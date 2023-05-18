@@ -8,7 +8,7 @@ import React from 'react'
 const TresPatios = () => {
   return (
     <>
-<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-11">
+<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-10 lg:py-20 mt-11">
       <div className="grid gap-5 row-gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <div className="max-w-xl mb-6">
@@ -140,14 +140,14 @@ const TresPatios = () => {
             </ul>
           </div>
         </div>
-        <div>
+        <div className='object-cover mx-auto w-[350px] justify-center bg-black'>
           {/* <img
-            className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-            src="https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png"
+            className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-red-800"
+            src=""
             alt=""
           /> */}
 
-          <PropertyDetail/>
+          <PropertyDetail className="" />
         </div>
       </div>
     </div>
