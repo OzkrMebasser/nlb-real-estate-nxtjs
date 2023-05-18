@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-
-      <body suppressHydrationWarning={true} className={inter.className}>
+      {/* suppressHydrationWarning={true} */}
+      <body  className={inter.className}>
       <PropertiesProvider>
         {children}
           <NavBar />

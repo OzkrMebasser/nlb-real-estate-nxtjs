@@ -19,6 +19,7 @@ export default function PropertyDetail() {
 
   return (
     <>
+    <div>
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -103,6 +104,7 @@ export default function PropertyDetail() {
           <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
       </Swiper>
+      </div>
     </>
   );
 }
