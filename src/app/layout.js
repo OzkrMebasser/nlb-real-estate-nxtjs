@@ -1,4 +1,4 @@
-'use client'
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ContactButtons from "@/components/ContactButtons/ContactButtons";
@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      {/* suppressHydrationWarning={true} */}
-      <body  className={inter.className}>
+      
+      <body suppressHydrationWarning={true} className={inter.className}>
       <PropertiesProvider>
         {children}
           <NavBar />
