@@ -50,8 +50,6 @@
     top: 0;
     font-weight: 900;
     text-align: center;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     color: white;
     background: url('https://images.pexels.com/photos/9149362/pexels-photo-9149362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: auto 200%;
@@ -61,9 +59,7 @@
     -webkit-text-fill-color: transparent;
     animation: shine 12s linear infinite;
  }
- /* .logo:nth-child(2) {
-    top: 50vh;
- } */
+
   @keyframes shine {
     from {
       background-position: center 0;
@@ -73,7 +69,14 @@
    }
  }
   
+ @media (max-width: 767px) {
+  .logoComp{
+    position: fixed;
+    left: 30px;
 
+    
+  }
+}
 
  .index-module_Button__F3ERg{
   color: #ffffff!important;

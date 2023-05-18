@@ -1,9 +1,11 @@
 'use client'  
-import { Fragment } from "react";
+import Link from 'next/link';
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import React, { useState } from "react";
+import React, { useState,Fragment } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { CgMenuGridO } from "react-icons/cg";
+import {BiMenuAltRight} from "react-icons/bi";
 
 
 
@@ -86,8 +88,8 @@ const NavBar = () => {
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <Link
+                        href="properties/playa-del-carmen/tres-patios"
                         className={classNames(
                           active
                             ? "bg-[#32f1ffa6] text-gray-900"
@@ -96,7 +98,7 @@ const NavBar = () => {
                         )}
                       >
                         Tres Patios
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -371,20 +373,22 @@ const NavBar = () => {
       </ul>
 
       {/* Menu mobile */}
-      <div onClick={handleNav} className="block md:hidden z-50">
-        {nav ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
+      <div onClick={handleNav} className="block md:hidden  fixed ml-[250px] z-40">
+        {nav ? <AiOutlineClose size={28} /> : <CgMenuGridO size={32} />}
+
+        
       </div>
       <ul
         className={
           nav
-            ? "mx-auto fixed left-0 top-0 w-[100%] h-full  navBg ease-in-out duration-500"
+            ? "mx-auto mt-[95px] fixed left-0 top-0 w-[100%] h-full  navBg ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <li className=" p-4 font-bold text-[20px]">
+        <li className=" p-4 font-bold text-[20px] ease-in-out duration-500 ">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold shadow-sm ">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-8 py-2 text-sm font-semibold shadow-sm ">
                 PLAYA DEL CARMEN
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -402,21 +406,22 @@ const NavBar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-                  <Menu.Item>
+                  <Menu.Item onClick={handleNav}>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <Link
+                        href="properties/playa-del-carmen/tres-patios " 
                         className={classNames(
                           active
                             ? "bg-[#32f1ffa6] text-gray-900"
                             : "text-gray-700",
                           "block px-4 py-2 text-sm"
+                          
                         )}
                       >
                         Tres Patios
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -457,7 +462,7 @@ const NavBar = () => {
         <li className=" p-4 font-bold text-[20px]">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold shadow-sm ">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-8 py-2 text-sm font-semibold shadow-sm ">
                 TULUM
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -475,7 +480,7 @@ const NavBar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
@@ -545,7 +550,7 @@ const NavBar = () => {
         <li className="p-4 font-bold text-[20px]">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold shadow-sm ">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-8 py-2 text-sm font-semibold shadow-sm ">
                 CANCUN
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -563,7 +568,7 @@ const NavBar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
 
                   <Menu.Item>
@@ -618,7 +623,7 @@ const NavBar = () => {
         <li className="p-4 font-bold text-[20px]">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold shadow-sm ">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-8 py-2 text-sm font-semibold shadow-sm ">
                 TERRENOS
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -636,7 +641,7 @@ const NavBar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
 
                   <Menu.Item>

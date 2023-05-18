@@ -14,10 +14,10 @@ const giauPass =
 
 export default function BasicSlider() {
   return (
-    <Fragment className="z-40">
+    <Fragment >
       
         <HeroSlider
-          style={{ color: "black" }}
+         
           height={"100vh"}
           autoplay
           controller={{
@@ -37,10 +37,10 @@ export default function BasicSlider() {
           }}
         >
 
-<div className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
+<span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
 <h1 className="titleShadow items-center justify-center z-40 text-4xl font-bold text-[white]">INVIERTE EN TU FUTURO</h1>
 <h3 className="titleShadow items-center justify-center z-40 text-1xl font-bold text-[white] ">Tenemos los mejores proyectos de la Riviera Maya</h3 >
-</div>
+</span>
           {/* <Overlay className="z-50">
       
         <Wrapper>
