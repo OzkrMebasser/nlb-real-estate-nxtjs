@@ -79,6 +79,7 @@ export const PropertiesProvider = ({ children }) => {
     },
   ];
 
+  
   return (
     <PropertiesContext.Provider value={{ properties }}>
       {children}

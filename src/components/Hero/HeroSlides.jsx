@@ -14,7 +14,7 @@ const giauPass =
 
 export default function BasicSlider() {
   return (
-    <Fragment >
+    <div className="top-0">
       
         <HeroSlider
          
@@ -106,6 +106,6 @@ export default function BasicSlider() {
           <MenuNav />
         </HeroSlider>
      
-    </Fragment>
+    </div>
   );
 }
