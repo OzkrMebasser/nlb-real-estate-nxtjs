@@ -1,10 +1,4 @@
-"use client";
-import { createContext, useContext } from "react";
-
-export const PropertiesContext = createContext();
-
-export const PropertiesProvider = ({ children }) => {
-  const properties = [
+const properties = [
     {
       id: 1,
       desarrollo: "Becán",
@@ -19,8 +13,8 @@ export const PropertiesProvider = ({ children }) => {
     },
     {
       id: 2,
-      desarrollo: "Yaxchilan",
       tipo: "Casa",
+      desarrollo: "Yaxchilan",
       ubicacion: "Cancun",
       precio: 3500000,
       habitaciones: 4,
@@ -117,22 +111,3 @@ export const PropertiesProvider = ({ children }) => {
 
     
   ];
-
-  
-  return (
-    <PropertiesContext.Provider value={{ properties }}>
-      {children}
-    </PropertiesContext.Provider>
-  );
-};
-
-// Make useUserContext Hook to easily use our context throughout the application
-export function useProperties() {
-  const context = useContext(PropertiesContext);
-  if (!context)
-    throw new Error(
-      `No se encontro el context, necesita usar dentro del provider`
-    );
-
-  return context;
-}

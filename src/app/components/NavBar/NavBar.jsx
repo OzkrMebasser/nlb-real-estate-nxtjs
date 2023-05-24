@@ -48,7 +48,7 @@ const NavBar = () => {
     <div
       className={
         navbarBg
-          ? "flex justify-between items-center h-24 w-full px-16 text-[#32f1ff] navBg shadow-xl fixed top-0 z-50"
+          ? "flex justify-between items-center h-24 w-full px-16 text-[#32f1ff] bg-gradient-to-r from-blue-900  via-sky-900  to-teal-500 shadow-xl fixed top-0 z-50"
           : "flex justify-between items-center h-24 w-full px-16 text-white bg-[transparent] fixed top-0 z-50"
       }
     >
@@ -381,7 +381,7 @@ const NavBar = () => {
       <ul
         className={
           nav
-            ? "mx-auto mt-[95px] fixed left-0 top-0 w-[100%] h-full  navBg ease-in-out duration-500"
+            ? "mx-auto mt-[95px] fixed left-0 top-0 w-[100%] h-full  bg-gradient-to-r from-blue-900  via-sky-900  to-teal-500 ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >

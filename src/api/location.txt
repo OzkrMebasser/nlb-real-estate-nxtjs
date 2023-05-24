@@ -1,8 +1,9 @@
 "use client";
 import { useParams } from "next/navigation";
-// import { useRouter } from "next/router";
+import { useProperties } from "@/context/PropertiesContext";
 
-import Properties from "@/components/Cards/Properties";
+import Properties from "../../components/Cards/Properties"
+
 
 // const router = useRouter();
 
@@ -12,6 +13,10 @@ const Page = ({items}) => {
   const params = useParams();
 
   const { location } = params;
+  // console.log(params)
+
+  const {properties} = useProperties();
+  // console.log(properties)
 
   // let decodedString = location;
 
@@ -37,21 +42,13 @@ const Page = ({items}) => {
   let qro = "Quer%C3%A9taro";
 
   const routes = location === pdc ? "Playa del Carmen" : location === qro ? "Querétaro" : location;
-  // let decodedRoute = location;
-  // if(decodedRoute === "Playa%20del%20Carmen"){
-  //   console.log("Playa del Carmen")
-  // }else if(decodedRoute === "Quer%C3%A9taro" ){
-  //   return "Querétaro"
-  // }else{
-  //   decodedRoute
-  // }
-
+ 
   return (
     <div className="mt-24 mx-auto">
       <h1 className="text text-center">
         Nuestras propiedades en {routes}{" "}
       </h1>
-      <Properties />
+      {/* <Properties location= {location} /> */}
     </div>
   );
 };

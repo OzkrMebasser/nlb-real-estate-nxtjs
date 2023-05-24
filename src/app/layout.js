@@ -1,10 +1,10 @@
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ContactButtons from "@/components/ContactButtons/ContactButtons";
-import NavBar from "@/components/NavBar/NavBar";
-import Footer from "@/components/Footer/Footer";
-import {PropertiesProvider} from "@/context/PropertiesContext";
+import ContactButtons from "./components/ContactButtons/ContactButtons";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import {PropertiesProvider} from "../context/PropertiesContext";
 
 
 const inter = Inter({ subsets: ["latin"] });

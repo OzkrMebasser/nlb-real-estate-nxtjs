@@ -1,9 +1,9 @@
 "use client";
-import HeroSlider from "@/components/Hero/HeroSlides";
-import Properties from "@/components/Cards/Properties";
-// import {usePropertiesContext} from "./context/PropertiesContext"
+import HeroSlider from "./components/Hero/HeroSlides";
+import HomeProperties from "./components/Cards/HomeProperties";
 
-// const { propiedades} = usePropertiesContext();
+
+
 export default function Home() {
   return (
     <>
@@ -12,7 +12,7 @@ export default function Home() {
         <h2 className="text-center mt-8 text-3xl font-black text-sky-950">
           Nuestras propiedades mas vendidas{" "}
         </h2>
-        <Properties />
+        <HomeProperties />
       </div>
     </>
   );

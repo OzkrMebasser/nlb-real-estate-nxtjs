@@ -12,9 +12,10 @@ import "./swipper.css";
 // import required modules
 import { EffectCube, Pagination } from "swiper";
 
-export default function App() {
+export default function PropertyDetailImages() {
   return (
-    <>
+   
+    
     <div>
       <Swiper
         effect={"cube"}
@@ -45,8 +46,10 @@ export default function App() {
         <SwiperSlide>
           <img src="https://images.pexels.com/photos/16348514/pexels-photo-16348514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         </SwiperSlide>
+        
       </Swiper>
-      </div>
-    </>
+     
+        </div>
+ 
   );
 }
