@@ -5,14 +5,15 @@ import { useRouter } from "next/navigation";
 
 
 const HomeProperties = () => {
-    const {properties} = useProperties();
+    const {dataProperties} = useProperties();
     const router = useRouter();
     
     // const homeProperties = properties[1,2,5];
-    const objetosFiltrados = properties.filter(objeto => objeto.id > 3 );
+    
+    const objetosFiltrados = dataProperties.filter(objeto => objeto.id > 3 );
 
 
-    const { precio } = properties.map((p) => {
+    const { precio } = dataProperties.map((p) => {
       p.precio;
     });
   
@@ -26,7 +27,7 @@ const HomeProperties = () => {
        
     <section className=" pt-4 pb-4 lg:pt-4 lg:pb-4 ">
 
-        <div className=" px-16 mx-auto pb-8"> 
+        <div className=" lg:px-16 mx-auto pb-8"> 
 
 
         {<div className="mx-auto grid gap-2 lg:grid-cols-3 ">

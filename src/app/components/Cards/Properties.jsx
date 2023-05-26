@@ -5,7 +5,7 @@ import PropertiesCards from "../../components/Cards/PropertiesCards"
 
 function Properties () {
  
-    const {properties} = useProperties();
+    const {dataProperties} = useProperties();
     // console.log(properties)
    
     const router = useRouter()
@@ -34,7 +34,7 @@ function Properties () {
 
     
             <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
-                {properties.map((items) => (
+                {dataProperties.map((items) => (
                     <PropertiesCards items={items} key={items.id}/>
                 ))}
             </div>

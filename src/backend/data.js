@@ -1,20 +1,29 @@
 const properties = [
     {
       id: 1,
-      desarrollo: "Becán",
+      desarrollo: "Tres Patios",
       tipo: "Departamento",
       ubicacion: "Playa del Carmen",
-      precio: 2000000,
+      precio: 2500000,
+      //Inside property
       habitaciones: 3,
       baños: 2,
-      metrosCuadrados: 120,
+      sala: "Sala",
+      cocina: "Cocina",
+      comedor: "Comedor",
+      closet: "Closets",
+      terraza: "Terraza",
+      metrosCuadrados: 90,
+      description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      embededMapSrc:
+        "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
     },
     {
       id: 2,
-      tipo: "Casa",
       desarrollo: "Yaxchilan",
+      tipo: "Casa",
       ubicacion: "Cancun",
       precio: 3500000,
       habitaciones: 4,
@@ -39,7 +48,7 @@ const properties = [
       id: 4,
       desarrollo: "Chanolandia",
       tipo: "Casa",
-      ubicacion: "Querétaro",
+      ubicacion: "Cancun",
       precio: 2800000,
       habitaciones: 3,
       baños: 2,
@@ -51,7 +60,7 @@ const properties = [
       id: 5,
       desarrollo: "Parque Zama",
       tipo: "Departamento",
-      ubicacion: "Puebla",
+      ubicacion: "Tulum",
       precio: 1500000,
       habitaciones: 1,
       baños: 1,
@@ -63,7 +72,7 @@ const properties = [
       id: 6,
       desarrollo: "Paam Cheel",
       tipo: "Departamento",
-      ubicacion: "Puebla",
+      ubicacion: "Cancun",
       precio: 1500000,
       habitaciones: 1,
       baños: 1,
@@ -76,7 +85,7 @@ const properties = [
       desarrollo: "Fulano 7",
       tipo: "Departamento",
       ubicacion: "Cozumel",
-      precio: 1500000,
+      precio: 900000,
       habitaciones: 1,
       baños: 1,
       metrosCuadrados: 60,
@@ -87,8 +96,8 @@ const properties = [
       id: 8,
       desarrollo: "Fulano 8",
       tipo: "Departamento",
-      ubicacion: "Valladolid",
-      precio: 1500000,
+      ubicacion: "Playa del Carmen",
+      precio: 800000,
       habitaciones: 1,
       baños: 1,
       metrosCuadrados: 60,
@@ -107,7 +116,5 @@ const properties = [
       imagenCard:
         "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
-    
-
-    
   ];
+  

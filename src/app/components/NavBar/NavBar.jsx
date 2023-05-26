@@ -6,6 +6,9 @@ import React, { useState,Fragment } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
 import {BiMenuAltRight} from "react-icons/bi";
+import { useProperties } from '@/context/PropertiesContext';
+import { useRouter } from "next/navigation";
+
 
 
 
@@ -17,6 +20,7 @@ function classNames(...classes) {
 }
 
 const NavBar = () => {
+
   //States
   const [nav, setNav] = useState(false);
   const [navbarBg, setNavbarBg] = useState(true);
@@ -43,6 +47,10 @@ const NavBar = () => {
   // };
 
   // const changeNavbg = window.addEventListener("scroll", changeNavBg);
+  const {dataProperties} = useProperties();
+  // console.log(properties)
+ 
+  const router = useRouter()
 
   return (
     <div
@@ -89,7 +97,8 @@ const NavBar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                        href="properties/playa-del-carmen/tres-patios"
+                      
+                        href={dataProperties[0].route}
                         className={classNames(
                           active
                             ? "bg-[#32f1ffa6] text-gray-900"
@@ -411,7 +420,7 @@ const NavBar = () => {
                   <Menu.Item onClick={handleNav}>
                     {({ active }) => (
                       <Link
-                        href="properties/playa-del-carmen/tres-patios " 
+                      href={dataProperties[0].route} 
                         className={classNames(
                           active
                             ? "bg-[#32f1ffa6] text-gray-900"

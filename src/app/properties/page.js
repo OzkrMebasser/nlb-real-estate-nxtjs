@@ -1,139 +1,140 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useProperties } from "../../context/PropertiesContext";
+import { useRouter } from "next/navigation";
 // import {Image} from "next"
 // import Properties from "../components/Cards/Properties";
+// const propiedades = [
+//   {
+//     id: 1,
+//     desarrollo: "Tres Patios",
+//     tipo: "Departamento",
+//     ubicacion: "Playa del Carmen",
+//     precio: 2500000,
+//     //Inside property
+//     habitaciones: 3,
+//     baños: 2,
+//     sala: "Sala",
+//     cocina: "Cocina",
+//     comedor: "Comedor",
+//     closet: "Closets",
+//     terraza: "Terraza",
+//     metrosCuadrados: 90,
+//     description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+//     embededMapSrc:
+//       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+//   },
+//   {
+//     id: 2,
+//     desarrollo: "Yaxchilan",
+//     tipo: "Casa",
+//     ubicacion: "Cancun",
+//     precio: 3500000,
+//     habitaciones: 4,
+//     baños: 3,
+//     metrosCuadrados: 200,
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2022/05/INICIO-1.webp",
+//   },
+//   {
+//     id: 3,
+//     desarrollo: "Vidaraa",
+//     tipo: "Departamento",
+//     ubicacion: "Tulum",
+//     precio: 1800000,
+//     habitaciones: 2,
+//     baños: 1,
+//     metrosCuadrados: 90,
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
+//   },
+//   {
+//     id: 4,
+//     desarrollo: "Chanolandia",
+//     tipo: "Casa",
+//     ubicacion: "Cancun",
+//     precio: 2800000,
+//     habitaciones: 3,
+//     baños: 2,
+//     metrosCuadrados: 150,
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2022/09/vidara_inicio.png",
+//   },
+//   {
+//     id: 5,
+//     desarrollo: "Parque Zama",
+//     tipo: "Departamento",
+//     ubicacion: "Tulum",
+//     precio: 1500000,
+//     habitaciones: 1,
+//     baños: 1,
+//     metrosCuadrados: 60,
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2022/07/BECAN_INDES.webp",
+//   },
+//   {
+//     id: 6,
+//     desarrollo: "Paam Cheel",
+//     tipo: "Departamento",
+//     ubicacion: "Cancun",
+//     precio: 1500000,
+//     habitaciones: 1,
+//     baños: 1,
+//     metrosCuadrados: 60,
+//     imagenCard:
+//       "https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png",
+//   },
+//   {
+//     id: 7,
+//     desarrollo: "Fulano 7",
+//     tipo: "Departamento",
+//     ubicacion: "Cozumel",
+//     precio: 900000,
+//     habitaciones: 1,
+//     baños: 1,
+//     metrosCuadrados: 60,
+//     imagenCard:
+//       "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   },
+//   {
+//     id: 8,
+//     desarrollo: "Fulano 8",
+//     tipo: "Departamento",
+//     ubicacion: "Playa del Carmen",
+//     precio: 800000,
+//     habitaciones: 1,
+//     baños: 1,
+//     metrosCuadrados: 60,
+//     imagenCard:
+//       "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   },
+//   {
+//     id: 9,
+//     desarrollo: "Fulano 9",
+//     tipo: "Departamento",
+//     ubicacion: "Merida",
+//     precio: 1500000,
+//     habitaciones: 1,
+//     baños: 1,
+//     metrosCuadrados: 60,
+//     imagenCard:
+//       "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   },
+// ];
 
-const propiedades = [
-  {
-    id: 1,
-    desarrollo: "Tres Patios",
-    tipo: "Departamento",
-    ubicacion: "Playa del Carmen",
-    precio: 2500000,
-    //Inside property
-    habitaciones: 3,
-    baños: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
-    description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
-    embededMapSrc:
-      "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
-  },
-  {
-    id: 2,
-    desarrollo: "Yaxchilan",
-    tipo: "Casa",
-    ubicacion: "Cancun",
-    precio: 3500000,
-    habitaciones: 4,
-    baños: 3,
-    metrosCuadrados: 200,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/05/INICIO-1.webp",
-  },
-  {
-    id: 3,
-    desarrollo: "Vidaraa",
-    tipo: "Departamento",
-    ubicacion: "Tulum",
-    precio: 1800000,
-    habitaciones: 2,
-    baños: 1,
-    metrosCuadrados: 90,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
-  },
-  {
-    id: 4,
-    desarrollo: "Chanolandia",
-    tipo: "Casa",
-    ubicacion: "Cancun",
-    precio: 2800000,
-    habitaciones: 3,
-    baños: 2,
-    metrosCuadrados: 150,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/09/vidara_inicio.png",
-  },
-  {
-    id: 5,
-    desarrollo: "Parque Zama",
-    tipo: "Departamento",
-    ubicacion: "Tulum",
-    precio: 1500000,
-    habitaciones: 1,
-    baños: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/07/BECAN_INDES.webp",
-  },
-  {
-    id: 6,
-    desarrollo: "Paam Cheel",
-    tipo: "Departamento",
-    ubicacion: "Cancun",
-    precio: 1500000,
-    habitaciones: 1,
-    baños: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png",
-  },
-  {
-    id: 7,
-    desarrollo: "Fulano 7",
-    tipo: "Departamento",
-    ubicacion: "Cozumel",
-    precio: 900000,
-    habitaciones: 1,
-    baños: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 8,
-    desarrollo: "Fulano 8",
-    tipo: "Departamento",
-    ubicacion: "Playa del Carmen",
-    precio: 800000,
-    habitaciones: 1,
-    baños: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 9,
-    desarrollo: "Fulano 9",
-    tipo: "Departamento",
-    ubicacion: "Merida",
-    precio: 1500000,
-    habitaciones: 1,
-    baños: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
 
-const { precio } = propiedades.map((p) => {
-  p.precio;
-});
 
-function formatearPrecio(precio) {
-  return precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+
 
 function Allproperties() {
+  const {dataProperties} = useProperties();
+  const router = useRouter()
+
+
   // const [filteredEmployees, setFilteredEmployees] = useState(employees);
-  const [filteredPropiedades, setfilteredPropiedades] = useState(propiedades);
+  const [filteredPropiedades, setfilteredPropiedades] = useState(dataProperties);
 
   // const [department, setDepartment] = useState("");
   const [ubicacion, setUbicacion] = useState("");
@@ -143,12 +144,12 @@ function Allproperties() {
 
   // Using set to filter unique values
   const ubicaciones = Array.from(
-    new Set(propiedades.map((propiedad) => propiedad.ubicacion))
+    new Set(dataProperties.map((propiedad) => propiedad.ubicacion))
   );
 
   useEffect(() => {
     setfilteredPropiedades(
-      propiedades.filter((propiedad) => {
+      dataProperties.filter((propiedad) => {
         return (
           (!ubicacion || ubicacion === propiedad.ubicacion) &&
           (!precio ||
@@ -165,6 +166,14 @@ function Allproperties() {
     setPrecio();
   };
 
+  
+  const { price } = dataProperties.map((p) => {
+  p.precio;
+});
+
+function formatearPrecio(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
   return (
     <>
       <div className="mt-24 mx-auto justify-center">
@@ -231,7 +240,7 @@ function Allproperties() {
         </div>
 
         <section className=" pt-4 pb-4 lg:pt-4 lg:pb-4 ">
-          <div className=" px-16 mx-auto pb-8">
+          <div className="lg:px-16 mx-auto pb-8">
             {
               <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
                 {filteredPropiedades.map((items) => (
@@ -241,7 +250,7 @@ function Allproperties() {
                     // onClick={HandleRoute}
 
                     // onClick={() => router.push(`properties/${items.ubicacion}`)}
-                    onClick={() => router.push(`properties`)}
+                    onClick={() => router.push(`${items.route}`)}
                   >
                     <h1 className="text-2xl text-sky-900 font-black">
                       {items.desarrollo}

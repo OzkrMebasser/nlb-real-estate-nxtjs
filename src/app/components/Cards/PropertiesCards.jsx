@@ -39,7 +39,7 @@ const PropertiesCards = ({ items, ruta }) => {
   return (
     <>
       <div
-        className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
+        className=" mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
         key={items.id}
         // onClick={HandleRoute}
 
@@ -53,7 +53,7 @@ const PropertiesCards = ({ items, ruta }) => {
           src={items.imagenCard}
           alt="image"
         />
-        <div className="p-4">
+        <div className="">
           <h4 className="text-xl font-semibold text-blue-600">{items.title}</h4>
           <p className="mb-2 leading-normal">{items.content}</p>
           <button className=" mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
