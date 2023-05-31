@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import { useProperties } from "../../context/PropertiesContext";
 import { useRouter } from "next/navigation";
-// import {Image} from "next"
+import Loading from "../components/Loading/Loading";
+import {Image} from "next"
 // import Properties from "../components/Cards/Properties";
 // const propiedades = [
 //   {
@@ -132,6 +133,7 @@ function Allproperties() {
   const {dataProperties} = useProperties();
   const router = useRouter()
 
+  const [isLoading, setIsLoading] = useState(true);
 
   // const [filteredEmployees, setFilteredEmployees] = useState(employees);
   const [filteredPropiedades, setfilteredPropiedades] = useState(dataProperties);
@@ -159,12 +161,20 @@ function Allproperties() {
         );
       })
     );
-  }, [ubicacion, precio]);
+  }, [ubicacion, precio,dataProperties]);
 
   const clearFilters = () => {
     setUbicacion("");
     setPrecio();
   };
+
+  useEffect(() => {
+    // Simulating an API call or data loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
 
   
   const { price } = dataProperties.map((p) => {
@@ -241,43 +251,48 @@ function formatearPrecio(price) {
 
         <section className=" pt-4 pb-4 lg:pt-4 lg:pb-4 ">
           <div className="lg:px-16 mx-auto pb-8">
-            {
-              <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
-                {filteredPropiedades.map((items) => (
-                  <div
-                    className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
-                    key={items.id}
-                    // onClick={HandleRoute}
 
-                    // onClick={() => router.push(`properties/${items.ubicacion}`)}
-                    onClick={() => router.push(`${items.route}`)}
-                  >
-                    <h1 className="text-2xl text-sky-900 font-black">
-                      {items.desarrollo}
-                    </h1>
-                    <p> Ubicacion : {items.ubicacion}</p>
-                    <img
-                      className="object-cover w-full h-48"
-                      src={items.imagenCard}
-                      alt="image"
-                    />
-                    <div className="p-4">
-                      <h4 className="text-xl font-semibold text-blue-600">
-                        {items.title}
-                      </h4>
-                      <p className="mb-2 leading-normal">{items.content}</p>
-                      <button className=" mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
-                        Propiedades desde ${formatearPrecio(items.precio)}
-                      </button>
-                      <div>Tipo : {items.tipo}</div>
-                      <p>Habitaciones : {items.habitaciones}</p>
-                      <p>M² : {items.metrosCuadrados}</p>
-                      <p>Baños : {items.baños}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            }
+          {isLoading ? (
+        <Loading />
+      ) : (
+        <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
+        {filteredPropiedades.map((items) => (
+          <div
+            className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
+            key={items.id}
+            // onClick={HandleRoute}
+
+            // onClick={() => router.push(`properties/${items.ubicacion}`)}
+            onClick={() => router.push(`${items.route}`)}
+          >
+            <h1 className="text-2xl text-sky-900 font-black">
+              {items.desarrollo}
+            </h1>
+            <p> Ubicacion : {items.ubicacion}</p>
+            <img
+              className="object-cover w-full h-48"
+              src={items.imagenCard}
+              alt="image"
+            />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-blue-600">
+                {items.title}
+              </h4>
+              <p className="mb-2 leading-normal">{items.content}</p>
+              <button className=" mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
+                Propiedades desde ${formatearPrecio(items.precio)}
+              </button>
+              <div>Tipo : {items.tipo}</div>
+              <p>Habitaciones : {items.habitaciones}</p>
+              <p>M² : {items.metrosCuadrados}</p>
+              <p>Baños : {items.baños}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      )}
+
+     
           </div>
         </section>
       </div>

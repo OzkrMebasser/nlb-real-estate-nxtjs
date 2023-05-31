@@ -1,16 +1,13 @@
-'use client'  
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import React, { useState,Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
-import {BiMenuAltRight} from "react-icons/bi";
-import { useProperties } from '@/context/PropertiesContext';
+import { BiMenuAltRight } from "react-icons/bi";
+import { useProperties } from "@/context/PropertiesContext";
 import { useRouter } from "next/navigation";
-
-
-
 
 import "./NavBar.css";
 import Logo from "./Logo";
@@ -20,7 +17,6 @@ function classNames(...classes) {
 }
 
 const NavBar = () => {
-
   //States
   const [nav, setNav] = useState(false);
   const [navbarBg, setNavbarBg] = useState(true);
@@ -47,10 +43,10 @@ const NavBar = () => {
   // };
 
   // const changeNavbg = window.addEventListener("scroll", changeNavBg);
-  const {dataProperties} = useProperties();
+  const { dataProperties } = useProperties();
   // console.log(properties)
- 
-  const router = useRouter()
+
+  const router = useRouter();
 
   return (
     <div
@@ -97,7 +93,6 @@ const NavBar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      
                         href={dataProperties[0].route}
                         className={classNames(
                           active
@@ -256,7 +251,6 @@ const NavBar = () => {
             >
               <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-
                   <Menu.Item>
                     {({ active }) => (
                       <a
@@ -283,7 +277,8 @@ const NavBar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Thalassa                      </a>
+                        Thalassa{" "}
+                      </a>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -329,7 +324,6 @@ const NavBar = () => {
             >
               <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-
                   <Menu.Item>
                     {({ active }) => (
                       <a
@@ -356,7 +350,8 @@ const NavBar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Terreno 2                      </a>
+                        Terreno 2{" "}
+                      </a>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -381,11 +376,17 @@ const NavBar = () => {
         </li>
       </ul>
 
-      {/* Menu mobile */}
-      <div onClick={handleNav} className="block md:hidden  fixed ml-[250px] z-40">
-        {nav ? <AiOutlineClose size={28} /> : <CgMenuGridO size={32} />}
+      {/* 
+░█▀▄▀█ ░█▀▀▀█ ░█▀▀█ ▀█▀ ░█─── ░█▀▀▀ 
+░█░█░█ ░█──░█ ░█▀▀▄ ░█─ ░█─── ░█▀▀▀ 
+░█──░█ ░█▄▄▄█ ░█▄▄█ ▄█▄ ░█▄▄█ ░█▄▄▄  */}
 
-        
+      <div
+        onClick={handleNav}
+        // className="block md:hidden  fixed ml-[250px] z-40"
+        className="block md:hidden  fixed ml-[250px] z-40"
+      >
+        {nav ? <AiOutlineClose size={28} /> : <CgMenuGridO size={32} />}
       </div>
       <ul
         className={
@@ -420,13 +421,12 @@ const NavBar = () => {
                   <Menu.Item onClick={handleNav}>
                     {({ active }) => (
                       <Link
-                      href={dataProperties[0].route} 
+                        href={dataProperties[0].route}
                         className={classNames(
                           active
                             ? "bg-[#32f1ffa6] text-gray-900"
                             : "text-gray-700",
                           "block px-4 py-2 text-sm"
-                          
                         )}
                       >
                         Tres Patios
@@ -579,7 +579,6 @@ const NavBar = () => {
             >
               <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-
                   <Menu.Item>
                     {({ active }) => (
                       <a
@@ -606,7 +605,8 @@ const NavBar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Thalassa                      </a>
+                        Thalassa{" "}
+                      </a>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -652,7 +652,6 @@ const NavBar = () => {
             >
               <Menu.Items className="absolute left-8 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-
                   <Menu.Item>
                     {({ active }) => (
                       <a
@@ -679,7 +678,8 @@ const NavBar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Terreno 2                      </a>
+                        Terreno 2{" "}
+                      </a>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -702,7 +702,6 @@ const NavBar = () => {
             </Transition>
           </Menu>
         </li>
-
       </ul>
     </div>
   );

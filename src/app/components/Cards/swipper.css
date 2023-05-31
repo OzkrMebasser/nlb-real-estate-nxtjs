@@ -5,6 +5,7 @@
   position: relative;
   /* left: 50%;
   top: 50%; */
+  
 margin: auto;
 }
 
@@ -17,4 +18,9 @@ margin: auto;
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  
+  background: #058a94;
 }

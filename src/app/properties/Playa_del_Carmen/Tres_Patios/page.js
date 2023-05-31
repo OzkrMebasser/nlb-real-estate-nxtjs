@@ -1,164 +1,220 @@
 "use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages";
-import React from "react";
+import { MdOutlineSwipe } from "react-icons/md";
+import { HiBadgeCheck } from "react-icons/hi";
+import Villa90m2 from "./depto_90m2/x";
+import Villa110m2 from "./Villa110m2";
 
 const TresPatios = () => {
+  const [isModalOpen90, setIsModalOpen90] = useState(false);
+  const [isModalOpen110, setIsModalOpen110] = useState(false);
+
+  const handleOpenModal90 = () => {
+    setIsModalOpen90(true);
+  };
+
+  const handleCloseModal90 = () => {
+    setIsModalOpen90(false);
+  };
+
+  const handleOpenModal110 = () => {
+    setIsModalOpen110(true);
+  };
+
+  const handleCloseModal110 = () => {
+    setIsModalOpen110(false);
+  };
+
+  const router = useRouter();
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-10 lg:py-20 mt-11">
-        <div className="grid gap-5 row-gap-10 lg:grid-cols-2">
-          <div className="flex flex-col justify-center">
-            <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+      <section class="bg-white ">
+        <div class="px-6 py-10 mx-auto mt-8">
+          <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+
+            <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-16 ">
+              <h2 className=" max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-sky-950 sm:text-4xl sm:leading-none">
                 Tres Patios
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
+                locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}
+                diseñadas para el entretenimiento y bienestar.
               </p>
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                Tres Patios es una innovadora propuesta de usos mixtos compuesta
+                por áreas habitables y locales comerciales, generando un entorno
+                novedoso de gran calidad de vida.
+                <br />
+                El conjunto se compone por 32 departamentos en villas con 6
+                departamentos cada una, rodeados de áreas verdes y atractivas
+                amenidades.
+              </p>
+
+              <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
+                Amenidades
+              </h4>
+
+              <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                <ul className="space-y-3">
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Casa Club
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Cancha de Paddel
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Outdoor Gym
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Alberca
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Pet Park
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Canchas Deportivas
+                  </li>
+                </ul>
+                <ul className="space-y-3">
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Reading Spots
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Dynamic Playground
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Asadores
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Urban Garden
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Neighbor Kiosco & Hammock Garden
+                  </li>
+                </ul>
+              </div>
+
+              {/* {"Villa 90m2 copy"} */}
             </div>
-            <p className="mb-4 text-sm font-bold tracking-widest uppercase">
-              Features
-            </p>
-            <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-              <ul className="space-y-3">
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  A slice of heaven
-                </li>
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Disrupt inspire
-                </li>
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Preliminary thinking
-                </li>
-              </ul>
-              <ul className="space-y-3">
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Flipboard curmudgeon
-                </li>
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Storage shed
-                </li>
-                <li className="flex">
-                  <span className="mr-1">
-                    <svg
-                      className="w-5 h-5 mt-px text-deep-purple-accent-400"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </span>
-                  Satoshi Nakamoto
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="object-cover mx-auto w-[350px] justify-center bg-black">
-            {/* <img
+            <div className="object-cover w-[330px] mx-auto lg:w-[430px] justify-center bg-white">
+              {/* <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-red-800"
             src=""
             alt=""
           /> */}
 
-            <PropertyDetailImages />
+              <PropertyDetailImages />
+              <div className="mx-auto items-center text-center relative bg-[white] mt-4">
+                <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
+              </div>
+            </div>
           </div>
         </div>
+        <span className="flex justify-center">
+          <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
+            Da click para ver mas detalles
+          </h4>
+        </span>
+        <div class="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
+          {/* {"Villa 90m2"} */}
 
-        <div class=" inset-0 h-[600px] mt-10">
-          <iframe
-            width="100%"
-            height="100%"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="map"
-            scroll="yes"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Tres patios playa del carmen&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          ></iframe>
+          <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            onClick={() =>
+              router.push(`properties/Playa_del_Carmen/Tres_Patios/depto_90m2`)
+            }
+          >
+            Villa 90m2
+          </button>
+
+          <Villa90m2 isOpen90={isModalOpen90} onClose90={handleCloseModal90} />
+
+          {/* {"Villa 110m2"} */}
+          <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            onClick={handleOpenModal110}
+          >
+            Villa 110m2
+          </button>
+
+          <Villa110m2
+            isOpen110={isModalOpen110}
+            onClose110={handleCloseModal110}
+          />
+
+          <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            onClick={handleOpenModal90}
+          >
+            Villa 90m2
+          </button>
+          {/* {"Villa 110m2"} */}
+          <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            onClick={handleOpenModal110}
+          >
+            Villa 110m2
+          </button>
+
+          <Villa110m2
+            isOpen110={isModalOpen110}
+            onClose110={handleCloseModal110}
+          />
         </div>
+      </section>
+      <div className="flex justify-center mt-6">
+        <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
+          Ubicación
+        </h4>
+      </div>
+      <div class=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="map"
+          scroll="yes"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Tres patios playa del carmen&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
       </div>
     </>
   );
