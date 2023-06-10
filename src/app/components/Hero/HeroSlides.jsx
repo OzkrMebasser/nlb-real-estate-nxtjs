@@ -38,8 +38,8 @@ export default function BasicSlider() {
         >
 
 <span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
-<h1 className="titleShadow items-center justify-center z-40 text-4xl font-bold text-[white]">INVIERTE EN TU FUTURO</h1>
-<h3 className="titleShadow items-center justify-center z-40 text-1xl font-bold text-[white] ">Tenemos los mejores proyectos de la Riviera Maya</h3 >
+<h1 className="titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">TODO LO QUE NECESITAS PARA INVERTIR EN LA RIVIERA MAYA</h1>
+<h3 className="titleShadow items-center justify-center z-40 text-lg lg:text-2xl font-bold text-[white] ">INVIERTE EN TU FUTURO</h3 >
 </span>
           {/* <Overlay className="z-50">
       
@@ -58,7 +58,7 @@ export default function BasicSlider() {
           
           <Slide
             shouldRenderMask
-            label="Lik- Tulum"
+            label="PRE VENTAS"
             background={{
               backgroundImageSrc: giauPass,
             }}
@@ -66,16 +66,16 @@ export default function BasicSlider() {
 
           <Slide
             shouldRenderMask
-            label="X desarrollo - Cancun"
+            label="TERRENOS DE INVERSION"
             background={{
               backgroundImageSrc: bogliasco,
-              color: "red",
+              
             }}
           />
 
           <Slide
             shouldRenderMask
-            label="Desarrollo - Cozumel"
+            label="ENTREGA INMEDIATA"
             background={{
               backgroundImageSrc: countyClare,
             }}
@@ -83,25 +83,25 @@ export default function BasicSlider() {
 
           <Slide
             shouldRenderMask
-            label="Aqua - Playa del Carmen"
+            label="LLAVE EN MANO"
             background={{
               backgroundImageSrc: craterRock,
             }}
           />
           <Slide
             shouldRenderMask
-            label="Aqua - Playa del Carmen"
+            label="CONDO HOTELERO"
             background={{
               backgroundImageSrc: giauPass,
             }}
           />
-          <Slide
+          {/* <Slide
             shouldRenderMask
             label="Aqua - Playa del Carmen"
             background={{
               backgroundImageSrc: bogliasco,
             }}
-          />
+          /> */}
 
           <MenuNav />
         </HeroSlider>

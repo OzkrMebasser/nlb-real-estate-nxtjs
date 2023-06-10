@@ -4,7 +4,7 @@ const Footer = () => {
   return (
    
         
-        <div className="pt-6 md:pt-12 bg-gradient-to-r from-blue-900  via-sky-900  to-teal-500">
+        <div className="pt-6 md:pt-12 bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800">
        
   <div className="lg:px-[80px]  mx-auto">
 
