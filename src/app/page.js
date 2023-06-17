@@ -10,7 +10,7 @@ export default function Home() {
       <div className="bg-[#F3F4F6]">
         <HeroSlider />
         <h2 className="text-center mt-8 text-3xl font-black text-sky-950">
-          Nuestras propiedades mas vendidas{" "}
+        PROPIEDADES DESTACADAS{" "}
         </h2>
         <HomeProperties />
       </div>
