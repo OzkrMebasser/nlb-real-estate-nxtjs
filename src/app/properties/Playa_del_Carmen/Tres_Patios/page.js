@@ -30,12 +30,11 @@ const TresPatios = () => {
   const router = useRouter();
   return (
     <>
-      <section class="bg-white ">
-        <div class="px-6 py-10 mx-auto mt-8">
-          <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+      <section className="bg-white ">
+        <div className="px-6 py-10 mx-auto mt-8">
+          <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
 
-            <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-16 ">
+            <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-16 ">
               <h2 className=" max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
                 Tres Patios
               </h2>
@@ -152,7 +151,7 @@ const TresPatios = () => {
             Da click para ver mas detalles
           </h4>
         </span>
-        <div class="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
+        <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
           {/* {"Villa 90m2"} */}
 
           <button
@@ -204,7 +203,7 @@ const TresPatios = () => {
           Ubicación
         </h4>
       </div>
-      <div class=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
+      <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
         <iframe
           width="100%"
           height="100%"
