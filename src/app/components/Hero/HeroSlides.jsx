@@ -3,24 +3,29 @@
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
 
 import "../NavBar/NavBar.css";
-const bogliasco =
-  // "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Cancun.jpg?alt=media&token=20d1767c-77ce-43a9-bcd7-94befb6a75a9"
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPRUEBAS%2Fnlb-hero%20(2).jpg?alt=media&token=c6ef7280-4aa9-42af-97eb-55c91c4a9780";
+const fotoHero1 =
+  // Tulum
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage1-tulum.jpeg?alt=media&token=ce7fa2f7-2eca-4ef0-8ce7-74000e153cd1";
+const fotoHero2 =
+  // "Tres Patios";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage2-tresPatios-.jpg?alt=media&token=0ef27096-fa8d-4e6a-9fa4-3e416c2f9b72";
+const fotoHero3 =
+  // "Madre tierra";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage3-madreTiera.jpg?alt=media&token=c4186920-5027-4037-bc80-1f3790e5970c";
+const fotoHero4 =
+  // "Vidarah";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage4-vidara.webp?alt=media&token=2be3b69b-bf24-47d6-91eb-78ed133253d3";
 
-const countyClare =
-  // "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/pexels-mati-mango-11291049.jpg?alt=media&token=0ccbeb43-6f25-4d06-9ba3-52d3f749103b";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPRUEBAS%2Fnlb-hero%20(1).png?alt=media&token=8d1197aa-1cc7-49f2-a19a-c54d3dbb414f";
-const craterRock =
-  // "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Cancun.jpg?alt=media&token=20d1767c-77ce-43a9-bcd7-94befb6a75a9";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPRUEBAS%2Fnlb-hero%20(3).jpg?alt=media&token=94c1eb6f-aaf6-4486-9ea4-822873c6db55";
-const giauPass =
-  // "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/pexels-tellez-erik-15100236.jpg?alt=media&token=4da4c5bd-a65d-42db-9228-7c2751c6f27a";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPRUEBAS%2Fnlb-hero%20(4).jpg?alt=media&token=207766d6-d481-44c1-9404-4b0946a096ae";
+const fotoHero5 =
+  //Cenote o Cancun
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage5-cancun.jpeg?alt=media&token=54ea1d35-7c29-46f8-a2ab-bbfe5c66ee4e";
+const fotoHero6 =
+  //Atimar
+  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage6-ATHIMAR.jpg?alt=media&token=5b395a3a-b857-4c1d-b510-23a1d3be376f";
 
-const foto5 = "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPRUEBAS%2Fnlb-hero%20(5).jpg?alt=media&token=d25a7101-5847-4a0d-a2d2-7fef82e4f26b"
-  export default function BasicSlider() {
+export default function BasicSlider() {
   return (
-    <div className="top-0">
+    <div className="mt-0">
       <HeroSlider
         height={"100vh"}
         autoplay
@@ -63,50 +68,50 @@ const foto5 = "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appsp
       </Overlay>   */}
 
         <Slide
-          shouldRenderMask
+          // shouldRenderMask
           label="PRE VENTAS"
           background={{
-            backgroundImageSrc: giauPass,
+            backgroundImageSrc: fotoHero1,
           }}
         />
 
         <Slide
-          shouldRenderMask
+          // shouldRenderMask
           label="TERRENOS DE INVERSION"
           background={{
-            backgroundImageSrc: bogliasco,
+            backgroundImageSrc: fotoHero2,
           }}
         />
 
         <Slide
-          shouldRenderMask
+          // shouldRenderMask
           label="ENTREGA INMEDIATA"
           background={{
-            backgroundImageSrc: countyClare,
+            backgroundImageSrc: fotoHero3,
           }}
         />
 
         <Slide
-          shouldRenderMask
+          // shouldRenderMask
           label="LLAVE EN MANO"
           background={{
-            backgroundImageSrc: craterRock,
+            backgroundImageSrc: fotoHero4,
           }}
         />
         <Slide
-          shouldRenderMask
+          // shouldRenderMask
           label="CONDO HOTELERO"
           background={{
-            backgroundImageSrc: foto5,
+            backgroundImageSrc: fotoHero5,
           }}
         />
-        {/* <Slide
-            shouldRenderMask
-            label="Aqua - Playa del Carmen"
-            background={{
-              backgroundImageSrc: bogliasco,
-            }}
-          /> */}
+        <Slide
+          // shouldRenderMask
+          label="UNIDADES EN PROMOCIÓN"
+          background={{
+            backgroundImageSrc: fotoHero6,
+          }}
+        />
 
         <MenuNav />
       </HeroSlider>

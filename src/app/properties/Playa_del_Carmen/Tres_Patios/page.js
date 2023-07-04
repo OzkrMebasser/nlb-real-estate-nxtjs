@@ -36,7 +36,7 @@ const TresPatios = () => {
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
             <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-16 ">
-              <h2 className=" max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-sky-950 sm:text-4xl sm:leading-none">
+              <h2 className=" max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
                 Tres Patios
               </h2>
               <p className="text-base text-gray-700 md:text-lg mb-2">
