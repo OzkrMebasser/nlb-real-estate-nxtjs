@@ -11,7 +11,7 @@ const ContactButtons = () => {
 	
     <a href="#" target="_blank" className="sbutton whatsapp" tooltip="WhatsApp"><i className="fab fa-whatsapp"></i></a>  
     
-    <a href="#" target="_blank" className="sbutton instagram" tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank" className="sbutton instagram" tooltip="Instagram"><i className="fab fa-instagram"></i></a>
     
     <a href="#" target="_blank" className="sbutton fb" tooltip="Facebook"><i className="fab fa-facebook-f"></i></a>
   
