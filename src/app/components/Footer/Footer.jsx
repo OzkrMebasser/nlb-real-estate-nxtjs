@@ -101,7 +101,7 @@ const Footer = () => {
                 <form action="#">
                   <div>
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-sm font-medium text-[#32f1ff]"
                     >
                       Your email
@@ -116,7 +116,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <label
-                      for="subject"
+                      htmlFor="subject"
                       className="block mb-2 text-sm font-medium text-[#32f1ff]"
                     >
                       Subject
@@ -131,7 +131,7 @@ const Footer = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="block mb-2 text-sm font-medium text-[#32f1ff]"
                     >
                       Your message

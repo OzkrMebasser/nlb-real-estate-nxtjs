@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -36,6 +37,12 @@ const NavBar = (props) => {
     setNav(!nav);
   };
 
+
+  useEffect(() => {
+    // window is accessible here.
+    console.log("window.innerHeight", window.innerHeight);
+  }, []);
+  
   const changeNavBg = () => {
     if (window.scrollY > 5) {
       setNavbarBg(true);
