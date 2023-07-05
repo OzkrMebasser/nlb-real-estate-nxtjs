@@ -37,13 +37,9 @@ const NavBar = (props) => {
     setNav(!nav);
   };
 
-
-  useEffect(() => {
-    // window is accessible here.
-    console.log("window.innerHeight", window.innerHeight);
-  }, []);
-  
+ 
   const changeNavBg = () => {
+ 
     if (window.scrollY > 5) {
       setNavbarBg(true);
     } else if (window.scrollY < 200) {
@@ -51,7 +47,11 @@ const NavBar = (props) => {
     }
   };
 
-  const changeNavbg = window.addEventListener("scroll", changeNavBg);
+  useEffect(() => {
+    const changeNavbg = window.addEventListener("scroll", changeNavBg);
+  }, []);
+
+
 
   // Change MENU items shadows
   const changeTextShadow = () => {

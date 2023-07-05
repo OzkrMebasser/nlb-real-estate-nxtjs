@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12 px-4">
           <div className="footer-info lg:w-1/3 md:px-4">
             <h6 className="text-base text-[#9c8966] font-bold uppercase mb-2 hover:underline cursor-pointer">
-              <span onClick={() => router.push(`frequent-questions`)}>
+              <span onClick={() => router.push(`frequent_questions`)}>
                 Preguntas Frecuentes
               </span>
             </h6>
@@ -18,7 +18,7 @@ const Footer = () => {
               <p
                 onClick={() =>
                   router.push(
-                    `/frequent-questions/how-do-i-acquire-a-property-in-mexico`
+                    `/frequent_questions/How_do_I_acquire_a_property_in_Mexico`
                   )
                 }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
@@ -29,7 +29,7 @@ const Footer = () => {
               <p
                 onClick={() =>
                   router.push(
-                    `/frequent-questions/can-i-acquire-in-co-ownership`
+                    `/frequent_questions/Can_I_acquire_in_co_ownership`
                   )
                 }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
