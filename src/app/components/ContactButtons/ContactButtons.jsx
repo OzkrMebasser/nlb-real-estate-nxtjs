@@ -1,10 +1,17 @@
 'use client'
-import React from 'react'
-import "./contactButtons.css"
+import {useState} from 'react';
+import "./contactButtons.css";
 
 
 
 const ContactButtons = () => {
+  const [openSideBarMenu, setOpenSideBarMenu] = useState(false);
+  
+const toggleMenu = () => {
+  setOpenSideBarMenu(!openSideBarMenu);
+};
+
+
   return (
     
           <div className="sbuttons z-[100]">
@@ -20,8 +27,12 @@ const ContactButtons = () => {
     <a href="#" target="_blank" className="sbutton twitt" tooltip="Llamanos"><i className="fas fa-phone"></i></a>
   
   
-    <a target="_blank" className="sbutton mainsbutton openButtons" tooltip="Contactanos"><i className="fas fa-plus"></i></a>
-        
+    <button className="sbutton mainsbutton openButtons" tooltip="Contactanos" onClick={toggleMenu}>
+    {/* <a target="_blank" className="sbutton mainsbutton openButtons" tooltip="Contactanos"><i className="fas fa-plus"></i></a> */}
+    {/* {!openSideBarMenu ? <AiOutlineComment />: <GoX/>} */}
+    <i className="fas fa-plus"></i>
+    
+    </button>
   </div>  
   
 

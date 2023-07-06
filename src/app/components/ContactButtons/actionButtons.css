@@ -1,0 +1,168 @@
+.floatingBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    background: #07a7b3;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 25px;
+    bottom: 3.5rem;
+
+  }
+   
+  .actionButton {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    z-index: 99999999999999999999;
+
+  }
+  
+  .whatsApp {
+    height: 50px;
+    width: 50px;
+    background-color: #25d366;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 5.5rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .messenger {
+    background-color: #006aff;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 9rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .email {
+    height: 50px;
+    width: 50px;
+    background-color: #ff002b;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 12.5rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+
+  .telephone {
+    height: 50px;
+    width: 50px;
+    background: #0c4a6e;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 16rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+
+  .instagram {
+    height: 50px;
+    width: 50px;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 19.5rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .facebook {
+    height: 50px;
+    width: 50px;
+    background: #3F51B5;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 99999999999999999999;
+    margin: 1em;
+    left: 0;
+    bottom: 23rem;
+    border-radius: 50%;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .openButtons{
+   
+    transition: transform .7s ease-in-out;
+  }
+  .openButtons:hover {
+    transform: rotate(180deg);
+  }
+
+  .closeButtons{
+ 
+    transition: transform .7s ease-in-out;
+  }
+  .closeButtons:hover {
+    transform: rotate(-180deg);
+  }

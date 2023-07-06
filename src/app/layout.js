@@ -1,7 +1,8 @@
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ContactButtons from "./components/ContactButtons/ContactButtons";
+// import ContactButtons from "./components/ContactButtons/ContactButtons";
+import ActionButtons from "./components/ContactButtons/ActionButtons";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import {PropertiesProvider} from "../context/PropertiesContext";
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
       <PropertiesProvider>
         {children}
           <NavBar />
-          <ContactButtons />
+          {/* <ContactButtons /> */}
+          <ActionButtons/>
           <Footer />
         </PropertiesProvider>
       </body>
