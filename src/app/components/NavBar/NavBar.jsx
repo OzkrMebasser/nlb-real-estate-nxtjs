@@ -69,7 +69,7 @@ const NavBar = (props) => {
           setUnderLineChg(false);
         }
       };
-      
+      window.addEventListener("scroll", changeNavbg);
       return()=>window.addEventListener("scroll", changeNavbg);
     }),[navbarBg,textShadowChg,underLineChg];
 
