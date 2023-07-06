@@ -38,44 +38,64 @@ const NavBar = (props) => {
   };
 
  
-  const changeNavBg = () => {
+  // const changeNavBg = () => {
  
-    if (window.scrollY > 5) {
-      setNavbarBg(true);
-    } else if (window.scrollY < 200) {
-      setNavbarBg(false);
-    }
-  };
+  //   if (window.scrollY > 5) {
+  //     setNavbarBg(true);
+  //     setTextShadowChg(true);
+  //     setUnderLineChg(true);
+     
+  //   } else if (window.scrollY < 200) {
+  //     setNavbarBg(false);
+  //     setTextShadowChg(false);
+  //     setUnderLineChg(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    const changeNavbg = window.addEventListener("scroll", changeNavBg);
-  }, []);
+ 
+    // const changeNavbg = window.addEventListener("scroll", changeNavBg);
 
 
+    useEffect(()=>{
+      const changeNavbg = e => {
+        if (window.scrollY > 5) {
+          setNavbarBg(true);
+          setTextShadowChg(true);
+          setUnderLineChg(true);
+         
+        } else if (window.scrollY < 200) {
+          setNavbarBg(false);
+          setTextShadowChg(false);
+          setUnderLineChg(false);
+        }
+      };
+      
+      return()=>window.addEventListener("scroll", changeNavbg);
+    }),[navbarBg,textShadowChg,underLineChg];
 
   // Change MENU items shadows
-  const changeTextShadow = () => {
-    if (window.scrollY > 5) {
-      setTextShadowChg(true);
-    } else if (window.scrollY < 400) {
-      setTextShadowChg(false);
-    }
-  };
+  // const changeTextShadow = () => {
+  //   if (window.scrollY > 5) {
+  //     setTextShadowChg(true);
+  //   } else if (window.scrollY < 400) {
+  //     setTextShadowChg(false);
+  //   }
+  // };
 
-  const changeTextshadow = window.addEventListener("scroll", changeTextShadow);
+  // const changeTextshadow = window.addEventListener("scroll", changeTextShadow);
 
   
   // Change UNDERLINE color
-  const changeUnderLineColor = () => {
-    if (window.scrollY > 5) {
-      setUnderLineChg(true);
-    } else if (window.scrollY < 400) {
-      setUnderLineChg(false);
-    }
-  };
+  // const changeUnderLineColor = () => {
+  //   if (window.scrollY > 5) {
+  //     setUnderLineChg(true);
+  //   } else if (window.scrollY < 400) {
+  //     setUnderLineChg(false);
+  //   }
+  // };
 
   
-  const changeUnderLinecolor = window.addEventListener("scroll", changeUnderLineColor);
+  // const changeUnderLinecolor = window.addEventListener("scroll", changeUnderLineColor);
 
 
 //Context
