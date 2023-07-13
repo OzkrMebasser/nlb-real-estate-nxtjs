@@ -3,7 +3,7 @@ import React from "react";
 function QuestionArticle(props) {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div className=" mt-[6rem] md:mb-0 w-full max-w-screen-md mx-auto relative">
+      <div className=" mt-[1rem] sm:mt-[2rem] md:mb-0 w-full max-w-screen-md mx-auto relative " >
         <h2 className="pl-4 pr-4 text-2xl  font-bold leading-tight text-[#9c8966] sm:text-4xl text-justify">
           {props.title}
         </h2>{" "}
@@ -23,7 +23,7 @@ function QuestionArticle(props) {
                 className="h-10 w-10 rounded-full mr-2 object-cover"
               />
               <div>
-                <p className="font-semibold text-gray-200 text-sm">
+                <p className="font-semibold text-[#000000] text-sm">
                   {" "}
                   {props.authorName}
                 </p>

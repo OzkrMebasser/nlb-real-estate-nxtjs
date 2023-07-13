@@ -1,10 +1,10 @@
 "use client";
-import FrequentQuestionTwo from "./FrequentQuestionTwo";
+import FrequentQuestionThree from "./FrequentQuestionThree";
 
 const FrequentQuestions = (props) => {
   return (
     <div className="max-w-screen-xl mx-auto mt-[130px]">
-       < FrequentQuestionTwo/> 
+       < FrequentQuestionThree/> 
     </div>
       
   );

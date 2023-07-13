@@ -36,6 +36,26 @@ const Footer = () => {
               >
                  Can I acquire in co-ownership?
               </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/Can_I_acquire_through_an_LLC`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                 Can I acquire through a LLC?
+              </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                If the bank holding my trust ceases doing business is ther any risk of losing my property?
+              </p>
              
             </div>
             {/* <h6 className="text-base font-medium text-white uppercase mb-2">FREQUENTLY ASKED QUESTIONS</h6>

@@ -109,7 +109,7 @@ const NavBar = (props) => {
       className={
         navbarBg 
           ? "flex justify-between items-center h-[80px] w-full px-16 text-[#32f1ff] bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 shadow-xl fixed top-0 z-50"
-          : "flex justify-between items-center h-[80px] w-full px-16 text-white bg-[transparent] fixed top-0 z-50 "
+          : "flex justify-between items-center h-[80px] w-full px-16 text-white bg-[transparent]  fixed top-0 z-50 "
       }
     >
       {/* <span>
@@ -549,17 +549,18 @@ const NavBar = (props) => {
       <ul
         className={
           nav
-            ? "mx-auto mt-[80px] fixed left-0 top-0 w-[100%] h-full bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 ease-in-out duration-500"
+            ? "mx-auto  fixed left-0 top-0 w-[100%] h-full bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
+        <Logo className="font-black mt-12" textShadowChg={textShadowChg} />
         <li className="pl-4 font-bold text-[20px] ease-in-out duration-500 ">
           <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button
                 className={
                   textShadowChg
-                    ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 pt-14 text-sm font-semibold "
+                    ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 pt-14 mt-[200px] text-sm font-semibold "
                     : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold "
                 }
               >

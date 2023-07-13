@@ -3,7 +3,7 @@ import QuestionArticle from "../QuestionArticle";
 
 const FrequentQuestionOne = (props) => {
   return (
-    <div className="max-w-screen-xl mx-auto" id="q1">
+    <div className="max-w-screen-xl mx-auto" id="question-1">
       <QuestionArticle
         title={"HOW DO I ACQUIRE A PROPERTY IN MEXICO?"}
         image="https://images.pexels.com/photos/4601159/pexels-photo-4601159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
