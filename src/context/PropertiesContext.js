@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext } from "react";
-import dataProperties from "../backend/data.json"
+import dataProperties from "../backend/dataProperties.json"
 
 
 export const PropertiesContext = createContext();

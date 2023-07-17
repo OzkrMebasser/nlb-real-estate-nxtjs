@@ -56,8 +56,29 @@ const Footer = () => {
               >
                 If the bank holding my trust ceases doing business is ther any risk of losing my property?
               </p>
-             
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/What_are_my_closing_cost`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                What are my closing cost?
+              </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                What is the role of the notary public in Mexico?
+              </p>
+              
             </div>
+            
             {/* <h6 className="text-base font-medium text-white uppercase mb-2">FREQUENTLY ASKED QUESTIONS</h6>
         <p className="text-[#32f1ff]">Te ayudamos a lograr tu objetivo en la busqueda de tu hogar.</p>
         <div className="mt-4">

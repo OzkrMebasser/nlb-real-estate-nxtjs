@@ -6,6 +6,7 @@ import ActionButtons from "./components/ContactButtons/ActionButtons";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import {PropertiesProvider} from "../context/PropertiesContext";
+import {QuestionsProvider} from "../context/QuestionContext"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,11 +28,13 @@ export default function RootLayout({ children }) {
       
       <body suppressHydrationWarning={true} className={inter.className}>
       <PropertiesProvider>
+      <QuestionsProvider>
         {children}
           <NavBar />
           {/* <ContactButtons /> */}
           <ActionButtons/>
           <Footer />
+          </QuestionsProvider>
         </PropertiesProvider>
       </body>
     </html>
