@@ -29,7 +29,28 @@
         "num": "6",
         "questionNum": "question-6",
         "completeQuestion" : "What is the role of the notary public in Mexico?"      
+      },
+      {
+        "num": "7",
+        "questionNum": "question-7",
+        "completeQuestion" : "Property Tax"      
+      },
+      {
+        "num": "8",
+        "questionNum": "question-8",
+        "completeQuestion" : "Do I need an attorney?"      
+      },
+      {
+        "num": "9",
+        "questionNum": "question-9",
+        "completeQuestion" : "Once I'm an owner,how do I transfer title?"      
+      },
+      {
+        "num": "10",
+        "questionNum": "question-10",
+        "completeQuestion" : "What are the next steps?"      
       }
+
       
 
 ]

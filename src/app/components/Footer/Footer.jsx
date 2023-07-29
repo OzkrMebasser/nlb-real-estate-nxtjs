@@ -76,9 +76,58 @@ const Footer = () => {
               >
                 What is the role of the notary public in Mexico?
               </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/Property_Tax`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                Property Tax
+              </p>
+
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/Do_I_need_an_attorney`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                Do I need an attorney?
+              </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/Once_Im_an_owner_how_do_I_transfer_title`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                Once I am an owner, how do I transfer title?
+              </p>
+              <p
+                onClick={() =>
+                  router.push(
+                    `/frequent_questions/What_are_the_next_steps`
+                  )
+                }
+                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
+              >
+                What are the next steps?
+              </p>
+
+
+
               
             </div>
             
+
+
+      
+
+
             {/* <h6 className="text-base font-medium text-white uppercase mb-2">FREQUENTLY ASKED QUESTIONS</h6>
         <p className="text-[#32f1ff]">Te ayudamos a lograr tu objetivo en la busqueda de tu hogar.</p>
         <div className="mt-4">
