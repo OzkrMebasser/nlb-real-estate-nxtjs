@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext } from "react";
 import dataQuestions from "../backend/dataQuestions.json"
+//HAY QUE CAMBIAR A JS FILE
 
 
 export const QuestionContext = createContext();

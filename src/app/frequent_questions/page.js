@@ -1,5 +1,5 @@
 "use client";
-import { useQuestions } from "../../context/QuestionContext";
+import { useQuestions } from "../../context/QuestionProvider";
 
 
 import ScrollToSection from "../components/ScrollToSection/ScrollToSection";

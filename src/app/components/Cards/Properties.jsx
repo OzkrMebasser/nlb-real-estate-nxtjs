@@ -1,11 +1,11 @@
 "use client"
-import {useProperties} from "../../../context/PropertiesContext"
+import {useProperties} from "../../../context/PropertiesProvider"
 import { useRouter } from "next/navigation";
 import PropertiesCards from "../../components/Cards/PropertiesCards"
 
 function Properties () {
  
-    const {dataProperties} = useProperties();
+    const {allProperties} = useProperties();
     // console.log(properties)
    
     const router = useRouter()
@@ -34,7 +34,7 @@ function Properties () {
 
     
             <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
-                {dataProperties.map((items) => (
+                {allProperties.map((items) => (
                     <PropertiesCards items={items} key={items.id}/>
                 ))}
             </div>

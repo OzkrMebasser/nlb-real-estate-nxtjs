@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useProperties } from "../../context/PropertiesContext";
+import { useProperties } from "../../context/PropertiesProvider";
 import { useRouter } from "next/navigation";
 import Loading from "../components/Loading/Loading";
 import {Image} from "next"
@@ -130,13 +130,13 @@ import {Image} from "next"
 
 
 function Allproperties() {
-  const {dataProperties} = useProperties();
+  const {allProperties} = useProperties();
   const router = useRouter()
 
   const [isLoading, setIsLoading] = useState(true);
 
   // const [filteredEmployees, setFilteredEmployees] = useState(employees);
-  const [filteredPropiedades, setfilteredPropiedades] = useState(dataProperties);
+  const [filteredPropiedades, setfilteredPropiedades] = useState(allProperties);
 
   // const [department, setDepartment] = useState("");
   const [ubicacion, setUbicacion] = useState("");
@@ -146,12 +146,12 @@ function Allproperties() {
 
   // Using set to filter unique values
   const ubicaciones = Array.from(
-    new Set(dataProperties.map((propiedad) => propiedad.ubicacion))
+    new Set(allProperties.map((propiedad) => propiedad.ubicacion))
   );
 
   useEffect(() => {
     setfilteredPropiedades(
-      dataProperties.filter((propiedad) => {
+      allProperties.filter((propiedad) => {
         return (
           (!ubicacion || ubicacion === propiedad.ubicacion) &&
           (!precio ||
@@ -161,7 +161,7 @@ function Allproperties() {
         );
       })
     );
-  }, [ubicacion, precio,dataProperties]);
+  }, [ubicacion, precio,allProperties]);
 
   const clearFilters = () => {
     setUbicacion("");
@@ -177,7 +177,7 @@ function Allproperties() {
 
 
   
-  const { price } = dataProperties.map((p) => {
+  const { price } = allProperties.map((p) => {
   p.precio;
 });
 

@@ -1,19 +1,19 @@
 "use client"
 import React from 'react'
-import {useProperties} from "../../../context/PropertiesContext";
+import {useProperties} from "../../../context/PropertiesProvider";
 import { useRouter } from "next/navigation";
 
 
 const HomeProperties = () => {
-    const {dataProperties} = useProperties();
+    const {homeProperties} = useProperties();
     const router = useRouter();
     
     // const homeProperties = properties[1,2,5];
     
-    const objetosFiltrados = dataProperties.filter(objeto => objeto.id > 3 );
+    // const objetosFiltrados = homeProperties.filter(objeto => objeto.id > 0 );
 
 
-    const { precio } = dataProperties.map((p) => {
+    const { precio } = homeProperties.map((p) => {
       p.precio;
     });
   
@@ -31,7 +31,7 @@ const HomeProperties = () => {
 
 
         {<div className="mx-auto grid gap-2 lg:grid-cols-3 ">
-            {objetosFiltrados.map((items) => (
+            {homeProperties.map((items) => (
                     <div
                     className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
                     key={items.id}
@@ -51,7 +51,7 @@ const HomeProperties = () => {
                       <h4 className="text-xl font-semibold text-blue-600">{items.title}</h4>
                       <p className="mb-2 leading-normal">{items.content}</p>
                       <button className=" mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
-                        Propiedades desde ${formatearPrecio(items.precio)}
+                        Propiedades desde US ${formatearPrecio(items.precio)}
                       </button>
                       <div>Tipo : {items.tipo}</div>
                       <p>Habitaciones : {items.habitaciones}</p>

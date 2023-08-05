@@ -1,13 +1,14 @@
-
 import "./globals.css";
 import { Inter } from "next/font/google";
 // import ContactButtons from "./components/ContactButtons/ContactButtons";
 import ActionButtons from "./components/ContactButtons/ActionButtons";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar';
+import Nav from "./components/NavBar/Nav";
 import Footer from "./components/Footer/Footer";
-import {PropertiesProvider} from "../context/PropertiesContext";
-import {QuestionsProvider} from "../context/QuestionContext"
-
+import  LanguageProvider  from "../context/LanguageProvider";
+// import LanguageSelector from './components/LanguageSelector/LanguageSelector'
+import { PropertiesProvider } from "../context/PropertiesProvider";
+import { QuestionsProvider } from "../context/QuestionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,17 +26,22 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      
+
       <body suppressHydrationWarning={true} className={inter.className}>
-      <PropertiesProvider>
-      <QuestionsProvider>
-        {children}
-          <NavBar />
-          {/* <ContactButtons /> */}
-          <ActionButtons/>
-          <Footer />
-          </QuestionsProvider>
-        </PropertiesProvider>
+        <LanguageProvider>
+          {/* <LanguageSelector/> */}
+          <PropertiesProvider>
+            <QuestionsProvider>
+              <Nav />
+
+              {children}
+
+              {/* <ContactButtons /> */}
+              <ActionButtons />
+              <Footer />
+            </QuestionsProvider>
+          </PropertiesProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

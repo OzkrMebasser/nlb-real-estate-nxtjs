@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useProperties } from "../../../context/PropertiesContext";
+import { useProperties } from "../../../context/PropertiesProvider";
 import { useRouter } from "next/navigation";
 
 const PropertiesCards = ({ items, ruta }) => {

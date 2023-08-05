@@ -1,6 +1,10 @@
 "use client";
 
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
+import useLanguage from '@/context/hooks/useLanguage'
+import en from '@/context/languages/en'
+import es from '@/context/languages/es'
+
 
 import "../NavBar/NavBar.css";
 const fotoHero1 =
@@ -24,6 +28,9 @@ const fotoHero6 =
   "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage6-ATHIMAR.jpg?alt=media&token=5b395a3a-b857-4c1d-b510-23a1d3be376f";
 
 export default function BasicSlider() {
+
+  const { language, setLanguage } = useLanguage();
+
   return (
     <div className="mt-0">
       <HeroSlider
@@ -47,10 +54,12 @@ export default function BasicSlider() {
       >
         <span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
           <h1 className="titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">
-            TODO LO QUE NECESITAS PARA INVERTIR EN LA RIVIERA MAYA
+                 {/*TITULO HERO */}
+                 {language === es ? es.heroTitle : en.heroTitle} 
           </h1>
           <h3 className="titleShadow items-center justify-center z-40 text-lg lg:text-2xl font-bold text-[white] ">
-            INVIERTE EN TU FUTURO
+           {/*SUBTITULO HERO*/}
+           {language === es ? es.heroSubTitle : en.heroSubTitle} 
           </h3>
         </span>
         {/* <Overlay className="z-50">
