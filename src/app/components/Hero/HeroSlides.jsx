@@ -1,10 +1,9 @@
 "use client";
 
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
-import useLanguage from '@/context/hooks/useLanguage'
-import en from '@/context/languages/en'
-import es from '@/context/languages/es'
-
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
 
 import "../NavBar/NavBar.css";
 const fotoHero1 =
@@ -27,9 +26,115 @@ const fotoHero6 =
   //Atimar
   "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage6-ATHIMAR.jpg?alt=media&token=5b395a3a-b857-4c1d-b510-23a1d3be376f";
 
-export default function BasicSlider() {
+function LabelIndex({ labelIndex }) {
+  return (
+    <>
+      <p>{labelIndex}</p>
+    </>
+  );
+}
 
+
+function SlideLabel({ textLabel }) {
+  return <p className="">{textLabel}</p>;
+}
+
+function LabelOne() {
   const { language, setLanguage } = useLanguage();
+  const indexOne = language === es ? es.labelHero_1 : en.labelHero_1;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexOne} />} />
+    </>
+  );
+}
+
+function LabelTwo() {
+  const { language, setLanguage } = useLanguage();
+  const indexTwo = language === es ? es.labelHero_2 : en.labelHero_2;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexTwo} />} />
+    </>
+  );
+}
+
+function LabelThree() {
+  const { language, setLanguage } = useLanguage();
+  const indexThree = language === es ? es.labelHero_3 : en.labelHero_3;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexThree} />} />
+    </>
+  );
+}
+
+function LabelFour() {
+  const { language, setLanguage } = useLanguage();
+  const indexFour = language === es ? es.labelHero_4 : en.labelHero_4;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexFour} />} />
+    </>
+  );
+}
+
+function LabelFive(){
+  const {language,setLanguage}=useLanguage();
+  const indexFive = language === es ? es.labelHero_5 : en.labelHero_5;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexFive} />} />
+    </>
+  )
+}
+
+function LabelSix(){
+  const {language,setLanguage}=useLanguage();
+  const indexSix = language === es ? es.labelHero_6 : en.labelHero_6;
+  return (
+    <>
+      <SlideLabel textLabel={<LabelIndex labelIndex={indexSix} />} />
+    </>
+  )
+}
+
+
+export default function BasicSlider() {
+  const { language, setLanguage } = useLanguage();
+
+  const slides = [
+    {
+      id: 1,
+      label: language === es ? es.labelHero_1 : en.labelHero_1,
+      img: fotoHero1,
+    },
+    {
+      id: 2,
+      label: language === es ? es.labelHero_2 : en.labelHero_2,
+      img: fotoHero2,
+    },
+    {
+      id: 3,
+      label: language === es ? es.labelHero_3 : en.labelHero_3,
+      img: fotoHero3,
+    },
+    {
+      id: 4,
+      label: language === es ? es.labelHero_4 : en.labelHero_4,
+      img: fotoHero4,
+    },
+    {
+      id: 5,
+      label: language === es ? es.labelHero_5 : en.labelHero_5,
+      img: fotoHero5,
+    },
+    {
+      id: 6,
+      label: language === es ? es.labelHero_6 : en.labelHero_6,
+      img: fotoHero6,
+    },
+  ];
 
   return (
     <div className="mt-0">
@@ -54,31 +159,20 @@ export default function BasicSlider() {
       >
         <span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
           <h1 className="titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">
-                 {/*TITULO HERO */}
-                 {language === es ? es.heroTitle : en.heroTitle} 
+            {/*TITULO HERO */}
+            {language === es ? es.heroTitle : en.heroTitle}
           </h1>
           <h3 className="titleShadow items-center justify-center z-40 text-lg lg:text-2xl font-bold text-[white] ">
-           {/*SUBTITULO HERO*/}
-           {language === es ? es.heroSubTitle : en.heroSubTitle} 
+            {/*SUBTITULO HERO*/}
+            {language === es ? es.heroSubTitle : en.heroSubTitle}
           </h3>
         </span>
-        {/* <Overlay className="z-50">
+
       
-        <Wrapper>
-          <Title>INVIERTE EN TU FUTURO</Title>
-          <Subtitle>
-            Tenemos los mejores proyectos de la Riviera Maya
-          </Subtitle>
-          
-            <h6>Contactanos para darte una atención personalida</h6>
-         
-        </Wrapper>
-   
-      </Overlay>   */}
 
         <Slide
           // shouldRenderMask
-          label="PRE VENTAS"
+          label={<LabelOne />}
           background={{
             backgroundImageSrc: fotoHero1,
           }}
@@ -86,7 +180,7 @@ export default function BasicSlider() {
 
         <Slide
           // shouldRenderMask
-          label="TERRENOS DE INVERSION"
+          label={<LabelTwo/>}
           background={{
             backgroundImageSrc: fotoHero2,
           }}
@@ -94,7 +188,7 @@ export default function BasicSlider() {
 
         <Slide
           // shouldRenderMask
-          label="ENTREGA INMEDIATA"
+          label={<LabelThree/>}
           background={{
             backgroundImageSrc: fotoHero3,
           }}
@@ -102,28 +196,31 @@ export default function BasicSlider() {
 
         <Slide
           // shouldRenderMask
-          label="LLAVE EN MANO"
+          label={<LabelFour/>}
           background={{
             backgroundImageSrc: fotoHero4,
           }}
         />
         <Slide
           // shouldRenderMask
-          label="CONDO HOTELERO"
+          label={<LabelFive/>}
           background={{
             backgroundImageSrc: fotoHero5,
           }}
         />
         <Slide
           // shouldRenderMask
-          label="UNIDADES EN PROMOCIÓN"
+          label={<LabelSix/>}
           background={{
             backgroundImageSrc: fotoHero6,
           }}
         />
+
+        {/* */}
 
         <MenuNav />
       </HeroSlider>
     </div>
   );
 }
+

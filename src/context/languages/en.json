@@ -1,0 +1,31 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About", 
+      "contact": "Contact"
+    },
+  
+    "hero": {
+      "title": "Invest in your future",
+      "subtitle": "We have the best projects in the Riviera Maya",
+      "button": "See more"
+    },
+  
+    "home": {
+      "welcome": "Welcome to our website!",
+      "introduction": "Introducing the best real estate projects with great investment opportunities."
+    },
+  
+    "about": {
+      "title": "About us",
+      "description": "Founded in 2018, we are a real estate company focused on luxury developments in Mexico's Riviera Maya area. Our mission is to find the best investment options for your future." 
+    },
+  
+    "contact": {
+      "title": "Contact us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message"
+    }
+  }

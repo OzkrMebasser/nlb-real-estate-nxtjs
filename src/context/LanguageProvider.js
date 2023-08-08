@@ -6,7 +6,7 @@ import es from './languages/es';
 export const LanguageContext = createContext();
 
 export default function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState(en);
+  const [language, setLanguage] = useState( es);
 
   const providerValue = {
     language,

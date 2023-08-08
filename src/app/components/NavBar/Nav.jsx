@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, Fragment } from "react";
+
 import Link from "next/link";
 import { Menu, Transition, Listbox } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -35,6 +36,7 @@ function Nav() {
   const [navbarBg, setNavbarBg] = useState(false);
   const [textShadowChg, setTextShadowChg] = useState(true);
   const [underLineChg, setUnderLineChg] = useState(true);
+  
 
   useEffect(() => {
     const changeNavbg = (e) => {

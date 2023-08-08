@@ -9,6 +9,7 @@ import  LanguageProvider  from "../context/LanguageProvider";
 // import LanguageSelector from './components/LanguageSelector/LanguageSelector'
 import { PropertiesProvider } from "../context/PropertiesProvider";
 import { QuestionsProvider } from "../context/QuestionProvider";
+import 'react-slideshow-image/dist/styles.css'
 
 const inter = Inter({ subsets: ["latin"] });
 

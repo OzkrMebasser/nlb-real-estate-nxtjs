@@ -1,0 +1,12 @@
+.index-module_Wrapper__-jUiF {
+    position: absolute;
+    display: flex;
+    z-index: 4;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+    /* user-select: none; */
+    opacity: 0;
+    animation: index-module_fade-in__HoAls var(--nav-fade-in-duration, 500) ease-in var(--nav-fade-in-delay, 1000) forwards;
+}

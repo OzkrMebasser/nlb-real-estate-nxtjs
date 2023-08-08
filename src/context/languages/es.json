@@ -1,0 +1,31 @@
+{
+    "header": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+  
+    "hero": {
+      "title": "Invierte en tu futuro", 
+      "subtitle": "Tenemos los mejores proyectos de la Riviera Maya",
+      "button": "Ver más"
+    },
+  
+    "home": {
+      "welcome": "¡Bienvenido a nuestro sitio web!",
+      "introduction": "Presentando los mejores proyectos inmobiliarios con grandes oportunidades de inversión."
+    },
+  
+    "about": {
+      "title": "Sobre nosotros",
+      "description": "Fundada en 2018, somos una inmobiliaria enfocada en desarrollos de lujo en la zona de Riviera Maya en México. Nuestra misión es encontrar las mejores opciones de inversión para tu futuro."
+    },
+  
+    "contact": {
+      "title": "Contáctanos",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar mensaje"
+    }
+  }
