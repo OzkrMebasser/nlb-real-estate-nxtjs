@@ -3,6 +3,8 @@ const enTranslations = {
     //MENU
     lang: "LANGUAGE",
     menuProperties: "PROPERTIES",
+    locations: "LOCATIONS",
+    lots: "LOTS ON SALE",
 
     //HERO
     heroTitle: "EVERYTHING YOU NEED TO INVEST IN THE RIVIERA MAYA",

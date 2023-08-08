@@ -158,7 +158,9 @@ function Nav() {
                             }
                             // onClick={() => router.push(`properties`)}
                           >
-                            LOCACIONES
+                            
+                             {/*LOCACIONES MENU*/}
+                             {language === es ? es.locations : en.locations} 
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-[#9c8966]"
                               aria-hidden="true"
@@ -553,7 +555,9 @@ function Nav() {
                                 : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
                             }
                           >
-                            TERRENOS
+                            
+                             {/*TERRENOS MENU*/}
+                             {language === es ? es.lots : en.lots} 
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-gray-400"
                               aria-hidden="true"
@@ -1213,12 +1217,86 @@ function Nav() {
                   </Menu>
                 </a>
 
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
+                <li
+                      className={
+                        underLineChg
+                          ? "goldenUnderline mid p-4 font-bold "
+                          : "blueUnderline mid p-4 font-bold "
+                      }
+                    >
+                      <Menu
+                        as="div"
+                        className="relative inline-block text-left"
+                      >
+                        <div>
+                          <Menu.Button
+                            className={
+                              textShadowChg
+                                ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
+                                : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
+                            }
+                          >
+                            {/* LANGUAGE CHANGER*/}
+                           {language === es ? es.lang : en.lang} 
+                            <ChevronDownIcon
+                              className="-mr-1 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
+                          </Menu.Button>
+                        </div>
+
+                        <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
+                        >
+                          <Menu.Items className="absolute left-0 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div className="py-1">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <button
+                                  onClick={() => setLanguage(en)}
+                                  disabled={language === en}
+                                    className={classNames(
+                                      active
+                                        ? "bg-[#e5c995] text-gray-900"
+                                        : "text-gray-700",
+                                      "w-full px-4 py-2 text-[11px] uppercase"
+                                    )}
+                                  >
+                                    ENGLISH
+                                    <span className="fi fi-us ml-3"></span> 
+                                    {/* <span className="fi fi-ca ml-3"></span>  */}
+                                  </button>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <button
+                                  onClick={() => setLanguage(es)}
+                                  disabled={language === es}
+                                    className={classNames(
+                                      active
+                                        ? "bg-[#e5c995] text-gray-900"
+                                        : "text-gray-700",
+                                      "w-full px-4 py-2 text-[11px] uppercase"
+                                    )}
+                                  >
+                                    ESPAÑOL
+                                    <span className="fi fi-mx  ml-3"></span> 
+                                    {/* <span className="fi fi-es  ml-3"></span>  */}
+                                  </button>
+                                )}
+                              </Menu.Item>
+                            </div>
+                          </Menu.Items>
+                        </Transition>
+                      </Menu>
+                    </li>
 
                 <a
                   href="#"

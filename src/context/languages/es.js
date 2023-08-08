@@ -4,6 +4,8 @@ const esTranslations = {
     //MENU
     lang: "IDIOMA",
     menuProperties: "PROPIEDADES",
+    locations: "LOCACIONES",
+    lots: "TERRENOS",
      //HERO
      heroTitle: "TODO LO QUE NECESITAS PARA INVERTIR EN LA RIVIERA MAYA",
      heroSubTitle: "¡ INVIERTE EN TU FUTURO !",
