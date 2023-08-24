@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className="bg-[#F3F4F6]">
         <HeroSlider />
-        <h2 className="text-center mt-8 text-3xl font-black text-sky-950">
+        <h2 className="text-center mt-8 text-xl lg:text-3xl font-black text-sky-950">
           {/*PROPIEDADES DESTACADAS*/}
         {language === es ? es.featuredProperties : en.featuredProperties}
         </h2>

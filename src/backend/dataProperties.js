@@ -1,9 +1,32 @@
 
+import es from "../context/languages/es"
+import  en from "../context/languages/en"
+
+
+//Esto es para enviar la info de "tipo" 
+// const es = {
+//   departamento: "Departamento",
+//   casa: "Casa",
+//   terreno: "Terreno",
+//   sala: "Sala"
+  
+// };
+
+// const en = {
+//   departamento: "Apartment",
+//   casa: "House",
+//   terreno: "Lot",
+//   sala: "Living Room"
+
+  
+// };
+
+
 export const homeProperties = [
     {
       id: 1,
       desarrollo: "Athimar Cozumel",
-      tipo: "Departamento",
+      tipo: "departamento",
       ubicacion: "Cozumel",
       route: "properties/Cozumel/Athimar_Cozumel",
       route2: "Cozumel/Athimar_Cozumel",
@@ -23,7 +46,7 @@ export const homeProperties = [
     {
       id: 2,
       desarrollo: "Tres Patios",
-      tipo: "Departamento",
+      tipo:"casa",
       ubicacion: "Playa del Carmen",
       route: "properties/Playa_del_Carmen/Tres_Patios",
       route2: "Playa_del_Carmen/Tres_Patios",

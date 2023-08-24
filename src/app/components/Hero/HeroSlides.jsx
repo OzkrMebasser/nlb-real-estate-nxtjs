@@ -6,6 +6,8 @@ import en from "@/context/languages/en";
 import es from "@/context/languages/es";
 
 import "../NavBar/NavBar.css";
+
+//IMAGES SLIDES
 const fotoHero1 =
   // Tulum
   "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage1-tulum.jpeg?alt=media&token=ce7fa2f7-2eca-4ef0-8ce7-74000e153cd1";
@@ -158,7 +160,7 @@ export default function BasicSlider() {
         }}
       >
         <span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
-          <h1 className="titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">
+          <h1 className="px-4 titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">
             {/*TITULO HERO */}
             {language === es ? es.heroTitle : en.heroTitle}
           </h1>

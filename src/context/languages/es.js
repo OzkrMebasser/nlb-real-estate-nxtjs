@@ -1,9 +1,13 @@
+
+
+
 const esTranslations = {
   // ESPAÑOL ESPAÑOL ESPAÑOL
     
     //MENU
     lang: "IDIOMA",
     menuProperties: "PROPIEDADES",
+      allProperties: "Todas las propiedades",
     locations: "LOCACIONES",
     lots: "TERRENOS",
      //HERO
@@ -18,7 +22,24 @@ const esTranslations = {
      
     //HOME PROPERTIES
     featuredProperties:"PROPIEDADES DESTACADAS",
- 
+
+    //CARDS
+    locationCard:"Ubicación ",
+    pricesFromCard: "Propiedades desde US ",
+    typeCard: "Tipo : ",
+    bedroomsCard: "Habitaciones : ",
+    bathroomsCard: "Baños : ",
+
+
+    //PROPERTIES DATA CARDS 
+    departamento: "Departamento",
+    casa: "Casa",
+    terreno: "Terreno",
+    villa: "Villa",
+    sala: "Sala",
+
+    //Button Ver este proyecto
+    verProyecto: "Ver mas de este proyecto"
   };
 
   export default esTranslations;

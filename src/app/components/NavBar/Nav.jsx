@@ -5,17 +5,15 @@ import Link from "next/link";
 import { Menu, Transition, Listbox } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-import useLanguage from '@/context/hooks/useLanguage'
-import en from '../../../context/languages/en'
-import es from '../../../context/languages/es'
-
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "../../../context/languages/en";
+import es from "../../../context/languages/es";
 
 import { useProperties } from "@/context/PropertiesProvider";
 import { useRouter } from "next/navigation";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
-
 
 import "./NavBar.css";
 import Logo from "./Logo";
@@ -34,9 +32,8 @@ function Nav() {
   }
   const [isOpen, setIsOpen] = useState(false);
   const [navbarBg, setNavbarBg] = useState(false);
-  const [textShadowChg, setTextShadowChg] = useState(true);
+  const [textShadowChg, setTextShadowChg] = useState(false);
   const [underLineChg, setUnderLineChg] = useState(true);
-  
 
   useEffect(() => {
     const changeNavbg = (e) => {
@@ -61,7 +58,7 @@ function Nav() {
         className={
           navbarBg
             ? "w-full text-[#32f1ff] bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 shadow-xl fixed top-0 z-50"
-            : "w-full text-white bg-[transparent]  fixed top-0 z-50 swing-in-top-fwd"
+            : "w-full text-white bg-[transparent]  fixed top-0 z-50 swing-in-top-fwd "
         }
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,8 +93,10 @@ function Nav() {
                             // onClick={() => router.push(`properties`)}
                           >
                             {/*PROPIEDADES MENU*/}
-                            {language === es ? es.menuProperties : en.menuProperties} 
-                            
+                            {language === es
+                              ? es.menuProperties
+                              : en.menuProperties}
+
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-[#9c8966]"
                               aria-hidden="true"
@@ -128,7 +127,10 @@ function Nav() {
                                       "block px-4 py-2 text-[11px] uppercase"
                                     )}
                                   >
-                                    Todas las propiedades
+                                    {/*Todas las propiedades*/}
+                                    {language === es
+                                      ? es.allProperties
+                                      : en.allProperties}
                                   </p>
                                 )}
                               </Menu.Item>
@@ -158,9 +160,8 @@ function Nav() {
                             }
                             // onClick={() => router.push(`properties`)}
                           >
-                            
-                             {/*LOCACIONES MENU*/}
-                             {language === es ? es.locations : en.locations} 
+                            {/*LOCACIONES MENU*/}
+                            {language === es ? es.locations : en.locations}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-[#9c8966]"
                               aria-hidden="true"
@@ -172,11 +173,7 @@ function Nav() {
                           <div className="dropdown-menu">
                             <ul>
                               {/*PLAYA DEL CARMEN */}
-                              <li
-                                className=
-                                 " text-gray-700 hover:bg-[#e5c995] hover:text-white"
-                                
-                              >
+                              <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
                                 <Menu
                                   as="div"
                                   className="relative inline-block text-left"
@@ -204,7 +201,11 @@ function Nav() {
                                         <Menu.Item>
                                           {({ active }) => (
                                             <p
-                                              onClick={() => router.push(`properties/Playa_del_Carmen/Tres_Patios`)}
+                                              onClick={() =>
+                                                router.push(
+                                                  `properties/Playa_del_Carmen/Tres_Patios`
+                                                )
+                                              }
                                               className={classNames(
                                                 active
                                                   ? "bg-[#e5c995] text-gray-900"
@@ -555,9 +556,8 @@ function Nav() {
                                 : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
                             }
                           >
-                            
-                             {/*TERRENOS MENU*/}
-                             {language === es ? es.lots : en.lots} 
+                            {/*TERRENOS MENU*/}
+                            {language === es ? es.lots : en.lots}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-gray-400"
                               aria-hidden="true"
@@ -647,7 +647,7 @@ function Nav() {
                             }
                           >
                             {/* LANGUAGE CHANGER*/}
-                           {language === es ? es.lang : en.lang} 
+                            {language === es ? es.lang : en.lang}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-gray-400"
                               aria-hidden="true"
@@ -669,8 +669,8 @@ function Nav() {
                               <Menu.Item>
                                 {({ active }) => (
                                   <button
-                                  onClick={() => setLanguage(en)}
-                                  disabled={language === en}
+                                    onClick={() => setLanguage(en)}
+                                    disabled={language === en}
                                     className={classNames(
                                       active
                                         ? "bg-[#e5c995] text-gray-900"
@@ -679,7 +679,7 @@ function Nav() {
                                     )}
                                   >
                                     ENGLISH
-                                    <span className="fi fi-us ml-3"></span> 
+                                    <span className="fi fi-us ml-3"></span>
                                     {/* <span className="fi fi-ca ml-3"></span>  */}
                                   </button>
                                 )}
@@ -687,8 +687,8 @@ function Nav() {
                               <Menu.Item>
                                 {({ active }) => (
                                   <button
-                                  onClick={() => setLanguage(es)}
-                                  disabled={language === es}
+                                    onClick={() => setLanguage(es)}
+                                    disabled={language === es}
                                     className={classNames(
                                       active
                                         ? "bg-[#e5c995] text-gray-900"
@@ -697,7 +697,7 @@ function Nav() {
                                     )}
                                   >
                                     ESPAÑOL
-                                    <span className="fi fi-mx  ml-3"></span> 
+                                    <span className="fi fi-mx  ml-3"></span>
                                     {/* <span className="fi fi-es  ml-3"></span>  */}
                                   </button>
                                 )}
@@ -717,7 +717,8 @@ function Nav() {
 ░█░█░█ ░█──░█ ░█▀▀▄ ░█─ ░█─── ░█▀▀▀ 
 ░█──░█ ░█▄▄▄█ ░█▄▄█ ▄█▄ ░█▄▄█ ░█▄▄▄  */}
 
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex md:hidden bg-teal-900 rounded-md" >
+              {/* MENU ICON & x ICON*/}
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -753,15 +754,11 @@ function Nav() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div ref={ref} className=" pt-8 pb-24 space-y-12 sm:px-3">
                 {/*PROPIEDADES */}
-                <a
-                  href="#"
-                  className={
-                    underLineChg
-                      ? "goldenUnderline mid p-4 font-bold "
-                      : "blueUnderline mid p-4 font-bold "
-                  }
+                <p
+                  
+                  className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium "
                 >
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
@@ -773,9 +770,12 @@ function Nav() {
                         }
                         // onClick={() => router.push(`properties`)}
                       >
-                        PROPIEDADES
+                        {/*PROPIEDADES MENU*/}
+                        {language === es
+                          ? es.menuProperties
+                          : en.menuProperties}
                         <ChevronDownIcon
-                          className="-mr-1 h-5 w-5 text-[#9c8966]"
+                          className="mr-4 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
                         />
                       </Menu.Button>
@@ -807,7 +807,10 @@ function Nav() {
                                   "block px-4 py-2 text-[11px] uppercase"
                                 )}
                               >
-                                Todas las propiedades
+                                {/*Todas las propiedades*/}
+                                {language === es
+                                  ? es.allProperties
+                                  : en.allProperties}
                               </p>
                             )}
                           </Menu.Item>
@@ -815,27 +818,21 @@ function Nav() {
                       </Menu.Items>
                     </Transition>
                   </Menu>
-                </a>
+                </p>
                 {/*LOCACIONES */}
-                <a
-                  href="#"
-                  className={
-                    underLineChg
-                      ? "goldenUnderline mid p-4 font-bold "
-                      : "blueUnderline mid p-4 font-bold "
-                  }
-                >
+                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"                >
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
-                    <Menu.Button
+                      <Menu.Button
                         className={
                           textShadowChg
-                          ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
-                          : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
-                      }
+                            ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
+                            : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
+                        }
                         // onClick={() => router.push(`properties`)}
                       >
-                      LOCACIONES
+                        {/*LOCACIONES MENU*/}
+                        {language === es ? es.locations : en.locations}
                         <ChevronDownIcon
                           className="-mr-1 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
@@ -881,11 +878,12 @@ function Nav() {
                                     <Menu.Item>
                                       {({ active }) => (
                                         <Link
-                                        href="CAMBIAR LA RUTRA"
-                                        onClick={() =>
-                                          router.push(`properties/Playa_del_Carmen/Tres_Patios`) ||
-                                          setIsOpen(!isOpen)
-                                        }
+                                          href="CAMBIAR LA RUTRA"
+                                          onClick={() =>
+                                            router.push(
+                                              `properties/Playa_del_Carmen/Tres_Patios`
+                                            ) || setIsOpen(!isOpen)
+                                          }
                                           className={classNames(
                                             active
                                               ? "bg-[#e5c995] text-gray-900"
@@ -1215,102 +1213,139 @@ function Nav() {
                       </div>
                     </Menu.Items>
                   </Menu>
-                </a>
-
-                <li
-                      className={
-                        underLineChg
-                          ? "goldenUnderline mid p-4 font-bold "
-                          : "blueUnderline mid p-4 font-bold "
-                      }
-                    >
-                      <Menu
-                        as="div"
-                        className="relative inline-block text-left"
+                </p>
+                {/*TERRENOS MENU*/}
+                <p
+                  className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div>
+                      <Menu.Button
+                        className={
+                          textShadowChg
+                            ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
+                            : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
+                        }
+                        // onClick={() => router.push(`properties`)}
                       >
-                        <div>
-                          <Menu.Button
-                            className={
-                              textShadowChg
-                                ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
-                                : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold"
-                            }
-                          >
-                            {/* LANGUAGE CHANGER*/}
-                           {language === es ? es.lang : en.lang} 
-                            <ChevronDownIcon
-                              className="-mr-1 h-5 w-5 text-gray-400"
-                              aria-hidden="true"
-                            />
-                          </Menu.Button>
+                        {/*TERRENOS MENU*/}
+                        {language === es ? es.lots : en.lots}
+                        <ChevronDownIcon
+                          className="-mr-1 h-5 w-5 text-[#9c8966]"
+                          aria-hidden="true"
+                        />
+                      </Menu.Button>
+                    </div>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <div className="py-1">
+                          <Menu.Item>
+                            {({ active }) => (
+                              <p
+                                onClick={() =>
+                                  router.push(`properties`) ||
+                                  setIsOpen(!isOpen)
+                                }
+                                // href={dataProperties[0].route}
+                                className={classNames(
+                                  active
+                                    ? "bg-[#e5c995] text-gray-900"
+                                    : "text-gray-700",
+                                  "block px-4 py-2 text-[11px] uppercase"
+                                )}
+                              >
+                                Todas las propiedades
+                              </p>
+                            )}
+                          </Menu.Item>
                         </div>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu>
+                </p>
 
-                        <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-100"
-                          enterFrom="transform opacity-0 scale-95"
-                          enterTo="transform opacity-100 scale-100"
-                          leave="transition ease-in duration-75"
-                          leaveFrom="transform opacity-100 scale-100"
-                          leaveTo="transform opacity-0 scale-95"
-                        >
-                          <Menu.Items className="absolute left-0 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            <div className="py-1">
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <button
-                                  onClick={() => setLanguage(en)}
-                                  disabled={language === en}
-                                    className={classNames(
-                                      active
-                                        ? "bg-[#e5c995] text-gray-900"
-                                        : "text-gray-700",
-                                      "w-full px-4 py-2 text-[11px] uppercase"
-                                    )}
-                                  >
-                                    ENGLISH
-                                    <span className="fi fi-us ml-3"></span> 
-                                    {/* <span className="fi fi-ca ml-3"></span>  */}
-                                  </button>
+                {/* LANGUAGE CHANGER*/}
+                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div>
+                      <Menu.Button
+                        className={
+                          textShadowChg
+                            ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-4 py-2 text-[12px] font-semibold  "
+                            : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-4 py-2 text-[12px] font-semibold  "
+                        }
+                      >
+                        {language === es ? es.lang : en.lang}
+                        <ChevronDownIcon
+                          className="-mr-1 h-5 w-5 text-[#9c8966]"
+                          aria-hidden="true"
+                        />
+                      </Menu.Button>
+                    </div>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <div className="py-1">
+                          <Menu.Item>
+                            {({ active }) => (
+                              <button
+                                onClick={() => setLanguage(en)}
+                                disabled={language === en}
+                                className={classNames(
+                                  active
+                                    ? "bg-[#e5c995] text-gray-900"
+                                    : "text-gray-700",
+                                  "block px-4 py-2 text-[11px] uppercase"
                                 )}
-                              </Menu.Item>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <button
-                                  onClick={() => setLanguage(es)}
-                                  disabled={language === es}
-                                    className={classNames(
-                                      active
-                                        ? "bg-[#e5c995] text-gray-900"
-                                        : "text-gray-700",
-                                      "w-full px-4 py-2 text-[11px] uppercase"
-                                    )}
-                                  >
-                                    ESPAÑOL
-                                    <span className="fi fi-mx  ml-3"></span> 
-                                    {/* <span className="fi fi-es  ml-3"></span>  */}
-                                  </button>
+                              >
+
+                                
+                                ENGLISH
+                                <span className="fi fi-us ml-3"></span>
+                                {/* <span className="fi fi-ca ml-3"></span>  */}
+                              </button>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }) => (
+                              <button
+                                onClick={() => setLanguage(es)}
+                                disabled={language === es}
+                                className={classNames(
+                                  active
+                                    ? "bg-[#e5c995] text-gray-900"
+                                    : "text-gray-700",
+                                  "block px-4 py-2 text-[11px] uppercase"
                                 )}
-                              </Menu.Item>
-                            </div>
-                          </Menu.Items>
-                        </Transition>
-                      </Menu>
-                    </li>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
+                              >
+                                ESPAÑOL
+                                <span className="fi fi-mx  ml-3"></span>
+                                {/* <span className="fi fi-es  ml-3"></span>  */}
+                              </button>
+                            )}
+                          </Menu.Item>
+                        </div>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu>
+                </p>
               </div>
             </div>
           )}
