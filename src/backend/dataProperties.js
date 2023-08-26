@@ -25,7 +25,7 @@ import  en from "../context/languages/en"
 export const homeProperties = [
     {
       id: 1,
-      desarrollo: "Athimar Cozumel",
+      desarrollo: "ATHIMAR COZUMEL",
       tipo: "departamento",
       ubicacion: "Cozumel",
       route: "properties/Cozumel/Athimar_Cozumel",
@@ -45,7 +45,7 @@ export const homeProperties = [
     },
     {
       id: 2,
-      desarrollo: "Tres Patios",
+      desarrollo: "TRES PATIOS",
       tipo:"casa",
       ubicacion: "Playa del Carmen",
       route: "properties/Playa_del_Carmen/Tres_Patios",
@@ -62,7 +62,89 @@ export const homeProperties = [
       description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
       imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
       embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    },
+    {
+      id: 3,
+      desarrollo: "VIDARA CANCUN",
+      tipo:"casa",
+      ubicacion: "Playa del Carmen",
+      route: "properties/Playa_del_Carmen/Tres_Patios",
+      route2: "Playa_del_Carmen/Tres_Patios",
+      precio: 2500000,
+      habitaciones: 3,
+      baños: 2,
+      sala: "Sala",
+      cocina: "Cocina",
+      comedor: "Comedor",
+      closet: "Closets",
+      terraza: "Terraza",
+      metrosCuadrados: 90,
+      description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+      imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    },
+    {
+      id: 4,
+      desarrollo: "LIK TULUM",
+      tipo:"casa",
+      ubicacion: "Playa del Carmen",
+      route: "properties/Playa_del_Carmen/Tres_Patios",
+      route2: "Playa_del_Carmen/Tres_Patios",
+      precio: 2500000,
+      habitaciones: 3,
+      baños: 2,
+      sala: "Sala",
+      cocina: "Cocina",
+      comedor: "Comedor",
+      closet: "Closets",
+      terraza: "Terraza",
+      metrosCuadrados: 90,
+      description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+      imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    },
+    {
+      id: 5,
+      desarrollo: "NALU",
+      tipo:"casa",
+      ubicacion: "Puerto Morelos",
+      route: "properties/Playa_del_Carmen/Tres_Patios",
+      route2: "Playa_del_Carmen/Tres_Patios",
+      precio: 2500000,
+      habitaciones: 3,
+      baños: 2,
+      sala: "Sala",
+      cocina: "Cocina",
+      comedor: "Comedor",
+      closet: "Closets",
+      terraza: "Terraza",
+      metrosCuadrados: 90,
+      description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+      imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    },
+
+{
+      id: 6,
+      desarrollo: "TERRENO DE INVERSION",
+      tipo:"terreno",
+      ubicacion: "Puerto Morelos",
+      route: "properties/Playa_del_Carmen/Tres_Patios",
+      route2: "Playa_del_Carmen/Tres_Patios",
+      precio: 2500000,
+      habitaciones: 3,
+      baños: 2,
+      sala: "Sala",
+      cocina: "Cocina",
+      comedor: "Comedor",
+      closet: "Closets",
+      terraza: "Terraza",
+      metrosCuadrados: 90,
+      description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+      imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
     }
+    
   ]
 
 
