@@ -1,13 +1,16 @@
 
 .swiper {
-  width: auto;
-  height: auto;
-  position: relative;
+  /* width: auto;
+  height: auto; */
+  /* width: 500px; */
+  /* position: relative; */
   /* left: 50%;
   top: 50%; */
   
-margin: auto;
+/* margin: auto; */
 }
+
+
 
 
 .swiper-slide {

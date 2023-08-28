@@ -1,4 +1,5 @@
 import React from 'react';
+import Villa90m2 from './Villa90m2';
 
 const Villa110m2 = ({ isOpen110, onClose110 }) => {
   if (!isOpen110) return null;
@@ -9,8 +10,10 @@ const Villa110m2 = ({ isOpen110, onClose110 }) => {
       <div className="bg-white p-4 rounded shadow-md z-10">
         <h2 className="text-xl font-bold mb-4">Departamentos en villas 
 </h2>
-        <p>110</p>
+        {/* <p>110</p> */}
+        {/* <Villa90m2/> */}
         <div className='mx-auto justify-center'>
+          
         <button
           className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded center"
           onClick={onClose110}

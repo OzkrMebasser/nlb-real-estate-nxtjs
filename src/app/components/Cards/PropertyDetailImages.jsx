@@ -13,7 +13,8 @@ import "./swipper.css";
 // import required modules
 import { EffectCube, Pagination } from "swiper";
 
-export default function PropertyDetailImages() {
+const PropertyDetailImages =({images}) => {
+  console.log(images)
   return (
     <>
       <div>
@@ -28,9 +29,9 @@ export default function PropertyDetailImages() {
           }}
           pagination={true}
           modules={[EffectCube, Pagination]}
-          className="bg-gradient-to-r from-blue-900  via-sky-900  to-teal-500"
+          className="bg-gradient-to-r from-blue-900  via-sky-900  to-teal-500 "
         >
-          <SwiperSlide className="">
+          {/* <SwiperSlide className="">
             <img src="https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTresRiosCubo.jpg?alt=media&token=7cb9a5a8-6b19-4f44-ab18-e7c17d96bb79&_gl=1*5cigs0*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY4NTUwNTYyOS45LjEuMTY4NTUwNTkxNC4wLjAuMA.." />
           </SwiperSlide>
           <SwiperSlide>
@@ -44,7 +45,12 @@ export default function PropertyDetailImages() {
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://images.pexels.com/photos/16348514/pexels-photo-16348514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          </SwiperSlide> */}
+          {images.map(image => (
+          <SwiperSlide key={image}>
+            <img src={image} />  
           </SwiperSlide>
+        ))}
         </Swiper>
       </div>
 
@@ -52,3 +58,5 @@ export default function PropertyDetailImages() {
     </>
   );
 }
+
+export default PropertyDetailImages;

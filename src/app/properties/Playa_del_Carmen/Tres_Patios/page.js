@@ -2,12 +2,21 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages";
+import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
-import Villa90m2 from "./depto_90m2/x";
-import Villa110m2 from "./Villa110m2";
+// import Villa90m2 from "./Villa90m2";
+// import Villa110m2 from "./Villa110m2";
+// import { images } from "../../../../../next.config";
 
 const TresPatios = () => {
+  const { homeProperties } = useProperties();
+
+  const { allProperties } = useProperties();
+console.log("AllProperties", allProperties);
+  const images = allProperties[0].imagesCube;
+  console.log(images)
+
   const [isModalOpen90, setIsModalOpen90] = useState(false);
   const [isModalOpen110, setIsModalOpen110] = useState(false);
 
@@ -32,9 +41,9 @@ const TresPatios = () => {
     <>
       <section className="bg-white ">
         <div className="px-6 py-10 mx-auto mt-8">
-          <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
+          <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between" >
 
-            <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-16 ">
+            <div className="mt-6 lg:mt-0 lg:mx-4">
               <h2 className=" max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
                 Tres Patios
               </h2>
@@ -132,14 +141,17 @@ const TresPatios = () => {
 
               {/* {"Villa 90m2 copy"} */}
             </div>
-            <div className="object-cover w-[330px] mx-auto lg:w-[430px] justify-center bg-white">
+            <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center bg-white">
               {/* <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-red-800"
             src=""
             alt=""
           /> */}
 
-              <PropertyDetailImages />
+              {/*Imagenes Swiper CUBO*/}
+              <PropertyDetailImages images={images}/>
+
+
               <div className="mx-auto items-center text-center relative bg-[white] mt-4">
                 <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
               </div>
@@ -154,7 +166,7 @@ const TresPatios = () => {
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
           {/* {"Villa 90m2"} */}
 
-          <button
+          {/* <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             onClick={() =>
               router.push(`properties/Playa_del_Carmen/Tres_Patios/depto_90m2`)
@@ -163,39 +175,43 @@ const TresPatios = () => {
             Villa 90m2
           </button>
 
-          <Villa90m2 isOpen90={isModalOpen90} onClose90={handleCloseModal90} />
+          <Villa90m2 isOpen90={isModalOpen90} onClose90={handleCloseModal90} /> */}
 
           {/* {"Villa 110m2"} */}
           <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={handleOpenModal110}
+            // onClick={handleOpenModal110}
+            // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
+            onClick={() =>
+              router.push(`${allProperties[0].routeUnit_1}`)
+            }
           >
             Villa 110m2
           </button>
-
+{/* 
           <Villa110m2
             isOpen110={isModalOpen110}
             onClose110={handleCloseModal110}
-          />
+          /> */}
 
-          <button
+          {/* <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             onClick={handleOpenModal90}
           >
             Villa 90m2
-          </button>
+          </button> */}
           {/* {"Villa 110m2"} */}
-          <button
+          {/* <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             onClick={handleOpenModal110}
           >
             Villa 110m2
-          </button>
+          </button> */}
 
-          <Villa110m2
+          {/* <Villa110m2
             isOpen110={isModalOpen110}
             onClose110={handleCloseModal110}
-          />
+          /> */}
         </div>
       </section>
       <div className="flex justify-center mt-6">

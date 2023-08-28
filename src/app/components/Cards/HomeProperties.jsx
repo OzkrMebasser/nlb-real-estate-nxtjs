@@ -11,6 +11,7 @@ const HomeProperties = () => {
   const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
+
   const router = useRouter();
 
   const { precio } = homeProperties.map((p) => {
@@ -85,7 +86,7 @@ const HomeProperties = () => {
 
                     <button
                       onClick={() =>
-                        router.push(`properties/${items.route2}`).toString()
+                        router.push(`properties/${items.route2}`)
                       }
                       className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
                     >
