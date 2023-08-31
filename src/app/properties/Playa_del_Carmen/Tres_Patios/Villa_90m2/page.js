@@ -32,7 +32,7 @@ const Villa90m2 = () => {
     const images_B = allProperties[0].unit_1["unit_1_imagenes_B"];
 
    const amenidad_1 = allProperties[0].unit_1.unit_1_amenidades["amenidad_1"];
-   console.log(amenidad_1);
+
    const amenidad_2 = allProperties[0].unit_1.unit_1_amenidades["amenidad_2"];
    const amenidad_3 = allProperties[0].unit_1.unit_1_amenidades["amenidad_3"];
    const amenidad_4 = allProperties[0].unit_1.unit_1_amenidades["amenidad_4"];
@@ -41,7 +41,7 @@ const Villa90m2 = () => {
    const amenidad_7 = allProperties[0].unit_1.unit_1_amenidades["amenidad_7"];
    const amenidad_8 = allProperties[0].unit_1.unit_1_amenidades["amenidad_8"];
 
-    console.log(images_A)
+  
 
 
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);

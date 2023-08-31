@@ -17,7 +17,24 @@ console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
   console.log(images)
 
-  
+//   const [isModalOpen90, setIsModalOpen90] = useState(false);
+//   const [isModalOpen110, setIsModalOpen110] = useState(false);
+
+//   const handleOpenModal90 = () => {
+//     setIsModalOpen90(true);
+//   };
+
+//   const handleCloseModal90 = () => {
+//     setIsModalOpen90(false);
+//   };
+
+//   const handleOpenModal110 = () => {
+//     setIsModalOpen110(true);
+//   };
+
+//   const handleCloseModal110 = () => {
+//     setIsModalOpen110(false);
+//   };
 
   const router = useRouter();
   return (
@@ -27,8 +44,8 @@ console.log("AllProperties", allProperties);
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between" >
 
             <div className="mt-6 lg:mt-0 lg:mx-4">
-              <h2 className="uppercase max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
-                Tres Patios
+              <h2 className=" uppercase max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
+                ATHIMAR
               </h2>
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para

@@ -23,15 +23,16 @@ const esTranslations = {
     //HOME PROPERTIES
     featuredProperties:"PROPIEDADES DESTACADAS",
 
-    //CARDS
+    //HOME CARDS
     locationCard:"Ubicación ",
     pricesFromCard: "Propiedades desde US ",
     typeCard: "Tipo : ",
     bedroomsCard: "Habitaciones : ",
     bathroomsCard: "Baños : ",
-
-
-    //PROPERTIES DATA CARDS 
+    unoAtresRooms: "una, dos y tres" ,
+    unoAtresBaños: "uno, dos y tres",
+    m2Athimar: "Deste 69.94m² hasta 189.33m²",
+    ymuchomas: "¡Y mucho más!",
     departamento: "Departamento",
     casa: "Casa",
     terreno: "Terreno",
@@ -39,7 +40,26 @@ const esTranslations = {
     sala: "Sala",
 
     //Button Ver este proyecto
-    verProyecto: "Ver mas de este proyecto"
+    verProyecto: "Ver este proyecto",
+
+    propiedades:{
+      // PLAYA DEL CARMEN
+        pdc:{
+          tres_patios:{
+            tipo: "Departamento"
+
+          } ,
+          xxxxx:{
+
+          },
+        },
+         // CANCUN
+         cun:{
+          cun_1:{
+
+          }
+         }
+    }
   };
 
   export default esTranslations;

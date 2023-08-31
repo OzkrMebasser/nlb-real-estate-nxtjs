@@ -21,26 +21,19 @@ import en from "../context/languages/en";
 export const homeProperties = [
   {
     id: 1,
-    desarrollo: "ATHIMAR COZUMEL",
+    desarrollo: "ATHIMAR",
     tipo: "departamento",
     ubicacion: "Cozumel",
     route: "properties/Cozumel/Athimar_Cozumel",
     route2: "Cozumel/Athimar_Cozumel",
-    precio: 13500,
-    habitaciones: 3,
-    baños: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
-    description:
-      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    precio: 16999,
+    habitaciones: "unoAtresRooms",
+    baños:"unoAtresBaños",
+    metrosCuadrados: "m2Athimar",
+    ymuchomas: "ymuchomas",
     imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
-    embededMapSrc:
-      "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/homePropertiesImgs%2F1_ATHIMAR_home.jpg?alt=media&token=f0278039-5ae9-41a2-879b-a90329bbb830",
+    
   },
   {
     id: 2,
@@ -67,9 +60,9 @@ export const homeProperties = [
   },
   {
     id: 3,
-    desarrollo: "VIDARA CANCUN",
+    desarrollo: "VIDARAA",
     tipo: "casa",
-    ubicacion: "Playa del Carmen",
+    ubicacion: "Cancún",
     route: "properties/Playa_del_Carmen/Tres_Patios",
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 2500000,
@@ -182,6 +175,81 @@ export const allProperties = [
     description:
       "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRES_PATIOS_card.jpg?alt=media&token=3580db23-d142-4df2-9fc6-ad3360802261",
+    embededMapSrc:
+      "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    imagesCube: [
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(1).jpg?alt=media&token=287c7669-d129-47d1-96e0-1f714dfa5047",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(2).jpg?alt=media&token=4b211425-4e1a-4157-a49e-a904589bfbfa",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(3).jpg?alt=media&token=b75ef34d-332f-4aa4-bf01-c69e0c8ac28b",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(4).jpg?alt=media&token=12c0d8ca-73c0-49b8-b922-1e8dc544f8f7",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(5).jpg?alt=media&token=833f91d7-55af-4dea-bd0a-1a288b7900e1",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(6).jpg?alt=media&token=2fd03751-007d-47df-91fa-8dcbb727bc36",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(7).jpg?alt=media&token=f63ccf08-07df-4f6e-a9e1-a4af8a15ba67",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(8).jpg?alt=media&token=93765bb5-08d5-4a7c-84c8-41186f899c64",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(9).jpg?alt=media&token=5a77d03a-fe24-4e78-b9db-bf92aa4b1182",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(10).jpg?alt=media&token=7efd1f6e-2d8b-4f9c-bb6d-a6e5d1eef2f3"
+
+    ],
+    unit_1: {
+      unit_1_Title: "Departamento en villa de 90 m²",
+      unit_1_description:
+        "Contamos con 6 Departamentos en villas por cada módulo de 90 m² y/o 110 m²",
+      unit_1_precio: 4780000,
+      unit_1_amenidades: 
+        {
+          amenidad_1: "3 Recámaras",
+          amenidad_2: "Sala",
+          amenidad_3: "Comedor",
+          amenidad_4: "Closets",
+          amenidad_5: "2 Baños",
+          amenidad_6: "Cocina",
+          amenidad_7: "Terraza",
+          amenidad_8: "Flex",
+        },
+      
+      unit_1_imagenes_A: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(1).jpg?alt=media&token=287c7669-d129-47d1-96e0-1f714dfa5047",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(2).jpg?alt=media&token=4b211425-4e1a-4157-a49e-a904589bfbfa",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(3).jpg?alt=media&token=b75ef34d-332f-4aa4-bf01-c69e0c8ac28b",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(4).jpg?alt=media&token=12c0d8ca-73c0-49b8-b922-1e8dc544f8f7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(5).jpg?alt=media&token=833f91d7-55af-4dea-bd0a-1a288b7900e1",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(6).jpg?alt=media&token=2fd03751-007d-47df-91fa-8dcbb727bc36",
+      ],
+      unit_1_imagenes_B: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(1).jpg?alt=media&token=287c7669-d129-47d1-96e0-1f714dfa5047",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(2).jpg?alt=media&token=4b211425-4e1a-4157-a49e-a904589bfbfa",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(3).jpg?alt=media&token=b75ef34d-332f-4aa4-bf01-c69e0c8ac28b",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(4).jpg?alt=media&token=12c0d8ca-73c0-49b8-b922-1e8dc544f8f7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(5).jpg?alt=media&token=833f91d7-55af-4dea-bd0a-1a288b7900e1",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(6).jpg?alt=media&token=2fd03751-007d-47df-91fa-8dcbb727bc36",
+      ],
+    },
+
+    unit_2_Title: "",
+  },
+  {
+    id: 2,
+    desarrollo: "ATHIMAR",
+    tipo: "Departamento",
+    ubicacion: "Cozumel",
+    route: "properties/Cozumel/Athimar_Cozumel",
+    route2: "Cozumel/Athimar_Cozumel",
+    routeUnit_1: "Athimar_Cozumel/App1",
+    routeUnit_2: "Athimar_Cozumel/App2",
+    precio: 16999,
+    habitaciones: "unoAtresRooms",
+    baños:"unoAtresBaños",
+    metrosCuadrados: "m2Athimar",
+    sala: "Sala",
+    cocina: "Cocina",
+    comedor: "Comedor",
+    closet: "Closets",
+    terraza: "Terraza",
+    metrosCuadrados: 90,
+    description:
+      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
@@ -233,18 +301,6 @@ export const allProperties = [
     },
 
     unit_2_Title: "",
-  },
-  {
-    id: 2,
-    desarrollo: "Yaxchilan",
-    tipo: "Casa",
-    ubicacion: "Cancun",
-    precio: 3500000,
-    habitaciones: 4,
-    baños: 3,
-    metrosCuadrados: 200,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/05/INICIO-1.webp",
   },
   {
     id: 3,
@@ -332,27 +388,4 @@ export const allProperties = [
   },
 ];
 
-/** 
- * 
- * OBJECTO
-   {
-  id: 1,
-  desarrollo: "Tres Patios",
-  tipo: "Departamento",
-  ubicacion: "Playa del Carmen",
-  route: "properties/Playa_del_Carmen/Tres_Patios",
-  route2: "Playa_del_Carmen/Tres_Patios",
-  precio: 2500000,
-  habitaciones: 3,
-  baños: 2,
-  sala: "Sala",
-  cocina: "Cocina",
-  comedor: "Comedor",
-  closet: "Closets",
-  terraza: "Terraza",
-  metrosCuadrados: 90,
-  description: "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
-  imagenCard: "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
-  embededMapSrc: "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-}
-*/
+

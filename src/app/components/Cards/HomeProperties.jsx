@@ -11,7 +11,6 @@ const HomeProperties = () => {
   const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
-
   const router = useRouter();
 
   const { precio } = homeProperties.map((p) => {
@@ -43,7 +42,9 @@ const HomeProperties = () => {
                   <p className="mb-3">
                     {/* Ubicación  */}
                     {language === es ? es.locationCard : en.locationCard}:{" "}
-                    {items.ubicacion}
+                    <strong className="text-teal-900 uppercase font-black">
+                      {items.ubicacion}
+                    </strong>
                   </p>
                   <img
                     className="object-cover w-full h-48"
@@ -51,7 +52,7 @@ const HomeProperties = () => {
                     alt="image"
                   />
                   <div className="p-4">
-                    <h4 className="text-xl font-semibold text-blue-600">
+                    <h4 className="text-xl font-semibold text-blue-800">
                       {items.title}
                     </h4>
                     <p className="mb-2 leading-normal">{items.content}</p>
@@ -64,34 +65,55 @@ const HomeProperties = () => {
                       {/* Tipo : */}
                       {language === es ? es.typeCard : en.typeCard}
 
-
-                
-                     {/*Tipo de edificio. Casa, Depto etc*/}
-                      {language === es ? es[items.tipo] : en[items.tipo]}
-
-
-                      
+                      {/*Tipo de edificio. Casa, Depto etc*/}
+                      <strong>
+                        {language === es ? es[items.tipo] : en[items.tipo]}
+                      </strong>
                     </div>
                     <p>
                       {/* Habitaciones :  */}
                       {language === es ? es.bedroomsCard : en.bedroomsCard}
-                      {items.habitaciones}
+                      <strong>
+                        {language === es
+                          ? es[items.habitaciones]
+                          : en[items.habitaciones]}
+                      </strong>
                     </p>
-                    <p>M² : {items.metrosCuadrados}</p>
-                    <p className="mb-4">
+                   
+                    <p >
                       {/* Baños :  */}
-                      {language === es ? es.bedroomsCard : en.bedroomsCard}
-                      <strong>{items.baños}</strong>
+                      {language === es ? es.bathroomsCard : en.bathroomsCard}
+                      <strong>
+                      {language === es
+                          ? es[items.baños]
+                          : en[items.baños]}
+                        </strong>
+                    </p>
+                    <p className="mb-2">
+                     
+                      <strong>
+                        {language === es
+                          ? es[items.metrosCuadrados]
+                          : en[items.metrosCuadrados]}
+                      </strong>
+                    </p> 
+                    <p className="mb-4 ">
+                     
+                      <strong>
+                        {language === es
+                          ? es[items.ymuchomas]
+                          : en[items.ymuchomas]}
+                      </strong>
                     </p>
 
+
                     <button
-                      onClick={() =>
-                        router.push(`properties/${items.route2}`)
-                      }
+                      onClick={() => router.push(`properties/${items.route2}`)}
                       className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
                     >
                       {/*Ver este proyecto*/}
-                       {language === es ? es.verProyecto : en.verProyecto}<TfiNewWindow className="inline ml-5 text-lg mb-2 font-black"/>
+                      {language === es ? es.verProyecto : en.verProyecto}
+                      <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" />
                     </button>
                   </div>
                 </div>
