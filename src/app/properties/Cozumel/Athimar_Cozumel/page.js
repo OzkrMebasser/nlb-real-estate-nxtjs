@@ -13,41 +13,47 @@ const TresPatios = () => {
   const { homeProperties } = useProperties();
 
   const { allProperties } = useProperties();
-console.log("AllProperties", allProperties);
+  console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
-  console.log(images)
+  console.log(images);
 
-//   const [isModalOpen90, setIsModalOpen90] = useState(false);
-//   const [isModalOpen110, setIsModalOpen110] = useState(false);
-
-//   const handleOpenModal90 = () => {
-//     setIsModalOpen90(true);
-//   };
-
-//   const handleCloseModal90 = () => {
-//     setIsModalOpen90(false);
-//   };
-
-//   const handleOpenModal110 = () => {
-//     setIsModalOpen110(true);
-//   };
-
-//   const handleCloseModal110 = () => {
-//     setIsModalOpen110(false);
-//   };
-
+ 
   const router = useRouter();
   return (
     <>
       <section className="bg-white ">
         <div className="px-6 py-10 mx-auto mt-8">
-          <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between" >
-
+          <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4">
-              <h2 className=" uppercase max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
+              <h2 className=" uppercase max-w-lg  mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
                 ATHIMAR
               </h2>
+              <h3 className="mb-6">Cozumel Luxury Living</h3>
               <p className="text-base text-gray-700 md:text-lg mb-2">
+                UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN
+              </p>
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                Athimar es un desarrollo de lujo con el diseño y la arquitectura
+                pensados minuciosamente para brindar ambientes con estilo, lujo
+                y confort. La premisa del diseño fue generar vistas inigualables
+                desde cada una de sus unidades, regalando una obra de arte en
+                tonos turquesa sólo con mirar por tu ventana.
+              </p>
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
+                alcance todas las comodidades y el confort de la vida ideal que
+                siempre imaginaste.
+              </p>
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                Athimar es un edificio de 6 niveles. Cuenta con 25 unidades
+                conformadas por 8 tipologías diferentes entre las que podrás
+                encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop
+                o jacuzzi e increíbles amenidades.
+              </p>
+              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
                 Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
                 locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}
                 diseñadas para el entretenimiento y bienestar.
@@ -60,7 +66,7 @@ console.log("AllProperties", allProperties);
                 El conjunto se compone por 32 departamentos en villas con 6
                 departamentos cada una, rodeados de áreas verdes y atractivas
                 amenidades.
-              </p>
+              </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 Amenidades
@@ -72,19 +78,51 @@ console.log("AllProperties", allProperties);
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Casa Club
+                    Bar
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Cancha de Paddel
+                    Area de Asadores
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Outdoor Gym
+                    Estacionamiento de Bicicletas
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Sala de Juntas
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Centro de Negocios
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Gimnasio
+                  </li>
+                </ul>
+                <ul className="space-y-3">
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Vestíbulo
+                  </li>
+                  <li className="flex">
+                    <span className="mr-1">
+                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
+                    </span>
+                    Estacionamiento
                   </li>
                   <li className="flex">
                     <span className="mr-1">
@@ -96,45 +134,13 @@ console.log("AllProperties", allProperties);
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Pet Park
+                    Asoleadores
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Canchas Deportivas
-                  </li>
-                </ul>
-                <ul className="space-y-3">
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Reading Spots
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Dynamic Playground
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Asadores
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Urban Garden
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Neighbor Kiosco & Hammock Garden
+                    Tienda
                   </li>
                 </ul>
               </div>
@@ -149,8 +155,7 @@ console.log("AllProperties", allProperties);
           /> */}
 
               {/*Imagenes Swiper CUBO*/}
-              <PropertyDetailImages images={images}/>
-
+              <PropertyDetailImages images={images} />
 
               <div className="mx-auto items-center text-center relative bg-[white] mt-4">
                 <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
@@ -182,13 +187,11 @@ console.log("AllProperties", allProperties);
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
-            onClick={() =>
-              router.push(`${allProperties[0].routeUnit_1}`)
-            }
+            onClick={() => router.push(`${allProperties[0].routeUnit_1}`)}
           >
             Villa 110m2
           </button>
-{/* 
+          {/* 
           <Villa110m2
             isOpen110={isModalOpen110}
             onClose110={handleCloseModal110}
@@ -228,7 +231,7 @@ console.log("AllProperties", allProperties);
           marginwidth="0"
           title="map"
           scroll="yes"
-          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Tres patios playa del carmen&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embedhttps://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
     </>

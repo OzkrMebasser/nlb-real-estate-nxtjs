@@ -15,7 +15,7 @@ const TresPatios = () => {
   const { allProperties } = useProperties();
 console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
-  console.log(images)
+  // console.log(images)
 
   
 
@@ -28,9 +28,14 @@ console.log("AllProperties", allProperties);
 
             <div className="mt-6 lg:mt-0 lg:mx-4">
               <h2 className="uppercase max-w-lg mb-6 mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
+                {/*props.   propertyName={propertyName}*/}              
                 Tres Patios
               </h2>
               <p className="text-base text-gray-700 md:text-lg mb-2">
+                {/*props.   descParagraphOne={descParagraphOne}*/} 
+                {/*props.   strongPhrase={strongPhrase}*/} 
+                 {/*props.   descParagraphTwo={descParagraphTwo}*/} 
+                 {/*props.   descParagraphThree={descParagraphThree}*/} 
                 Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
                 locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}
                 diseñadas para el entretenimiento y bienestar.
@@ -55,36 +60,42 @@ console.log("AllProperties", allProperties);
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                    {/*props.   amenityOne={amenityOne}*/} 
                     Casa Club
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                     {/*props.   amenityTwo={amenityTwo}*/} 
                     Cancha de Paddel
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                     {/*props.   amenityThree={amenityThree}*/} 
                     Outdoor Gym
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                     {/*props.   amenityFour={amenityFour}*/} 
                     Alberca
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                     {/*props.   amenityFive={amenityFive}*/} 
                     Pet Park
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                      {/*props.   amenitySix={amenitySix}*/} 
                     Canchas Deportivas
                   </li>
                 </ul>
@@ -93,30 +104,35 @@ console.log("AllProperties", allProperties);
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                      {/*props.   amenitySeven={amenitySeven}*/} 
                     Reading Spots
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                    {/*props.   amenityEight={amenityEight}*/} 
                     Dynamic Playground
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                    {/*props.   amenityNine={amenityNine}*/} 
                     Asadores
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                    {/*props.   amenityTen={amenityTen}*/} 
                     Urban Garden
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
+                    {/*props.   amenityEleven={amenityEleven}*/} 
                     Neighbor Kiosco & Hammock Garden
                   </li>
                 </ul>
@@ -131,7 +147,9 @@ console.log("AllProperties", allProperties);
             alt=""
           /> */}
 
-              {/*Imagenes Swiper CUBO*/}
+              {/*Imagenes Swiper CUBO
+                      props. images={images}              
+              */}
               <PropertyDetailImages images={images}/>
 
 
