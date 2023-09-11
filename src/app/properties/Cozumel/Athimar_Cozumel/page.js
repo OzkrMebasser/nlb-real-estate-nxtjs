@@ -13,9 +13,10 @@ const TresPatios = () => {
   const { homeProperties } = useProperties();
 
   const { allProperties } = useProperties();
-  console.log("AllProperties", allProperties);
-  const images = allProperties[0].imagesCube;
-  console.log(images);
+  // console.log("AllProperties", allProperties);
+  const images = allProperties[1].imagesCube;
+  
+  // console.log("Athimar", images);
 
  
   const router = useRouter();
@@ -187,9 +188,9 @@ const TresPatios = () => {
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
-            onClick={() => router.push(`${allProperties[0].routeUnit_1}`)}
+            onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
           >
-            Villa 110m2
+            1 RECÁMARA
           </button>
           {/* 
           <Villa110m2

@@ -13,9 +13,9 @@ const TresPatios = () => {
   const { homeProperties } = useProperties();
 
   const { allProperties } = useProperties();
-console.log("AllProperties", allProperties);
+// console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
-  // console.log(images)
+  console.log("Imagenes3Patios", images)
 
   
 
