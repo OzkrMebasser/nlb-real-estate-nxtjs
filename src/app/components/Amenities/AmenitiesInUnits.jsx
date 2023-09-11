@@ -111,14 +111,7 @@ const AmenitiesInUnits = (props) => {
                 </ul>
               </div>
 
-              <div className="flex items-center justify-center mt-8 mb-4 lg:mt-12 ">
-                <button
-                  className=" mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded "
-                  onClick={goBack}
-                >
-                  Volver
-                </button>
-              </div>
+         
             </div>
     </>
   )
