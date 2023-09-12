@@ -43,7 +43,7 @@ function SlideLabel({ textLabel }) {
 
 function LabelOne() {
   const { language, setLanguage } = useLanguage();
-  const indexOne = language === es ? es.labelHero_1 : en.labelHero_1;
+  const indexOne = language === es ? es.hero.labelHero_1 : en.hero.labelHero_1;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexOne} />} />
@@ -53,7 +53,7 @@ function LabelOne() {
 
 function LabelTwo() {
   const { language, setLanguage } = useLanguage();
-  const indexTwo = language === es ? es.labelHero_2 : en.labelHero_2;
+  const indexTwo = language === es ? es.hero.labelHero_2 : en.hero.labelHero_2;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexTwo} />} />
@@ -63,7 +63,7 @@ function LabelTwo() {
 
 function LabelThree() {
   const { language, setLanguage } = useLanguage();
-  const indexThree = language === es ? es.labelHero_3 : en.labelHero_3;
+  const indexThree = language === es ? es.hero.labelHero_3 : en.hero.labelHero_3;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexThree} />} />
@@ -73,7 +73,7 @@ function LabelThree() {
 
 function LabelFour() {
   const { language, setLanguage } = useLanguage();
-  const indexFour = language === es ? es.labelHero_4 : en.labelHero_4;
+  const indexFour = language === es ? es.hero.labelHero_4 : en.hero.labelHero_4;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexFour} />} />
@@ -83,7 +83,7 @@ function LabelFour() {
 
 function LabelFive(){
   const {language,setLanguage}=useLanguage();
-  const indexFive = language === es ? es.labelHero_5 : en.labelHero_5;
+  const indexFive = language === es ? es.hero.labelHero_5 : en.hero.labelHero_5;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexFive} />} />
@@ -93,7 +93,7 @@ function LabelFive(){
 
 function LabelSix(){
   const {language,setLanguage}=useLanguage();
-  const indexSix = language === es ? es.labelHero_6 : en.labelHero_6;
+  const indexSix = language === es ? es.hero.labelHero_6 : en.hero.labelHero_6;
   return (
     <>
       <SlideLabel textLabel={<LabelIndex labelIndex={indexSix} />} />
@@ -108,32 +108,32 @@ export default function BasicSlider() {
   const slides = [
     {
       id: 1,
-      label: language === es ? es.labelHero_1 : en.labelHero_1,
+      label: language === es ? es.hero.labelHero_1 : en.hero.labelHero_1,
       img: fotoHero1,
     },
     {
       id: 2,
-      label: language === es ? es.labelHero_2 : en.labelHero_2,
+      label: language === es ? es.hero.labelHero_2 : en.hero.labelHero_2,
       img: fotoHero2,
     },
     {
       id: 3,
-      label: language === es ? es.labelHero_3 : en.labelHero_3,
+      label: language === es ? es.hero.labelHero_3 : en.hero.labelHero_3,
       img: fotoHero3,
     },
     {
       id: 4,
-      label: language === es ? es.labelHero_4 : en.labelHero_4,
+      label: language === es ? es.hero.labelHero_4 : en.hero.labelHero_4,
       img: fotoHero4,
     },
     {
       id: 5,
-      label: language === es ? es.labelHero_5 : en.labelHero_5,
+      label: language === es ? es.hero.labelHero_5 : en.hero.labelHero_5,
       img: fotoHero5,
     },
     {
       id: 6,
-      label: language === es ? es.labelHero_6 : en.labelHero_6,
+      label: language === es ? es.hero.labelHero_6 : en.hero.labelHero_6,
       img: fotoHero6,
     },
   ];
@@ -162,11 +162,11 @@ export default function BasicSlider() {
         <span className="flex flex-col flex-wrap justify-center items-center w-full h-full pointer-events-none m-0 p-0 z-40 text-center sm:text-left md:text-center lg:text-right">
           <h1 className="px-4 titleShadow items-center justify-center z-40 mb-4 text-xl lg:text-3xl font-bold text-[white]">
             {/*TITULO HERO */}
-            {language === es ? es.heroTitle : en.heroTitle}
+            {language === es ? es.hero.heroTitle : en.hero.heroTitle}
           </h1>
           <h3 className="titleShadow items-center justify-center z-40 text-lg lg:text-2xl font-bold text-[white] ">
             {/*SUBTITULO HERO*/}
-            {language === es ? es.heroSubTitle : en.heroSubTitle}
+            {language === es ? es.hero.heroSubTitle : en.hero.heroSubTitle}
           </h3>
         </span>
 

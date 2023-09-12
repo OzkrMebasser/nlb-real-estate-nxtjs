@@ -10,20 +10,6 @@ function Properties () {
    
     const router = useRouter()
 
-//     // ID del objeto a filtrar
-// const specificDesarrollo = properties.desarrollo;
-// console.log(specificDesarrollo)
-
-// // Filtrar el objeto específico
-// const filteredObject = items.find(item => item.desarrollo === specificDesarrollo);
-
-// // Mostrar el valor deseado del objeto
-// if (filteredObject) {
-//   console.log(filteredObject.value);
-// } else {
-//   console.log('No se encontró el objeto con el ID especificado.');
-// }
-
 
     return (
         <>

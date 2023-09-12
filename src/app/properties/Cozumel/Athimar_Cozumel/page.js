@@ -23,6 +23,7 @@ const TresPatios = () => {
   return (
     <>
       <section className="bg-white ">
+    
         <div className="px-6 py-10 mx-auto mt-8">
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4">
@@ -31,7 +32,8 @@ const TresPatios = () => {
               </h2>
               <h3 className="mb-6">Cozumel Luxury Living</h3>
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN
+                <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong>
+                
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
@@ -49,8 +51,8 @@ const TresPatios = () => {
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                Athimar es un edificio de 6 niveles. Cuenta con 25 unidades
-                conformadas por 8 tipologías diferentes entre las que podrás
+                Athimar es un <strong>edificio de 6 niveles</strong>. Cuenta con <strong>25 unidades </strong>
+                conformadas por <strong>8 tipologías</strong> diferentes entre las que podrás
                 encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop
                 o jacuzzi e increíbles amenidades.
               </p>
@@ -170,20 +172,7 @@ const TresPatios = () => {
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
-          {/* {"Villa 90m2"} */}
-
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={() =>
-              router.push(`properties/Playa_del_Carmen/Tres_Patios/depto_90m2`)
-            }
-          >
-            Villa 90m2
-          </button>
-
-          <Villa90m2 isOpen90={isModalOpen90} onClose90={handleCloseModal90} /> */}
-
-          {/* {"Villa 110m2"} */}
+    
           <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
@@ -192,30 +181,7 @@ const TresPatios = () => {
           >
             1 RECÁMARA
           </button>
-          {/* 
-          <Villa110m2
-            isOpen110={isModalOpen110}
-            onClose110={handleCloseModal110}
-          /> */}
-
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={handleOpenModal90}
-          >
-            Villa 90m2
-          </button> */}
-          {/* {"Villa 110m2"} */}
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={handleOpenModal110}
-          >
-            Villa 110m2
-          </button> */}
-
-          {/* <Villa110m2
-            isOpen110={isModalOpen110}
-            onClose110={handleCloseModal110}
-          /> */}
+         
         </div>
       </section>
       <div className="flex justify-center mt-6">

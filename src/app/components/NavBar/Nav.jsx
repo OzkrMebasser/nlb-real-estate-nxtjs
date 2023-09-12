@@ -17,9 +17,10 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 import "./NavBar.css";
 import Logo from "./Logo";
+import { urls } from "@/backend/dataProperties";
 
 function Nav() {
-  const { allProperties } = useProperties();
+  const { allProperties, urls } = useProperties();
   // const {language} = useLanguage();
   const { language, setLanguage } = useLanguage();
 
@@ -57,19 +58,19 @@ function Nav() {
       <nav
         className={
           navbarBg
-            ? "w-full text-[#32f1ff] bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 shadow-xl fixed top-0 z-50"
-            : "w-full text-white bg-[transparent]  fixed top-0 z-50 swing-in-top-fwd "
+            ? "w-full  text-[#32f1ff] bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 shadow-xl fixed top-0 z-50"
+            : "w-full  text-white bg-[transparent]  fixed top-0 z-50 swing-in-top-fwd "
         }
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16  ">
-            <div className="flex items-center">
+        
+          <div className="flex justify-around items-center h-16 max-w-7xl mx-auto px-4   sm:px-6 lg:px-4 ">
+            <div className="flex items-center w-full mx-auto">
               {/*LOGO*/}
               <div className="flex-shrink-0 ">
                 <Logo className="font-black " textShadowChg={textShadowChg} />
               </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+              <div className="hidden md:block md:ml-[380px]">
+                <div className=" flex items-baseline space-x-8">
                   <ul className="hidden md:flex ">
                     {/*PROPIEDADES */}
                     <li
@@ -94,8 +95,8 @@ function Nav() {
                           >
                             {/*PROPIEDADES MENU*/}
                             {language === es
-                              ? es.menuProperties
-                              : en.menuProperties}
+                              ? es.navMenu.menuProperties
+                              : en.navMenu.menuProperties}
 
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-[#9c8966]"
@@ -117,9 +118,10 @@ function Nav() {
                             <div className="py-1">
                               <Menu.Item>
                                 {({ active }) => (
-                                  <p
-                                    onClick={() => router.push(`properties`)}
-                                    // href={dataProperties[0].route}
+                                  <Link
+                                  href="/properties"
+                                    // onClick={() => router.push(`properties`)}
+                                    // href={urls.routes["routeAllProperties"]}
                                     className={classNames(
                                       active
                                         ? "bg-[#e5c995] text-gray-900"
@@ -129,9 +131,9 @@ function Nav() {
                                   >
                                     {/*Todas las propiedades*/}
                                     {language === es
-                                      ? es.allProperties
-                                      : en.allProperties}
-                                  </p>
+                                      ? es.navMenu.allProperties
+                                      : en.navMenu.allProperties}
+                                  </Link>
                                 )}
                               </Menu.Item>
                             </div>
@@ -158,10 +160,12 @@ function Nav() {
                                 ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                                 : "titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                             }
-                            // onClick={() => router.push(`properties`)}
+                            
                           >
                             {/*LOCACIONES MENU*/}
-                            {language === es ? es.locations : en.locations}
+                            {language === es
+                              ? es.navMenu.locations
+                              : en.navMenu.locations}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-[#9c8966]"
                               aria-hidden="true"
@@ -200,12 +204,9 @@ function Nav() {
                                       <div className="py-1">
                                         <Menu.Item>
                                           {({ active }) => (
-                                            <p
-                                              onClick={() =>
-                                                router.push(
-                                                  `properties/Playa_del_Carmen/Tres_Patios`
-                                                )
-                                              }
+                                            <Link
+                                            href="/properties/Playa_del_Carmen/Tres_Patios"
+                                           
                                               className={classNames(
                                                 active
                                                   ? "bg-[#e5c995] text-gray-900"
@@ -214,11 +215,13 @@ function Nav() {
                                               )}
                                             >
                                               Tres Patios
-                                            </p>
+                                            </Link>
                                           )}
                                         </Menu.Item>
+                                       {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
+                                            
                                             <a
                                               href="#"
                                               className={classNames(
@@ -232,6 +235,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -285,6 +289,7 @@ function Nav() {
                                   >
                                     <Menu.Items className="absolute left-0  z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                       <div className="py-1">
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -300,6 +305,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -315,6 +321,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -330,6 +337,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -383,6 +391,7 @@ function Nav() {
                                   >
                                     <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                       <div className="py-1">
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -398,6 +407,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -413,6 +423,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -466,6 +477,7 @@ function Nav() {
                                   >
                                     <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                       <div className="py-1">
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -481,6 +493,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -496,6 +509,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -511,6 +525,7 @@ function Nav() {
                                             </a>
                                           )}
                                         </Menu.Item>
+                                        {/*//Falta cambiar ruta href*/} 
                                         <Menu.Item>
                                           {({ active }) => (
                                             <a
@@ -557,7 +572,9 @@ function Nav() {
                             }
                           >
                             {/*TERRENOS MENU*/}
-                            {language === es ? es.lots : en.lots}
+                            {language === es
+                              ? es.navMenu.lots
+                              : en.navMenu.lots}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-gray-400"
                               aria-hidden="true"
@@ -576,6 +593,7 @@ function Nav() {
                         >
                           <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
+                              {/*//Falta cambiar ruta href*/} 
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
@@ -591,6 +609,7 @@ function Nav() {
                                   </a>
                                 )}
                               </Menu.Item>
+                              {/*//Falta cambiar ruta href*/} 
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
@@ -606,6 +625,7 @@ function Nav() {
                                   </a>
                                 )}
                               </Menu.Item>
+                              {/*//Falta cambiar ruta href*/} 
                               <Menu.Item>
                                 {({ active }) => (
                                   <a
@@ -647,7 +667,9 @@ function Nav() {
                             }
                           >
                             {/* LANGUAGE CHANGER*/}
-                            {language === es ? es.lang : en.lang}
+                            {language === es
+                              ? es.navMenu.lang
+                              : en.navMenu.lang}
                             <ChevronDownIcon
                               className="-mr-1 h-5 w-5 text-gray-400"
                               aria-hidden="true"
@@ -717,7 +739,7 @@ function Nav() {
 ░█░█░█ ░█──░█ ░█▀▀▄ ░█─ ░█─── ░█▀▀▀ 
 ░█──░█ ░█▄▄▄█ ░█▄▄█ ▄█▄ ░█▄▄█ ░█▄▄▄  */}
 
-            <div className="-mr-2 flex md:hidden bg-teal-900 rounded-md" >
+            <div className="-mr-2 flex md:hidden bg-teal-900 rounded-md">
               {/* MENU ICON & x ICON*/}
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -741,7 +763,7 @@ function Nav() {
               </button>
             </div>
           </div>
-        </div>
+        
 
         <Transition
           show={isOpen}
@@ -756,10 +778,7 @@ function Nav() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className=" pt-8 pb-24 space-y-12 sm:px-3">
                 {/*PROPIEDADES */}
-                <p
-                  
-                  className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium "
-                >
+                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium ">
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
                       <Menu.Button
@@ -772,8 +791,8 @@ function Nav() {
                       >
                         {/*PROPIEDADES MENU*/}
                         {language === es
-                          ? es.menuProperties
-                          : en.menuProperties}
+                          ? es.navMenu.menuProperties
+                          : en.navMenu.menuProperties}
                         <ChevronDownIcon
                           className="mr-4 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
@@ -794,12 +813,8 @@ function Nav() {
                         <div className="py-1">
                           <Menu.Item>
                             {({ active }) => (
-                              <p
-                                onClick={() =>
-                                  router.push(`properties`) ||
-                                  setIsOpen(!isOpen)
-                                }
-                                // href={dataProperties[0].route}
+                              <Link
+                                href="/properties"
                                 className={classNames(
                                   active
                                     ? "bg-[#e5c995] text-gray-900"
@@ -809,9 +824,9 @@ function Nav() {
                               >
                                 {/*Todas las propiedades*/}
                                 {language === es
-                                  ? es.allProperties
-                                  : en.allProperties}
-                              </p>
+                                  ? es.navMenu.allProperties
+                                  : en.navMenu.allProperties}
+                              </Link>
                             )}
                           </Menu.Item>
                         </div>
@@ -820,7 +835,7 @@ function Nav() {
                   </Menu>
                 </p>
                 {/*LOCACIONES */}
-                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"                >
+                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
                       <Menu.Button
@@ -829,10 +844,12 @@ function Nav() {
                             ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                             : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                         }
-                        // onClick={() => router.push(`properties`)}
+                        
                       >
                         {/*LOCACIONES MENU*/}
-                        {language === es ? es.locations : en.locations}
+                        {language === es
+                          ? es.navMenu.locations
+                          : en.navMenu.locations}
                         <ChevronDownIcon
                           className="-mr-1 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
@@ -878,11 +895,9 @@ function Nav() {
                                     <Menu.Item>
                                       {({ active }) => (
                                         <Link
-                                          href="CAMBIAR LA RUTRA"
+                                          href="properties/Playa_del_Carmen/Tres_Patios"
                                           onClick={() =>
-                                            router.push(
-                                              `properties/Playa_del_Carmen/Tres_Patios`
-                                            ) || setIsOpen(!isOpen)
+                                             setIsOpen(!isOpen)
                                           }
                                           className={classNames(
                                             active
@@ -895,6 +910,7 @@ function Nav() {
                                         </Link>
                                       )}
                                     </Menu.Item>
+                               {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -910,6 +926,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -963,6 +980,7 @@ function Nav() {
                               >
                                 <Menu.Items className="absolute left-0  z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                   <div className="py-1">
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -978,6 +996,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -993,6 +1012,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1008,6 +1028,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1061,6 +1082,7 @@ function Nav() {
                               >
                                 <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                   <div className="py-1">
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1076,6 +1098,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1091,6 +1114,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1144,6 +1168,7 @@ function Nav() {
                               >
                                 <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                   <div className="py-1">
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1159,6 +1184,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1174,6 +1200,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1189,6 +1216,7 @@ function Nav() {
                                         </a>
                                       )}
                                     </Menu.Item>
+                                    {/*//Falta cambiar ruta href*/} 
                                     <Menu.Item>
                                       {({ active }) => (
                                         <a
@@ -1215,9 +1243,7 @@ function Nav() {
                   </Menu>
                 </p>
                 {/*TERRENOS MENU*/}
-                <p
-                  className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <p className=" hover:bg-[#e5c995] hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
                       <Menu.Button
@@ -1226,10 +1252,10 @@ function Nav() {
                             ? " inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                             : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold  "
                         }
-                        // onClick={() => router.push(`properties`)}
+                        
                       >
                         {/*TERRENOS MENU*/}
-                        {language === es ? es.lots : en.lots}
+                        {language === es ? es.navMenu.lots : en.navMenu.lots}
                         <ChevronDownIcon
                           className="-mr-1 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
@@ -1263,7 +1289,11 @@ function Nav() {
                                   "block px-4 py-2 text-[11px] uppercase"
                                 )}
                               >
-                                Todas las propiedades
+                                {/* Todas las propiedades */}
+
+                                {language === es
+                                  ? es.navMenu.allProperties
+                                  : en.navMenu.allProperties}
                               </p>
                             )}
                           </Menu.Item>
@@ -1284,7 +1314,7 @@ function Nav() {
                             : " titleShadow inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-4 py-2 text-[12px] font-semibold  "
                         }
                       >
-                        {language === es ? es.lang : en.lang}
+                        {language === es ? es.navMenu.lang : en.navMenu.lang}
                         <ChevronDownIcon
                           className="-mr-1 h-5 w-5 text-[#9c8966]"
                           aria-hidden="true"
@@ -1315,8 +1345,6 @@ function Nav() {
                                   "block px-4 py-2 text-[11px] uppercase"
                                 )}
                               >
-
-                                
                                 ENGLISH
                                 <span className="fi fi-us ml-3"></span>
                                 {/* <span className="fi fi-ca ml-3"></span>  */}

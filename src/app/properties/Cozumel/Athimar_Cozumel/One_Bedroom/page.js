@@ -1,7 +1,7 @@
 "use client";
 
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { useProperties } from "@/context/PropertiesProvider";
 import useLanguage from "@/context/hooks/useLanguage";
@@ -50,6 +50,8 @@ const OneBedroom = () => {
   const goBack = () => {
     router.back();
   };
+
+
   return (
     <>
       <h2 className="text-xl lg:text-2xl text-sky-900 font-black  mt-[120px] text-center ">

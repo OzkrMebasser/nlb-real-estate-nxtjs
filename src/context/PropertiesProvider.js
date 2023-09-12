@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useContext } from "react";
 // import dataProperties from "../backend/dataProperties.json"
-import {homeProperties,allProperties} from "../backend/dataProperties"
+import {homeProperties,allProperties, urls} from "../backend/dataProperties"
 
 
 
@@ -134,7 +134,7 @@ export const PropertiesContext = createContext();
 export const PropertiesProvider = ({ children }) => {
 
   return (
-    <PropertiesContext.Provider value={{ homeProperties, allProperties}}>
+    <PropertiesContext.Provider value={{ homeProperties, allProperties, urls}}>
       {children}
     </PropertiesContext.Provider>
   );

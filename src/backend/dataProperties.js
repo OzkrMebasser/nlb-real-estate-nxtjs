@@ -18,6 +18,13 @@ import en from "../context/languages/en";
 
 // };
 
+export const urls = [
+  {
+    routes:{
+      routeAllProperties:"http://localhost:3000/properties" ,
+    }
+  },
+]
 export const homeProperties = [
   {
     id: 1,
@@ -154,6 +161,7 @@ export const homeProperties = [
 ];
 
 export const allProperties = [
+ 
   {
     id: 1,
     desarrollo: "Tres Patios",
@@ -232,6 +240,8 @@ export const allProperties = [
   {
     id: 2,
     desarrollo: "ATHIMAR",
+    nickName: "Cozumel Luxury Living",
+    subTitle: "UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN",
     tipo: "Departamento",
     ubicacion: "Cozumel",
     route: "properties/Cozumel/Athimar_Cozumel",
