@@ -3,6 +3,7 @@ import React from "react";
 import { TfiNewWindow } from "react-icons/tfi";
 import { useProperties } from "../../../context/PropertiesProvider";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
@@ -41,7 +42,7 @@ const HomeProperties = () => {
                   </h1>
                   <p className="mb-3">
                     {/* Ubicación  */}
-                    {language === es ? es.locationCard : en.locationCard}:{" "}
+                    {language === es ? es.propiedades : en.propiedades}:{" "}
                     <strong className="text-teal-900 uppercase font-black">
                       {items.ubicacion}
                     </strong>
@@ -108,12 +109,13 @@ const HomeProperties = () => {
 
 
                     <button
-                      onClick={() => router.push(`properties/${items.route2}`)}
+                      // onClick={() => router.push(`properties/${items.route2}`)}
                       className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
                     >
                       {/*Ver este proyecto*/}
-                      {language === es ? es.verProyecto : en.verProyecto}
-                      <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" />
+                      <Link href={`properties/${items.route2}`}>{language === es ? es.verProyecto : en.verProyecto}
+                      <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" /></Link>
+                      
                     </button>
                   </div>
                 </div>

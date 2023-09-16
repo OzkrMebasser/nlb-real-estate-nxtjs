@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
 import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages";
 import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
@@ -11,6 +14,7 @@ import { HiBadgeCheck } from "react-icons/hi";
 
 const TresPatios = () => {
   const { homeProperties } = useProperties();
+  const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
   // console.log("AllProperties", allProperties);
@@ -32,30 +36,56 @@ const TresPatios = () => {
               </h2>
               <h3 className="mb-6">Cozumel Luxury Living</h3>
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong>
-                
+                {/**/}
+                {/* <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong> */}
+                <strong>
+                {language === es ? es.propiedades.coz.athimar.subTitleStrong : en.propiedades.coz.athimar.subTitleStrong}
+
+                </strong>
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                Athimar es un desarrollo de lujo con el diseño y la arquitectura
+              {language === es ? es.propiedades.coz.athimar.paragraph_1 : en.propiedades.coz.athimar.paragraph_1}
+
+                {/* Athimar es un desarrollo de lujo con el diseño y la arquitectura
                 pensados minuciosamente para brindar ambientes con estilo, lujo
                 y confort. La premisa del diseño fue generar vistas inigualables
                 desde cada una de sus unidades, regalando una obra de arte en
-                tonos turquesa sólo con mirar por tu ventana.
+                tonos turquesa sólo con mirar por tu ventana. */}
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
+              {language === es ? es.propiedades.coz.athimar.paragraph_2 : en.propiedades.coz.athimar.paragraph_2}
+
+                {/* ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
                 alcance todas las comodidades y el confort de la vida ideal que
-                siempre imaginaste.
+                siempre imaginaste. */}
               </p>
 
-              <p className="text-base text-gray-700 md:text-lg mb-2">
-                Athimar es un <strong>edificio de 6 niveles</strong>. Cuenta con <strong>25 unidades </strong>
-                conformadas por <strong>8 tipologías</strong> diferentes entre las que podrás
+              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
+                Athimar es un 
+                <strong>edificio de 6 niveles</strong>. 
+                Cuenta con <strong>25 unidades </strong>
+                conformadas por 
+                <strong>8 tipologías</strong> 
+                diferentes entre las que podrás
                 encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop
                 o jacuzzi e increíbles amenidades.
+              </p> */}
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_1 : en.propiedades.coz.athimar.paragraph_3_pt_1}
+              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_2_strong : en.propiedades.coz.athimar.paragraph_3_pt_2_strong}</strong>
+              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_3 : en.propiedades.coz.athimar.paragraph_3_pt_3}
+              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_4_strong : en.propiedades.coz.athimar.paragraph_3_pt_4_strong}</strong>  
+              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_5 : en.propiedades.coz.athimar.paragraph_3_pt_5}
+              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_6_strong : en.propiedades.coz.athimar.paragraph_3_pt_6_strong}</strong>
+              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_7 : en.propiedades.coz.athimar.paragraph_3_pt_7}
+
+
+              
               </p>
+
               {/* <p className="text-base text-gray-700 md:text-lg mb-2">
                 Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
                 locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}

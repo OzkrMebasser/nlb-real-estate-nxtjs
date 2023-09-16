@@ -63,14 +63,14 @@ function Nav() {
         }
       >
         
-          <div className="flex justify-around items-center h-16 max-w-7xl mx-auto px-4   sm:px-6 lg:px-4 ">
-            <div className="flex items-center w-full mx-auto">
+          <div className="flex justify-around  items-center h-16 max-w-7xl mx-auto px-4   sm:px-6 lg:px-4 ">
+            <div className="flex items-center w-full mx-auto ">
               {/*LOGO*/}
               <div className="flex-shrink-0 ">
                 <Logo className="font-black " textShadowChg={textShadowChg} />
               </div>
               <div className="hidden md:block md:ml-[380px]">
-                <div className=" flex items-baseline space-x-8">
+                <div className=" flex items-baseline space-x-20">
                   <ul className="hidden md:flex ">
                     {/*PROPIEDADES */}
                     <li

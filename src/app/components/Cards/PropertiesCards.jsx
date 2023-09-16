@@ -7,28 +7,6 @@ const PropertiesCards = ({ items, ruta }) => {
   const { properties } = useProperties();
   const router = useRouter();
 
-
-  // const HandleRoute = () => {
-  //   let decodedString = items.ubicacion;
-
-  //   if (decodedString === "Playa%20del%20Carmen") {
-  //     const encodedString = items.ubicacion;
-  //     console.log(encodedString);
-  //     const decodedString = decodeURIComponent(encodedString);
-  //     console.log(decodedString);
-  //     return decodedString;
-  //   } else if (decodedString === "Quer%C3%A9taro") {
-  //     const encodedString = items.ubicacion;
-  //     const decodedString = decodeURIComponent(encodedString);
-  //     console.log(decodedString);
-  //     return decodedString;
-  //   } else {
-  //     console.log(decodedString);
-  //     decodedString;
-  //   }
-  //   return router.push(`/properties/${decodedString}`);
-  // };
-
   const { precio } = properties.map((p) => {
     p.precio;
   });
