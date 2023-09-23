@@ -44,36 +44,44 @@ const esTranslations = {
   //Button Ver este proyecto
   verProyecto: "Ver este proyecto",
 
-  propiedades: {
-    // PLAYA DEL CARMEN
-    pdc: {
-      tres_patios: {
-        tipo: "Departamento",
-      },
-      xxxxx: {},
-    },
-    // CANCUN
-    cun: {
-      cun_1: {},
-    },
-    // COZUMEL
-    coz: {
-      athimar: {
-        subTitleStrong:
-          "UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN",
-        paragraph_1:
-          "Athimar es un desarrollo de lujo con el diseño y la arquitectura pensados minuciosamente para brindar ambientes con estilo, lujo y confort. La premisa del diseño fue generar vistas inigualables desde cada una de sus unidades, regalando una obra de arte en tonos turquesa sólo con mirar por tu ventana.",
-        paragraph_2:"¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu alcance todas las comodidades y el confort de la vida ideal que siempre imaginaste.",
-        paragraph_3_pt_1:"Athimar es un ",
-        paragraph_3_pt_2_strong:" edificio de 6 niveles. ",
-        paragraph_3_pt_3:"Cuenta con ",
-        paragraph_3_pt_4_strong: "25 unidades ",
-        paragraph_3_pt_5: "conformadas por ",
-        paragraph_3_pt_6_strong: "8 tipologías ",
-        paragraph_3_pt_7: "diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades."
-        },
-    },
+  //PROPIEDADES ***********************
+
+  //COZUMEL ********
+  coz_athimar: {
+    //ATHIMAR ********************
+    subTitleStrong:
+      "UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN",
+    paragraph_1:
+      "Athimar es un desarrollo de lujo con el diseño y la arquitectura pensados minuciosamente para brindar ambientes con estilo, lujo y confort. La premisa del diseño fue generar vistas inigualables desde cada una de sus unidades, regalando una obra de arte en tonos turquesa sólo con mirar por tu ventana.",
+    paragraph_2:
+      "¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu alcance todas las comodidades y el confort de la vida ideal que siempre imaginaste.",
+    paragraph_3_pt_1: "Athimar es un ",
+    paragraph_3_pt_2_strong: " edificio de 6 niveles. ",
+    paragraph_3_pt_3: "Cuenta con ",
+    paragraph_3_pt_4_strong: "25 unidades ",
+    paragraph_3_pt_5: "conformadas por ",
+    paragraph_3_pt_6_strong: "8 tipologías ",
+    paragraph_3_pt_7:
+      "diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
   },
 };
 
 export default esTranslations;
+
+// propiedades: [
+
+//   // PLAYA DEL CARMEN
+//   // {
+//   //   pdc: [
+//   //     { desarrollo: "Tres Patios", tipo: "Departamento" },
+//   //     {
+//   //       desarrollo: "2 pdc",
+//   //       tipo: "Departamento ",
+//   //     },
+//   //   ],
+//   // },
+//   // CANCUN
+//   // { cun: [{ cun_1: {} }] },
+//   // COZUMEL
+
+// ],

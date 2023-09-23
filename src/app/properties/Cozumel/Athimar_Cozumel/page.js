@@ -17,6 +17,7 @@ const TresPatios = () => {
   const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
+ 
   // console.log("AllProperties", allProperties);
   const images = allProperties[1].imagesCube;
   
@@ -39,13 +40,13 @@ const TresPatios = () => {
                 {/**/}
                 {/* <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong> */}
                 <strong>
-                {language === es ? es.propiedades.coz.athimar.subTitleStrong : en.propiedades.coz.athimar.subTitleStrong}
+                {language === es ? es.coz_athimar.subTitleStrong : en.coz_athimar.subTitleStrong}
 
                 </strong>
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.propiedades.coz.athimar.paragraph_1 : en.propiedades.coz.athimar.paragraph_1}
+              {language === es ? es.coz_athimar.paragraph_1 : en.coz_athimar.paragraph_1}
 
                 {/* Athimar es un desarrollo de lujo con el diseño y la arquitectura
                 pensados minuciosamente para brindar ambientes con estilo, lujo
@@ -55,7 +56,7 @@ const TresPatios = () => {
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.propiedades.coz.athimar.paragraph_2 : en.propiedades.coz.athimar.paragraph_2}
+              {language === es ? es.coz_athimar.paragraph_2 : en.coz_athimar.paragraph_2}
 
                 {/* ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
                 alcance todas las comodidades y el confort de la vida ideal que
@@ -74,13 +75,13 @@ const TresPatios = () => {
               </p> */}
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_1 : en.propiedades.coz.athimar.paragraph_3_pt_1}
-              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_2_strong : en.propiedades.coz.athimar.paragraph_3_pt_2_strong}</strong>
-              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_3 : en.propiedades.coz.athimar.paragraph_3_pt_3}
-              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_4_strong : en.propiedades.coz.athimar.paragraph_3_pt_4_strong}</strong>  
-              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_5 : en.propiedades.coz.athimar.paragraph_3_pt_5}
-              <strong>{language === es ? es.propiedades.coz.athimar.paragraph_3_pt_6_strong : en.propiedades.coz.athimar.paragraph_3_pt_6_strong}</strong>
-              {language === es ? es.propiedades.coz.athimar.paragraph_3_pt_7 : en.propiedades.coz.athimar.paragraph_3_pt_7}
+              {language === es ? es.coz_athimar.paragraph_3_pt_1 : en.coz_athimar.paragraph_3_pt_1}
+              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_2_strong : en.coz_athimar.paragraph_3_pt_2_strong}</strong>
+              {language === es ? es.coz_athimar.paragraph_3_pt_3 : en.coz_athimar.paragraph_3_pt_3}
+              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_4_strong : en.coz_athimar.paragraph_3_pt_4_strong}</strong>  
+              {language === es ? es.coz_athimar.paragraph_3_pt_5 : en.coz_athimar.paragraph_3_pt_5}
+              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_6_strong : en.coz_athimar.paragraph_3_pt_6_strong}</strong>
+              {language === es ? es.coz_athimar.paragraph_3_pt_7 : en.coz_athimar.paragraph_3_pt_7}
 
 
               

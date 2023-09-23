@@ -42,7 +42,7 @@ const HomeProperties = () => {
                   </h1>
                   <p className="mb-3">
                     {/* Ubicación  */}
-                    {language === es ? es.propiedades : en.propiedades}:{" "}
+                    {language === es ? es.propiedades : en.propiedades}{" "}
                     <strong className="text-teal-900 uppercase font-black">
                       {items.ubicacion}
                     </strong>
