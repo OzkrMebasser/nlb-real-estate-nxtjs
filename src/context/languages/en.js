@@ -41,6 +41,8 @@ const enTranslations = {
 
   //Button Ver este proyecto
   verProyecto: "See this project",
+  //Button Volver
+  go_back: "Go back",
 
   //PROPIEDADES ***********************
 
@@ -61,6 +63,41 @@ const enTranslations = {
     paragraph_3_pt_6_strong: "8 different unit types ",
     paragraph_3_pt_7:
       "among which you can find 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
+    //Amenidades
+    amenities_athimar: {
+      title: "Amenities",
+      bbq_area: "BBQ Area",
+      bikes_parking: "Bikes Parking",
+      boardroom: "Boardroom",
+      bussines_ctr: "Business Center",
+      gym: "Gym",
+      lobby: "Lobby",
+      parking: "Parking",
+      pool: "Pool",
+      solarium: "Solarium",
+      store: "Store",
+    },
+    //Mas detalles...
+    more_details: "Click to see more details",
+    one_bedroom: "1 BEDROOM",
+    location: "Location",
+    //Unidades Tipologia
+    unit_1: {
+      unit_1_Title: "1 Bedroom 69.94m²",
+      unit_1_description:
+        "We have 25 units consisting of 8 different typologies among which you can find apartments with 1 to 3 bedrooms, with terrace, rooftop, or jacuzzi, and incredible amenities.",
+      unit_1_amenidades: {
+        amenidad_1: "1 Bedroom",
+        amenidad_2: "1 Bathroom",
+        amenidad_3: "Living Room",
+        amenidad_4: "Kitchen",
+        amenidad_5: "Dining Area",
+        amenidad_6: "Terrace",
+        amenidad_7: "Service Area",
+        and_much_more: "And much more...",
+        // amenidad_8: "",
+      },
+    },
   },
 };
 

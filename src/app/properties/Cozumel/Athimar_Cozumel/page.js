@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link"
 import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
@@ -12,7 +13,7 @@ import { HiBadgeCheck } from "react-icons/hi";
 // import Villa110m2 from "./Villa110m2";
 // import { images } from "../../../../../next.config";
 
-const TresPatios = () => {
+const AthimarPage = () => {
   const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
@@ -103,7 +104,9 @@ const TresPatios = () => {
               </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
-                Amenidades
+              {language === es ? es.coz_athimar.amenities_athimar.title : en.coz_athimar.amenities_athimar.title}
+
+              
               </h4>
 
               <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
@@ -118,31 +121,41 @@ const TresPatios = () => {
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Area de Asadores
+                    {/* Area de Asadores */}
+                    {language === es ? es.coz_athimar.amenities_athimar.bbq_area : en.coz_athimar.amenities_athimar.bbq_area}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Estacionamiento de Bicicletas
+                    {/* Estacionamiento de Bicicletas */}
+                    {language === es ? es.coz_athimar.amenities_athimar.bikes_parking : en.coz_athimar.amenities_athimar.bikes_parking}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Sala de Juntas
+                    {/* Sala de Juntas */}
+                    {language === es ? es.coz_athimar.amenities_athimar.boardroom : en.coz_athimar.amenities_athimar.boardroom}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Centro de Negocios
+                    {/* Centro de Negocios */}
+                    {language === es ? es.coz_athimar.amenities_athimar.bussines_ctr : en.coz_athimar.amenities_athimar.bussines_ctr}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Gimnasio
+                    {/* Gimnasio */}
+                    {language === es ? es.coz_athimar.amenities_athimar.gym : en.coz_athimar.amenities_athimar.gym}
+
                   </li>
                 </ul>
                 <ul className="space-y-3">
@@ -150,31 +163,41 @@ const TresPatios = () => {
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Vestíbulo
+                    {/* Vestíbulo */}
+                    {language === es ? es.coz_athimar.amenities_athimar.lobby : en.coz_athimar.amenities_athimar.lobby}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Estacionamiento
+                    {/* Estacionamiento */}
+                    {language === es ? es.coz_athimar.amenities_athimar.parking : en.coz_athimar.amenities_athimar.parking}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Alberca
+                    {/* Alberca */}
+                    {language === es ? es.coz_athimar.amenities_athimar.pool : en.coz_athimar.amenities_athimar.pool}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Asoleadores
+                    {/* Asoleadores */}
+                    {language === es ? es.coz_athimar.amenities_athimar.solarium : en.coz_athimar.amenities_athimar.solarium}
+
                   </li>
                   <li className="flex">
                     <span className="mr-1">
                       <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
                     </span>
-                    Tienda
+                    {/* Tienda */}
+                    {language === es ? es.coz_athimar.amenities_athimar.store : en.coz_athimar.amenities_athimar.store}
+
                   </li>
                 </ul>
               </div>
@@ -199,7 +222,10 @@ const TresPatios = () => {
         </div>
         <span className="flex justify-center">
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
-            Da click para ver mas detalles
+            {/* Da click para ver mas detalles */}
+            {language === es ? es.coz_athimar.more_details : en.coz_athimar.more_details}
+
+            
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
@@ -208,16 +234,20 @@ const TresPatios = () => {
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
-            onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
+            // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
           >
-            1 RECÁMARA
+           <Link href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom">
+            {/* 1 RECÁMARA */}
+            {language === es ? es.coz_athimar.one_bedroom : en.coz_athimar.one_bedroom}
+            </Link>
           </button>
          
         </div>
       </section>
       <div className="flex justify-center mt-6">
         <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
-          Ubicación
+          {/* Ubicación */}
+          {language === es ? es.coz_athimar.location : en.coz_athimar.location}
         </h4>
       </div>
       <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
@@ -236,4 +266,4 @@ const TresPatios = () => {
   );
 };
 
-export default TresPatios;
+export default AthimarPage;

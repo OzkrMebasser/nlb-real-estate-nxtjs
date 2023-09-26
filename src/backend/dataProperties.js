@@ -288,21 +288,22 @@ export const allProperties = [
     ],
     unit_1: {
       //ONE BEDROOM 
-      unit_1_Title: "1 Recámara 69.94m²",
+      // unit_1_Title: "1 Recámara 69.94m²",
+      unit_1_Title: "coz_athimar.unit_1.unit_1_Title",
       unit_1_description:
-        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        "coz_athimar.unit_1.unit_1_Title",
       unit_1_precio: 4780000,
-      unit_1_amenidades: 
-        {
-          amenidad_1: "1 Recámara",
-          amenidad_2: "1 Baño",
-          amenidad_3: "Sala",
-          amenidad_4: "Cocina",
-          amenidad_5: "Comedor",
-          amenidad_6: "Terraza",
-          amenidad_7: "Zona de Servicio",
-          // amenidad_8: "",
-        },
+      // unit_1_amenidades: 
+      //   {
+      //     amenidad_1: "1 Recámara",
+      //     amenidad_2: "1 Baño",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "Terraza",
+      //     amenidad_7: "Zona de Servicio",
+      //     // amenidad_8: "",
+      //   },
       
       unit_1_imagenes_A: [
         "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-one-bedroom.jpg?alt=media&token=e7846352-4d32-4619-8292-694b0ee1e5a9",

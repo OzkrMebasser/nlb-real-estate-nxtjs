@@ -1,8 +1,13 @@
 // import React from 'react'
 import { HiBadgeCheck } from "react-icons/hi";
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
 import { useRouter } from "next/navigation";
 
 const AmenitiesInUnits = (props) => {
+  const { language, setLanguage } = useLanguage();
+  
   const goBack = () => {
     router.back();
   };
@@ -92,7 +97,8 @@ const AmenitiesInUnits = (props) => {
                 <span className="mr-1">
                   <HiBadgeCheck className="w-5 h-5 text-teal-500" />
                 </span>
-                Y mucho mas...
+                {/* Y mucho mas... */}
+                {language === es ? es.coz_athimar.unit_1.unit_1_amenidades.and_much_more : en.coz_athimar.unit_1.unit_1_amenidades.and_much_more}
               </li>
             )}
 
