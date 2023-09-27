@@ -229,7 +229,7 @@ const AthimarPage = () => {
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
-    
+            {/* 1 RECÁMARA */}
           <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
@@ -239,6 +239,19 @@ const AthimarPage = () => {
            <Link href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom">
             {/* 1 RECÁMARA */}
             {language === es ? es.coz_athimar.one_bedroom : en.coz_athimar.one_bedroom}
+            </Link>
+          </button>
+
+          {/* 2 RECÁMARA */}
+          <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            // onClick={handleOpenModal110}
+            // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
+            // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
+          >
+           <Link href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom">
+            {/* 1 RECÁMARA */}
+            {language === es ? es.coz_athimar.two_bedroom : en.coz_athimar.two_bedroom}
             </Link>
           </button>
          

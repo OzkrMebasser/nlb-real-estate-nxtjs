@@ -84,6 +84,7 @@ const esTranslations = {
     //Mas detalles...
     more_details: "Da click para ver mas detalles",
     one_bedroom: "1 RECÁMARA",
+    two_bedroom: "2 RECÁMARAS",
     location: "Ubicación",
     //Unidades Tipologia
     unit_1:{
@@ -94,6 +95,22 @@ const esTranslations = {
         {
           amenidad_1: "1 Recámara",
           amenidad_2: "1 Baño",
+          amenidad_3: "Sala",
+          amenidad_4: "Cocina",
+          amenidad_5: "Comedor",
+          amenidad_6: "Terraza",
+          amenidad_7: "Zona de Servicio",
+          and_much_more: "Y mucho mas..."
+        },
+    },
+    unit_2:{
+      unit_2_Title: "2 Recámaras 102.19² y 107.21²",
+      unit_2_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        unit_2_amenidades: 
+        {
+          amenidad_1: "2 Recámaras",
+          amenidad_2: "2 1/2 Baños",
           amenidad_3: "Sala",
           amenidad_4: "Cocina",
           amenidad_5: "Comedor",
