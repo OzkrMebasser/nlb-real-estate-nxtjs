@@ -41,10 +41,15 @@ const esTranslations = {
   villa: "Villa",
   sala: "Sala",
 
+  
   //Button Ver este proyecto
   verProyecto: "Ver este proyecto",
   //Button Volver
   go_back: "Volver",
+  //Modal images
+  clic_to_enlarge: "Da clic en la imagen para ampliarla",
+  enlarged_image: "Imagen Ampliada",
+ 
 
 
   //PROPIEDADES ***********************
@@ -85,6 +90,7 @@ const esTranslations = {
     more_details: "Da click para ver mas detalles",
     one_bedroom: "1 RECÁMARA",
     two_bedroom: "2 RECÁMARAS",
+    three_bedroom: "3 RECÁMARAS",
     location: "Ubicación",
     //Unidades Tipologia
     unit_1:{
@@ -104,7 +110,7 @@ const esTranslations = {
         },
     },
     unit_2:{
-      unit_2_Title: "2 Recámaras 102.19² y 107.21²",
+      unit_2_Title: "2 Recámaras, opciones desde 102.19² hasta 137.47²",
       unit_2_description:
         "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
         unit_2_amenidades: 
@@ -118,7 +124,23 @@ const esTranslations = {
           amenidad_7: "Zona de Servicio",
           and_much_more: "Y mucho mas..."
         },
-    }
+    },
+    unit_3:{
+      unit_3_Title: "3 Recámaras 133.99m²",
+      unit_3_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        unit_3_amenidades: 
+        {
+          amenidad_1: "3 Recámaras",
+          amenidad_2: "2 Baños",
+          amenidad_3: "Sala",
+          amenidad_4: "Cocina",
+          amenidad_5: "Comedor",
+          amenidad_6: "3 Terrazas",
+          amenidad_7: "Zona de Servicio",
+          and_much_more: "Y mucho mas..."
+        },
+    },
   },
 };
 

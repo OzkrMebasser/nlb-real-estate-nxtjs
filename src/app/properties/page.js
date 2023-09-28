@@ -169,7 +169,7 @@ function Allproperties() {
   };
 
   useEffect(() => {
-    // Simulating an API call or data loading
+   
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);

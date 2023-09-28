@@ -108,15 +108,19 @@ const HomeProperties = () => {
                     </p>
 
 
-                    <button
+                   
+                      {/*Ver este proyecto*/}
+                      <Link  href={`properties/${items.route2}`}>
+                      <button
                       // onClick={() => router.push(`properties/${items.route2}`)}
                       className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
                     >
-                      {/*Ver este proyecto*/}
-                      <Link href={`properties/${items.route2}`}>{language === es ? es.verProyecto : en.verProyecto}
-                      <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" /></Link>
+                        {language === es ? es.verProyecto : en.verProyecto}
+                      <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" />
+                      </button>
+                      </Link>
                       
-                    </button>
+                    
                   </div>
                 </div>
               ))}

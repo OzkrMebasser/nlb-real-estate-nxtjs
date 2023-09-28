@@ -43,6 +43,9 @@ const enTranslations = {
   verProyecto: "See this project",
   //Button Volver
   go_back: "Go back",
+  //Modal images
+  clic_to_enlarge: "Click the image to enlarge it",
+  enlarged_image: "Enlarged Image",
 
   //PROPIEDADES ***********************
 
@@ -81,6 +84,7 @@ const enTranslations = {
     more_details: "Click to see more details",
     one_bedroom: "1 BEDROOM",
     two_bedroom: "2 BEDROOMS",
+    three_bedroom: "3 BEDROOMS",
     location: "Location",
     //Unidades Tipologia
     unit_1: {
@@ -100,7 +104,7 @@ const enTranslations = {
       },
     },
     unit_2:{ 
-      unit_2_Title: "2 Bedrooms 102.19² and 107.21²", 
+      unit_2_Title: "2 Bedrooms, options from 102.19² to 137.47²", 
       unit_2_description: "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
       unit_2_amenidades: {
         amenidad_1: "2 Bedrooms", 
@@ -112,7 +116,22 @@ const enTranslations = {
         amenidad_7: "Service Area",
         and_much_more: "And much more..."
       },
-    }
+    },
+    unit_3:{
+      unit_3_Title: "3 Bedrooms 133.99m²",
+      unit_3_description:
+        "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
+        unit_3_amenidades: {
+          amenidad_1: "3 Bedrooms",
+          amenidad_2: "2 Bathrooms",
+          amenidad_3: "Living Room",
+          amenidad_4: "Kitchen",
+          amenidad_5: "Dining Room",
+          amenidad_6: "3 Terraces",
+          amenidad_7: "Service Area",
+          and_much_more: "And much more..."
+        }
+    },
   },
 };
 

@@ -230,30 +230,36 @@ const AthimarPage = () => {
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
             {/* 1 RECÁMARA */}
-          <button
+          {/* <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
             // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
-          >
-           <Link href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom">
+          > */}
+           <Link className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded " href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom">
             {/* 1 RECÁMARA */}
+            
             {language === es ? es.coz_athimar.one_bedroom : en.coz_athimar.one_bedroom}
             </Link>
-          </button>
+          {/* </button> */}
 
           {/* 2 RECÁMARA */}
-          <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            // onClick={handleOpenModal110}
+          {/* <button
+            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded" */}
+            {/* // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
             // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
-          >
-           <Link href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom">
-            {/* 1 RECÁMARA */}
+          > */}
+           <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom">
+           {/* 2 RECÁMARAS */}
             {language === es ? es.coz_athimar.two_bedroom : en.coz_athimar.two_bedroom}
             </Link>
-          </button>
+          {/* </button> */}
+
+          <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Three_Bedroom">
+           {/* 3 RECÁMARAS */}
+            {language === es ? es.coz_athimar.three_bedroom : en.coz_athimar.three_bedroom}
+            </Link>
          
         </div>
       </section>
