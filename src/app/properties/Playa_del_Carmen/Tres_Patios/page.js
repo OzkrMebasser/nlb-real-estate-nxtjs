@@ -1,6 +1,11 @@
 "use client";
-import { useState } from "react";
+
 import { useRouter } from "next/navigation";
+import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject"
+import Link from "next/link"
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
 import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages";
 import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
@@ -11,8 +16,10 @@ import { HiBadgeCheck } from "react-icons/hi";
 
 const TresPatios = () => {
   const { homeProperties } = useProperties();
+  const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
+  
 // console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
   console.log("Imagenes3Patios", images)
@@ -32,111 +39,70 @@ const TresPatios = () => {
                 Tres Patios
               </h2>
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                {/*props.   descParagraphOne={descParagraphOne}*/} 
-                {/*props.   strongPhrase={strongPhrase}*/} 
-                 {/*props.   descParagraphTwo={descParagraphTwo}*/} 
-                 {/*props.   descParagraphThree={descParagraphThree}*/} 
-                Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
-                locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}
-                diseñadas para el entretenimiento y bienestar.
+              {language === es ? es.pdc_tres_patios.paragraph_1 : en.pdc_tres_patios.paragraph_1}
+              <strong>{language === es ? es.pdc_tres_patios.paragraph_1_pt_2_strong : en.pdc_tres_patios.paragraph_1_pt_2_strong}</strong>
+              {language === es ? es.pdc_tres_patios.paragraph_1_pt_3 : en.pdc_tres_patios.paragraph_1_pt_3}
+              <strong>{language === es ? es.pdc_tres_patios.paragraph_1_pt_4_strong : en.pdc_tres_patios.paragraph_1_pt_4_strong}</strong>
+              {language === es ? es.pdc_tres_patios.paragraph_1_pt_5 : en.pdc_tres_patios.paragraph_1_pt_5}
+
+               
+                {/* 
+                Ofrecemos la mezcla perfecta de 
+                <strong>espacios recreativos </strong>
+                para locales y turistas, integrando una 
+                <strong> Casa Club con +10 amenidades </strong> {" "}
+                diseñadas para el entretenimiento y bienestar. */}
               </p>
               <p className="text-base text-gray-700 md:text-lg mb-2">
-                Tres Patios es una innovadora propuesta de usos mixtos compuesta
+                {/* Tres Patios es una innovadora propuesta de usos mixtos compuesta
                 por áreas habitables y locales comerciales, generando un entorno
-                novedoso de gran calidad de vida.
-                <br />
-                El conjunto se compone por 32 departamentos en villas con 6
-                departamentos cada una, rodeados de áreas verdes y atractivas
-                amenidades.
+                novedoso de gran calidad de vida. */}
+                {language === es ? es.pdc_tres_patios.paragraph_2 : en.pdc_tres_patios.paragraph_2}
+                </p>
+
+  
+                <p className="text-base text-gray-700 md:text-lg mb-2">
+
+                {language === es ? es.pdc_tres_patios.paragraph_3_pt_1 : en.pdc_tres_patios.paragraph_3_pt_1}
+                <strong>{language === es ? es.pdc_tres_patios.paragraph_3_pt_2_strong : en.pdc_tres_patios.paragraph_3_pt_2_strong}</strong>
+                {language === es ? es.pdc_tres_patios.paragraph_3_pt_3 : en.pdc_tres_patios.paragraph_3_pt_3}
+                <strong>{language === es ? es.pdc_tres_patios.paragraph_3_pt_4_strong : en.pdc_tres_patios.paragraph_3_pt_4_strong}</strong>
+                {language === es ? es.pdc_tres_patios.paragraph_3_pt_5 : en.pdc_tres_patios.paragraph_3_pt_5}
+                {/* El conjunto se compone por 
+                <strong> 32 departamentos en villas </strong>
+                con 
+                <strong> 6 departamentos cada una, </strong>
+                rodeados de áreas verdes y atractivas
+                amenidades. */}
               </p>
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
-                Amenidades
+                {/* Amenidades */}
+                {language === es ? es.pdc_tres_patios.amenities_tres_patios.title : en.pdc_tres_patios.amenities_tres_patios.title}
               </h4>
 
-              <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-                <ul className="space-y-3">
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/*props.   amenityOne={amenityOne}*/} 
-                    Casa Club
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                     {/*props.   amenityTwo={amenityTwo}*/} 
-                    Cancha de Paddel
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                     {/*props.   amenityThree={amenityThree}*/} 
-                    Outdoor Gym
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                     {/*props.   amenityFour={amenityFour}*/} 
-                    Alberca
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                     {/*props.   amenityFive={amenityFive}*/} 
-                    Pet Park
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                      {/*props.   amenitySix={amenitySix}*/} 
-                    Canchas Deportivas
-                  </li>
-                </ul>
-                <ul className="space-y-3">
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                      {/*props.   amenitySeven={amenitySeven}*/} 
-                    Reading Spots
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/*props.   amenityEight={amenityEight}*/} 
-                    Dynamic Playground
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/*props.   amenityNine={amenityNine}*/} 
-                    Asadores
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/*props.   amenityTen={amenityTen}*/} 
-                    Urban Garden
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/*props.   amenityEleven={amenityEleven}*/} 
-                    Neighbor Kiosco & Hammock Garden
-                  </li>
-                </ul>
-              </div>
+              <AmenitiesInProject
+                  amenidad_1={language === es ? es.pdc_tres_patios.amenities_tres_patios.club_house : en.pdc_tres_patios.amenities_tres_patios.club_house}
+                  amenidad_2={language === es ? es.pdc_tres_patios.amenities_tres_patios.paddel_court : en.pdc_tres_patios.amenities_tres_patios.paddel_court}
+                  amenidad_3={language === es ? es.pdc_tres_patios.amenities_tres_patios.outdoor_gym : en.pdc_tres_patios.amenities_tres_patios.outdoor_gym}
+                  amenidad_4={language === es ? es.pdc_tres_patios.amenities_tres_patios.pool : en.pdc_tres_patios.amenities_tres_patios.pool}
+                  amenidad_5={language === es ? es.pdc_tres_patios.amenities_tres_patios.pet_park : en.pdc_tres_patios.amenities_tres_patios.pet_park}
+                  amenidad_6={language === es ? es.pdc_tres_patios.amenities_tres_patios.sports_fields : en.pdc_tres_patios.amenities_tres_patios.sports_fields}
+                  amenidad_7={language === es ? es.pdc_tres_patios.amenities_tres_patios.reading_spots : en.pdc_tres_patios.amenities_tres_patios.reading_spots}
+                  amenidad_8={language === es ? es.pdc_tres_patios.amenities_tres_patios.dynamic_playground : en.pdc_tres_patios.amenities_tres_patios.dynamic_playground}
+                  amenidad_9={language === es ? es.pdc_tres_patios.amenities_tres_patios.steakhouses : en.pdc_tres_patios.amenities_tres_patios.steakhouses}
+                  amenidad_10={language === es ? es.pdc_tres_patios.amenities_tres_patios.urban_garden : en.pdc_tres_patios.amenities_tres_patios.urban_garden}
+                  amenidad_11={language === es ? es.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden : en.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden}
+                  amenidad_12={language === es ? es.pdc_tres_patios.amenities_tres_patios.and_much_more : en.pdc_tres_patios.amenities_tres_patios.and_much_more}
+
+
+
+                  // amenidad_8=
+                  // amenidad_9=
+                  // amenidad_10=
+                  // amenidad_11=
+              />
+          
 
               {/* {"Villa 90m2 copy"} */}
             </div>

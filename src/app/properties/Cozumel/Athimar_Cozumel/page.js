@@ -260,6 +260,11 @@ const AthimarPage = () => {
            {/* 3 RECÁMARAS */}
             {language === es ? es.coz_athimar.three_bedroom : en.coz_athimar.three_bedroom}
             </Link>
+
+            <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Penthouse">
+           PENTHOUSE
+            
+            </Link>
          
         </div>
       </section>

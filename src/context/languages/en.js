@@ -49,6 +49,111 @@ const enTranslations = {
 
   //PROPIEDADES ***********************
 
+  //PLAYA DEL CARMEN
+  pdc_tres_patios: {
+    //TRES PATIOS ********************
+    subTitleStrong: "",
+    //Description
+    paragraph_1: "We offer the perfect blend of ",
+    paragraph_1_pt_2_strong: "recreational spaces ",
+    paragraph_1_pt_3: "for locals and tourists, integrating a ",
+    paragraph_1_pt_4_strong: "Clubhouse with +10 amenities ",
+    paragraph_1_pt_5: "designed for entertainment and well-being.",
+
+    paragraph_2:
+      "Tres Patios is an innovative mixed-use proposition composed of residential areas and commercial spaces, creating a novel environment of high quality of life.",
+
+    paragraph_3_pt_1: "The complex consists of ",
+    paragraph_3_pt_2_strong: "32 apartments in villas ",
+    paragraph_3_pt_3: "with ",
+    paragraph_3_pt_4_strong: "6 apartments each, ",
+    paragraph_3_pt_5: "surrounded by green areas and appealing amenities.",
+
+    //Amenidades
+    amenities_tres_patios: {
+      title: "Amenities",
+      club_house: "Club House",
+      paddel_court: "Paddle Court",
+      outdoor_gym: "Outdoor Gym",
+      pool: "Swimming pool",
+      pet_park: "Pet Park",
+      sports_fields: "Sports Fields",
+      reading_spots: "Reading Spots",
+      dynamic_playground: "Dynamic Playground",
+      steakhouses: "Steakhouses",
+      urban_garden: "Urban Garden",
+      kiosco_and_garden: "Neighbor Kiosco & Hammock Garden",
+      and_much_more: "And much more...",
+    },
+    //Mas detalles...
+    more_details: "Da click para ver mas detalles",
+    one_bedroom: "1 RECÁMARA",
+    two_bedroom: "2 RECÁMARAS",
+    three_bedroom: "3 RECÁMARAS",
+    location: "Ubicación",
+    //Unidades Tipologia
+    unit_1: {
+      unit_1_Title: "1 Recámara 69.94m²",
+      unit_1_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      unit_1_amenidades: {
+        amenidad_1: "1 Recámara",
+        amenidad_2: "1 Baño",
+        amenidad_3: "Sala",
+        amenidad_4: "Cocina",
+        amenidad_5: "Comedor",
+        amenidad_6: "Terraza",
+        amenidad_7: "Zona de Servicio",
+        and_much_more: "Y mucho mas...",
+      },
+    },
+    unit_2: {
+      unit_2_Title: "2 Recámaras, opciones desde 102.19² hasta 137.47²",
+      unit_2_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      unit_2_amenidades: {
+        amenidad_1: "2 Recámaras",
+        amenidad_2: "2 1/2 Baños",
+        amenidad_3: "Sala",
+        amenidad_4: "Cocina",
+        amenidad_5: "Comedor",
+        amenidad_6: "Terraza",
+        amenidad_7: "Zona de Servicio",
+        and_much_more: "Y mucho mas...",
+      },
+    },
+    unit_3: {
+      unit_3_Title: "3 Recámaras 133.99m²",
+      unit_3_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      unit_3_amenidades: {
+        amenidad_1: "3 Recámaras",
+        amenidad_2: "2 Baños",
+        amenidad_3: "Sala",
+        amenidad_4: "Cocina",
+        amenidad_5: "Comedor",
+        amenidad_6: "3 Terrazas",
+        amenidad_7: "Zona de Servicio",
+        and_much_more: "Y mucho mas...",
+      },
+    },
+    unit_4: {
+      unit_4_Title: "Penthouse 189.33m²",
+      unit_4_description:
+        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      unit_4_amenidades: {
+        amenidad_1: "3 Recámaras",
+        amenidad_2: "3 Baños",
+        amenidad_3: "Sala",
+        amenidad_4: "Cocina",
+        amenidad_5: "Comedor",
+        amenidad_6: "2 Terrazas",
+        amenidad_7: "Zona de Servicio",
+        and_much_more: "Y mucho mas...",
+      },
+    },
+  },
+
   //COZUMEL ********
   coz_athimar: {
     //ATHIMAR ********************
@@ -103,34 +208,50 @@ const enTranslations = {
         // amenidad_8: "",
       },
     },
-    unit_2:{ 
-      unit_2_Title: "2 Bedrooms, options from 102.19² to 137.47²", 
-      unit_2_description: "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
+    unit_2: {
+      unit_2_Title: "2 Bedrooms, options from 102.19² to 137.47²",
+      unit_2_description:
+        "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
       unit_2_amenidades: {
-        amenidad_1: "2 Bedrooms", 
+        amenidad_1: "2 Bedrooms",
         amenidad_2: "2 1/2 Bathrooms",
         amenidad_3: "Living Room",
         amenidad_4: "Kitchen",
         amenidad_5: "Dining Room",
         amenidad_6: "Terrace",
         amenidad_7: "Service Area",
-        and_much_more: "And much more..."
+        and_much_more: "And much more...",
       },
     },
-    unit_3:{
+    unit_3: {
       unit_3_Title: "3 Bedrooms 133.99m²",
       unit_3_description:
         "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
-        unit_3_amenidades: {
-          amenidad_1: "3 Bedrooms",
-          amenidad_2: "2 Bathrooms",
-          amenidad_3: "Living Room",
-          amenidad_4: "Kitchen",
-          amenidad_5: "Dining Room",
-          amenidad_6: "3 Terraces",
-          amenidad_7: "Service Area",
-          and_much_more: "And much more..."
-        }
+      unit_3_amenidades: {
+        amenidad_1: "3 Bedrooms",
+        amenidad_2: "2 Bathrooms",
+        amenidad_3: "Living Room",
+        amenidad_4: "Kitchen",
+        amenidad_5: "Dining Room",
+        amenidad_6: "3 Terraces",
+        amenidad_7: "Service Area",
+        and_much_more: "And much more...",
+      },
+    },
+    unit_4: {
+      unit_4_Title: "Penthouse 189.33m2",
+      unit_4_description:
+        "We have 25 units made up of 8 different typologies including 1 to 3 bedroom apartments, with terrace, rooftop or jacuzzi and incredible amenities.",
+      unit_4_amenidades: {
+        amenidad_1: "3 Bedrooms",
+        amenidad_2: "3 Bathrooms",
+        amenidad_3: "Living room",
+        amenidad_4: "Kitchen",
+        amenidad_5: "Dining room",
+        amenidad_6: "2 Terraces",
+        amenidad_7: "Service area",
+        and_much_more: "And much more...",
+      },
     },
   },
 };
