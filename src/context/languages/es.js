@@ -193,6 +193,7 @@ const esTranslations = {
       pool: "Alberca",
       solarium: "Asoleadores",
       store: "Tienda",
+      and_much_more: "Y mucho mas...",
     },
     //Mas detalles...
     more_details: "Da click para ver mas detalles",

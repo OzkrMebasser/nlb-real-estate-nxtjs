@@ -187,6 +187,7 @@ const enTranslations = {
       pool: "Pool",
       solarium: "Solarium",
       store: "Store",
+      and_much_more: "And much more...",
     },
     //Mas detalles...
     more_details: "Click to see more details",

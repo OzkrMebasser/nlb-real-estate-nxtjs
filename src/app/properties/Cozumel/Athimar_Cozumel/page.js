@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link"
+import Link from "next/link";
 import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
 import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages";
+import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject";
 import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
@@ -18,18 +19,16 @@ const AthimarPage = () => {
   const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
- 
+
   // console.log("AllProperties", allProperties);
   const images = allProperties[1].imagesCube;
-  
+
   // console.log("Athimar", images);
 
- 
   const router = useRouter();
   return (
     <>
       <section className="bg-white ">
-    
         <div className="px-6 py-10 mx-auto mt-8">
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4">
@@ -41,13 +40,16 @@ const AthimarPage = () => {
                 {/**/}
                 {/* <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong> */}
                 <strong>
-                {language === es ? es.coz_athimar.subTitleStrong : en.coz_athimar.subTitleStrong}
-
+                  {language === es
+                    ? es.coz_athimar.subTitleStrong
+                    : en.coz_athimar.subTitleStrong}
                 </strong>
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.coz_athimar.paragraph_1 : en.coz_athimar.paragraph_1}
+                {language === es
+                  ? es.coz_athimar.paragraph_1
+                  : en.coz_athimar.paragraph_1}
 
                 {/* Athimar es un desarrollo de lujo con el diseño y la arquitectura
                 pensados minuciosamente para brindar ambientes con estilo, lujo
@@ -57,7 +59,9 @@ const AthimarPage = () => {
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.coz_athimar.paragraph_2 : en.coz_athimar.paragraph_2}
+                {language === es
+                  ? es.coz_athimar.paragraph_2
+                  : en.coz_athimar.paragraph_2}
 
                 {/* ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
                 alcance todas las comodidades y el confort de la vida ideal que
@@ -76,16 +80,33 @@ const AthimarPage = () => {
               </p> */}
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
-              {language === es ? es.coz_athimar.paragraph_3_pt_1 : en.coz_athimar.paragraph_3_pt_1}
-              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_2_strong : en.coz_athimar.paragraph_3_pt_2_strong}</strong>
-              {language === es ? es.coz_athimar.paragraph_3_pt_3 : en.coz_athimar.paragraph_3_pt_3}
-              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_4_strong : en.coz_athimar.paragraph_3_pt_4_strong}</strong>  
-              {language === es ? es.coz_athimar.paragraph_3_pt_5 : en.coz_athimar.paragraph_3_pt_5}
-              <strong>{language === es ? es.coz_athimar.paragraph_3_pt_6_strong : en.coz_athimar.paragraph_3_pt_6_strong}</strong>
-              {language === es ? es.coz_athimar.paragraph_3_pt_7 : en.coz_athimar.paragraph_3_pt_7}
-
-
-              
+                {language === es
+                  ? es.coz_athimar.paragraph_3_pt_1
+                  : en.coz_athimar.paragraph_3_pt_1}
+                <strong>
+                  {language === es
+                    ? es.coz_athimar.paragraph_3_pt_2_strong
+                    : en.coz_athimar.paragraph_3_pt_2_strong}
+                </strong>
+                {language === es
+                  ? es.coz_athimar.paragraph_3_pt_3
+                  : en.coz_athimar.paragraph_3_pt_3}
+                <strong>
+                  {language === es
+                    ? es.coz_athimar.paragraph_3_pt_4_strong
+                    : en.coz_athimar.paragraph_3_pt_4_strong}
+                </strong>
+                {language === es
+                  ? es.coz_athimar.paragraph_3_pt_5
+                  : en.coz_athimar.paragraph_3_pt_5}
+                <strong>
+                  {language === es
+                    ? es.coz_athimar.paragraph_3_pt_6_strong
+                    : en.coz_athimar.paragraph_3_pt_6_strong}
+                </strong>
+                {language === es
+                  ? es.coz_athimar.paragraph_3_pt_7
+                  : en.coz_athimar.paragraph_3_pt_7}
               </p>
 
               {/* <p className="text-base text-gray-700 md:text-lg mb-2">
@@ -104,113 +125,71 @@ const AthimarPage = () => {
               </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
-              {language === es ? es.coz_athimar.amenities_athimar.title : en.coz_athimar.amenities_athimar.title}
-
-              
+                {language === es
+                  ? es.coz_athimar.amenities_athimar.title
+                  : en.coz_athimar.amenities_athimar.title}
               </h4>
 
-              <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-                <ul className="space-y-3">
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    Bar
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Area de Asadores */}
-                    {language === es ? es.coz_athimar.amenities_athimar.bbq_area : en.coz_athimar.amenities_athimar.bbq_area}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Estacionamiento de Bicicletas */}
-                    {language === es ? es.coz_athimar.amenities_athimar.bikes_parking : en.coz_athimar.amenities_athimar.bikes_parking}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Sala de Juntas */}
-                    {language === es ? es.coz_athimar.amenities_athimar.boardroom : en.coz_athimar.amenities_athimar.boardroom}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Centro de Negocios */}
-                    {language === es ? es.coz_athimar.amenities_athimar.bussines_ctr : en.coz_athimar.amenities_athimar.bussines_ctr}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Gimnasio */}
-                    {language === es ? es.coz_athimar.amenities_athimar.gym : en.coz_athimar.amenities_athimar.gym}
-
-                  </li>
-                </ul>
-                <ul className="space-y-3">
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Vestíbulo */}
-                    {language === es ? es.coz_athimar.amenities_athimar.lobby : en.coz_athimar.amenities_athimar.lobby}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Estacionamiento */}
-                    {language === es ? es.coz_athimar.amenities_athimar.parking : en.coz_athimar.amenities_athimar.parking}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Alberca */}
-                    {language === es ? es.coz_athimar.amenities_athimar.pool : en.coz_athimar.amenities_athimar.pool}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Asoleadores */}
-                    {language === es ? es.coz_athimar.amenities_athimar.solarium : en.coz_athimar.amenities_athimar.solarium}
-
-                  </li>
-                  <li className="flex">
-                    <span className="mr-1">
-                      <HiBadgeCheck className="w-5 h-5 text-[#07a7b3]" />
-                    </span>
-                    {/* Tienda */}
-                    {language === es ? es.coz_athimar.amenities_athimar.store : en.coz_athimar.amenities_athimar.store}
-
-                  </li>
-                </ul>
-              </div>
-
-              {/* {"Villa 90m2 copy"} */}
+              <AmenitiesInProject
+                amenidad_1={"Bar"}
+                amenidad_2={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.bbq_area
+                    : en.coz_athimar.amenities_athimar.bbq_area
+                }
+                amenidad_3={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.bikes_parking
+                    : en.coz_athimar.amenities_athimar.bikes_parking
+                }
+                amenidad_4={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.boardroom
+                    : en.coz_athimar.amenities_athimar.boardroom
+                }
+                amenidad_5={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.bussines_ctr
+                    : en.coz_athimar.amenities_athimar.bussines_ctr
+                }
+                amenidad_6={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.gym
+                    : en.coz_athimar.amenities_athimar.gym
+                }
+                amenidad_7={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.lobby
+                    : en.coz_athimar.amenities_athimar.lobby
+                }
+                amenidad_8={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.parking
+                    : en.coz_athimar.amenities_athimar.parking
+                }
+                amenidad_9={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.pool
+                    : en.coz_athimar.amenities_athimar.pool
+                }
+                amenidad_10={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.solarium
+                    : en.coz_athimar.amenities_athimar.solarium
+                }
+                amenidad_11={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.store
+                    : en.coz_athimar.amenities_athimar.store
+                }
+                amenidad_12={
+                  language === es
+                    ? es.coz_athimar.amenities_athimar.and_much_more
+                    : en.coz_athimar.amenities_athimar.and_much_more
+                }
+              />
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center bg-white">
-              {/* <img
-            className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-red-800"
-            src=""
-            alt=""
-          /> */}
-
               {/*Imagenes Swiper CUBO*/}
               <PropertyDetailImages images={images} />
 
@@ -220,52 +199,53 @@ const AthimarPage = () => {
             </div>
           </div>
         </div>
+
         <span className="flex justify-center">
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
             {/* Da click para ver mas detalles */}
-            {language === es ? es.coz_athimar.more_details : en.coz_athimar.more_details}
-
-            
+            {language === es
+              ? es.coz_athimar.more_details
+              : en.coz_athimar.more_details}
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
-            {/* 1 RECÁMARA */}
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            // onClick={handleOpenModal110}
-            // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
-            // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
-          > */}
-           <Link className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded " href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom">
-            {/* 1 RECÁMARA */}
-            
-            {language === es ? es.coz_athimar.one_bedroom : en.coz_athimar.one_bedroom}
-            </Link>
-          {/* </button> */}
+          {/* 1 RECÁMARA */}
+          <Link
+            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
+            href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom"
+          >
+            {language === es
+              ? es.coz_athimar.one_bedroom
+              : en.coz_athimar.one_bedroom}
+          </Link>
 
-          {/* 2 RECÁMARA */}
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded" */}
-            {/* // onClick={handleOpenModal110}
-            // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
-            // onClick={() => router.push(`${allProperties[1].routeUnit_1}`)}
-          > */}
-           <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom">
-           {/* 2 RECÁMARAS */}
-            {language === es ? es.coz_athimar.two_bedroom : en.coz_athimar.two_bedroom}
-            </Link>
-          {/* </button> */}
+          {/* 2 RECÁMARAS */}
+          <Link
+            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
+            href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom"
+          >
+            {/* 2 RECÁMARAS */}
+            {language === es
+              ? es.coz_athimar.two_bedroom
+              : en.coz_athimar.two_bedroom}
+          </Link>
 
-          <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Three_Bedroom">
-           {/* 3 RECÁMARAS */}
-            {language === es ? es.coz_athimar.three_bedroom : en.coz_athimar.three_bedroom}
-            </Link>
+          <Link
+            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
+            href="/properties/Cozumel/Athimar_Cozumel/Three_Bedroom"
+          >
+            {/* 3 RECÁMARAS */}
+            {language === es
+              ? es.coz_athimar.three_bedroom
+              : en.coz_athimar.three_bedroom}
+          </Link>
 
-            <Link  className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded" href="/properties/Cozumel/Athimar_Cozumel/Penthouse">
-           PENTHOUSE
-            
-            </Link>
-         
+          <Link
+            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
+            href="/properties/Cozumel/Athimar_Cozumel/Penthouse"
+          >
+            PENTHOUSE
+          </Link>
         </div>
       </section>
       <div className="flex justify-center mt-6">

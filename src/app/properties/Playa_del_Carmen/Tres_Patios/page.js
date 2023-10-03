@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject"
-import Link from "next/link"
+import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject";
+import Link from "next/link";
 import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
