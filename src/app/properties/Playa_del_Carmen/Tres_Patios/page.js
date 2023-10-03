@@ -94,13 +94,6 @@ const TresPatios = () => {
                   amenidad_10={language === es ? es.pdc_tres_patios.amenities_tres_patios.urban_garden : en.pdc_tres_patios.amenities_tres_patios.urban_garden}
                   amenidad_11={language === es ? es.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden : en.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden}
                   amenidad_12={language === es ? es.pdc_tres_patios.amenities_tres_patios.and_much_more : en.pdc_tres_patios.amenities_tres_patios.and_much_more}
-
-
-
-                  // amenidad_8=
-                  // amenidad_9=
-                  // amenidad_10=
-                  // amenidad_11=
               />
           
 
@@ -127,7 +120,9 @@ const TresPatios = () => {
         </div>
         <span className="flex justify-center">
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
-            Da click para ver mas detalles
+            {/* Da click para ver mas detalles */}
+            {language === es ? es.pdc_tres_patios.more_details : en.pdc_tres_patios.more_details}
+
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
@@ -145,7 +140,7 @@ const TresPatios = () => {
           <Villa90m2 isOpen90={isModalOpen90} onClose90={handleCloseModal90} /> */}
 
           {/* {"Villa 110m2"} */}
-          <button
+          {/* <button
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
             // onClick={handleOpenModal110}
             // onClick={() => router.push("properties/Playa_del_Carmen/Tres_Patios/Villa_90m2")}
@@ -154,36 +149,20 @@ const TresPatios = () => {
             }
           >
             Villa 110m2
-          </button>
-{/* 
-          <Villa110m2
-            isOpen110={isModalOpen110}
-            onClose110={handleCloseModal110}
-          /> */}
-
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={handleOpenModal90}
-          >
+          </button> */}
+            <Link className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded " href="/properties/Playa_del_Carmen/Tres_Patios/Villa_90m2">
+            {/* 1 RECÁMARA */}
+            
+            {/* {language === es ? es.coz_athimar.one_bedroom : en.coz_athimar.one_bedroom} */}
             Villa 90m2
-          </button> */}
-          {/* {"Villa 110m2"} */}
-          {/* <button
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
-            onClick={handleOpenModal110}
-          >
-            Villa 110m2
-          </button> */}
+            </Link>
 
-          {/* <Villa110m2
-            isOpen110={isModalOpen110}
-            onClose110={handleCloseModal110}
-          /> */}
         </div>
       </section>
       <div className="flex justify-center mt-6">
         <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
-          Ubicación
+          {/* Ubicación */}
+          {language === es ? es.pdc_tres_patios.location : en.pdc_tres_patios.location}
         </h4>
       </div>
       <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">

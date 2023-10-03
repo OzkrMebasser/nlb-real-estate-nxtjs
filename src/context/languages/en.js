@@ -29,9 +29,12 @@ const enTranslations = {
   typeCard: "Type : ",
   bedroomsCard: "Bedrooms : ",
   bathroomsCard: "Bathrooms : ",
-  unoAtresRooms: "one, two & three",
-  unoAtresBaños: "one, two & three",
+  unoAtresRooms: "One, two & three",
+  unoAtresBaños: "One, two & three",
+  tres_habs: "Three",
+  dos_banios: "Two",
   m2Athimar: "From 69.94m² to 189.33m²",
+  m2TresPatios: "90m² or 110m²",
   ymuchomas: "And much more!",
   departamento: "Appartment",
   casa: "House",
@@ -86,11 +89,11 @@ const enTranslations = {
       and_much_more: "And much more...",
     },
     //Mas detalles...
-    more_details: "Da click para ver mas detalles",
+    more_details: "Click to see more details",
     one_bedroom: "1 RECÁMARA",
     two_bedroom: "2 RECÁMARAS",
     three_bedroom: "3 RECÁMARAS",
-    location: "Ubicación",
+    location: "Location",
     //Unidades Tipologia
     unit_1: {
       unit_1_Title: "1 Recámara 69.94m²",

@@ -71,6 +71,14 @@ const HomeProperties = () => {
                         {language === es ? es[items.tipo] : en[items.tipo]}
                       </strong>
                     </div>
+                    <p className="">
+                     
+                     <strong>
+                       {language === es
+                         ? es[items.metrosCuadrados]
+                         : en[items.metrosCuadrados]}
+                     </strong>
+                   </p> 
                     <p>
                       {/* Habitaciones :  */}
                       {language === es ? es.bedroomsCard : en.bedroomsCard}
@@ -81,7 +89,7 @@ const HomeProperties = () => {
                       </strong>
                     </p>
                    
-                    <p >
+                    <p className="mb-2">
                       {/* Baños :  */}
                       {language === es ? es.bathroomsCard : en.bathroomsCard}
                       <strong>
@@ -90,14 +98,7 @@ const HomeProperties = () => {
                           : en[items.baños]}
                         </strong>
                     </p>
-                    <p className="mb-2">
-                     
-                      <strong>
-                        {language === es
-                          ? es[items.metrosCuadrados]
-                          : en[items.metrosCuadrados]}
-                      </strong>
-                    </p> 
+                   
                     <p className="mb-4 ">
                      
                       <strong>

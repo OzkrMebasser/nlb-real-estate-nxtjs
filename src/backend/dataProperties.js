@@ -45,25 +45,18 @@ export const homeProperties = [
   {
     id: 2,
     desarrollo: "TRES PATIOS",
-    tipo: "casa",
+    tipo: "villa",
     ubicacion: "Playa del Carmen",
     route: "properties/Playa_del_Carmen/Tres_Patios",
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 140000,
-    habitaciones: 3,
-    baños: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
-    description:
-      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    habitaciones: "tres_habs",
+    baños: "dos_banios",
+    metrosCuadrados: "m2TresPatios",
+    ymuchomas: "ymuchomas",
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
-    embededMapSrc:
-      "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    
   },
   {
     id: 3,
