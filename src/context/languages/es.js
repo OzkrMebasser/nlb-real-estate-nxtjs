@@ -1,3 +1,5 @@
+import Villa90m2 from "@/app/properties/Playa_del_Carmen/Tres_Patios/Villa_90m2/page";
+
 const esTranslations = {
   // ESPAÑOL ESPAÑOL ESPAÑOL
 
@@ -90,73 +92,74 @@ const esTranslations = {
       and_much_more: "Y mucho mas...",
     },
 
-
-
-    
     //Mas detalles...
     more_details: "Da click para ver mas detalles",
-    one_bedroom: "1 RECÁMARA",
-    two_bedroom: "2 RECÁMARAS",
-    three_bedroom: "3 RECÁMARAS",
-    location: "Ubicación",
+    villa_90m2: "Villa 90m²",
+    villa_110m2: "Villa 110m²",
+    penthouse_90m2: "Penthouse 90m²",
+    penthouse_110m2: "Penthouse 110m²",
     //Unidades Tipologia
     unit_1: {
-      unit_1_Title: "1 Recámara 69.94m²",
+      unit_1_Title: "Villa de 90m²",
       unit_1_description:
-        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
       unit_1_amenidades: {
-        amenidad_1: "1 Recámara",
-        amenidad_2: "1 Baño",
-        amenidad_3: "Sala",
-        amenidad_4: "Cocina",
-        amenidad_5: "Comedor",
-        amenidad_6: "Terraza",
-        amenidad_7: "Zona de Servicio",
+        amenidad_1: "3 Recámaras",
+        amenidad_2: "Sala",
+        amenidad_3: "Comedor",
+        amenidad_4: "Closets",
+        amenidad_5: "2 Baños",
+        amenidad_6: "Cocina",
+        amenidad_7: "Terraza",
+        amenidad_8: "Flex",
         and_much_more: "Y mucho mas...",
       },
     },
     unit_2: {
-      unit_2_Title: "2 Recámaras, opciones desde 102.19² hasta 137.47²",
+      unit_2_Title: "Villa de 110m²",
       unit_2_description:
-        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
       unit_2_amenidades: {
-        amenidad_1: "2 Recámaras",
-        amenidad_2: "2 1/2 Baños",
-        amenidad_3: "Sala",
-        amenidad_4: "Cocina",
-        amenidad_5: "Comedor",
-        amenidad_6: "Terraza",
-        amenidad_7: "Zona de Servicio",
+        amenidad_1: "3 Recámaras",
+        amenidad_2: "Walk-in Closet",
+        amenidad_3: "Comedor",
+        amenidad_4: "2 Closets",
+        amenidad_5: "2 Baños",
+        amenidad_6: "Closets",
+        amenidad_7: "Terraza",
+        amenidad_8: "Cocina",
         and_much_more: "Y mucho mas...",
       },
     },
     unit_3: {
-      unit_3_Title: "3 Recámaras 133.99m²",
+      unit_3_Title: "Penthouse 90m2",
       unit_3_description:
-        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        "Contamos con 6 Penthouses por cada módulo de 90 m2 o 110 m2.",
       unit_3_amenidades: {
         amenidad_1: "3 Recámaras",
-        amenidad_2: "2 Baños",
-        amenidad_3: "Sala",
-        amenidad_4: "Cocina",
-        amenidad_5: "Comedor",
-        amenidad_6: "3 Terrazas",
-        amenidad_7: "Zona de Servicio",
+        amenidad_2: "Sala",
+        amenidad_3: "Comedor",
+        amenidad_4: "Closets",
+        amenidad_5: "2 Baños",
+        amenidad_6: "Cocina",
+        amenidad_7: "Terraza",
+        amenidad_8: "Flex",
         and_much_more: "Y mucho mas...",
       },
     },
     unit_4: {
-      unit_4_Title: "Penthouse 189.33m²",
+      unit_4_Title: "Penthouse 110m2",
       unit_4_description:
-        "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        "Contamos con 6 Penthouses por cada módulo de 90 m2 o 110 m2.",
       unit_4_amenidades: {
         amenidad_1: "3 Recámaras",
-        amenidad_2: "3 Baños",
-        amenidad_3: "Sala",
-        amenidad_4: "Cocina",
-        amenidad_5: "Comedor",
-        amenidad_6: "2 Terrazas",
-        amenidad_7: "Zona de Servicio",
+        amenidad_2: "Sala",
+        amenidad_3: "Comedor",
+        amenidad_4: "Closets",
+        amenidad_5: "2 Baños",
+        amenidad_6: "Cocina",
+        amenidad_7: "Terraza",
+        amenidad_8: "Flex",
         and_much_more: "Y mucho mas...",
       },
     },

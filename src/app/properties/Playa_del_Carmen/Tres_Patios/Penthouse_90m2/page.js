@@ -19,12 +19,12 @@ import UnitDetailImages from "@/app/components/Cards/UnitDetailImages";
 import AmenitiesInUnits from "@/app/components/Amenities/AmenitiesInUnits";
 
 //TRES PATIOS
-const Villa90m2 = () => {
+const Penthouse90m2 = () => {
   const { allProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
-  const images_A = allProperties[0].unit_1["unit_1_imagenes_A"];
-  const images_B = allProperties[0].unit_1["unit_1_imagenes_B"];
+  const images_A = allProperties[0].unit_3["unit_3_imagenes_A"];
+  const images_B = allProperties[0].unit_3["unit_3_imagenes_B"];
 
   const router = useRouter();
   const goBack = () => {
@@ -39,8 +39,8 @@ const Villa90m2 = () => {
 
         {/* Villa 90m2   */}
         {language === es
-          ? es.pdc_tres_patios.unit_1.unit_1_Title
-          : en.pdc_tres_patios.unit_1.unit_1_Title}
+          ? es.pdc_tres_patios.unit_3.unit_3_Title
+          : en.pdc_tres_patios.unit_3.unit_3_Title}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:px-8 ">
         <div>
@@ -54,48 +54,48 @@ const Villa90m2 = () => {
               //  unitDesc={"Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2."}
               unitDesc={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_description
-                  : en.pdc_tres_patios.unit_1.unit_1_description
+                  ? es.pdc_tres_patios.unit_3.unit_3_description
+                  : en.pdc_tres_patios.unit_3.unit_3_description
               }
               amenidad_1={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_1
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_1
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_1
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_1
               }
               amenidad_2={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_2
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_2
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_2
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_2
               }
               amenidad_3={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_3
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_3
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_3
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_3
               }
               amenidad_4={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_4
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_4
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_4
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_4
               }
               amenidad_5={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_5
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_5
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_5
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_5
               }
               amenidad_6={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_6
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_6
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_6
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_6
               }
               amenidad_7={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_2
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_7
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_7
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_7
               }
               amenidad_8={
                 language === es
-                  ? es.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_8
-                  : en.pdc_tres_patios.unit_1.unit_1_amenidades.amenidad_8
+                  ? es.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_8
+                  : en.pdc_tres_patios.unit_3.unit_3_amenidades.amenidad_8
               }
             />
           </div>
@@ -114,4 +114,4 @@ const Villa90m2 = () => {
   );
 };
 
-export default Villa90m2;
+export default Penthouse90m2;

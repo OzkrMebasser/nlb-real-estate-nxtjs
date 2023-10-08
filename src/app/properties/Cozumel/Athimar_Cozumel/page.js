@@ -10,9 +10,6 @@ import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject
 import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
-// import Villa90m2 from "./Villa90m2";
-// import Villa110m2 from "./Villa110m2";
-// import { images } from "../../../../../next.config";
 
 const AthimarPage = () => {
   const { homeProperties } = useProperties();
@@ -20,10 +17,10 @@ const AthimarPage = () => {
 
   const { allProperties } = useProperties();
 
-  // console.log("AllProperties", allProperties);
+ 
   const images = allProperties[1].imagesCube;
 
-  // console.log("Athimar", images);
+
 
   const router = useRouter();
   return (
@@ -109,20 +106,6 @@ const AthimarPage = () => {
                   : en.coz_athimar.paragraph_3_pt_7}
               </p>
 
-              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
-                Ofrecemos la mezcla perfecta de <strong>espacios recreativos </strong>para
-                locales y turistas, integrando una <strong>Casa Club con +10 amenidades</strong> {" "}
-                diseñadas para el entretenimiento y bienestar.
-              </p>
-              <p className="text-base text-gray-700 md:text-lg mb-2">
-                Tres Patios es una innovadora propuesta de usos mixtos compuesta
-                por áreas habitables y locales comerciales, generando un entorno
-                novedoso de gran calidad de vida.
-                <br />
-                El conjunto se compone por 32 departamentos en villas con 6
-                departamentos cada una, rodeados de áreas verdes y atractivas
-                amenidades.
-              </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 {language === es
