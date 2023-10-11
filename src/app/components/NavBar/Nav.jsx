@@ -858,7 +858,9 @@ function Nav() {
                             >
                               <div>
                                 <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                  PLAYA DEL CARMEN
+                                <Link href="/properties/Playa_del_Carmen">
+                                      PLAYA DEL CARMEN
+                                    </Link>
                                   <ChevronDownIcon
                                     className="-mr-1 h-5 w-5 text-[#9c8966]"
                                     aria-hidden="true"
@@ -1131,7 +1133,10 @@ function Nav() {
                             >
                               <div>
                                 <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                  COZUMEL
+                                       
+                                <Link href="/properties/Cozumel">
+                                    COZUMEL
+                                    </Link>
                                   <ChevronDownIcon
                                     className="-mr-1 h-5 w-5 text-gray-400"
                                     aria-hidden="true"

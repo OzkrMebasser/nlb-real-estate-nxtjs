@@ -38,7 +38,7 @@ const esTranslations = {
   tres_habs: "Tres",
   dos_banios: "Dos",
   m2Athimar: "Deste 69.94m² hasta 189.33m²",
-  m2TresPatios: "90m² o 110m²",
+  m2TresPatios: "Deste 90m² hasta 110m²",
   ymuchomas: "¡Y mucho más!",
   departamento: "Departamento",
   casa: "Casa",

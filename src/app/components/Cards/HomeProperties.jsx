@@ -1,6 +1,10 @@
 "use client";
 import React from "react";
-import { TfiNewWindow } from "react-icons/tfi";
+import { TfiNewWindow, TfiRulerPencil } from "react-icons/tfi";
+import {PiBathtub} from "react-icons/pi";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import {IoBedOutline} from  "react-icons/io5"
+import {RxRulerHorizontal} from "react-icons/rx";
 import { useProperties } from "../../../context/PropertiesProvider";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -30,7 +34,7 @@ const HomeProperties = () => {
             <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
               {homeProperties.map((items) => (
                 <div
-                  className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2"
+                  className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2 hover:scale-95 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition-transform duration-300 "
                   key={items.id}
                   // onClick={HandleRoute}
 
@@ -64,15 +68,21 @@ const HomeProperties = () => {
                     </button>
                     <div>
                       {/* Tipo : */}
-                      {language === es ? es.typeCard : en.typeCard}
+                      <HiOutlineBuildingOffice2 className="inline font-extrabold text-[1.4rem] " />
+                      {/* {language === es ? es.typeCard : en.typeCard} */}
 
                       {/*Tipo de edificio. Casa, Depto etc*/}
-                      <strong>
+                      <span className="ml-2"></span>
+                      <strong >
                         {language === es ? es[items.tipo] : en[items.tipo]}
                       </strong>
+
+                      
+                      
                     </div>
                     <p className="">
-                     
+                    <RxRulerHorizontal className="inline font-extrabold text-[1.1rem] " />
+                    <span className="ml-2"></span>
                      <strong>
                        {language === es
                          ? es[items.metrosCuadrados]
@@ -81,6 +91,8 @@ const HomeProperties = () => {
                    </p> 
                     <p>
                       {/* Habitaciones :  */}
+                      <IoBedOutline className="inline font-extrabold text-[1.3rem] " />
+                    <span className="ml-2"></span>
                       {language === es ? es.bedroomsCard : en.bedroomsCard}
                       <strong>
                         {language === es
@@ -91,6 +103,8 @@ const HomeProperties = () => {
                    
                     <p className="mb-2">
                       {/* Baños :  */}
+                      <PiBathtub className="inline font-extrabold text-[1.1rem] " />
+                    <span className="ml-2"></span>
                       {language === es ? es.bathroomsCard : en.bathroomsCard}
                       <strong>
                       {language === es
