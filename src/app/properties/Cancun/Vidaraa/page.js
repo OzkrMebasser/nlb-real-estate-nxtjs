@@ -11,7 +11,7 @@ import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
 
-const AthimarPage = () => {
+const VidaraaPage = () => {
   const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
@@ -30,9 +30,9 @@ const AthimarPage = () => {
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4">
               <h2 className=" uppercase max-w-lg  mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
-                ATHIMAR
+                VIDARAA TOWER
               </h2>
-              <h3 className="mb-6">Cozumel Luxury Living</h3>
+              <h3 className="mb-6">{es.cun.vidaraa.subTitleStrong}</h3>
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 {/**/}
                 {/* <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong> */}
@@ -253,4 +253,4 @@ const AthimarPage = () => {
   );
 };
 
-export default AthimarPage;
+export default VidaraaPage;

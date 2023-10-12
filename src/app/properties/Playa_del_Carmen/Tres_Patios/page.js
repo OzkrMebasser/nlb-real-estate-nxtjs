@@ -37,24 +37,24 @@ const TresPatios = () => {
               </h2>
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_1
-                  : en.pdc_tres_patios.paragraph_1}
+                  ? es.pdc.tres_patios.paragraph_1
+                  : en.pdc.tres_patios.paragraph_1}
                 <strong>
                   {language === es
-                    ? es.pdc_tres_patios.paragraph_1_pt_2_strong
-                    : en.pdc_tres_patios.paragraph_1_pt_2_strong}
+                    ? es.pdc.tres_patios.paragraph_1_pt_2_strong
+                    : en.pdc.tres_patios.paragraph_1_pt_2_strong}
                 </strong>
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_1_pt_3
-                  : en.pdc_tres_patios.paragraph_1_pt_3}
+                  ? es.pdc.tres_patios.paragraph_1_pt_3
+                  : en.pdc.tres_patios.paragraph_1_pt_3}
                 <strong>
                   {language === es
-                    ? es.pdc_tres_patios.paragraph_1_pt_4_strong
-                    : en.pdc_tres_patios.paragraph_1_pt_4_strong}
+                    ? es.pdc.tres_patios.paragraph_1_pt_4_strong
+                    : en.pdc.tres_patios.paragraph_1_pt_4_strong}
                 </strong>
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_1_pt_5
-                  : en.pdc_tres_patios.paragraph_1_pt_5}
+                  ? es.pdc.tres_patios.paragraph_1_pt_5
+                  : en.pdc.tres_patios.paragraph_1_pt_5}
 
                 {/* 
                 Ofrecemos la mezcla perfecta de 
@@ -68,30 +68,30 @@ const TresPatios = () => {
                 por áreas habitables y locales comerciales, generando un entorno
                 novedoso de gran calidad de vida. */}
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_2
-                  : en.pdc_tres_patios.paragraph_2}
+                  ? es.pdc.tres_patios.paragraph_2
+                  : en.pdc.tres_patios.paragraph_2}
               </p>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_3_pt_1
-                  : en.pdc_tres_patios.paragraph_3_pt_1}
+                  ? es.pdc.tres_patios.paragraph_3_pt_1
+                  : en.pdc.tres_patios.paragraph_3_pt_1}
                 <strong>
                   {language === es
-                    ? es.pdc_tres_patios.paragraph_3_pt_2_strong
-                    : en.pdc_tres_patios.paragraph_3_pt_2_strong}
+                    ? es.pdc.tres_patios.paragraph_3_pt_2_strong
+                    : en.pdc.tres_patios.paragraph_3_pt_2_strong}
                 </strong>
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_3_pt_3
-                  : en.pdc_tres_patios.paragraph_3_pt_3}
+                  ? es.pdc.tres_patios.paragraph_3_pt_3
+                  : en.pdc.tres_patios.paragraph_3_pt_3}
                 <strong>
                   {language === es
-                    ? es.pdc_tres_patios.paragraph_3_pt_4_strong
-                    : en.pdc_tres_patios.paragraph_3_pt_4_strong}
+                    ? es.pdc.tres_patios.paragraph_3_pt_4_strong
+                    : en.pdc.tres_patios.paragraph_3_pt_4_strong}
                 </strong>
                 {language === es
-                  ? es.pdc_tres_patios.paragraph_3_pt_5
-                  : en.pdc_tres_patios.paragraph_3_pt_5}
+                  ? es.pdc.tres_patios.paragraph_3_pt_5
+                  : en.pdc.tres_patios.paragraph_3_pt_5}
                 {/* El conjunto se compone por 
                 <strong> 32 departamentos en villas </strong>
                 con 
@@ -103,75 +103,74 @@ const TresPatios = () => {
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 {/* Amenidades */}
                 {language === es
-                  ? es.pdc_tres_patios.amenities_tres_patios.title
-                  : en.pdc_tres_patios.amenities_tres_patios.title}
+                  ? es.pdc.tres_patios.amenities_tres_patios.title
+                  : en.pdc.tres_patios.amenities_tres_patios.title}
               </h4>
 
               <AmenitiesInProject
                 amenidad_1={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.club_house
-                    : en.pdc_tres_patios.amenities_tres_patios.club_house
+                    ? es.pdc.tres_patios.amenities_tres_patios.club_house
+                    : en.pdc.tres_patios.amenities_tres_patios.club_house
                 }
                 amenidad_2={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.paddel_court
-                    : en.pdc_tres_patios.amenities_tres_patios.paddel_court
+                    ? es.pdc.tres_patios.amenities_tres_patios.paddel_court
+                    : en.pdc.tres_patios.amenities_tres_patios.paddel_court
                 }
                 amenidad_3={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.outdoor_gym
-                    : en.pdc_tres_patios.amenities_tres_patios.outdoor_gym
+                    ? es.pdc.tres_patios.amenities_tres_patios.outdoor_gym
+                    : en.pdc.tres_patios.amenities_tres_patios.outdoor_gym
                 }
                 amenidad_4={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.pool
-                    : en.pdc_tres_patios.amenities_tres_patios.pool
+                    ? es.pdc.tres_patios.amenities_tres_patios.pool
+                    : en.pdc.tres_patios.amenities_tres_patios.pool
                 }
                 amenidad_5={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.pet_park
-                    : en.pdc_tres_patios.amenities_tres_patios.pet_park
+                    ? es.pdc.tres_patios.amenities_tres_patios.pet_park
+                    : en.pdc.tres_patios.amenities_tres_patios.pet_park
                 }
                 amenidad_6={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.sports_fields
-                    : en.pdc_tres_patios.amenities_tres_patios.sports_fields
+                    ? es.pdc.tres_patios.amenities_tres_patios.sports_fields
+                    : en.pdc.tres_patios.amenities_tres_patios.sports_fields
                 }
                 amenidad_7={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.reading_spots
-                    : en.pdc_tres_patios.amenities_tres_patios.reading_spots
+                    ? es.pdc.tres_patios.amenities_tres_patios.reading_spots
+                    : en.pdc.tres_patios.amenities_tres_patios.reading_spots
                 }
                 amenidad_8={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios
+                    ? es.pdc.tres_patios.amenities_tres_patios
                         .dynamic_playground
-                    : en.pdc_tres_patios.amenities_tres_patios
+                    : en.pdc.tres_patios.amenities_tres_patios
                         .dynamic_playground
                 }
                 amenidad_9={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.steakhouses
-                    : en.pdc_tres_patios.amenities_tres_patios.steakhouses
+                    ? es.pdc.tres_patios.amenities_tres_patios.steakhouses
+                    : en.pdc.tres_patios.amenities_tres_patios.steakhouses
                 }
                 amenidad_10={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.urban_garden
-                    : en.pdc_tres_patios.amenities_tres_patios.urban_garden
+                    ? es.pdc.tres_patios.amenities_tres_patios.urban_garden
+                    : en.pdc.tres_patios.amenities_tres_patios.urban_garden
                 }
                 amenidad_11={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden
-                    : en.pdc_tres_patios.amenities_tres_patios.kiosco_and_garden
+                    ? es.pdc.tres_patios.amenities_tres_patios.kiosco_and_garden
+                    : en.pdc.tres_patios.amenities_tres_patios.kiosco_and_garden
                 }
                 amenidad_12={
                   language === es
-                    ? es.pdc_tres_patios.amenities_tres_patios.and_much_more
-                    : en.pdc_tres_patios.amenities_tres_patios.and_much_more
+                    ? es.pdc.tres_patios.amenities_tres_patios.and_much_more
+                    : en.pdc.tres_patios.amenities_tres_patios.and_much_more
                 }
-              />
-
+              />.
               {/* {"Villa 90m2 copy"} */}
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center bg-white">
@@ -196,8 +195,8 @@ const TresPatios = () => {
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
             {/* Da click para ver mas detalles */}
             {language === es
-              ? es.pdc_tres_patios.more_details
-              : en.pdc_tres_patios.more_details}
+              ? es.pdc.tres_patios.more_details
+              : en.pdc.tres_patios.more_details}
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
@@ -207,8 +206,8 @@ const TresPatios = () => {
             href="/properties/Playa_del_Carmen/Tres_Patios/Villa_90m2"
           >
             {language === es
-              ? es.pdc_tres_patios.villa_90m2
-              : en.pdc_tres_patios.villa_90m2}
+              ? es.pdc.tres_patios.villa_90m2
+              : en.pdc.tres_patios.villa_90m2}
           </Link>
 
           {/* Villa 110m2 */}
@@ -217,8 +216,8 @@ const TresPatios = () => {
             href="/properties/Playa_del_Carmen/Tres_Patios/Villa_110m2"
           >
             {language === es
-              ? es.pdc_tres_patios.villa_110m2
-              : en.pdc_tres_patios.villa_110m2}
+              ? es.pdc.tres_patios.villa_110m2
+              : en.pdc.tres_patios.villa_110m2}
           </Link>
           {/* Penthouse 90m2 */}
           <Link
@@ -226,8 +225,8 @@ const TresPatios = () => {
             href="/properties/Playa_del_Carmen/Tres_Patios/Penthouse_90m2"
           >
             {language === es
-              ? es.pdc_tres_patios.penthouse_90m2
-              : en.pdc_tres_patios.penthouse_90m2}
+              ? es.pdc.tres_patios.penthouse_90m2
+              : en.pdc.tres_patios.penthouse_90m2}
           </Link>
              {/* Penthouse 110m2 */}
              <Link
@@ -235,8 +234,8 @@ const TresPatios = () => {
             href="/properties/Playa_del_Carmen/Tres_Patios/Penthouse_110m2"
           >
             {language === es
-              ? es.pdc_tres_patios.penthouse_110m2
-              : en.pdc_tres_patios.penthouse_110m2}
+              ? es.pdc.tres_patios.penthouse_110m2
+              : en.pdc.tres_patios.penthouse_110m2}
           </Link>
         </div>
       </section>
@@ -244,8 +243,8 @@ const TresPatios = () => {
         <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
           {/* Ubicación */}
           {language === es
-            ? es.pdc_tres_patios.location
-            : en.pdc_tres_patios.location}
+            ? es.pdc.tres_patios.location
+            : en.pdc.tres_patios.location}
         </h4>
       </div>
       <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">

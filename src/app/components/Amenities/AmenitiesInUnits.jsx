@@ -98,7 +98,7 @@ const AmenitiesInUnits = (props) => {
                   <HiBadgeCheck className="w-5 h-5 text-teal-500" />
                 </span>
                 {/* Y mucho mas... */}
-                {language === es ? es.coz_athimar.unit_1.unit_1_amenidades.and_much_more : en.coz_athimar.unit_1.unit_1_amenidades.and_much_more}
+                {language === es ? es.coz.athimar.unit_1.unit_1_amenidades.and_much_more : en.coz.athimar.unit_1.unit_1_amenidades.and_much_more}
               </li>
             )}
 

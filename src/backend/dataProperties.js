@@ -35,7 +35,7 @@ export const homeProperties = [
     route2: "Cozumel/Athimar_Cozumel",
     precio: 169999,
     habitaciones: "unoAtresRooms",
-    baños:"unoAtresBaños",
+    banios:"unoAtresBanios",
     metrosCuadrados: "m2Athimar",
     ymuchomas: "ymuchomas",
     imagenCard:
@@ -51,7 +51,7 @@ export const homeProperties = [
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 140000,
     habitaciones: "tres_habs",
-    baños: "dos_banios",
+    banios: "dos_banios",
     metrosCuadrados: "m2TresPatios",
     ymuchomas: "ymuchomas",
     imagenCard:
@@ -61,21 +61,15 @@ export const homeProperties = [
   {
     id: 3,
     desarrollo: "VIDARAA",
-    tipo: "departamento",
+    tipo: "condo",
     ubicacion: "Cancún",
     route: "properties/Cancun/Vidaraa",
     route2: "Cancun/Vidaraa",
-    precio: 2500000,
-    habitaciones: 3,
-    baños: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
-    description:
-      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    precio: 340859,
+    habitaciones: "dosTres",
+    banios: "dosTres",
+    metrosCuadrados: "m2vidaraa",
+    ymuchomas: "ymuchomas",
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
     embededMapSrc:
@@ -90,7 +84,7 @@ export const homeProperties = [
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 2500000,
     habitaciones: 3,
-    baños: 2,
+    banios: 2,
     sala: "Sala",
     cocina: "Cocina",
     comedor: "Comedor",
@@ -113,7 +107,7 @@ export const homeProperties = [
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 2500000,
     habitaciones: 3,
-    baños: 2,
+    banios: 2,
     sala: "Sala",
     cocina: "Cocina",
     comedor: "Comedor",
@@ -137,7 +131,7 @@ export const homeProperties = [
     route2: "Playa_del_Carmen/Tres_Patios",
     precio: 2500000,
     habitaciones: 3,
-    baños: 2,
+    banios: 2,
     sala: "Sala",
     cocina: "Cocina",
     comedor: "Comedor",
@@ -167,7 +161,7 @@ export const allProperties = [
     routeUnit_2: "Tres_Patios/Villa_110m2",
     precio: 2500000,
     habitaciones: 3,
-    baños: 2,
+    banios: 2,
     sala: "Sala",
     cocina: "Cocina",
     comedor: "Comedor",
@@ -319,7 +313,7 @@ export const allProperties = [
     routeUnit_2: "Athimar_Cozumel/App2",
     precio: 16999,
     habitaciones: "unoAtresRooms",
-    baños:"unoAtresBaños",
+    banios:"unoAtresBaños",
     metrosCuadrados: "m2Athimar",
     sala: "Sala",
     cocina: "Cocina",
@@ -358,9 +352,9 @@ export const allProperties = [
     unit_1: {
       //ONE BEDROOM 
       // unit_1_Title: "1 Recámara 69.94m²",
-      unit_1_Title: "coz_athimar.unit_1.unit_1_Title",
+      unit_1_Title: "coz.athimar.unit_1.unit_1_Title",
       unit_1_description:
-        "coz_athimar.unit_1.unit_1_Title",
+        "coz.athimar.unit_1.unit_1_Title",
       unit_1_precio: 4780000,
       // unit_1_amenidades: 
       //   {
@@ -401,9 +395,9 @@ export const allProperties = [
     unit_2: {
       //ONE BEDROOM 
       // unit_1_Title: "1 Recámara 69.94m²",
-      unit_2_Title: "coz_athimar.unit_2.unit_2_Title",
+      unit_2_Title: "coz.athimar.unit_2.unit_2_Title",
       unit_2_description:
-        "coz_athimar.unit_2.unit_2_Title",
+        "coz.athimar.unit_2.unit_2_Title",
       unit_2_precio: 4780000,
       // unit_1_amenidades: 
       //   {
@@ -449,9 +443,9 @@ export const allProperties = [
     unit_3: {
       //Three BEDROOM 
       // unit_3_Title: "1 Recámara 69.94m²",
-      unit_3_Title: "coz_athimar.unit_3.unit_3_Title",
+      unit_3_Title: "coz.athimar.unit_3.unit_3_Title",
       unit_3_description:
-        "coz_athimar.unit_3.unit_3_Title",
+        "coz.athimar.unit_3.unit_3_Title",
       unit_3_precio: 4780000,      
       unit_3_imagenes_A: [
         "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-three-bedroom.jpg?alt=media&token=c01bf2f4-db06-48eb-a7ad-7cdd3255680c&_gl=1*1xl8ak7*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NTg4MTg2OC41Mi4xLjE2OTU4ODE4ODIuNDYuMC4w",
@@ -478,9 +472,9 @@ export const allProperties = [
     },
     unit_4: {
       //Penthouse
-      unit_4_Title: "coz_athimar.unit_4.unit_4_Title",
+      unit_4_Title: "coz.athimar.unit_4.unit_4_Title",
       unit_4_description:
-        "coz_athimar.unit_4.unit_4_Title",
+        "coz.athimar.unit_4.unit_4_Title",
       unit_4_precio: 4780000,      
       unit_4_imagenes_A: [
         "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-penthouse.jpg?alt=media&token=bc239a94-c3bc-45a7-a406-fe018a51db7a&_gl=1*1qohdnr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NjA0NTE0NS41My4xLjE2OTYwNDU0MTcuMTcuMC4w",
@@ -520,7 +514,7 @@ export const allProperties = [
     routeUnit_2: "Athimar_Cozumel/App2",
     precio: 16999,
     habitaciones: "unoAtresRooms",
-    baños:"unoAtresBaños",
+    banios:"unoAtresBaños",
     metrosCuadrados: "m2Athimar",
     sala: "Sala",
     cocina: "Cocina",
@@ -559,9 +553,9 @@ export const allProperties = [
     unit_1: {
       //ONE BEDROOM 
       // unit_1_Title: "1 Recámara 69.94m²",
-      unit_1_Title: "coz_athimar.unit_1.unit_1_Title",
+      unit_1_Title: "coz.athimar.unit_1.unit_1_Title",
       unit_1_description:
-        "coz_athimar.unit_1.unit_1_Title",
+        "coz.athimar.unit_1.unit_1_Title",
       unit_1_precio: 4780000,
       // unit_1_amenidades: 
       //   {
@@ -602,9 +596,9 @@ export const allProperties = [
     unit_2: {
       //ONE BEDROOM 
       // unit_1_Title: "1 Recámara 69.94m²",
-      unit_2_Title: "coz_athimar.unit_2.unit_2_Title",
+      unit_2_Title: "coz.athimar.unit_2.unit_2_Title",
       unit_2_description:
-        "coz_athimar.unit_2.unit_2_Title",
+        "coz.athimar.unit_2.unit_2_Title",
       unit_2_precio: 4780000,
       // unit_1_amenidades: 
       //   {
@@ -650,9 +644,9 @@ export const allProperties = [
     unit_3: {
       //Three BEDROOM 
       // unit_3_Title: "1 Recámara 69.94m²",
-      unit_3_Title: "coz_athimar.unit_3.unit_3_Title",
+      unit_3_Title: "coz.athimar.unit_3.unit_3_Title",
       unit_3_description:
-        "coz_athimar.unit_3.unit_3_Title",
+        "coz.athimar.unit_3.unit_3_Title",
       unit_3_precio: 4780000,      
       unit_3_imagenes_A: [
         "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-three-bedroom.jpg?alt=media&token=c01bf2f4-db06-48eb-a7ad-7cdd3255680c&_gl=1*1xl8ak7*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NTg4MTg2OC41Mi4xLjE2OTU4ODE4ODIuNDYuMC4w",
@@ -679,9 +673,9 @@ export const allProperties = [
     },
     unit_4: {
       //Penthouse
-      unit_4_Title: "coz_athimar.unit_4.unit_4_Title",
+      unit_4_Title: "coz.athimar.unit_4.unit_4_Title",
       unit_4_description:
-        "coz_athimar.unit_4.unit_4_Title",
+        "coz.athimar.unit_4.unit_4_Title",
       unit_4_precio: 4780000,      
       unit_4_imagenes_A: [
         "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-penthouse.jpg?alt=media&token=bc239a94-c3bc-45a7-a406-fe018a51db7a&_gl=1*1qohdnr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NjA0NTE0NS41My4xLjE2OTYwNDU0MTcuMTcuMC4w",
@@ -714,7 +708,7 @@ export const allProperties = [
     ubicacion: "Cancún",
     precio: 1800000,
     habitaciones: 2,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 90,
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
@@ -726,7 +720,7 @@ export const allProperties = [
     ubicacion: "Cancun",
     precio: 2800000,
     habitaciones: 3,
-    baños: 2,
+    banios: 2,
     metrosCuadrados: 150,
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2022/09/vidara_inicio.png",
@@ -738,7 +732,7 @@ export const allProperties = [
     ubicacion: "Tulum",
     precio: 1500000,
     habitaciones: 1,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 60,
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2022/07/BECAN_INDES.webp",
@@ -750,7 +744,7 @@ export const allProperties = [
     ubicacion: "Cancun",
     precio: 1500000,
     habitaciones: 1,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 60,
     imagenCard:
       "https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png",
@@ -762,7 +756,7 @@ export const allProperties = [
     ubicacion: "Cozumel",
     precio: 900000,
     habitaciones: 1,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 60,
     imagenCard:
       "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -774,7 +768,7 @@ export const allProperties = [
     ubicacion: "Playa del Carmen",
     precio: 800000,
     habitaciones: 1,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 60,
     imagenCard:
       "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -786,7 +780,7 @@ export const allProperties = [
     ubicacion: "Merida",
     precio: 1500000,
     habitaciones: 1,
-    baños: 1,
+    banios: 1,
     metrosCuadrados: 60,
     imagenCard:
       "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

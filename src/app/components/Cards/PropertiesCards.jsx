@@ -40,7 +40,7 @@ const PropertiesCards = ({ items, ruta }) => {
           <div>Tipo : {items.tipo}</div>
           <p>Habitaciones : {items.habitaciones}</p>
           <p>M² : {items.metrosCuadrados}</p>
-          <p>Baños : {items.baños}</p>
+          <p>Baños : {items.banios}</p>
         </div>
       </div>
     </>

@@ -30,17 +30,20 @@ const enTranslations = {
   bedroomsCard: "Bedrooms : ",
   bathroomsCard: "Bathrooms : ",
   unoAtresRooms: "One, two & three",
-  unoAtresBaños: "One, two & three",
+  dosTres: "Two & three",
+  unoAtresBanios: "One, two & three",
   tres_habs: "Three",
   dos_banios: "Two",
   m2Athimar: "From 69.94m² to 189.33m²",
   m2TresPatios: "From 90m² to 110m²",
+  m2vidaraa: "Deste 125.15m² hasta 150.32m²",
   ymuchomas: "And much more!",
   departamento: "Appartment",
   casa: "House",
   terreno: "Lot",
   villa: "Villa",
   sala: "Living Room",
+  condo: "Condo",
 
   //Button Ver este proyecto
   verProyecto: "See this project",
@@ -53,7 +56,8 @@ const enTranslations = {
   //PROPIEDADES ***********************
 
   //PLAYA DEL CARMEN
-  pdc_tres_patios: {
+pdc:{
+  tres_patios: {
     //TRES PATIOS ********************
     subTitleStrong: "",
     //Description
@@ -162,9 +166,11 @@ const enTranslations = {
       },
     },
   },
+},
 
   //COZUMEL ********
-  coz_athimar: {
+coz:{
+  athimar: {
     //ATHIMAR ********************
     subTitleStrong:
       "A PROJECT WHERE LUXURY AND COMFORT PREDOMINATE IN EVERY CORNER",
@@ -264,6 +270,7 @@ const enTranslations = {
       },
     },
   },
+},
 };
 
 export default enTranslations;

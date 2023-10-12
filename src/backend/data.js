@@ -7,7 +7,7 @@ const properties = [
       precio: 2500000,
       //Inside property
       habitaciones: 3,
-      baños: 2,
+      banios: 2,
       sala: "Sala",
       cocina: "Cocina",
       comedor: "Comedor",
@@ -27,7 +27,7 @@ const properties = [
       ubicacion: "Cancun",
       precio: 3500000,
       habitaciones: 4,
-      baños: 3,
+      banios: 3,
       metrosCuadrados: 200,
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2022/05/INICIO-1.webp",
@@ -39,7 +39,7 @@ const properties = [
       ubicacion: "Tulum",
       precio: 1800000,
       habitaciones: 2,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 90,
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
@@ -51,7 +51,7 @@ const properties = [
       ubicacion: "Cancun",
       precio: 2800000,
       habitaciones: 3,
-      baños: 2,
+      banios: 2,
       metrosCuadrados: 150,
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2022/09/vidara_inicio.png",
@@ -63,7 +63,7 @@ const properties = [
       ubicacion: "Tulum",
       precio: 1500000,
       habitaciones: 1,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 60,
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2022/07/BECAN_INDES.webp",
@@ -75,7 +75,7 @@ const properties = [
       ubicacion: "Cancun",
       precio: 1500000,
       habitaciones: 1,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 60,
       imagenCard:
         "https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png",
@@ -87,7 +87,7 @@ const properties = [
       ubicacion: "Cozumel",
       precio: 900000,
       habitaciones: 1,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 60,
       imagenCard:
         "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -99,7 +99,7 @@ const properties = [
       ubicacion: "Playa del Carmen",
       precio: 800000,
       habitaciones: 1,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 60,
       imagenCard:
         "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -111,7 +111,7 @@ const properties = [
       ubicacion: "Merida",
       precio: 1500000,
       habitaciones: 1,
-      baños: 1,
+      banios: 1,
       metrosCuadrados: 60,
       imagenCard:
         "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
