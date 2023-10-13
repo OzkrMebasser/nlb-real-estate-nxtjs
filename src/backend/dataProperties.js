@@ -701,18 +701,18 @@ export const allProperties = [
       ],
     },
   },
-  {
-    id: 3,
-    desarrollo: "Vidaraa Tower",
-    tipo: "Departamento",
-    ubicacion: "Cancún",
-    precio: 1800000,
-    habitaciones: 2,
-    banios: 1,
-    metrosCuadrados: 90,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
-  },
+  // {
+  //   id: 3,
+  //   desarrollo: "Vidaraa Tower",
+  //   tipo: "Departamento",
+  //   ubicacion: "Cancún",
+  //   precio: 1800000,
+  //   habitaciones: 2,
+  //   banios: 1,
+  //   metrosCuadrados: 90,
+  //   imagenCard:
+  //     "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
+  // },
   {
     id: 4,
     desarrollo: "Chanolandia",

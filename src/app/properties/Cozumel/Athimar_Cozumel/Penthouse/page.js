@@ -36,7 +36,7 @@ const Penthouse = () => {
     <>
       <h2 className="text-xl lg:text-2xl text-sky-900 font-black  mt-[120px] text-center ">
         {/* {headerTitle} */}
-        {language === es ? es.coz.amenidad_1athimar.unit_4.unit_4_Title : en.coz.amenidad_1athimar.unit_4.unit_4_Title}
+        {language === es ? es.coz.athimar.unit_4.unit_4_Title : en.coz.athimar.unit_4.unit_4_Title}
 
         
       </h2>
