@@ -14,6 +14,8 @@ const AmenitiesInUnits = (props) => {
 
   const {
     unitDesc,
+    unitDesc_2,
+    unitDesc_3,
     amenidad_1,
     amenidad_2,
     amenidad_3,
@@ -30,6 +32,22 @@ const AmenitiesInUnits = (props) => {
           {/* Contamos con 6 Departamentos en villas por cada módulo de 90 m²
                 y/o 110 m². */}
           {unitDesc}
+          {/* 
+                ASI ES COMO VA A AQUEDAR PARA LAS TRADUCIONES
+                {language === es ? es[amenidad_1] : en[amenidad_1]} */}
+        </p>
+        <p className="text-justify pt-4 pb-4">
+          {/* Contamos con 6 Departamentos en villas por cada módulo de 90 m²
+                y/o 110 m². */}
+          {unitDesc_2}
+          {/* 
+                ASI ES COMO VA A AQUEDAR PARA LAS TRADUCIONES
+                {language === es ? es[amenidad_1] : en[amenidad_1]} */}
+        </p>
+        <p className="text-justify">
+          {/* Contamos con 6 Departamentos en villas por cada módulo de 90 m²
+                y/o 110 m². */}
+          {unitDesc_3}
           {/* 
                 ASI ES COMO VA A AQUEDAR PARA LAS TRADUCIONES
                 {language === es ? es[amenidad_1] : en[amenidad_1]} */}
@@ -98,7 +116,7 @@ const AmenitiesInUnits = (props) => {
                   <HiBadgeCheck className="w-5 h-5 text-teal-500" />
                 </span>
                 {/* Y mucho mas... */}
-                {language === es ? es.coz.athimar.unit_1.unit_1_amenidades.and_much_more : en.coz.athimar.unit_1.unit_1_amenidades.and_much_more}
+                {language === es ? es.and_much_more : en.and_much_more}
               </li>
             )}
 

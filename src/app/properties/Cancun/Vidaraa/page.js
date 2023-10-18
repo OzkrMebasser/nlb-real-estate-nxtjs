@@ -18,7 +18,7 @@ const VidaraaPage = () => {
   const { allProperties } = useProperties();
 
  
-  const images = allProperties[1].imagesCube;
+  const images = allProperties[2].imagesCube;
 
 
 
@@ -33,143 +33,108 @@ const VidaraaPage = () => {
                 VIDARAA TOWER
               </h2>
               <h3 className="mb-6">{es.cun.vidaraa.subTitleStrong}</h3>
-              <p className="text-base text-gray-700 md:text-lg mb-2">
+              {/* <p className="text-base text-gray-700 md:text-lg mb-2"> */}
                 {/**/}
                 {/* <strong>UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN</strong> */}
-                <strong>
+                {/* <strong>
                   {language === es
                     ? es.coz.athimar.subTitleStrong
                     : en.coz.athimar.subTitleStrong}
                 </strong>
-              </p>
-
-              <p className="text-base text-gray-700 md:text-lg mb-2">
-                {language === es
-                  ? es.coz.athimar.paragraph_1
-                  : en.coz.athimar.paragraph_1}
-
-                {/* Athimar es un desarrollo de lujo con el diseño y la arquitectura
-                pensados minuciosamente para brindar ambientes con estilo, lujo
-                y confort. La premisa del diseño fue generar vistas inigualables
-                desde cada una de sus unidades, regalando una obra de arte en
-                tonos turquesa sólo con mirar por tu ventana. */}
-              </p>
-
-              <p className="text-base text-gray-700 md:text-lg mb-2">
-                {language === es
-                  ? es.coz.athimar.paragraph_2
-                  : en.coz.athimar.paragraph_2}
-
-                {/* ¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu
-                alcance todas las comodidades y el confort de la vida ideal que
-                siempre imaginaste. */}
-              </p>
-
-              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
-                Athimar es un 
-                <strong>edificio de 6 niveles</strong>. 
-                Cuenta con <strong>25 unidades </strong>
-                conformadas por 
-                <strong>8 tipologías</strong> 
-                diferentes entre las que podrás
-                encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop
-                o jacuzzi e increíbles amenidades.
               </p> */}
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
-                  ? es.coz.athimar.paragraph_3_pt_1
-                  : en.coz.athimar.paragraph_3_pt_1}
+                  ? es.cun.vidaraa.paragraph_1
+                  : en.cun.vidaraa.paragraph_1}
                 <strong>
-                  {language === es
-                    ? es.coz.athimar.paragraph_3_pt_2_strong
-                    : en.coz.athimar.paragraph_3_pt_2_strong}
+                {language === es
+                  ? es.cun.vidaraa.paragraph_1_pt_2_strong
+                  : en.cun.vidaraa.paragraph_1_pt_2_strong}
                 </strong>
                 {language === es
-                  ? es.coz.athimar.paragraph_3_pt_3
-                  : en.coz.athimar.paragraph_3_pt_3}
-                <strong>
-                  {language === es
-                    ? es.coz.athimar.paragraph_3_pt_4_strong
-                    : en.coz.athimar.paragraph_3_pt_4_strong}
+                  ? es.cun.vidaraa.paragraph_1_pt_3
+                  : en.cun.vidaraa.paragraph_1_pt_3}
+               <strong>
+                {language === es
+                  ? es.cun.vidaraa.paragraph_1_pt_4_strong
+                  : en.cun.vidaraa.paragraph_1_pt_4_strong}
                 </strong>
                 {language === es
-                  ? es.coz.athimar.paragraph_3_pt_5
-                  : en.coz.athimar.paragraph_3_pt_5}
-                <strong>
-                  {language === es
-                    ? es.coz.athimar.paragraph_3_pt_6_strong
-                    : en.coz.athimar.paragraph_3_pt_6_strong}
-                </strong>
+                  ? es.cun.vidaraa.paragraph_1_pt_5
+                  : en.cun.vidaraa.paragraph_1_pt_5}
+
+
+              </p>
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
-                  ? es.coz.athimar.paragraph_3_pt_7
-                  : en.coz.athimar.paragraph_3_pt_7}
+                  ? es.cun.vidaraa.paragraph_2
+                  : en.cun.vidaraa.paragraph_2}
+
+                
+              </p>
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+                {language === es
+                  ? es.cun.vidaraa.paragraph_3
+                  : en.cun.vidaraa.paragraph_3}
+
+                
+              </p>
+              
+
+              <p className="text-base text-gray-700 md:text-lg mb-2">
+              {language === es
+                  ? es.cun.vidaraa.paragraph_4
+                  : en.cun.vidaraa.paragraph_4}
+                
+                
               </p>
 
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 {language === es
-                  ? es.coz.athimar.amenities_athimar.title
-                  : en.coz.athimar.amenities_athimar.title}
+                  ? es.cun.vidaraa.amenities_vidaraa.title
+                  : en.cun.vidaraa.amenities_vidaraa.title}
               </h4>
 
               <AmenitiesInProject
-                amenidad_1={"Bar"}
-                amenidad_2={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.bbq_area
-                    : en.coz.athimar.amenities_athimar.bbq_area
-                }
-                amenidad_3={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.bikes_parking
-                    : en.coz.athimar.amenities_athimar.bikes_parking
-                }
-                amenidad_4={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.boardroom
-                    : en.coz.athimar.amenities_athimar.boardroom
-                }
-                amenidad_5={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.bussines_ctr
-                    : en.coz.athimar.amenities_athimar.bussines_ctr
-                }
-                amenidad_6={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.gym
-                    : en.coz.athimar.amenities_athimar.gym
-                }
-                amenidad_7={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.lobby
-                    : en.coz.athimar.amenities_athimar.lobby
-                }
-                amenidad_8={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.parking
-                    : en.coz.athimar.amenities_athimar.parking
-                }
-                amenidad_9={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.pool
-                    : en.coz.athimar.amenities_athimar.pool
-                }
-                amenidad_10={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.solarium
-                    : en.coz.athimar.amenities_athimar.solarium
-                }
-                amenidad_11={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.store
-                    : en.coz.athimar.amenities_athimar.store
-                }
-                amenidad_12={
-                  language === es
-                    ? es.coz.athimar.amenities_athimar.and_much_more
-                    : en.coz.athimar.amenities_athimar.and_much_more
-                }
+                amenidad_1= {language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.lobby
+                  : en.cun.vidaraa.amenities_vidaraa.lobby}
+                amenidad_2={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.gym
+                  : en.cun.vidaraa.amenities_vidaraa.gym}
+                amenidad_3={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.elevator
+                  : en.cun.vidaraa.amenities_vidaraa.elevator}
+                amenidad_4={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.grill
+                  : en.cun.vidaraa.amenities_vidaraa.grill}
+                amenidad_5={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.garden
+                  : en.cun.vidaraa.amenities_vidaraa.garden}
+                amenidad_6={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.playroom
+                  : en.cun.vidaraa.amenities_vidaraa.playroom}
+                amenidad_7={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.kids_pool
+                  : en.cun.vidaraa.amenities_vidaraa.kids_pool}
+                amenidad_8={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.pool
+                  : en.cun.vidaraa.amenities_vidaraa.pool}
+                amenidad_9={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.camastros
+                  : en.cun.vidaraa.amenities_vidaraa.camastros}
+                amenidad_10={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.dressing
+                  : en.cun.vidaraa.amenities_vidaraa.dressing}
+                amenidad_11={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.showers
+                  : en.cun.vidaraa.amenities_vidaraa.showers}
+                amenidad_12={language === es
+                  ? es.cun.vidaraa.amenities_vidaraa.parking 
+                  : en.cun.vidaraa.amenities_vidaraa.parking}
               />
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center bg-white">
@@ -187,54 +152,52 @@ const VidaraaPage = () => {
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
             {/* Da click para ver mas detalles */}
             {language === es
-              ? es.coz.athimar.more_details
-              : en.coz.athimar.more_details}
+              ? es.more_details
+              : en.more_details}
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
           {/* 1 RECÁMARA */}
-          <Link
-            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom"
+          <p
+            className="px-4 py-2 text-center bg-white rounded "
+            
           >
-            {language === es
-              ? es.coz.athimar.one_bedroom
-              : en.coz.athimar.one_bedroom}
-          </Link>
+            {/* BLANK BUTTON */} 
+          </p>
 
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom"
+            href="/properties/Cancun/Vidaraa/Two_Bedroom"
           >
-            {/* 2 RECÁMARAS */}
+           
             {language === es
-              ? es.coz.athimar.two_bedroom
-              : en.coz.athimar.two_bedroom}
+              ? es.cun.vidaraa.two_bedroom
+              : en.cun.vidaraa.two_bedroom}
           </Link>
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Three_Bedroom"
+            href="/properties/Cancun/Vidaraa/Three_Bedroom"
           >
             {/* 3 RECÁMARAS */}
             {language === es
-              ? es.coz.athimar.three_bedroom
-              : en.coz.athimar.three_bedroom}
+              ? es.cun.vidaraa.three_bedroom
+              : en.cun.vidaraa.three_bedroom}
           </Link>
 
-          <Link
+          {/* <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
             href="/properties/Cozumel/Athimar_Cozumel/Penthouse"
           >
             PENTHOUSE
-          </Link>
+          </Link> */}
         </div>
       </section>
       <div className="flex justify-center mt-6">
         <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
           {/* Ubicación */}
-          {language === es ? es.coz.athimar.location : en.coz.athimar.location}
+          {language === es ? es.location : en.location}
         </h4>
       </div>
       <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
@@ -246,7 +209,7 @@ const VidaraaPage = () => {
           marginwidth="0"
           title="map"
           scroll="yes"
-          src="https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embedhttps://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Vidaraa Tower&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
     </>

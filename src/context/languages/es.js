@@ -58,6 +58,11 @@ const esTranslations = {
   enlarged_image: "Imagen Ampliada",
 
   //PROPIEDADES ***********************
+  and_much_more: "Y mucho mas...",
+  more_details: "Da click para ver mas detalles",
+  location: "Ubicación",
+
+
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -97,7 +102,7 @@ const esTranslations = {
       },
 
       //Mas detalles...
-      more_details: "Da click para ver mas detalles",
+      
       villa_90m2: "Villa 90m²",
       villa_110m2: "Villa 110m²",
       penthouse_90m2: "Penthouse 90m²",
@@ -169,7 +174,7 @@ const esTranslations = {
       },
     },
   },
- //COZUMEL ********
+  //COZUMEL ********
   coz: {
     //ATHIMAR ********
     athimar: {
@@ -205,7 +210,7 @@ const esTranslations = {
         and_much_more: "Y mucho mas...",
       },
       //Mas detalles...
-      more_details: "Da click para ver mas detalles",
+     
       one_bedroom: "1 RECÁMARA",
       two_bedroom: "2 RECÁMARAS",
       three_bedroom: "3 RECÁMARAS",
@@ -276,103 +281,113 @@ const esTranslations = {
   //CANCUN ********
   cun: {
     vidaraa: {
-      //ATHIMAR ********************
-      subTitleStrong: "VIDARAA",
+      //VIDARAA ********************
+      // subTitleStrong: "VIDARAA TOWER",
       //Description
-      paragraph_1:
-        "Athimar es un desarrollo de lujo con el diseño y la arquitectura pensados minuciosamente para brindar ambientes con estilo, lujo y confort. La premisa del diseño fue generar vistas inigualables desde cada una de sus unidades, regalando una obra de arte en tonos turquesa sólo con mirar por tu ventana.",
-      paragraph_2:
-        "¡Vivir en Athimar, será hacer un sueño realidad! Tendrás a tu alcance todas las comodidades y el confort de la vida ideal que siempre imaginaste.",
-      paragraph_3_pt_1: "Athimar es un ",
-      paragraph_3_pt_2_strong: " edificio de 6 niveles. ",
-      paragraph_3_pt_3: "Cuenta con ",
-      paragraph_3_pt_4_strong: "25 unidades ",
-      paragraph_3_pt_5: "conformadas por ",
-      paragraph_3_pt_6_strong: "8 tipologías ",
-      paragraph_3_pt_7:
-        "diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      paragraph_1: "Vidaraa Tower es un desarrollo ",
+      paragraph_1_pt_2_strong: "exclusivo de 12 niveles ",
+      paragraph_1_pt_3: "con tan ",
+      paragraph_1_pt_4_strong: "sólo 36 departamentos, ",
+      paragraph_1_pt_5:
+        "donde destaca el majestuoso paisaje de las playas color turquesa de la Riviera Maya.",
+
+      paragraph_2: "Idóneo para quien busca privacidad, confort y placidez.",
+
+      paragraph_3:
+        "Vidaraa Tower, se encuentra a 2 minutos de la nueva zona hotelera en Costa Mujeres, a 15 minutos de la primera zona hotelera de Cancún y a 25 minutos del Aeropuerto Internacional de Cancún.",
+      paragraph_4:
+        "Esta nueva área se distingue por contar con desarrollos y hoteles exclusivos con nuevos conceptos como SHA, uno de los complejos médicos de Europa con su concepto residences. ",
+
       //Amenidades
-      amenities_athimar: {
+      amenities_vidaraa: {
         title: "Amenidades",
-        bbq_area: "Area de Asadores",
-        bikes_parking: "Estacionamiento de Bicicletas",
-        boardroom: "Sala de Juntas",
-        bussines_ctr: "Centro de Negocios",
+
+        lobby: "Recepción",
         gym: "Gimnasio",
-        lobby: "Vestíbulo",
-        parking: "Estacionamiento",
-        pool: "Alberca",
-        solarium: "Asoleadores",
-        store: "Tienda",
+        elevator: "Elevador",
+        grill: "Área grill",
+        garden: "Jardín zen",
+        playroom: "Ludoteca",
+        kids_pool: "Kids pool",
+        pool: "Piscina familiar",
+        camastros: "Zona de camastros húmedos",
+        dressing: "Vestidores",
+        showers: "Área de regaderas",
+        parking: "Estacionamiento para autos y motos",
+        
         and_much_more: "Y mucho mas...",
       },
       //Mas detalles...
-      more_details: "Da click para ver mas detalles",
-      one_bedroom: "1 RECÁMARA",
+     
+     
       two_bedroom: "2 RECÁMARAS",
       three_bedroom: "3 RECÁMARAS",
-      location: "Ubicación",
+     
       //Unidades Tipologia
       unit_1: {
-        unit_1_Title: "1 Recámara 69.94m²",
-        unit_1_description:
-          "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        unit_1_Title: "2 Recámaras desde 99.65 m² a 137.52 m²",
+        unit_1_description: "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
+        unit_1_description_p_2: "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
+        unit_1_description_p_3: "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
+        
         unit_1_amenidades: {
-          amenidad_1: "1 Recámara",
-          amenidad_2: "1 Baño",
-          amenidad_3: "Sala",
-          amenidad_4: "Cocina",
-          amenidad_5: "Comedor",
-          amenidad_6: "Terraza",
-          amenidad_7: "Zona de Servicio",
+          amenidad_1: "Sala",
+          amenidad_2: "Comedor",
+          amenidad_3: "Cocina",
+          amenidad_4: "Cuarto de lavado",
+          amenidad_5: "1/2 Baño",
+          amenidad_6: "Recámara principal con vestidor y baño",
+          amenidad_7: "Recámara secundaria con baño",
           and_much_more: "Y mucho mas...",
         },
       },
       unit_2: {
-        unit_2_Title: "2 Recámaras, opciones desde 102.19² hasta 137.47²",
-        unit_2_description:
-          "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+        unit_2_Title: "3 Recámaras, desde 136.24 m² a 150.39 m²",
+        unit_2_description: "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
+        unit_2_description_p_2: "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
+        unit_2_description_p_3: "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
+        
         unit_2_amenidades: {
-          amenidad_1: "2 Recámaras",
-          amenidad_2: "2 1/2 Baños",
-          amenidad_3: "Sala",
-          amenidad_4: "Cocina",
-          amenidad_5: "Comedor",
-          amenidad_6: "Terraza",
-          amenidad_7: "Zona de Servicio",
-          and_much_more: "Y mucho mas...",
+          amenidad_1: "Sala",
+          amenidad_2: "Comedor",
+          amenidad_3: "Cocina",
+          amenidad_4: "Cuarto de lavado",
+          amenidad_5: "1/2 Baño",
+          amenidad_6: "Recámara principal con vestidor y baño",
+          amenidad_7: "Recámara secundaria con baño",
+          amenidad_8: "Tercera recámara con baño",
         },
       },
-      unit_3: {
-        unit_3_Title: "3 Recámaras 133.99m²",
-        unit_3_description:
-          "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
-        unit_3_amenidades: {
-          amenidad_1: "3 Recámaras",
-          amenidad_2: "2 Baños",
-          amenidad_3: "Sala",
-          amenidad_4: "Cocina",
-          amenidad_5: "Comedor",
-          amenidad_6: "3 Terrazas",
-          amenidad_7: "Zona de Servicio",
-          and_much_more: "Y mucho mas...",
-        },
-      },
-      unit_4: {
-        unit_4_Title: "Penthouse 189.33m²",
-        unit_4_description:
-          "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
-        unit_4_amenidades: {
-          amenidad_1: "3 Recámaras",
-          amenidad_2: "3 Baños",
-          amenidad_3: "Sala",
-          amenidad_4: "Cocina",
-          amenidad_5: "Comedor",
-          amenidad_6: "2 Terrazas",
-          amenidad_7: "Zona de Servicio",
-          and_much_more: "Y mucho mas...",
-        },
-      },
+      // unit_3: {
+      //   unit_3_Title: "3 Recámaras 133.99m²",
+      //   unit_3_description:
+      //     "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      //   unit_3_amenidades: {
+      //     amenidad_1: "3 Recámaras",
+      //     amenidad_2: "2 Baños",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "3 Terrazas",
+      //     amenidad_7: "Zona de Servicio",
+      //     and_much_more: "Y mucho mas...",
+      //   },
+      // },
+      // unit_4: {
+      //   unit_4_Title: "Penthouse 189.33m²",
+      //   unit_4_description:
+      //     "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      //   unit_4_amenidades: {
+      //     amenidad_1: "3 Recámaras",
+      //     amenidad_2: "3 Baños",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "2 Terrazas",
+      //     amenidad_7: "Zona de Servicio",
+      //     and_much_more: "Y mucho mas...",
+      //   },
+      // },
     },
   },
 };

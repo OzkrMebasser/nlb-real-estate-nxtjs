@@ -54,7 +54,10 @@ const enTranslations = {
   enlarged_image: "Enlarged Image",
 
   //PROPIEDADES ***********************
-
+  and_much_more: "And much more...",
+  more_details: "Click to see more details",
+  location: "Location",
+  
   //PLAYA DEL CARMEN
 pdc:{
   tres_patios: {
@@ -93,7 +96,7 @@ pdc:{
       and_much_more: "And much more...",
     },
     //Mas detalles...
-    more_details: "Click to see more details",
+    
     villa_90m2: "90m² Villa",
     villa_110m2: "110m² Villa ",
     penthouse_90m2: "90m² Penthouse",
@@ -202,7 +205,7 @@ coz:{
       and_much_more: "And much more...",
     },
     //Mas detalles...
-    more_details: "Click to see more details",
+  
     one_bedroom: "1 BEDROOM",
     two_bedroom: "2 BEDROOMS",
     three_bedroom: "3 BEDROOMS",
@@ -271,6 +274,119 @@ coz:{
     },
   },
 },
+  //CANCUN ********
+  cun: {
+    vidaraa: {
+      //VIDARAA ********************
+      // subTitleStrong: "VIDARAA TOWER",
+      //Description
+      paragraph_1: "Vidaraa Tower is an ",
+      paragraph_1_pt_2_strong: "exclusive development of 12 levels ",
+      paragraph_1_pt_3: "with ",
+      paragraph_1_pt_4_strong: "only 36 apartments, ",
+      paragraph_1_pt_5:
+        "where the majestic landscape of the turquoise beaches of the Riviera Maya stands out.",
+
+      paragraph_2: "Ideal for those seeking privacy, comfort and placidity.",
+
+      paragraph_3:
+        "Vidaraa Tower is located 2 minutes from the new hotel zone in Costa Mujeres, 15 minutes from the first hotel zone in Cancun and 25 minutes from Cancun International Airport.",
+      paragraph_4:
+        "This new area is distinguished by exclusive developments and hotels with new concepts such as SHA, one of the medical complexes in Europe with its residences concept.",
+
+      //Amenidades
+      amenities_vidaraa: {
+        title: "Amenities",
+
+       lobby: "Lobby",
+        gym: "Gym",
+        elevator: "Elevator",
+        grill: "Grill Area",
+        garden: "Zen Garden",
+        playroom:"Toy library",
+        kids_pool:"Kids pool",
+        pool: "Family pool",
+        camastros: "wet lounge chairs",
+        dressing: "Dressing rooms",
+        showers: "Shower area",
+        parking: "Car and Motorcycle Parking",
+        
+        and_much_more: "And much more...",
+
+
+
+      },
+      //Mas detalles...
+      
+      two_bedroom: "2 BEDROOMS",
+      three_bedroom: "3 BEDROOMS",
+      
+      //Unidades Tipologia
+      unit_1: {
+        unit_1_Title: "2 Bedrooms from 99.65 m² to 137.52 m²",
+        unit_1_description: "Your apartment in Vidaraa Tower will have the FIBARO system, proven for its quality worldwide, through the HOME CENTER LITE model.",
+        unit_1_description_p_2: "This software is a home manager that you can access through a browser or mobile app through geolocation from anywhere in the world.",
+        unit_1_description_p_3: "Its high range is characterized by being extremely friendly to control devices such as, TV,  Cameras, Thermostats,  Alarm Panels, Media Players.",
+        unit_1_amenidades: {
+          amenidad_1: "Living Room",
+          amenidad_2: "Dining Room",
+          amenidad_3: "Kitchen",
+          amenidad_4: "Laundry Room",
+          amenidad_5: "1/2 Bathroom",
+          amenidad_6: "Master Bedroom with Walk-in Closet and Bathroom",
+          amenidad_7: "Secondary Bedroom with Bathroom",
+          // and_much_more: "And much more...",
+        },
+      },
+      unit_2: {
+        unit_2_Title: "3 Bedrooms, from 136.24 m² to 150.39 m²",
+        unit_2_description: "Your apartment in Vidaraa Tower will have the FIBARO system, proven for its quality worldwide, through the HOME CENTER LITE model.",
+        unit_2_description_p_2: "This software is a home manager that you can access through a browser or mobile app through geolocation from anywhere in the world.",
+        unit_2_description_p_3: "Its high range is characterized by being extremely friendly to control devices such as, TV,  Cameras, Thermostats,  Alarm Panels, Media Players.",
+        unit_2_amenidades: {
+          amenidad_1: "Living Room",
+          amenidad_2: "Dining Room",
+          amenidad_3: "Kitchen",
+          amenidad_4: "Laundry Room",
+          amenidad_5: "1/2 Bathroom",
+          amenidad_6: "Master Bedroom with Walk-in Closet and Bathroom",
+          amenidad_7: "Secondary Bedroom with Bathroom",
+          amenidad_8: "Third Bedroom with Bathroom",
+        },
+      },
+      
+      // unit_3: {
+      //   unit_3_Title: "3 Recámaras 133.99m²",
+      //   unit_3_description:
+      //     "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      //   unit_3_amenidades: {
+      //     amenidad_1: "3 Recámaras",
+      //     amenidad_2: "2 Baños",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "3 Terrazas",
+      //     amenidad_7: "Zona de Servicio",
+      //     and_much_more: "Y mucho mas...",
+      //   },
+      // },
+      // unit_4: {
+      //   unit_4_Title: "Penthouse 189.33m²",
+      //   unit_4_description:
+      //     "Contamos con 25 unidades conformadas por 8 tipologías diferentes entre las que podrás encontrar departamentos de 1 a 3 recámaras, con terraza, rooftop o jacuzzi e increíbles amenidades.",
+      //   unit_4_amenidades: {
+      //     amenidad_1: "3 Recámaras",
+      //     amenidad_2: "3 Baños",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "2 Terrazas",
+      //     amenidad_7: "Zona de Servicio",
+      //     and_much_more: "Y mucho mas...",
+      //   },
+      // },
+    },
+  },
 };
 
 export default enTranslations;

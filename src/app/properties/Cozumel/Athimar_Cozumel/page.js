@@ -187,8 +187,8 @@ const AthimarPage = () => {
           <h4 className=" text-center max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
             {/* Da click para ver mas detalles */}
             {language === es
-              ? es.coz.athimar.more_details
-              : en.coz.athimar.more_details}
+              ? es.more_details
+              : en.more_details}
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
@@ -234,7 +234,7 @@ const AthimarPage = () => {
       <div className="flex justify-center mt-6">
         <h4 className=" text-center max-w-lg  mt-4 text-xl font-black text-sky-950 ">
           {/* Ubicación */}
-          {language === es ? es.coz.athimar.location : en.coz.athimar.location}
+          {language === es ? es.location : en.location}
         </h4>
       </div>
       <div className=" inset-0 h-[550px] mt-4 mb-8 px-4 lg:px-12 ">
