@@ -74,48 +74,37 @@ export const homeProperties = [
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
   {
+    //PROBABLE HAY QUE CAMBIAR INFO
     id: 4,
     desarrollo: "LIK TULUM",
-    tipo: "casa",
-    ubicacion: "Playa del Carmen",
-    route: "properties/Playa_del_Carmen/Tres_Patios",
-    route2: "Playa_del_Carmen/Tres_Patios",
+    tipo: "departamento",
+    ubicacion: "Tulum",
+    route: "",
+    route2: "",
     precio: 2500000,
     habitaciones: 3,
     banios: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
     metrosCuadrados: 90,
-    description:
-      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    // description:
+    //   "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      "https://lh3.googleusercontent.com/p/AF1QipP6kcotaUM6hWKhr8s7rVpOtZ-OafPIhbFlgjBP=s680-w680-h510",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
   {
     id: 5,
-    desarrollo: "NALU",
-    tipo: "casa",
+    desarrollo: "NÁLU LUXURY BEACHFRONT",
+    tipo: "departamento",
     ubicacion: "Puerto Morelos",
-    route: "properties/Playa_del_Carmen/Tres_Patios",
-    route2: "Playa_del_Carmen/Tres_Patios",
-    precio: 2500000,
-    habitaciones: 3,
-    banios: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
-    description:
-      "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    precio: 699000,
+    habitaciones: "dosTres",
+    banios: "tres_banios",
+    metrosCuadrados: "m2Nalu",
     imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPuertoMorelos%2F01_PRINCIPAL%20less.png?alt=media&token=b3a9d55b-7fbf-4a03-af2a-e1f58b8c2243&_gl=1*r8us0b*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzY5MDY3NC42Mi4xLjE2OTc2OTEyNzYuNTkuMC4w",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
@@ -146,7 +135,7 @@ export const homeProperties = [
 ];
 
 export const allProperties = [
-  // "Tres Patios"
+  // "TRES PATIOS"
   {
     id: 1,
     desarrollo: "Tres Patios",
@@ -490,7 +479,7 @@ export const allProperties = [
       ],
     },
   },
-  //"Vidaraa"
+  //"VIDARAA"
   {
     id: 3,
     desarrollo: "Vidaraa Tower",
@@ -671,29 +660,188 @@ export const allProperties = [
       ],
     },
   },
-  // {
-  //   id: 3,
-  //   desarrollo: "Vidaraa Tower",
-  //   tipo: "Departamento",
-  //   ubicacion: "Cancún",
-  //   precio: 1800000,
-  //   habitaciones: 2,
-  //   banios: 1,
-  //   metrosCuadrados: 90,
-  //   imagenCard:
-  //     "https://maxproperties.com.mx/wp-content/uploads/2022/05/lik_orga_inicio.png",
-  // },
+  //"NALU"
   {
     id: 4,
-    desarrollo: "Chanolandia",
-    tipo: "Casa",
-    ubicacion: "Cancun",
-    precio: 2800000,
-    habitaciones: 3,
-    banios: 2,
-    metrosCuadrados: 150,
+    desarrollo: "NÁLU LUXURY BEACHFRONT RESIDENCES",
+    nickName: "",
+    subTitle: "",
+    tipo: "Departamento",
+    ubicacion: "Puerto Morelos",
+    route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    routeUnit_1: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom",
+    routeUnit_2: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom",
+    precio: 699000,
+    habitaciones: "dosTres",
+    banios: "tres_banios",
+    metrosCuadrados: "m2Nalu",
+
+
+    sala: "Sala",
+    cocina: "Cocina",
+    comedor: "Comedor",
+    closet: "Closets",
+    terraza: "Terraza",
+    
+    // description:
+    //   "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/09/vidara_inicio.png",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-homecard.jpg?alt=media&token=4e1b0df2-9a25-4fca-813d-e59cf2e3a186&_gl=1*17t7769*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDU3ODQuNjAuMC4w",
+    // embededMapSrc:
+    //   "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embedhttps://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+
+    imagesCube: [
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-1.jpg?alt=media&token=c342c3f3-4edc-4bda-9766-7ff1b01108fd&_gl=1*19li6u1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDYxMzguNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-1b.jpg?alt=media&token=fa1e808f-21fe-4a6e-bd34-3e539f6133ee&_gl=1*1wsnh7*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDYyODIuNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-1c.jpg?alt=media&token=38ae9297-263d-418b-8ccc-d3a7b149a5de&_gl=1*1mapequ*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDYyOTQuNDguMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-2.jpg?alt=media&token=1f5d4a96-ca76-4d23-9be5-912c2e3ffd96&_gl=1*1ud86b9*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDYzMTAuMzIuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-3.jpg?alt=media&token=3316795b-f3c0-44d4-80d9-04493ec91b9d&_gl=1*1wre0y1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MDcuNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4.jpg?alt=media&token=d8e271cc-fc0f-4761-a410-ab8e3b548ba5&_gl=1*ooqawu*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MjYuNDEuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4b.jpg?alt=media&token=36aedd4f-3dc7-4cde-996e-dd0f19aea386&_gl=1*46ayyy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0NDAuMjcuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-5.jpg?alt=media&token=bced20fc-fdc2-4626-bcd7-26393723f999&_gl=1*lkjdxy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0ODQuNTkuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-6.jpg?alt=media&token=53179df4-6fd0-4ad4-9478-17999832935d&_gl=1*1cpmf1v*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY1MjcuMTYuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7.jpg?alt=media&token=0d1010fa-0cf2-49c8-9338-acc22f8d850f&_gl=1*a7ja6o*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4MjEuMjIuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7b.jpg?alt=media&token=50abe1e0-176c-4591-b195-63afdb60d816&_gl=1*1o6yyzd*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4NDYuNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8.jpg?alt=media&token=a59525b2-d6b0-4d96-99a1-ce82a4c59dfb&_gl=1*qew6a1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNDcuNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8b.jpg?alt=media&token=e827af89-bc04-437d-907b-1c34ed887688&_gl=1*1dt0z16*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNzQuMzMuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-9.jpg?alt=media&token=b00e07d0-1691-4a66-9f94-3782289bd7f2&_gl=1*1wgmujr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcxMDEuNi4wLjA.",
+    ],
+    unit_1: {
+      //TWO BEDROOMS NÁLU
+
+      unit_1_precio: 4780000,
+
+      unit_1_imagenes_A: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidara-2-rooms.JPG?alt=media&token=9d3945d8-89eb-4fd3-b352-9671fb48047b&_gl=1*5e5h7g*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDc2NzIuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-3.jpg?alt=media&token=3316795b-f3c0-44d4-80d9-04493ec91b9d&_gl=1*1wre0y1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4.jpg?alt=media&token=d8e271cc-fc0f-4761-a410-ab8e3b548ba5&_gl=1*ooqawu*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MjYuNDEuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4b.jpg?alt=media&token=36aedd4f-3dc7-4cde-996e-dd0f19aea386&_gl=1*46ayyy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0NDAuMjcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-5.jpg?alt=media&token=bced20fc-fdc2-4626-bcd7-26393723f999&_gl=1*lkjdxy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0ODQuNTkuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-6.jpg?alt=media&token=53179df4-6fd0-4ad4-9478-17999832935d&_gl=1*1cpmf1v*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY1MjcuMTYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7.jpg?alt=media&token=0d1010fa-0cf2-49c8-9338-acc22f8d850f&_gl=1*a7ja6o*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4MjEuMjIuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7b.jpg?alt=media&token=50abe1e0-176c-4591-b195-63afdb60d816&_gl=1*1o6yyzd*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4NDYuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8.jpg?alt=media&token=a59525b2-d6b0-4d96-99a1-ce82a4c59dfb&_gl=1*qew6a1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8b.jpg?alt=media&token=e827af89-bc04-437d-907b-1c34ed887688&_gl=1*1dt0z16*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNzQuMzMuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-9.jpg?alt=media&token=b00e07d0-1691-4a66-9f94-3782289bd7f2&_gl=1*1wgmujr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcxMDEuNi4wLjA.",
+      ],
+      unit_1_imagenes_B: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidara-2-rooms.JPG?alt=media&token=9d3945d8-89eb-4fd3-b352-9671fb48047b&_gl=1*5e5h7g*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDc2NzIuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-3.jpg?alt=media&token=3316795b-f3c0-44d4-80d9-04493ec91b9d&_gl=1*1wre0y1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4.jpg?alt=media&token=d8e271cc-fc0f-4761-a410-ab8e3b548ba5&_gl=1*ooqawu*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MjYuNDEuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4b.jpg?alt=media&token=36aedd4f-3dc7-4cde-996e-dd0f19aea386&_gl=1*46ayyy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0NDAuMjcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-5.jpg?alt=media&token=bced20fc-fdc2-4626-bcd7-26393723f999&_gl=1*lkjdxy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0ODQuNTkuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-6.jpg?alt=media&token=53179df4-6fd0-4ad4-9478-17999832935d&_gl=1*1cpmf1v*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY1MjcuMTYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7.jpg?alt=media&token=0d1010fa-0cf2-49c8-9338-acc22f8d850f&_gl=1*a7ja6o*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4MjEuMjIuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7b.jpg?alt=media&token=50abe1e0-176c-4591-b195-63afdb60d816&_gl=1*1o6yyzd*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4NDYuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8.jpg?alt=media&token=a59525b2-d6b0-4d96-99a1-ce82a4c59dfb&_gl=1*qew6a1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8b.jpg?alt=media&token=e827af89-bc04-437d-907b-1c34ed887688&_gl=1*1dt0z16*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNzQuMzMuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-9.jpg?alt=media&token=b00e07d0-1691-4a66-9f94-3782289bd7f2&_gl=1*1wgmujr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcxMDEuNi4wLjA.",
+      ],
+    },
+
+    unit_2: {
+      //ONE BEDROOM
+      // unit_1_Title: "1 Recámara 69.94m²",
+      unit_2_Title: "coz.athimar.unit_2.unit_2_Title",
+      unit_2_description: "coz.athimar.unit_2.unit_2_Title",
+      unit_2_precio: 4780000,
+      // unit_1_amenidades:
+      //   {
+      //     amenidad_1: "1 Recámara",
+      //     amenidad_2: "1 Baño",
+      //     amenidad_3: "Sala",
+      //     amenidad_4: "Cocina",
+      //     amenidad_5: "Comedor",
+      //     amenidad_6: "Terraza",
+      //     amenidad_7: "Zona de Servicio",
+      //     // amenidad_8: "",
+      //   },
+
+      unit_2_imagenes_A: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidara-3-rooms.JPG?alt=media&token=d73e5fe5-33ec-4198-80e7-12b7940c5040&_gl=1*wenryf*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDgxODEuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-3.jpg?alt=media&token=3316795b-f3c0-44d4-80d9-04493ec91b9d&_gl=1*1wre0y1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4.jpg?alt=media&token=d8e271cc-fc0f-4761-a410-ab8e3b548ba5&_gl=1*ooqawu*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MjYuNDEuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4b.jpg?alt=media&token=36aedd4f-3dc7-4cde-996e-dd0f19aea386&_gl=1*46ayyy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0NDAuMjcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-5.jpg?alt=media&token=bced20fc-fdc2-4626-bcd7-26393723f999&_gl=1*lkjdxy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0ODQuNTkuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-6.jpg?alt=media&token=53179df4-6fd0-4ad4-9478-17999832935d&_gl=1*1cpmf1v*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY1MjcuMTYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7.jpg?alt=media&token=0d1010fa-0cf2-49c8-9338-acc22f8d850f&_gl=1*a7ja6o*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4MjEuMjIuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7b.jpg?alt=media&token=50abe1e0-176c-4591-b195-63afdb60d816&_gl=1*1o6yyzd*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4NDYuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8.jpg?alt=media&token=a59525b2-d6b0-4d96-99a1-ce82a4c59dfb&_gl=1*qew6a1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8b.jpg?alt=media&token=e827af89-bc04-437d-907b-1c34ed887688&_gl=1*1dt0z16*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNzQuMzMuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-9.jpg?alt=media&token=b00e07d0-1691-4a66-9f94-3782289bd7f2&_gl=1*1wgmujr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcxMDEuNi4wLjA.",
+      ],
+      unit_2_imagenes_B: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidara-3-rooms.JPG?alt=media&token=d73e5fe5-33ec-4198-80e7-12b7940c5040&_gl=1*wenryf*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDgxODEuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-3.jpg?alt=media&token=3316795b-f3c0-44d4-80d9-04493ec91b9d&_gl=1*1wre0y1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4.jpg?alt=media&token=d8e271cc-fc0f-4761-a410-ab8e3b548ba5&_gl=1*ooqawu*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0MjYuNDEuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-4b.jpg?alt=media&token=36aedd4f-3dc7-4cde-996e-dd0f19aea386&_gl=1*46ayyy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0NDAuMjcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-5.jpg?alt=media&token=bced20fc-fdc2-4626-bcd7-26393723f999&_gl=1*lkjdxy*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY0ODQuNTkuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-6.jpg?alt=media&token=53179df4-6fd0-4ad4-9478-17999832935d&_gl=1*1cpmf1v*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY1MjcuMTYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7.jpg?alt=media&token=0d1010fa-0cf2-49c8-9338-acc22f8d850f&_gl=1*a7ja6o*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4MjEuMjIuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-7b.jpg?alt=media&token=50abe1e0-176c-4591-b195-63afdb60d816&_gl=1*1o6yyzd*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDY4NDYuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8.jpg?alt=media&token=a59525b2-d6b0-4d96-99a1-ce82a4c59dfb&_gl=1*qew6a1*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNDcuNjAuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-8b.jpg?alt=media&token=e827af89-bc04-437d-907b-1c34ed887688&_gl=1*1dt0z16*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcwNzQuMzMuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-9.jpg?alt=media&token=b00e07d0-1691-4a66-9f94-3782289bd7f2&_gl=1*1wgmujr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDcxMDEuNi4wLjA.",
+      ],
+    },
+    unit_3: {
+      //Three BEDROOM
+      // unit_3_Title: "1 Recámara 69.94m²",
+      unit_3_Title: "coz.athimar.unit_3.unit_3_Title",
+      unit_3_description: "coz.athimar.unit_3.unit_3_Title",
+      unit_3_precio: 4780000,
+      unit_3_imagenes_A: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-three-bedroom.jpg?alt=media&token=c01bf2f4-db06-48eb-a7ad-7cdd3255680c&_gl=1*1xl8ak7*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NTg4MTg2OC41Mi4xLjE2OTU4ODE4ODIuNDYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20(1).jpg?alt=media&token=3bfcf350-2932-4067-9450-e45c8c751db7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20TERRACE.jpg?alt=media&token=1689a08a-5057-409f-b19e-8d0cfc83078d",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO.jpg?alt=media&token=d39d5acf-793f-4b29-9ad0-0325831b4bd5",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO2.jpg?alt=media&token=5bec04b9-311c-4de5-b079-8eea9a4b14a2",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20DEPT08.jpg?alt=media&token=1f84bca6-8e13-41b2-aa81-6f8fe894d9a7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20PH.jpg?alt=media&token=2465d64c-861f-4a10-9749-3277ec5da133",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_BA%C3%91O.jpg?alt=media&token=76843091-6759-42c1-b11f-af22666b0a47",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_COCINA.jpg?alt=media&token=68e80fbd-2392-40ab-86c4-78a2edabcd5c",
+      ],
+      unit_3_imagenes_B: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-three-bedroom.jpg?alt=media&token=c01bf2f4-db06-48eb-a7ad-7cdd3255680c&_gl=1*1xl8ak7*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NTg4MTg2OC41Mi4xLjE2OTU4ODE4ODIuNDYuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20(1).jpg?alt=media&token=3bfcf350-2932-4067-9450-e45c8c751db7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20TERRACE.jpg?alt=media&token=1689a08a-5057-409f-b19e-8d0cfc83078d",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO.jpg?alt=media&token=d39d5acf-793f-4b29-9ad0-0325831b4bd5",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO2.jpg?alt=media&token=5bec04b9-311c-4de5-b079-8eea9a4b14a2",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20DEPT08.jpg?alt=media&token=1f84bca6-8e13-41b2-aa81-6f8fe894d9a7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20PH.jpg?alt=media&token=2465d64c-861f-4a10-9749-3277ec5da133",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_BA%C3%91O.jpg?alt=media&token=76843091-6759-42c1-b11f-af22666b0a47",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_COCINA.jpg?alt=media&token=68e80fbd-2392-40ab-86c4-78a2edabcd5c",
+      ],
+    },
+    unit_4: {
+      //Penthouse
+      unit_4_Title: "coz.athimar.unit_4.unit_4_Title",
+      unit_4_description: "coz.athimar.unit_4.unit_4_Title",
+      unit_4_precio: 4780000,
+      unit_4_imagenes_A: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-penthouse.jpg?alt=media&token=bc239a94-c3bc-45a7-a406-fe018a51db7a&_gl=1*1qohdnr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NjA0NTE0NS41My4xLjE2OTYwNDU0MTcuMTcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20(1).jpg?alt=media&token=3bfcf350-2932-4067-9450-e45c8c751db7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20TERRACE.jpg?alt=media&token=1689a08a-5057-409f-b19e-8d0cfc83078d",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO.jpg?alt=media&token=d39d5acf-793f-4b29-9ad0-0325831b4bd5",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO2.jpg?alt=media&token=5bec04b9-311c-4de5-b079-8eea9a4b14a2",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20DEPT08.jpg?alt=media&token=1f84bca6-8e13-41b2-aa81-6f8fe894d9a7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20PH.jpg?alt=media&token=2465d64c-861f-4a10-9749-3277ec5da133",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_BA%C3%91O.jpg?alt=media&token=76843091-6759-42c1-b11f-af22666b0a47",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_COCINA.jpg?alt=media&token=68e80fbd-2392-40ab-86c4-78a2edabcd5c",
+      ],
+      unit_4_imagenes_B: [
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR-penthouse.jpg?alt=media&token=bc239a94-c3bc-45a7-a406-fe018a51db7a&_gl=1*1qohdnr*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NjA0NTE0NS41My4xLjE2OTYwNDU0MTcuMTcuMC4w",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20(1).jpg?alt=media&token=3bfcf350-2932-4067-9450-e45c8c751db7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_POOL%20TERRACE.jpg?alt=media&token=1689a08a-5057-409f-b19e-8d0cfc83078d",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO.jpg?alt=media&token=d39d5acf-793f-4b29-9ad0-0325831b4bd5",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_RECAMARA%20DEP%20TIPO2.jpg?alt=media&token=5bec04b9-311c-4de5-b079-8eea9a4b14a2",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20DEPT08.jpg?alt=media&token=1f84bca6-8e13-41b2-aa81-6f8fe894d9a7",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_SALA%20COMEDOR%20COCINA%20PH.jpg?alt=media&token=2465d64c-861f-4a10-9749-3277ec5da133",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_BA%C3%91O.jpg?alt=media&token=76843091-6759-42c1-b11f-af22666b0a47",
+        "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FAthimar_Cozumel%2FATHIMAR_COCINA.jpg?alt=media&token=68e80fbd-2392-40ab-86c4-78a2edabcd5c",
+      ],
+    },
   },
   {
     id: 5,

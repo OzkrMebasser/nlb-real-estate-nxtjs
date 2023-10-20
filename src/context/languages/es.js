@@ -38,9 +38,11 @@ const esTranslations = {
   unoAtresBanios: "Uno, dos y tres",
   tres_habs: "Tres",
   dos_banios: "Dos",
+  tres_banios: "Tres",
   m2Athimar: "Deste 69.94m² hasta 189.33m²",
   m2TresPatios: "Deste 90m² hasta 110m²",
   m2vidaraa: "Deste 104.72m² hasta 150.32m²",
+  m2Nalu: "Deste 141.40m² hasta 215.10m²",
   ymuchomas: "¡Y mucho más!",
   departamento: "Departamento",
   casa: "Casa",
@@ -61,8 +63,6 @@ const esTranslations = {
   and_much_more: "Y mucho mas...",
   more_details: "Da click para ver mas detalles",
   location: "Ubicación",
-
-
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -102,7 +102,7 @@ const esTranslations = {
       },
 
       //Mas detalles...
-      
+
       villa_90m2: "Villa 90m²",
       villa_110m2: "Villa 110m²",
       penthouse_90m2: "Penthouse 90m²",
@@ -210,7 +210,7 @@ const esTranslations = {
         and_much_more: "Y mucho mas...",
       },
       //Mas detalles...
-     
+
       one_bedroom: "1 RECÁMARA",
       two_bedroom: "2 RECÁMARAS",
       three_bedroom: "3 RECÁMARAS",
@@ -314,22 +314,24 @@ const esTranslations = {
         dressing: "Vestidores",
         showers: "Área de regaderas",
         parking: "Estacionamiento para autos y motos",
-        
+
         and_much_more: "Y mucho mas...",
       },
       //Mas detalles...
-     
-     
+
       two_bedroom: "2 RECÁMARAS",
       three_bedroom: "3 RECÁMARAS",
-     
+
       //Unidades Tipologia
       unit_1: {
         unit_1_Title: "2 Recámaras desde 99.65 m² a 137.52 m²",
-        unit_1_description: "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
-        unit_1_description_p_2: "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
-        unit_1_description_p_3: "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
-        
+        unit_1_description:
+          "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
+        unit_1_description_p_2:
+          "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
+        unit_1_description_p_3:
+          "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
+
         unit_1_amenidades: {
           amenidad_1: "Sala",
           amenidad_2: "Comedor",
@@ -343,10 +345,13 @@ const esTranslations = {
       },
       unit_2: {
         unit_2_Title: "3 Recámaras, desde 136.24 m² a 150.39 m²",
-        unit_2_description: "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
-        unit_2_description_p_2: "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
-        unit_2_description_p_3: "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
-        
+        unit_2_description:
+          "Tu departamento en Vidaraa Tower, contará con el sistema FIBARO, probado por su calidad a nivel mundial, a través del modelo HOME CENTER LITE.",
+        unit_2_description_p_2:
+          "Este software es un administrador de vivienda al cual puede acceder por medio de un navegador o vía aplicación móvil a través de geolocalización desde cualquier parte del mundo.",
+        unit_2_description_p_3:
+          "Su alta gama se caracteriza por ser sumamente amigable para controlar dispositivos como, Televisores, Cámaras, Termostátos, Páneles de alarmas, Reproductores multimedia",
+
         unit_2_amenidades: {
           amenidad_1: "Sala",
           amenidad_2: "Comedor",
@@ -388,6 +393,114 @@ const esTranslations = {
       //     and_much_more: "Y mucho mas...",
       //   },
       // },
+    },
+  },
+  pom: {
+    nalu: {
+      //NALU ********************
+      subTitleStrong: "Luxury Beachfront Residences - Puerto Morelos",
+      //Description
+      paragraph_1:
+        "NÁLU, de origen hawaiano que significa “gran ola” representa la conexión con la vida através de los elementos naturales que rodean el hermoso paraíso de Puerto Morelos.",
+
+      paragraph_2: "NÁLU, es un desarrollo de lujo en Puerto Morelos de ",
+      paragraph_2_pt_2_strong: "12 apartamentos frente a la playa ",
+      paragraph_2_pt_3:
+        "diseñados bajo una filosofía de confort y respeto al entorno integrando amenidades para disfrutar de la naturaleza y aportar bienestar a un estilo de vida único al vivir frente al mar del caribe mexicano.",
+
+      paragraph_3:
+        "Puerto Morelos es el escondido de la Riviera Maya. Sus hermosas y paradisíacas playas, con un maravilloso mar azul, crean una atmósfera enigmática y mística que evoca una profunda paz y tranquilidad",
+
+      //Amenidades
+      amenities_nalu: {
+        title: "Amenities",
+        private_beach: "Playa Privada",
+        bbq_area: "Área de Asadores",
+        poolside_bar: "Bar en la Piscina",
+        bicycle_area: "Área de Bicicletas",
+        lobby: "Vestíbulo",
+        gym: "Gimnasio",
+        private_parking: "Estacionamiento Privado",
+        elevator: "Ascensor",
+        rooftop_pool: "Piscina en la Azotea",
+        wellness_room: "Sala de Bienestar",
+        multipurpose_room: "Sala Multipropósito",
+        security_24_7: "Seguridad 24/7",
+        
+      },
+      //Mas detalles...
+
+      villa_90m2: "90m² Villa",
+      villa_110m2: "110m² Villa ",
+      penthouse_90m2: "90m² Penthouse",
+      penthouse_110m2: "110m² Penthouse",
+      location: "Location",
+      //Unidades Tipologia
+      unit_1: {
+        unit_1_Title: "90m² Villa ",
+        unit_1_description:
+          "We have 6 Apartments in villas for each module of 90m² or 110m².",
+        unit_1_amenidades: {
+          amenidad_1: "3 Bedrooms",
+          amenidad_2: "Living room",
+          amenidad_3: "Dining room",
+          amenidad_4: "Closets",
+          amenidad_5: "2 Bathrooms",
+          amenidad_6: "Kitchen",
+          amenidad_7: "Terrace",
+          amenidad_8: "Flex space",
+          and_much_more: "And much more...",
+        },
+      },
+      unit_2: {
+        unit_2_Title: "110m² Villa",
+        unit_2_description:
+          "We have 6 Apartments in villas for each module of 90m² or 110m².",
+
+        unit_2_amenidades: {
+          amenidad_1: "3 Bedrooms",
+          amenidad_2: "Walk-in Closet",
+          amenidad_3: "Dining room",
+          amenidad_4: "2 Closets",
+          amenidad_5: "2 Bathrooms",
+          amenidad_6: "Closets",
+          amenidad_7: "Terrace",
+          amenidad_8: "Kitchen",
+          and_much_more: "And much more...",
+        },
+      },
+      unit_3: {
+        unit_3_Title: "90m² Penthouse",
+        unit_3_description:
+          "We have 6 Penthouses for each module of 90m² or 110m².",
+        unit_3_amenidades: {
+          amenidad_1: "3 Bedrooms",
+          amenidad_2: "Living room",
+          amenidad_3: "Dining room",
+          amenidad_4: "Closets",
+          amenidad_5: "2 Bathrooms",
+          amenidad_6: "Kitchen",
+          amenidad_7: "Terrace",
+          amenidad_8: "Flex space",
+          and_much_more: "And much more...",
+        },
+      },
+      unit_4: {
+        unit_4_Title: "110m² Penthouse",
+        unit_4_description:
+          "We have 6 Penthouses for each module of 90m² or 110m².",
+        unit_4_amenidades: {
+          amenidad_1: "3 Bedrooms",
+          amenidad_2: "Living room",
+          amenidad_3: "Dining room",
+          amenidad_4: "Closets",
+          amenidad_5: "2 Bathrooms",
+          amenidad_6: "Kitchen",
+          amenidad_7: "Terrace",
+          amenidad_8: "Flex space",
+          and_much_more: "And much more...",
+        },
+      },
     },
   },
 };
