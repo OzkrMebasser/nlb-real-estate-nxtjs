@@ -427,80 +427,43 @@ const enTranslations = {
         wellness_room: "Wellness Room",
         multipurpose_room: "Multipurpose Room",
         security_24_7: "24/7 Security",
-
-        
       },
       //Mas detalles...
 
-      villa_90m2: "90m² Villa",
-      villa_110m2: "110m² Villa ",
-      penthouse_90m2: "90m² Penthouse",
-      penthouse_110m2: "110m² Penthouse",
-      location: "Location",
+      two_bedroom: "2 BEDROOMS",
+      three_bedroom: "3 BEDROOMS",
+
       //Unidades Tipologia
       unit_1: {
-        unit_1_Title: "90m² Villa ",
+        unit_1_Title: "2 BEDROOMS OCEAN VIEW OR BEACHFRONT",
+
         unit_1_description:
-          "We have 6 Apartments in villas for each module of 90m² or 110m².",
+          "NÁLU is a luxury development in Puerto Morelos consisting of 12 beachfront apartments designed under a philosophy of comfort and environmental respect, integrating amenities to enjoy nature and contribute to well-being for a unique lifestyle while living in front of the Mexican Caribbean Sea",
         unit_1_amenidades: {
-          amenidad_1: "3 Bedrooms",
-          amenidad_2: "Living room",
-          amenidad_3: "Dining room",
-          amenidad_4: "Closets",
-          amenidad_5: "2 Bathrooms",
-          amenidad_6: "Kitchen",
-          amenidad_7: "Terrace",
-          amenidad_8: "Flex space",
-          and_much_more: "And much more...",
+          amenidad_1: "Private Beach",
+          amenidad_2: "BBQ Area",
+          amenidad_3: "Poolside Bar",
+          amenidad_4: "Lobby",
+          amenidad_5: "Elevator",
+          amenidad_6: "Rooftop Pool",
+          amenidad_7: "24/7 Security",
+          amenidad_8: "",
         },
       },
       unit_2: {
-        unit_2_Title: "110m² Villa",
+        unit_2_Title: "PENTHOUSE 3 BEDROOMS BEACHFRONT",
         unit_2_description:
-          "We have 6 Apartments in villas for each module of 90m² or 110m².",
+          "NÁLU is a luxury development in Puerto Morelos consisting of 12 beachfront apartments designed under a philosophy of comfort and environmental respect, integrating amenities to enjoy nature and contribute to well-being for a unique lifestyle while living in front of the Mexican Caribbean Sea",
 
         unit_2_amenidades: {
-          amenidad_1: "3 Bedrooms",
-          amenidad_2: "Walk-in Closet",
-          amenidad_3: "Dining room",
-          amenidad_4: "2 Closets",
-          amenidad_5: "2 Bathrooms",
-          amenidad_6: "Closets",
-          amenidad_7: "Terrace",
-          amenidad_8: "Kitchen",
-          and_much_more: "And much more...",
-        },
-      },
-      unit_3: {
-        unit_3_Title: "90m² Penthouse",
-        unit_3_description:
-          "We have 6 Penthouses for each module of 90m² or 110m².",
-        unit_3_amenidades: {
-          amenidad_1: "3 Bedrooms",
-          amenidad_2: "Living room",
-          amenidad_3: "Dining room",
-          amenidad_4: "Closets",
-          amenidad_5: "2 Bathrooms",
-          amenidad_6: "Kitchen",
-          amenidad_7: "Terrace",
-          amenidad_8: "Flex space",
-          and_much_more: "And much more...",
-        },
-      },
-      unit_4: {
-        unit_4_Title: "110m² Penthouse",
-        unit_4_description:
-          "We have 6 Penthouses for each module of 90m² or 110m².",
-        unit_4_amenidades: {
-          amenidad_1: "3 Bedrooms",
-          amenidad_2: "Living room",
-          amenidad_3: "Dining room",
-          amenidad_4: "Closets",
-          amenidad_5: "2 Bathrooms",
-          amenidad_6: "Kitchen",
-          amenidad_7: "Terrace",
-          amenidad_8: "Flex space",
-          and_much_more: "And much more...",
+          amenidad_1: "Private Beach",
+          amenidad_2: "BBQ Area",
+          amenidad_3: "Poolside Bar",
+          amenidad_4: "Lobby",
+          amenidad_5: "Elevator",
+          amenidad_6: "Rooftop Pool",
+          amenidad_7: "24/7 Security",
+          amenidad_8: "",
         },
       },
     },

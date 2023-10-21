@@ -59,11 +59,11 @@ const NaluPage = () => {
                   ? es.pom.nalu.paragraph_2_pt_3
                   : en.pom.nalu.paragraph_2_pt_3}
               </p>
-              <p className="text-base text-gray-700 md:text-lg mb-2">
+              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
                   ? es.pom.nalu.paragraph_3
                   : en.pom.nalu.paragraph_3}
-              </p>
+              </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 {language === es
@@ -160,21 +160,23 @@ const NaluPage = () => {
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cancun/Vidaraa/Two_Bedroom"
+            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom"
+            
           >
             {language === es
-              ? es.cun.vidaraa.two_bedroom
-              : en.cun.vidaraa.two_bedroom}
+              ? es.pom.nalu.two_bedroom
+              : en.pom.nalu.two_bedroom}
           </Link>
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cancun/Vidaraa/Three_Bedroom"
+            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom"
+
           >
             {/* 3 RECÁMARAS */}
             {language === es
-              ? es.cun.vidaraa.three_bedroom
-              : en.cun.vidaraa.three_bedroom}
+              ? es.pom.nalu.three_bedroom
+              : en.pom.nalu.three_bedroom}
           </Link>
 
           {/* <Link
