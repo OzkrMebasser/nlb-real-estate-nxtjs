@@ -27,14 +27,14 @@ body {
 } */
 
 /* Agrega la animación para el resplandor infinito */
-@keyframes glowing {
+/* @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-}
+} */
 
 /* Aplica la animación a la clase glow-on-hover sin necesidad de hover */
-.glow-on-hover {
+/* .glow-on-hover {
   width: 220px;
   height: 50px;
   border: none;
@@ -45,15 +45,15 @@ body {
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  animation: glowing 20s linear infinite; /* Aplica la animación infinita */
-}
+  animation: glowing 20s linear infinite; /* Aplica la animación infinita 
+} */
 
 /* Estilo para cuando el botón está activo (opcional) */
-.glow-on-hover:active {
+/* .glow-on-hover:active {
   color: #000;
-}
+} */
 
-/* Estilo para cuando el botón está activo (opcional) */
+/* Estilo para cuando el botón está activo (opcional) 
 .glow-on-hover:active:after {
-  background: transparent;
-}
+ background: transparent;
+} */

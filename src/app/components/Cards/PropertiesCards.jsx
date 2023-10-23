@@ -25,7 +25,7 @@ const PropertiesCards = ({ items, ruta }) => {
         onClick={() => router.push(`properties`)}
       >
         <h1 className="text-2xl text-sky-900 font-black">{items.desarrollo}</h1>
-        <p> Ubicacion : {items.ubicacion}</p>
+        <p> Ubicacion ff: {items.ubicacion}</p>
         <img
           className="object-cover w-full h-48"
           src={items.imagenCard}

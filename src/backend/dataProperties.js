@@ -139,21 +139,17 @@ export const allProperties = [
   {
     id: 1,
     desarrollo: "Tres Patios",
-    tipo: "Departamento",
+    tipo: "villa",
     ubicacion: "Playa del Carmen",
     route: "properties/Playa_del_Carmen/Tres_Patios",
     route2: "Playa_del_Carmen/Tres_Patios",
     routeUnit_1: "Tres_Patios/Villa_90m2",
     routeUnit_2: "Tres_Patios/Villa_110m2",
     precio: 2500000,
-    habitaciones: 3,
-    banios: 2,
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
+    habitaciones: "tres_habs",
+    banios: "dos_banios",
+    metrosCuadrados: "m2TresPatios",
+    ymuchomas: "ymuchomas",
     description:
       "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
@@ -291,22 +287,17 @@ export const allProperties = [
     nickName: "Cozumel Luxury Living",
     subTitle:
       "UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN",
-    tipo: "Departamento",
+    tipo: "departamento",
     ubicacion: "Cozumel",
     route: "properties/Cozumel/Athimar_Cozumel",
     route2: "Cozumel/Athimar_Cozumel",
     routeUnit_1: "Athimar_Cozumel/One_Bedroom",
     routeUnit_2: "Athimar_Cozumel/App2",
-    precio: 16999,
+    precio: 169999,
     habitaciones: "unoAtresRooms",
-    banios: "unoAtresBaños",
+    banios: "unoAtresBanios",
     metrosCuadrados: "m2Athimar",
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
+    ymuchomas: "ymuchomas",
     description:
       "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
@@ -485,22 +476,17 @@ export const allProperties = [
     desarrollo: "Vidaraa Tower",
     nickName: "",
     subTitle: "",
-    tipo: "Departamento",
-    ubicacion: "Cozumel",
+    tipo: "condo",
+    ubicacion: "Cancún",
     route: "properties/Cancun/Vidaraa",
     route2: "Cancun/Vidaraa",
     routeUnit_1: "properties/Cancun/Vidaraa/Two_Bedroom",
     routeUnit_2: "properties/Cancun/Vidaraa/Three_Bedroom",
-    precio: 16999,
-    habitaciones: "unoAtresRooms",
-    banios: "unoAtresBaños",
-    metrosCuadrados: "m2Athimar",
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-    metrosCuadrados: 90,
+    precio: 340859,
+    habitaciones: "dosTres",
+    banios: "dosTres",
+    metrosCuadrados: "m2vidaraa",
+    ymuchomas: "ymuchomas",
     description:
       "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
@@ -663,10 +649,10 @@ export const allProperties = [
   //"NALU"
   {
     id: 4,
-    desarrollo: "NÁLU LUXURY BEACHFRONT RESIDENCES",
-    nickName: "",
+    desarrollo: "NÁLU ",
+    nickName: "NÁLU LUXURY BEACHFRONT RESIDENCES",
     subTitle: "",
-    tipo: "Departamento",
+    tipo: "departamento",
     ubicacion: "Puerto Morelos",
     route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
     route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
@@ -678,15 +664,7 @@ export const allProperties = [
     habitaciones: "dosTres",
     banios: "tres_banios",
     metrosCuadrados: "m2Nalu",
-
-    sala: "Sala",
-    cocina: "Cocina",
-    comedor: "Comedor",
-    closet: "Closets",
-    terraza: "Terraza",
-
-    // description:
-    //   "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
+    
     imagenCard:
       "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-homecard.jpg?alt=media&token=4e1b0df2-9a25-4fca-813d-e59cf2e3a186&_gl=1*17t7769*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDU3ODQuNjAuMC4w",
     // embededMapSrc:
@@ -845,64 +823,6 @@ export const allProperties = [
     },
    
   },
-  {
-    id: 5,
-    desarrollo: "Parque Zama",
-    tipo: "Departamento",
-    ubicacion: "Tulum",
-    precio: 1500000,
-    habitaciones: 1,
-    banios: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2022/07/BECAN_INDES.webp",
-  },
-  {
-    id: 6,
-    desarrollo: "Paam Cheel",
-    tipo: "Departamento",
-    ubicacion: "Cancun",
-    precio: 1500000,
-    habitaciones: 1,
-    banios: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2023/05/yax.png",
-  },
-  {
-    id: 7,
-    desarrollo: "Fulano 7",
-    tipo: "Departamento",
-    ubicacion: "Cozumel",
-    precio: 900000,
-    habitaciones: 1,
-    banios: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 8,
-    desarrollo: "Fulano 8",
-    tipo: "Departamento",
-    ubicacion: "Playa del Carmen",
-    precio: 800000,
-    habitaciones: 1,
-    banios: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 9,
-    desarrollo: "Fulano 9",
-    tipo: "Departamento",
-    ubicacion: "Merida",
-    precio: 1500000,
-    habitaciones: 1,
-    banios: 1,
-    metrosCuadrados: 60,
-    imagenCard:
-      "https://images.pexels.com/photos/36362/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
+ 
+  
 ];

@@ -18,6 +18,7 @@ const NaluPage = () => {
   const { allProperties } = useProperties();
 
   const images = allProperties[3].imagesCube;
+  
 
   const router = useRouter();
   return (
@@ -27,7 +28,7 @@ const NaluPage = () => {
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4 ">
               <h2 className=" uppercase max-w-lg  mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
-                NÁLU
+                NÁLU 
               </h2>
 
               <strong>

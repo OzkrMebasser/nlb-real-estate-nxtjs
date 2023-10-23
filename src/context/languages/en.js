@@ -40,6 +40,7 @@ const enTranslations = {
   m2vidaraa: "From 104.72m² to 150.32m²",
   m2Nalu: "From 141.40m² to 215.10m²",
 
+  
   ymuchomas: "And much more!",
   departamento: "Appartment",
   casa: "House",
@@ -50,6 +51,7 @@ const enTranslations = {
 
   //Button Ver este proyecto
   verProyecto: "See this project",
+  seeOtherLocations: "See other Locations",
   //Button Volver
   go_back: "Go back",
   //Modal images
@@ -57,9 +59,11 @@ const enTranslations = {
   enlarged_image: "Enlarged Image",
 
   //PROPIEDADES ***********************
+  propertiesIn : "Properties in ",
   and_much_more: "And much more...",
   more_details: "Click to see more details",
   location: "Location",
+  wesorry: "We're sorry, but we currently don't have any properties in this location.",
 
   //PLAYA DEL CARMEN
   pdc: {

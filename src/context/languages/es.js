@@ -53,6 +53,7 @@ const esTranslations = {
 
   //Button Ver este proyecto
   verProyecto: "Ver este proyecto",
+  seeOtherLocations: "Ver otras ubicaciones",
   //Button Volver
   go_back: "Volver",
   //Modal images
@@ -60,9 +61,12 @@ const esTranslations = {
   enlarged_image: "Imagen Ampliada",
 
   //PROPIEDADES ***********************
+
+  propertiesIn : "Propiedades en ",
   and_much_more: "Y mucho mas...",
   more_details: "Da click para ver mas detalles",
   location: "Ubicación",
+  wesorry: "Lo sentimos, por el momento no tenemos propiedades en esta ubicación.",
 
   //PLAYA DEL CARMEN
   pdc: {
