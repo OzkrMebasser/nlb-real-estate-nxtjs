@@ -40,7 +40,6 @@ const enTranslations = {
   m2vidaraa: "From 104.72m² to 150.32m²",
   m2Nalu: "From 141.40m² to 215.10m²",
 
-  
   ymuchomas: "And much more!",
   departamento: "Appartment",
   casa: "House",
@@ -59,11 +58,43 @@ const enTranslations = {
   enlarged_image: "Enlarged Image",
 
   //PROPIEDADES ***********************
-  propertiesIn : "Properties in ",
+  propertiesIn: "Properties in ",
   and_much_more: "And much more...",
   more_details: "Click to see more details",
   location: "Location",
-  wesorry: "We're sorry, but we currently don't have any properties in this location.",
+  wesorry:
+    "We're sorry, but we currently don't have any properties in this location.",
+
+  //PREGUNTAS FRECUENTES
+  faq: "Frequently Asked Questions",
+  faq_1: "How do I acquire a property In Mexico?",
+  faq_2: "Can I acquire in co-ownership?",
+  faq_3: "Can I acquire through a LLC?",
+  faq_4: "If the bank holding my trust ceases doing business is ther any risk of losing my property?",
+  faq_5: "What is the role of the notary public in Mexico?",
+  faq_6: "What are my closing cost?",
+  faq_7: "Property Tax",
+  faq_8: "Do I need an attorney?",
+  faq_9: "Once I am an owner, how do I transfer title?",
+  faq_10: "What are the next steps?",
+
+
+  //CONTACT US FORM
+  contactUsTitle: "Contact Us",
+  full_name: "Full Name",
+  placeHolder_full_name: "Type your full name",
+  your_email: "Your email",
+  phone: "Telephone",
+  placeHolder_phone: "Enter your phone number",
+  interested_property: "Property of Interest",  
+  your_message: "Your message",
+  placeHolder_message: "Leave a comment or message...",
+  send_msg: "Send Message",
+  terms: "Terms of Service",
+  privacyPolicy: "Privacy Policy",
+
+
+
 
   //PLAYA DEL CARMEN
   pdc: {

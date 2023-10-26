@@ -1,15 +1,23 @@
 "use client";
 import { useState } from "react";
 import { useProperties } from "@/context/PropertiesProvider";
+
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "../../../context/languages/en";
+import es from "../../../context/languages/es";
+
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const { allProperties } = useProperties();
+  const { language, setLanguage } = useLanguage();
+
   const router = useRouter();
 
   const propiedades = allProperties.map((propiedad) => propiedad.desarrollo);
@@ -25,75 +33,70 @@ const Footer = () => {
           <div className="footer-info lg:w-1/3 md:px-4">
             <h6 className="text-base text-[#9c8966] font-bold uppercase mb-2 hover:underline cursor-pointer">
               <span onClick={() => router.push(`frequent_questions`)}>
-                Preguntas Frecuentes
+                {/* Preguntas Frecuentes */}
+                {language === es ? es.faq : en.faq}
               </span>
             </h6>
             <div>
               <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/How_do_I_acquire_a_property_in_Mexico`
-                  )
-                }
+                // onClick={() =>
+                //   router.push(
+                //     `/frequent_questions/How_do_I_acquire_a_property_in_Mexico`
+                //   )
+                // }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                How do I acquire a property In Mexico?
+                <Link href="/frequent_questions/How_do_I_acquire_a_property_in_Mexico">
+                  {/* How do I acquire a property In Mexico? */}
+                  {language === es ? es.faq_1 : en.faq_1}
+                </Link>
               </p>
 
-              <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/Can_I_acquire_in_co_ownership`
-                  )
-                }
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                Can I acquire in co-ownership?
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
+                {/* Can I acquire in co-ownership? */}
+                <Link href="/frequent_questions/Can_I_acquire_in_co_ownership">
+                  {language === es ? es.faq_2 : en.faq_2}
+                </Link>
+              </p>
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
+                {/* Can I acquire through a LLC? */}
+                <Link href="/frequent_questions/Can_I_acquire_through_an_LLC">
+                  {language === es ? es.faq_3 : en.faq_3}
+                </Link>
               </p>
               <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/Can_I_acquire_through_an_LLC`
-                  )
-                }
+                
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                Can I acquire through a LLC?
+                {/* If the bank holding my trust ceases doing business is ther any
+                risk of losing my property? */}
+                <Link href="/frequent_questions/If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property">
+                  {language === es ? es.faq_4 : en.faq_4}
+                </Link>
+              </p>
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
+                {/* What are my closing cost? */}
+                <Link href="/frequent_questions/What_are_my_closing_cost">
+                  
+                </Link>
               </p>
               <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property`
-                  )
-                }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                If the bank holding my trust ceases doing business is ther any
-                risk of losing my property?
+                {/* What is the role of the notary public in Mexico? */}
+                <Link href="/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico">
+                {language === es ? es.faq_5 : en.faq_5}
+                </Link>
+                
               </p>
               <p
-                onClick={() =>
-                  router.push(`/frequent_questions/What_are_my_closing_cost`)
-                }
+                
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                What are my closing cost?
-              </p>
-              <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico`
-                  )
-                }
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                What is the role of the notary public in Mexico?
-              </p>
-              <p
-                onClick={() => router.push(`/frequent_questions/Property_Tax`)}
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                Property Tax
+                {/* Property Tax */}
+              <Link href="/frequent_questions/Property_Tax">
+              
+              </Link>
               </p>
 
               <p
@@ -266,10 +269,10 @@ const Footer = () => {
                     <select
                       id="property"
                       name="property"
-                      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                      className="uppercase shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                     >
                       {propiedades.map((property) => (
-                        <option key={property} value={property}>
+                        <option className="" key={property} value={property}>
                           {property}
                         </option>
                       ))}

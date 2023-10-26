@@ -250,20 +250,14 @@ function Nav() {
                               </Menu>
                             </li>
                             {/*TULUM */}
-                            <li
-                              className={
-                                underLineChg
-                                  ? "goldenUnderline mid p-4 font-bold "
-                                  : "blueUnderline mid p-4 font-bold "
-                              }
-                            >
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
                               <Menu
                                 as="div"
                                 className="relative inline-block text-left"
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    TULUM
+                                    <Link href="/properties/Tulum">TULUM</Link>
                                     <ChevronDownIcon
                                       className="-mr-1 h-5 w-5 text-gray-400"
                                       aria-hidden="true"
@@ -352,20 +346,16 @@ function Nav() {
                               </Menu>
                             </li>
                             {/*CANCUN */}
-                            <li
-                              className={
-                                underLineChg
-                                  ? "goldenUnderline mid p-4 font-bold "
-                                  : "blueUnderline mid p-4 font-bold "
-                              }
-                            >
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
                               <Menu
                                 as="div"
                                 className="relative inline-block text-left"
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    CANCUN
+                                    <Link href="/properties/Cancun">
+                                      CANCUN
+                                    </Link>
                                     <ChevronDownIcon
                                       className="-mr-1 h-5 w-5 text-gray-400"
                                       aria-hidden="true"
@@ -438,22 +428,15 @@ function Nav() {
                               </Menu>
                             </li>
                             {/*COZUMEL */}
-                            <li
-                              className={
-                                underLineChg
-                                  ? "goldenUnderline mid p-4 font-bold "
-                                  : "blueUnderline mid p-4 font-bold "
-                              }
-                            >
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
                               <Menu
                                 as="div"
                                 className="relative inline-block text-left"
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                   
                                     <Link href="/properties/Cozumel">
-                                    COZUMEL
+                                      COZUMEL
                                     </Link>
                                     <ChevronDownIcon
                                       className="-mr-1 h-5 w-5 text-gray-400"
@@ -534,6 +517,104 @@ function Nav() {
                                             )}
                                           >
                                             Tuane
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
+                            {/*PUERTO MORELOS */}
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
+                              >
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Puerto_Morelos">
+                                      PUERTO MORELOS
+                                    </Link>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
+
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Nálu
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
                                           </a>
                                         )}
                                       </Menu.Item>
@@ -844,386 +925,461 @@ function Nav() {
                     <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="dropdown-menu">
                         <ul>
-                          {/*PLAYA DEL CARMEN */}
-                          <li
-                            className={
-                              underLineChg
-                                ? "goldenUnderline mid p-4 font-bold "
-                                : "blueUnderline mid p-4 font-bold "
-                            }
-                          >
-                            <Menu
-                              as="div"
-                              className="relative inline-block text-left"
-                            >
-                              <div>
-                                <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                <Link href="/properties/Playa_del_Carmen">
+                                               {/*PLAYA DEL CARMEN */}
+                                               <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
+                              >
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Playa_del_Carmen">
                                       PLAYA DEL CARMEN
                                     </Link>
-                                  <ChevronDownIcon
-                                    className="-mr-1 h-5 w-5 text-[#9c8966]"
-                                    aria-hidden="true"
-                                  />
-                                </Menu.Button>
-                              </div>
 
-                              <Transition
-                                as={Fragment}
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
-                              >
-                                <Menu.Items className=" absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                  <div className="py-1">
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <Link
-                                          href="properties/Playa_del_Carmen/Tres_Patios"
-                                          onClick={() => setIsOpen(!isOpen)}
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Tres Patios
-                                        </Link>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Huaya
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Ocean Life
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                  </div>
-                                </Menu.Items>
-                              </Transition>
-                            </Menu>
-                          </li>
-                          {/*TULUM */}
-                          <li
-                            className={
-                              underLineChg
-                                ? "goldenUnderline mid p-4 font-bold "
-                                : "blueUnderline mid p-4 font-bold "
-                            }
-                          >
-                            <Menu
-                              as="div"
-                              className="relative inline-block text-left"
-                            >
-                              <div>
-                                <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                  TULUM
-                                  <ChevronDownIcon
-                                    className="-mr-1 h-5 w-5 text-gray-400"
-                                    aria-hidden="true"
-                                  />
-                                </Menu.Button>
-                              </div>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-[#9c8966]"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
 
-                              <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-100"
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
+                                <Transition
+                                  as={Fragment}
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className=" absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <Link
+                                            href="/properties/Playa_del_Carmen/Tres_Patios"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Tres Patios
+                                          </Link>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Huaya
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Ocean Life
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
+                            {/*TULUM */}
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
                               >
-                                <Menu.Items className="absolute left-0  z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                  <div className="py-1">
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Tulum
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Organic
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Xelba
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Tuane
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                  </div>
-                                </Menu.Items>
-                              </Transition>
-                            </Menu>
-                          </li>
-                          {/*CANCUN */}
-                          <li
-                            className={
-                              underLineChg
-                                ? "goldenUnderline mid p-4 font-bold "
-                                : "blueUnderline mid p-4 font-bold "
-                            }
-                          >
-                            <Menu
-                              as="div"
-                              className="relative inline-block text-left"
-                            >
-                              <div>
-                                <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                  CANCUN
-                                  <ChevronDownIcon
-                                    className="-mr-1 h-5 w-5 text-gray-400"
-                                    aria-hidden="true"
-                                  />
-                                </Menu.Button>
-                              </div>
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Tulum">TULUM</Link>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
 
-                              <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-100"
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute left-0  z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Tulum
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Organic
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Xelba
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Tuane
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
+                            {/*CANCUN */}
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
                               >
-                                <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                  <div className="py-1">
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Vidaraa
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Thalassa{" "}
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Distrito Yaxx
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                  </div>
-                                </Menu.Items>
-                              </Transition>
-                            </Menu>
-                          </li>
-                          {/*COZUMEL */}
-                          <li
-                            className={
-                              underLineChg
-                                ? "goldenUnderline mid p-4 font-bold "
-                                : "blueUnderline mid p-4 font-bold "
-                            }
-                          >
-                            <Menu
-                              as="div"
-                              className="relative inline-block text-left"
-                            >
-                              <div>
-                                <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                       
-                                <Link href="/properties/Cozumel">
-                                    COZUMEL
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Cancun">
+                                      CANCUN
                                     </Link>
-                                  <ChevronDownIcon
-                                    className="-mr-1 h-5 w-5 text-gray-400"
-                                    aria-hidden="true"
-                                  />
-                                </Menu.Button>
-                              </div>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
 
-                              <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-100"
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Vidaraa
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Thalassa{" "}
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Distrito Yaxx
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
+                            {/*COZUMEL */}
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
                               >
-                                <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                  <div className="py-1">
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Tulum
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Organic
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Lik Xelba
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                    {/*//Falta cambiar ruta href*/}
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <a
-                                          href="#"
-                                          className={classNames(
-                                            active
-                                              ? "bg-[#e5c995] text-gray-900"
-                                              : "text-gray-700",
-                                            "block px-4 py-2 text-[11px] uppercase"
-                                          )}
-                                        >
-                                          Tuane
-                                        </a>
-                                      )}
-                                    </Menu.Item>
-                                  </div>
-                                </Menu.Items>
-                              </Transition>
-                            </Menu>
-                          </li>
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Cozumel">
+                                      COZUMEL
+                                    </Link>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
+
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Tulum
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Organic
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Lik Xelba
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Tuane
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
+                            {/*PUERTO MORELOS */}
+                            <li className=" text-gray-700 hover:bg-[#e5c995] hover:text-white">
+                              <Menu
+                                as="div"
+                                className="relative inline-block text-left"
+                              >
+                                <div>
+                                  <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
+                                    <Link href="/properties/Puerto_Morelos">
+                                      PUERTO MORELOS
+                                    </Link>
+                                    <ChevronDownIcon
+                                      className="-mr-1 h-5 w-5 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                  </Menu.Button>
+                                </div>
+
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-1">
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <Link
+                                            href="properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            Nálu
+                                          </Link>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                      {/*//Falta cambiar ruta href*/}
+                                      <Menu.Item>
+                                        {({ active }) => (
+                                          <a
+                                            href="#"
+                                            className={classNames(
+                                              active
+                                                ? "bg-[#e5c995] text-gray-900"
+                                                : "text-gray-700",
+                                              "block px-4 py-2 text-[11px] uppercase"
+                                            )}
+                                          >
+                                            ....
+                                          </a>
+                                        )}
+                                      </Menu.Item>
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </Menu>
+                            </li>
                         </ul>
                       </div>
                     </Menu.Items>

@@ -1,5 +1,3 @@
-import Villa90m2 from "@/app/properties/Playa_del_Carmen/Tres_Patios/Villa_90m2/page";
-
 const esTranslations = {
   // ESPAÑOL ESPAÑOL ESPAÑOL
 
@@ -60,13 +58,42 @@ const esTranslations = {
   clic_to_enlarge: "Da clic en la imagen para ampliarla",
   enlarged_image: "Imagen Ampliada",
 
+  //PREGUNTAS FRECUENTES
+  faq: "Preguntas frecuentes",
+  faq_1: "¿Cómo adquiero una propiedad en México?",
+  faq_2: "¿Puedo adquirir en copropiedad?",
+  faq_3: "¿Puedo adquirir a través de una LLC?",
+  faq_4:
+    "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay riesgo de perder mi propiedad?",
+  faq_5: "¿Cuál es el papel del notario público en México?",
+  faq_6: "¿Cuáles son mis costos de cierre?",
+  faq_7: "Impuesto sobre la propiedad",
+  faq_8: "¿Necesito un abogado?",
+  faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
+  faq_10: "¿Cuáles son los siguientes pasos?",
+
+  // FORMULARIO DE CONTACTO
+  contactUsTitle: "Contáctenos",
+  full_name: "Nombre completo",
+  placeHolder_full_name: "Escriba su nombre completo",
+  your_email: "Su correo electrónico",
+  phone: "Teléfono",
+  placeHolder_phone: "Ingrese su número de teléfono",
+  interested_property: "Propiedad de interés",
+  your_message: "Su mensaje",
+  placeHolder_message: "Deje un comentario o mensaje...",
+  send_msg: "Enviar mensaje",
+  terms: "Términos de servicio",
+  privacyPolicy: "Política de privacidad",
+
   //PROPIEDADES ***********************
 
-  propertiesIn : "Propiedades en ",
+  propertiesIn: "Propiedades en ",
   and_much_more: "Y mucho mas...",
   more_details: "Da click para ver mas detalles",
   location: "Ubicación",
-  wesorry: "Lo sentimos, por el momento no tenemos propiedades en esta ubicación.",
+  wesorry:
+    "Lo sentimos, por el momento no tenemos propiedades en esta ubicación.",
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -472,21 +499,3 @@ const esTranslations = {
 };
 
 export default esTranslations;
-
-// propiedades: [
-
-//   // PLAYA DEL CARMEN
-//   // {
-//   //   pdc: [
-//   //     { desarrollo: "Tres Patios", tipo: "Departamento" },
-//   //     {
-//   //       desarrollo: "2 pdc",
-//   //       tipo: "Departamento ",
-//   //     },
-//   //   ],
-//   // },
-//   // CANCUN
-//   // { cun: [{ cun_1: {} }] },
-//   // COZUMEL
-
-// ],
