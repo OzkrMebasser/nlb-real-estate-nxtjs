@@ -654,6 +654,7 @@ export const allProperties = [
     subTitle: "",
     tipo: "departamento",
     ubicacion: "Puerto Morelos",
+    onsale: "promo",
     route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
     route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
     routeUnit_1:

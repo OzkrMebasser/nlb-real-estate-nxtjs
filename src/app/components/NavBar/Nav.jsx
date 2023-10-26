@@ -101,7 +101,7 @@ function Nav() {
                         </Menu.Button>
                       </div>
 
-                      <Transition
+                      <Transition 
                         as={Fragment}
                         enter="transition ease-out duration-100"
                         enterFrom="transform opacity-0 scale-95"
@@ -133,7 +133,9 @@ function Nav() {
                               )}
                             </Menu.Item>
                           </div>
+                          
                         </Menu.Items>
+                        
                       </Transition>
                     </Menu>
                   </li>

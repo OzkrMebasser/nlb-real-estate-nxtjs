@@ -1,69 +1,42 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import { useModal } from "@/context/ModalProvider";
+import Link from "next/link";
+import "./promoModal.css";
 
 export default function PromoModal() {
-    const { showModal, setShowModal } = useModal();
+  const { showModal, setShowModal } = useModal();
 
- 
-//   useEffect(() => {
-//     const openModal = () => {
-//       setShowModal(true);
-//       setTimeout(() => {
-//         setShowModal(false);
-//       }, 40000); // Cierra automáticamente después de 40 segundos
-//     };
-
-//     openModal(); // Abre el modal inicialmente después de 5 segundos
-
-//     // Configura un temporizador recurrente para abrir el modal cada 40 segundos
-//     const interval = setInterval(openModal, 40000);
-
-//     return () => {
-//       clearInterval(interval); // Limpia el intervalo si el componente se desmonta
-//     };
-//   }, []);
-  
   return (
     <>
-      {/* <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
-        onClick={() => setShowModal(true)}
-      >
-        Open regular modal
-      </button> */}
       {showModal ? (
         <>
-          <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="animatedBorder p-4 justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
-                    Modal Title
+                <div className="bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-xl lg:text-3xl font-semibold text-white ">
+                    OFERTA DE FIN DE AÑO
                   </h3>
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      ×
-                    </span>
-                  </button>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto">
+                <div className="relative p-6 flex-auto ">
                   <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                    I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They <a href=""></a>re slowed down by their perception of
-                    themselves. If you are taught you can’t do anything, you
-                    won’t do anything. I was taught I could do everything.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Earum perspiciatis magni voluptas aspernatur beatae, sed
+                    neque animi, omnis rerum fugit esse, iusto corrupti a alias
+                    minima sint! Optio, molestiae? Modi.
                   </p>
+
+                  <button
+                    className=" w-full lg:w-[300px] align-middle text-white  bg-blue-500 rounded shadow font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <Link href="/properties/On_Sale">Ver Ofertas!</Link>
+                  </button>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

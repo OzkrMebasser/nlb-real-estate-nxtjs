@@ -1,0 +1,37 @@
+.animatedBorder {
+	position: relative;
+	
+	width: auto;
+	height: auto;
+	
+}
+
+.animatedBorder:before, .animatedBorder:after {
+	content: '';
+	position: absolute;
+	/* left: -2px;
+	top: -2px; */
+	background: linear-gradient(45deg, #00abfb2f, #00ffb32c, #00ff0027,#00ff402c, #00ffaa2a, #00fbfb28, 
+		#00ccff2c, #00ff622c,#0099ff2c, #00ffd527);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
