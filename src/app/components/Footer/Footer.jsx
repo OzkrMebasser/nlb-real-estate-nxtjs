@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useProperties } from "@/context/PropertiesProvider";
 
 import useLanguage from "@/context/hooks/useLanguage";
-import en from "../../../context/languages/en";
-import es from "../../../context/languages/es";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
 
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
@@ -77,7 +77,7 @@ const Footer = () => {
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
                 {/* What are my closing cost? */}
                 <Link href="/frequent_questions/What_are_my_closing_cost">
-                  
+
                 </Link>
               </p>
               <p
@@ -188,7 +188,7 @@ const Footer = () => {
                   Contact Us
                 </h2>
 
-                <form action="https://formspree.io/f/mwkdlvlw" method="post">
+                <form action="https://formcarry.com/s/Mi680Qbg5u" method="post">
                   <div>
                     <label
                       htmlFor="fullName"

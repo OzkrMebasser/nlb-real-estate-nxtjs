@@ -2,14 +2,16 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 // import ContactButtons from "./components/ContactButtons/ContactButtons";
 import ActionButtons from "./components/ContactButtons/ActionButtons";
+import PromoModal from "./components/PromoModal/PromoModal";
 // import NavBar from "./components/NavBar/NavBar';
 import Nav from "./components/NavBar/Nav";
 import Footer from "./components/Footer/Footer";
-import  LanguageProvider  from "../context/LanguageProvider";
+import LanguageProvider from "../context/LanguageProvider";
 // import LanguageSelector from './components/LanguageSelector/LanguageSelector'
 import { PropertiesProvider } from "../context/PropertiesProvider";
 import { QuestionsProvider } from "../context/QuestionProvider";
-import 'react-slideshow-image/dist/styles.css'
+import "react-slideshow-image/dist/styles.css";
+import { ModalProvider } from "@/context/ModalProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,20 +31,23 @@ export default function RootLayout({ children }) {
       </head>
 
       <body suppressHydrationWarning={true} className={inter.className}>
-        <LanguageProvider>
-          {/* <LanguageSelector/> */}
-          <PropertiesProvider>
-            <QuestionsProvider>
-              <Nav />
+        <ModalProvider>
+          <PromoModal />
+          <LanguageProvider>
+            {/* <LanguageSelector/> */}
+            <PropertiesProvider>
+              <QuestionsProvider>
+                <Nav />
 
-              {children}
+                {children}
 
-              {/* <ContactButtons /> */}
-              <ActionButtons />
-              <Footer />
-            </QuestionsProvider>
-          </PropertiesProvider>
-        </LanguageProvider>
+                {/* <ContactButtons /> */}
+                <ActionButtons />
+                <Footer />
+              </QuestionsProvider>
+            </PropertiesProvider>
+          </LanguageProvider>
+        </ModalProvider>
       </body>
     </html>
   );
