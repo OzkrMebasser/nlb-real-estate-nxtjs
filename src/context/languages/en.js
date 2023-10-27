@@ -79,7 +79,7 @@ const enTranslations = {
   faq_10: "What are the next steps?",
 
 
-  //CONTACT US FORM
+  //CONTACT US FORM // FOOTER
   contactUsTitle: "Contact Us",
   full_name: "Full Name",
   placeHolder_full_name: "Type your full name",
@@ -92,6 +92,7 @@ const enTranslations = {
   send_msg: "Send Message",
   terms: "Terms of Service",
   privacyPolicy: "Privacy Policy",
+  argentina: "Looking for properties in Argentina?",
 
 
 

@@ -85,6 +85,8 @@ const esTranslations = {
   send_msg: "Enviar mensaje",
   terms: "Términos de servicio",
   privacyPolicy: "Política de privacidad",
+  argentina: "¿Buscas propiedades en Argentina?",
+  
 
   //PROPIEDADES ***********************
 

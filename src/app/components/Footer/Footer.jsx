@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useProperties } from "@/context/PropertiesProvider";
-
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
@@ -38,107 +38,78 @@ const Footer = () => {
               </span>
             </h6>
             <div>
-              <p
-                // onClick={() =>
-                //   router.push(
-                //     `/frequent_questions/How_do_I_acquire_a_property_in_Mexico`
-                //   )
-                // }
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
+              {/*faq_1: "How do I acquire a property In Mexico?"*/}
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
                 <Link href="/frequent_questions/How_do_I_acquire_a_property_in_Mexico">
                   {/* How do I acquire a property In Mexico? */}
                   {language === es ? es.faq_1 : en.faq_1}
                 </Link>
               </p>
-
+              {/*faq_2: "Can I acquire in co-ownership?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
                 {/* Can I acquire in co-ownership? */}
                 <Link href="/frequent_questions/Can_I_acquire_in_co_ownership">
                   {language === es ? es.faq_2 : en.faq_2}
                 </Link>
               </p>
+              {/* faq_3: "Can I acquire through a LLC?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                {/* Can I acquire through a LLC? */}
                 <Link href="/frequent_questions/Can_I_acquire_through_an_LLC">
                   {language === es ? es.faq_3 : en.faq_3}
                 </Link>
               </p>
-              <p
-                
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                {/* If the bank holding my trust ceases doing business is ther any
-                risk of losing my property? */}
+              {/* faq_4: "If the bank holding my trust ceases doing business is ther any risk of losing my property?"*/}
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
                 <Link href="/frequent_questions/If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property">
                   {language === es ? es.faq_4 : en.faq_4}
                 </Link>
               </p>
+              {/* faq_5: "What is the role of the notary public in Mexico?" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                {/* What are my closing cost? */}
-                <Link href="/frequent_questions/What_are_my_closing_cost">
-
-                </Link>
-              </p>
-              <p
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                {/* What is the role of the notary public in Mexico? */}
                 <Link href="/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico">
-                {language === es ? es.faq_5 : en.faq_5}
+                  {language === es ? es.faq_5 : en.faq_5}
                 </Link>
-                
               </p>
-              <p
-                
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                {/* Property Tax */}
-              <Link href="/frequent_questions/Property_Tax">
+              {/* faq_6: "What are my closing cost?" */}
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
+                <Link href="/frequent_questions/What_are_my_closing_cost">
+                  {language === es ? es.faq_6 : en.faq_6}
+                </Link>
+              </p>
+              {/* faq_7: "Property Tax" */}
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
+                <Link href="/frequent_questions/Property_Tax">
+                  {language === es ? es.faq_7 : en.faq_7}
+                </Link>
+              </p>
+              {/* faq_8: "Do I need an attorney?" */}
+              <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
               
-              </Link>
+                <Link href="/frequent_questions/Do_I_need_an_attorney">
+                  {language === es ? es.faq_8 : en.faq_8}
+                </Link>
               </p>
-
+              {/* faq_9: "Once I am an owner, how do I transfer title?" */}
               <p
-                onClick={() =>
-                  router.push(`/frequent_questions/Do_I_need_an_attorney`)
-                }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                Do I need an attorney?
+               <Link href="/frequent_questions/Once_Im_an_owner_how_do_I_transfer_title">
+               {language === es ? es.faq_9 : en.faq_9}
+               </Link>
               </p>
+              {/* faq_10: "What are the next steps?" */}
               <p
-                onClick={() =>
-                  router.push(
-                    `/frequent_questions/Once_Im_an_owner_how_do_I_transfer_title`
-                  )
-                }
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                Once I am an owner, how do I transfer title?
-              </p>
-              <p
-                onClick={() =>
-                  router.push(`/frequent_questions/What_are_the_next_steps`)
-                }
-                className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
-              >
-                What are the next steps?
+                <Link href="/frequent_questions/What_are_the_next_steps">
+                {language === es ? es.faq_10 : en.faq_10}
+                </Link>
               </p>
             </div>
 
-            {/* <h6 className="text-base font-medium text-white uppercase mb-2">FREQUENTLY ASKED QUESTIONS</h6>
-        <p className="text-[#32f1ff]">Te ayudamos a lograr tu objetivo en la busqueda de tu hogar.</p>
-        <div className="mt-4">
-          <button className="bg-facebook py-2 px-4 text-white rounded mt-2 transition-colors duration-300">
-            <span className="fab fa-facebook-f mr-2"></span> Follow
-          </button>
-          <button className="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300">
-            <span className="fab fa-twitter mr-2"></span> Follow @freeweb19
-          </button>
-        </div> */}
+         
           </div>
-
+        {/* FALTA MODIFICAR ESTA SECCION  */}
           <div className="md:w-2/3 lg:w-1/3 md:px-4 xl:pl-16 mt-12 lg:mt-0">
             <div className="sm:flex">
               <div className="sm:flex-1 mt-4 sm:mt-0">
@@ -153,10 +124,12 @@ const Footer = () => {
                     HOW DO I ACQUIRE PROPERTY IN MEXICO?
                   </a>
                   <a
-                    href="#"
+                    href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20en%20la%20Argentina,%20vengo%20de%20la%20pagina%20www.nlbrealestate.com"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
                     className="text-[#32f1ff] py-1 block hover:underline"
                   >
-                    Resources
+                    {language === es? es.argentina : en.argentina}  <span className="fi fi-ar ml-3"></span>
                   </a>
                   <a
                     href="#"
@@ -185,7 +158,8 @@ const Footer = () => {
             <section className="bg-[transparent] relative rigth-6">
               <div className="  mx-auto max-w-screen-md">
                 <h2 className="mb-5 mt-5 lg:mt-0 uppercase text-3xl tracking-tight font-extrabold text-center text-[#9c8966]">
-                  Contact Us
+                  {/* Contact Us */}
+                  {language === es ? es.contactUsTitle : en.contactUsTitle}
                 </h2>
 
                 <form action="https://formcarry.com/s/Mi680Qbg5u" method="post">
@@ -194,7 +168,8 @@ const Footer = () => {
                       htmlFor="fullName"
                       className="block mb-2 text-sm font-medium text-[#32f1ff]"
                     >
-                      Full Name
+                      {/* Full Name */}
+                      {language === es ? es.full_name : en.full_name}
                     </label>
 
                     <input
@@ -203,7 +178,7 @@ const Footer = () => {
                       id="fullName"
                       // className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                       className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                      placeholder="Enter your full name"
+                      placeholder={language === es ? es.placeHolder_full_name : en.placeHolder_full_name}
                       required
                     />
 
@@ -211,7 +186,8 @@ const Footer = () => {
                       htmlFor="email"
                       className="block mt-3 mb-2 text-sm font-medium text-[#32f1ff]"
                     >
-                      Your email
+                      {/* Your email */}
+                      {language === es ? es.your_email : en.your_email}
                     </label>
 
                     <input
@@ -229,7 +205,8 @@ const Footer = () => {
                       htmlFor="phone"
                       className="block mt-3 mb-2 text-sm font-medium text-[#32f1ff]"
                     >
-                      Telephone
+                      {/* Telephone */}
+                      {language === es ? es.phone : en.phone}
                     </label>
                     <PhoneInput
                       inputProps={{
@@ -237,7 +214,7 @@ const Footer = () => {
                         id: "phone",
                         className:
                           "ml-10 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-none rounded-r-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5",
-                        placeholder: "Enter your phone number",
+                        placeholder: `${language === es ? es.placeHolder_phone : en.placeHolder_phone}`,
                       }}
                       value={phoneNumber}
                       onChange={handlePhoneNumberChange}
@@ -255,7 +232,8 @@ const Footer = () => {
                       htmlFor="property"
                       className="block mt-3 mb-2 text-sm font-medium text-[#32f1ff]"
                     >
-                      Property of Interest
+                      {/* Property of Interest */}
+                      {language === es ? es.interested_property : en.interested_property}
                     </label>
 
                     {/* <input
@@ -284,7 +262,8 @@ const Footer = () => {
                       htmlFor="message"
                       className="block mt-3 mb-2 text-sm font-medium text-[#32f1ff]"
                     >
-                      Your message
+                      {/* Your message */}
+                      {language === es ? es.your_message : en.your_message}
                     </label>
 
                     <textarea
@@ -292,7 +271,7 @@ const Footer = () => {
                       name="message"
                       rows="4"
                       className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                      placeholder="Leave a comment or message..."
+                      placeholder={language === es ? es.placeHolder_message : en.placeHolder_message}
                     ></textarea>
                   </div>
 
@@ -301,7 +280,8 @@ const Footer = () => {
                     className="w-full h-12 mt-5 mx-auto px-4 py-2 text-sm text-[#32f1ff] bg-transparent border rounded-lg shadow"
                     role="button"
                   >
-                    Send Message
+                    {/* Send Message */}
+                    {language === es ? es.send_msg : en.send_msg}
                   </button>
                 </form>
               </div>
@@ -323,13 +303,15 @@ const Footer = () => {
                 href="#"
                 className="py-2 px-4 text-white inline-block hover:underline"
               >
-                Terms of Service
+                {/* Terms of Service */}
+                {language === es ? es.terms : en.terms}
               </a>
               <a
                 href="#"
                 className="py-2 px-4 text-white inline-block hover:underline"
               >
-                Privacy Policy
+                {/* Privacy Policy */}
+                {language === es ? es.privacyPolicy : en.privacyPolicy}
               </a>
             </div>
           </div>

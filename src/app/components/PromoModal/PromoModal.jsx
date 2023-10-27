@@ -23,20 +23,25 @@ export default function PromoModal() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto ">
-                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed mb-4">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Earum perspiciatis magni voluptas aspernatur beatae, sed
                     neque animi, omnis rerum fugit esse, iusto corrupti a alias
                     minima sint! Optio, molestiae? Modi.
                   </p>
-
-                  <button
-                    className=" w-full lg:w-[300px] align-middle text-white  bg-blue-500 rounded shadow font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
+                    <div className="w-full lg:px-44 mx-auto  items-center justify-center ">
+                    <Link 
                     onClick={() => setShowModal(false)}
+                    href="/properties/On_Sale"
                   >
-                    <Link href="/properties/On_Sale">Ver Ofertas!</Link>
-                  </button>
+                    {/* w-full lg:w-[350px]  */}
+                    <button className=" w-full  px-4 py-3 text-sm text-blue-100 bg-blue-500 rounded shadow"
+                    >
+                      Ver Ofertas!
+                    </button>
+                  </Link>
+                    </div>
+                  
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

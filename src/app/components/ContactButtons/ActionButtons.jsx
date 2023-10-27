@@ -7,7 +7,7 @@ import { FaPlus, FaPhone, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { GoX } from "react-icons/go";
 
 import "./actionButtons.css";
-import "./contactButtons.css";
+// import "./contactButtons.css";
 
 const ActionButtons = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -32,7 +32,7 @@ const ActionButtons = () => {
       {openMenu ? (
         <div className="whatsApp">
           <a
-            href="https://wa.me/5214626932535?text=Hola%20me%20interesa%20saber%20mas%20acerca%20de%20Silver%20Protect"
+            href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
@@ -43,7 +43,7 @@ const ActionButtons = () => {
       {openMenu ? (
         <div className="messenger">
           <a
-            href="https://www.facebook.com/876531472464645"
+            href="https://www.facebook.com/"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
@@ -53,38 +53,46 @@ const ActionButtons = () => {
       ) : null}
       {openMenu ? (
         <div className="email">
-          <a href="mailto:silverprotect@hotmail.com">
+          <a href="mailto:nlb@email.com">
             <MdOutlineMailOutline />
           </a>
         </div>
       ) : null}
       {openMenu ? (
-        <div className="telephone">
-          <a href="mailto:silverprotect@hotmail.com">
+        <div
+          className="telephone"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <a href="tel:+529841886928">
             <FaPhone />
           </a>
         </div>
       ) : null}
       {openMenu ? (
         <div className="instagram">
-          <a href="">
-          
+          <a href="https://www.instagram.com/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >
             <FaInstagram />
           </a>
         </div>
       ) : null}
-        {openMenu ? (
+      {openMenu ? (
         <div className="facebook">
-          <a href="">
-          
+          <a 
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >
             <FaFacebookF />
           </a>
         </div>
       ) : null}
     </div>
-    
   );
 };
 
 export default ActionButtons;
-//  {//NO OLVIDAR CAMBIAR LOS DATOS DE CONTACTO }
+
