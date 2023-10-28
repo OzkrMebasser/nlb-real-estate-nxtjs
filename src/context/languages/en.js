@@ -65,20 +65,6 @@ const enTranslations = {
   wesorry:
     "We're sorry, but we currently don't have any properties in this location.",
 
-  //PREGUNTAS FRECUENTES
-  faq: "Frequently Asked Questions",
-  faq_1: "How do I acquire a property In Mexico?",
-  faq_2: "Can I acquire in co-ownership?",
-  faq_3: "Can I acquire through a LLC?",
-  faq_4: "If the bank holding my trust ceases doing business is ther any risk of losing my property?",
-  faq_5: "What is the role of the notary public in Mexico?",
-  faq_6: "What are my closing cost?",
-  faq_7: "Property Tax",
-  faq_8: "Do I need an attorney?",
-  faq_9: "Once I am an owner, how do I transfer title?",
-  faq_10: "What are the next steps?",
-
-
   //CONTACT US FORM // FOOTER
   contactUsTitle: "Contact Us",
   full_name: "Full Name",
@@ -86,16 +72,13 @@ const enTranslations = {
   your_email: "Your email",
   phone: "Telephone",
   placeHolder_phone: "Enter your phone number",
-  interested_property: "Property of Interest",  
+  interested_property: "Property of Interest",
   your_message: "Your message",
   placeHolder_message: "Leave a comment or message...",
   send_msg: "Send Message",
   terms: "Terms of Service",
   privacyPolicy: "Privacy Policy",
   argentina: "Looking for properties in Argentina?",
-
-
-
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -504,25 +487,49 @@ const enTranslations = {
       },
     },
   },
+
+  //PREGUNTAS FRECUENTES (LINKS FOOTER)
+  faq: "Frequently Asked Questions",
+  faq_1: "How do I acquire a property In Mexico?",
+  faq_2: "Can I acquire in co-ownership?",
+  faq_3: "Can I acquire through a LLC?",
+  faq_4:
+    "If the bank holding my trust ceases doing business is ther any risk of losing my property?",
+  faq_5: "What is the role of the notary public in Mexico?",
+  faq_6: "What are my closing cost?",
+  faq_7: "Property Tax",
+  faq_8: "Do I need an attorney?",
+  faq_9: "Once I am an owner, how do I transfer title?",
+  faq_10: "What are the next steps?",
+
+  //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
+  //  faq_1
+  faq_1_article:{
+    cap_letter_p1: "F",
+    p1:
+    // "oreigners may obtain direct ownership of property within Mexican territory. However, foreigners cannot hold title to property within 100 km from the border and within 50 km from the coastline. This area is know as the restricted zone. However, there is a system in Mexico that allows non-Mexicans to purchase property, providing great protection for the property owner, and is very similar to fee simple ownership. In order to purchase real estate in the restricted zone, foreigners must acquire the property through a bank trust formalized with a Mexican Banking institution.",
+    `
+   oreigners may obtain direct ownership of property within Mexican
+territory. However, foreigners cannot hold title to property within
+100 km from the border and within 50 km from the coastline. This
+area is know as the restricted zone. However, there is a system in
+Mexico that allows non-Mexicans to purchase property, providing
+great protection for the property owner, and is very similar to fee
+simple ownership. In order to purchase real estate in the restricted
+zone, foreigners must acquire the property through a bank trust
+formalized with a Mexican Banking institution.
+   `,
+   p2: `As a buyer, you will
+   be designated as the main beneficiary and can designate substitute
+   beneficiaries in the event of death, that way avoiding probate
+   procedures upon death. The bank turst is established for 50 years,
+   renewable for the same period of time.`,
+   p3: `Prior to expiration, the
+   trustee bank will let you know that it´s time to extend the term for
+   anothr 50 years.`,
+  },
+  
+  //  faq_2
 };
 
 export default enTranslations;
-// propiedades: [
-//   // PLAYA DEL CARMEN
-//   // {
-//   //   pdc: [
-//   //     {
-//   //       propiedad: "Tres Patios",
-//   //       tipo: "Appartment",
-//   //     },
-//   //     {
-//   //       propiedad: "2 pdc",
-//   //       tipo: "Appartment",
-//   //     },
-//   //   ],
-//   // },
-//   // CANCUN
-//   // { cun: [{ cun_1: {} }, { cun_2: {} }] },
-//   // COZUMEL
-
-// ],

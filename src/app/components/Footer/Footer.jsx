@@ -294,11 +294,11 @@ const Footer = () => {
         <div className="container px-4 mx-auto">
           <div className="md:flex md:-mx-4 md:items-center">
             <div className="md:flex-1 md:px-4 text-center md:text-left">
-              <p className="text-white">
-                &copy; <strong>NLB Real Estate</strong>
+              <p className="text-white text-xl">
+                &copy; <strong>NLB</strong> <span className="text-sm">REAL ESTATE</span>
               </p>
             </div>
-            <div className="md:flex-1 md:px-4 text-center md:text-right">
+            <div className="md:flex-1 md:px-4 text-center md:text-right lg:flex-none justify-between">
               <a
                 href="#"
                 className="py-2 px-4 text-white inline-block hover:underline"
@@ -313,6 +313,10 @@ const Footer = () => {
                 {/* Privacy Policy */}
                 {language === es ? es.privacyPolicy : en.privacyPolicy}
               </a>
+             
+            <a href="#" className=" text-sm py-2 px-4 text-white inline-block hover:underline"
+              >Made with &#x1F9E1; by Ozkr Mebasser</a>.
+         
             </div>
           </div>
         </div>

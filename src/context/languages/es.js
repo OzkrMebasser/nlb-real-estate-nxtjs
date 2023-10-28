@@ -58,20 +58,6 @@ const esTranslations = {
   clic_to_enlarge: "Da clic en la imagen para ampliarla",
   enlarged_image: "Imagen Ampliada",
 
-  //PREGUNTAS FRECUENTES
-  faq: "Preguntas frecuentes",
-  faq_1: "¿Cómo adquiero una propiedad en México?",
-  faq_2: "¿Puedo adquirir en copropiedad?",
-  faq_3: "¿Puedo adquirir a través de una LLC?",
-  faq_4:
-    "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay riesgo de perder mi propiedad?",
-  faq_5: "¿Cuál es el papel del notario público en México?",
-  faq_6: "¿Cuáles son mis costos de cierre?",
-  faq_7: "Impuesto sobre la propiedad",
-  faq_8: "¿Necesito un abogado?",
-  faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
-  faq_10: "¿Cuáles son los siguientes pasos?",
-
   // FORMULARIO DE CONTACTO
   contactUsTitle: "Contáctenos",
   full_name: "Nombre completo",
@@ -86,7 +72,6 @@ const esTranslations = {
   terms: "Términos de servicio",
   privacyPolicy: "Política de privacidad",
   argentina: "¿Buscas propiedades en Argentina?",
-  
 
   //PROPIEDADES ***********************
 
@@ -497,6 +482,31 @@ const esTranslations = {
         },
       },
     },
+  },
+
+  //PREGUNTAS FRECUENTES
+  faq: "Preguntas frecuentes",
+  faq_1: "¿Cómo adquiero una propiedad en México?",
+  faq_2: "¿Puedo adquirir en copropiedad?",
+  faq_3: "¿Puedo adquirir a través de una LLC?",
+  faq_4:
+    "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay riesgo de perder mi propiedad?",
+  faq_5: "¿Cuál es el papel del notario público en México?",
+  faq_6: "¿Cuáles son mis costos de cierre?",
+  faq_7: "Impuesto sobre la propiedad",
+  faq_8: "¿Necesito un abogado?",
+  faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
+  faq_10: "¿Cuáles son los siguientes pasos?",
+
+  //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
+  //  faq_1
+  faq_1_article: {
+    cap_letter_p1: "L",
+    p1: `
+os extranjeros pueden adquirir la propiedad directa de bienes raíces en territorio mexicano. Sin embargo, los extranjeros no pueden tener el título de propiedad dentro de 100 km de la frontera y a menos de 50 km de la costa. Esta área se conoce como la zona restringida. Sin embargo, en México existe un sistema que permite a los no mexicanos adquirir propiedades, brindando una gran protección al propietario y es muy similar a la propiedad en régimen de propiedad simple. Para comprar bienes raíces en la zona restringida, los extranjeros deben adquirir la propiedad a través de un fideicomiso bancario formalizado con una institución bancaria mexicana.
+`,
+    p2: `Como comprador, serás designado como el beneficiario principal y podrás designar beneficiarios sustitutos en caso de fallecimiento, evitando de esta manera los procedimientos de sucesión tras la muerte. El fideicomiso bancario se establece por 50 años y es renovable por el mismo período de tiempo.`,
+    p3: `Antes de la expiración, el banco fiduciario te informará que es hora de extender el plazo por otros 50 años.`,
   },
 };
 

@@ -1,4 +1,9 @@
 "use client";
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
+
+
 import QuestionArticle from "../QuestionArticle";
 
 const FrequentQuestionTwo = (props) => {
