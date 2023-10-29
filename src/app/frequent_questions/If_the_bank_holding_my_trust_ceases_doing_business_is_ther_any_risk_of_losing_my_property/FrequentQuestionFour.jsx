@@ -1,14 +1,20 @@
 "use client";
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
+
 import QuestionArticle from "../QuestionArticle";
 
 const FrequentQuestionFour = (props) => {
+  const { language, setLanguage } = useLanguage();
+
   return (
     <div className="max-w-screen-xl mx-auto" id="question-4">
       <QuestionArticle
-        title="IF THE BANK HOLDING MY TRUS CEASES DOING BUSINESS, IS THER ANY RISK OF LOSING MY PROPERTY?"
+        title={ language === es ? es.faq_4 : en.faq_4}
         image="https://images.pexels.com/photos/7433825/pexels-photo-7433825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        capitalLetter="N"
-        articleP1="o, With the assistance of the Mexican Banking Commission, the trustee bank would be replaced by another."
+        capitalLetter={language === es? es.faq_4_article.cap_letter_p1: en.faq_4_article.cap_letter_p1 }
+        articleP1={language === es? es.faq_4_article.p1: en.faq_4_article.p1 }
         articleP2=""
         authorName="Nuria Hernandez"
         authorImg="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

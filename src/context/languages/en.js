@@ -6,7 +6,7 @@ const enTranslations = {
     menuProperties: "PROPERTIES",
     allProperties: "All properties",
     locations: "LOCATIONS",
-    lots: "LOTS ON SALE",
+    lots: "LOTS",
   },
   //HERO
   hero: {
@@ -503,7 +503,7 @@ const enTranslations = {
   faq_10: "What are the next steps?",
 
   //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
-  //  faq_1
+  //faq_1: "How do I acquire a property In Mexico?",
   faq_1_article:{
     cap_letter_p1: "F",
     p1:
@@ -528,8 +528,64 @@ formalized with a Mexican Banking institution.
    trustee bank will let you know that it´s time to extend the term for
    anothr 50 years.`,
   },
-  
-  //  faq_2
+  //faq_2: "Can I acquire in co-ownership?",
+  faq_2_article:{
+    cap_letter_p1: "Y",
+    p1: `es, In the trust, both co-owners will be designated as main beneficiaries. It's common that such co-owners designate themselves
+    as substitute beneficiaries, and they can also designate other 3rd parties, such as their children, as substitutive beneficiaries in 
+    the event of death.`
+  },
+  //faq_3: "Can I acquire through a LLC?",
+  faq_3_article:{
+    cap_letter_p1: "Y",
+    p1: `es, the trustee bank would designate the LLC as the main beneficiary of the trust. However, since the LLC is a foreign entity, there are aditional requirements for such an LLC to conduct business in Mexico.`,
+  },
+  /*faq_4:
+  "If the bank holding my trust ceases doing business is ther any risk of losing my property?",*/
+  faq_4_article:{
+    cap_letter_p1: "N",
+    p1: `o, with the assistance of the Mexican Banking Commission, the trustee bank would be replaced by another.`,
+  },
+  //faq_5: "What is the role of the notary public in Mexico?",
+  faq_5_article:{
+    cap_letter_p1: "T",
+    p1: `he notary public is a government appointed official. Part of his responsibility is to calculate, retain and pay taxes on behalf of both
+    the buyer and the seller at closing. The notary public will issue a deed by means of which the real estate transaction will be formalized,
+    and this document is recorded in the Public Registry.`,
+  },
+  //faq_6: "What are my closing cost?",
+  faq_6_article:{
+    cap_letter_p1: "C",
+    p1: `losing costs are typically paid by the buyer and vary on a case to case basis, depending on the purchase price, and are usually between 5% to 9% of the purchase price.`,
+    p2: `Closing costs include notary fees, government taxes and duties, trustee bank fees, government  permits, Secure Title fees, among others. `,
+    p3: `The seller is responsible for the Capital Gains Tax, any unpaid utilities, and property taxes. Such fees must be paid upon or prior to
+    closing. Secure Title will make sure that all items are paid, in order for the buyer to receive a clean title.`,
+  },
+//faq_7: "Property Tax",
+faq_7_article:{
+  cap_letter_p1: "A",
+  p1: `s a general rule, property taxes are very low in Mexico. Property taxes vary according to the jurisdiction in Mexico in which your
+  property is located. Taxes are paid annually, with the assessed value being determined at the time of the sale and based on the
+  purchase price.`,
+},
+//faq_8: "Do I need an attorney?",
+faq_8_article:{
+  cap_letter_p1: "Y",
+  p1: `es, the real estate transaction is subject to the execution of multiple legal documents, therefore it is important to have a real estate
+  attorney to guide and advise you during the process. Secure Title has a team of experienced real estate attorneys that would assist you
+  during the transaction.`,
+},
+//faq_9: "Once I am an owner, how do I transfer title?",
+faq_9_article:{
+  cap_letter_p1: "A",
+  p1:`s the main beneficiary of the trust, you would instruct the trustee bank to: 1- extinguish the trust ad transfer the title if the buyer is a Mexican National, or 2- assign the rights of the trust agreement to a foreign buyer.`,
+},
+//faq_10: "What are the next steps?",
+faq_10_article:{
+  cap_letter_p1: "",
+  p1:``,
+},
+
 };
 
 export default enTranslations;

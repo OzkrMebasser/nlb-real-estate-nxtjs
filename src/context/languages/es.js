@@ -499,7 +499,7 @@ const esTranslations = {
   faq_10: "¿Cuáles son los siguientes pasos?",
 
   //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
-  //  faq_1
+  //faq_1: "¿Cómo adquiero una propiedad en México?"
   faq_1_article: {
     cap_letter_p1: "L",
     p1: `
@@ -508,6 +508,55 @@ os extranjeros pueden adquirir la propiedad directa de bienes raíces en territo
     p2: `Como comprador, serás designado como el beneficiario principal y podrás designar beneficiarios sustitutos en caso de fallecimiento, evitando de esta manera los procedimientos de sucesión tras la muerte. El fideicomiso bancario se establece por 50 años y es renovable por el mismo período de tiempo.`,
     p3: `Antes de la expiración, el banco fiduciario te informará que es hora de extender el plazo por otros 50 años.`,
   },
+
+  //faq_2: "¿Puedo adquirir en copropiedad?",
+  faq_2_article:{
+    cap_letter_p1: "S",
+    p1: `í, en el fideicomiso, ambos copropietarios serán designados como beneficiarios principales. Es común que estos copropietarios se designen a sí mismos como beneficiarios sustitutos, y también pueden designar a terceros, como sus hijos, como beneficiarios sustitutos en caso de fallecimiento.`
+  },
+   //faq_3: "¿Puedo adquirir a través de una LLC?",
+   faq_3_article:{
+    cap_letter_p1: "S",
+    p1: `í, el banco fiduciario designaría a la LLC como el beneficiario principal del fideicomiso. Sin embargo, dado que la LLC es una entidad extranjera, existen requisitos adicionales para que dicha LLC realice negocios en México.`,
+  },
+  //faq_4: "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay
+  faq_4_article:{
+    cap_letter_p1: "N",
+    p1: `o, con la asistencia de la Comisión Bancaria de México, el banco fiduciario sería reemplazado por otro.`,
+  },
+  //faq_5: "¿Cuál es el papel del notario público en México?",
+  faq_5_article:{
+    cap_letter_p1: "E",
+    p1: `l notario público es un funcionario designado por el gobierno. Parte de su responsabilidad es calcular, retener y pagar impuestos en nombre tanto del comprador como del vendedor al cierre de la transacción. El notario público emitirá una escritura mediante la cual se formalizará la transacción inmobiliaria, y este documento se registra en el Registro Público.`,
+  },
+  //faq_6: "¿Cuáles son mis costos de cierre?",
+  faq_6_article:{
+    cap_letter_p1: "L",
+    p1: `os costos de cierre suelen ser pagados por el comprador y varían de un caso a otro, dependiendo del precio de compra, y normalmente representan entre el 5% y el 9% del precio de compra.`,
+    p2: `Los costos de cierre incluyen honorarios notariales, impuestos y deberes gubernamentales, tarifas del banco fiduciario, permisos gubernamentales, tarifas de Título Seguro, entre otros.`,
+    p3: `El vendedor es responsable del Impuesto sobre las Ganancias de Capital, servicios públicos impagos y los impuestos de la propiedad. Estos gastos deben pagarse antes o en el momento del cierre. Título Seguro se asegurará de que se paguen todos los conceptos para que el comprador reciba un título limpio.`,
+  },
+  //faq_7: "Impuesto sobre la propiedad",
+  faq_7_article:{
+    cap_letter_p1: "C",
+    p1: `omo regla general, los impuestos a la propiedad son muy bajos en México. Los impuestos a la propiedad varían según la jurisdicción en México en la que se encuentre su propiedad. Los impuestos se pagan anualmente, y el valor evaluado se determina en el momento de la venta y se basa en el precio de compra.`,
+  },
+//faq_8: "¿Necesito un abogado?",
+  faq_8_article:{
+    cap_letter_p1: "S",
+    p1: `í, la transacción inmobiliaria está sujeta a la ejecución de múltiples documentos legales, por lo tanto, es importante contar con un abogado de bienes raíces que lo guíe y asesore durante el proceso. "Secure Title" cuenta con un equipo de experimentados abogados de bienes raíces que lo asistirán durante la transacción.`,
+  },
+  //faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
+  faq_9_article:{
+    cap_letter_p1: "C",
+    p1:`omo beneficiario principal del fideicomiso, usted instruiría al banco fiduciario para: 1- extinga el fideicomiso y transfiera el título si el comprador es de nacionalidad mexicana, o 2- ceda los derechos del contrato de fideicomiso a un comprador extranjero.`,
+  },
+//faq_10: "¿Cuáles son los siguientes pasos?",
+faq_10_article:{
+  cap_letter_p1: "",
+  p1:``,
+},
+  
 };
 
 export default esTranslations;
