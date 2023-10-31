@@ -1,22 +1,29 @@
 "use client";
-import QuestionArticle from "../QuestionArticle";
+import useLanguage from "@/context/hooks/useLanguage";
+import en from "@/context/languages/en";
+import es from "@/context/languages/es";
+
+import QuestionArticle from "../../components/QuestionArticles/QuestionArticle";
+
 
 const FrequentQuestionTen = (props) => {
+  const { language } = useLanguage();
+
   return (
     <div className="max-w-screen-xl mx-auto" id="question-10">
       <QuestionArticle
-        title="WHAT ARE THE NEXT STEPS?"
+        title={language === es ? es.faq_info.faq_10 : en.faq_info.faq_10}
         image="https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         // capitalLetter=""
-        articleP1="1. Find your property and submit an offer."
-        articleP2="2. is the offer is accepted, secure title will:"
-        articleP3="* Conduct due diligence in order to verify that the property is in good legal standing."
-        articleP4="* Draft the escrow and purchase agreement in both Spanish and English."
-        articleP5="* Coordinate with the notary public and trustee bank the draft of the deed that will contain the trust."
-        articleP6="* Receive funds in escrow."
-        articleP7="* Set a closing date to execute the deed. "
-        articleP8="* Release funds from escrow once the terms and conditions agreed by the parties are met."
-        articleP9="* Delivery a certified copy of the deed."
+        articleP1={language === es ? es.faq_info.faq_10_article.p1 : en.faq_info.faq_10_article.p1}
+        articleP2={language === es ? es.faq_info.faq_10_article.p2 : en.faq_info.faq_10_article.p2}
+        articleP3={language === es ? es.faq_info.faq_10_article.p3 : en.faq_info.faq_10_article.p3}
+        articleP4={language === es ? es.faq_info.faq_10_article.p4 : en.faq_info.faq_10_article.p4}
+        articleP5={language === es ? es.faq_info.faq_10_article.p5 : en.faq_info.faq_10_article.p5}
+        articleP6={language === es ? es.faq_info.faq_10_article.p6 : en.faq_info.faq_10_article.p6}
+        articleP7={language === es ? es.faq_info.faq_10_article.p7 : en.faq_info.faq_10_article.p7}
+        articleP8={language === es ? es.faq_info.faq_10_article.p8 : en.faq_info.faq_10_article.p8}
+        articleP9={language === es ? es.faq_info.faq_10_article.p9 : en.faq_info.faq_10_article.p9}
         authorName="Nuria Hernandez"
         authorImg="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         date="2020/2/21"

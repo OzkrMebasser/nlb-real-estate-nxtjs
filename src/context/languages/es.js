@@ -484,7 +484,8 @@ const esTranslations = {
     },
   },
 
-  //PREGUNTAS FRECUENTES
+  faq_info:{
+    //PREGUNTAS FRECUENTES
   faq: "Preguntas frecuentes",
   faq_1: "¿Cómo adquiero una propiedad en México?",
   faq_2: "¿Puedo adquirir en copropiedad?",
@@ -553,9 +554,19 @@ os extranjeros pueden adquirir la propiedad directa de bienes raíces en territo
   },
 //faq_10: "¿Cuáles son los siguientes pasos?",
 faq_10_article:{
-  cap_letter_p1: "",
-  p1:``,
+  p1:`1. Encuentra tu propiedad y presentar una oferta:`,
+  p2:`2. Si la oferta es aceptada, asegure el título de propiedad:`,
+  p3:`* Llevar a cabo la diligencia debida para verificar que la propiedad está en buen estado legal.`,
+  p4:`* Redactar el contrato de depósito en garantía y de compraventa tanto en español como en inglés.`,
+  p5:`* Coordinar con el notario público y el banco fiduciario el borrador de la escritura que contendrá el fideicomiso.`,
+  p6:`* Recibir los fondos en custodia.`,
+  p7:`* Fijar una fecha de cierre para ejecutar la escritura.`,
+  p8:`* Liberar los fondos de la plica una vez cumplidos los términos y condiciones acordados por las partes.`,
+  p9:`* Entregar una copia certificada de la escritura.`,
+  
 },
+  },
+  
   
 };
 

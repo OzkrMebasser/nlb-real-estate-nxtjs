@@ -488,7 +488,8 @@ const enTranslations = {
     },
   },
 
-  //PREGUNTAS FRECUENTES (LINKS FOOTER)
+  faq_info:{
+    //PREGUNTAS FRECUENTES (LINKS FOOTER)
   faq: "Frequently Asked Questions",
   faq_1: "How do I acquire a property In Mexico?",
   faq_2: "Can I acquire in co-ownership?",
@@ -582,9 +583,20 @@ faq_9_article:{
 },
 //faq_10: "What are the next steps?",
 faq_10_article:{
-  cap_letter_p1: "",
-  p1:``,
+  p1:`1. Find your property and submit an offer.`,
+  p2:`2. is the offer is accepted, secure title will:`,
+  p3:`* Conduct due diligence in order to verify that the property is in good legal standing.`,
+  p4:`* Draft the escrow and purchase agreement in both Spanish and English.`,
+  p5:`* Coordinate with the notary public and trustee bank the draft of the deed that will contain the trust.`,
+  p6:`* Receive funds in escrow.`,
+  p7:`* Set a closing date to execute the deed.`,
+  p8:`* Release funds from escrow once the terms and conditions agreed by the parties are met.`,
+  p9:`* Delivery a certified copy of the deed.`,
+  
+  
 },
+  },
+  
 
 };
 

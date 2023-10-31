@@ -12,7 +12,7 @@ const ScrollToSection = (props) => {
             offset={-80}
             duration={500}
           >
-            {props.num}) {props.completeQuestion}
+            {props.num}) {props.questionText}
           </Scroller>
           </div>
 

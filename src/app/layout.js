@@ -12,6 +12,7 @@ import { PropertiesProvider } from "../context/PropertiesProvider";
 import { QuestionsProvider } from "../context/QuestionProvider";
 import "react-slideshow-image/dist/styles.css";
 import { ModalProvider } from "@/context/ModalProvider";
+import { PostsProvider } from "@/context/PostsProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
             {/* <LanguageSelector/> */}
             <PropertiesProvider>
               <QuestionsProvider>
+                <PostsProvider> 
                 <Nav />
 
                 {children}
@@ -44,6 +46,7 @@ export default function RootLayout({ children }) {
                 {/* <ContactButtons /> */}
                 <ActionButtons />
                 <Footer />
+                </PostsProvider>
               </QuestionsProvider>
             </PropertiesProvider>
           </LanguageProvider>

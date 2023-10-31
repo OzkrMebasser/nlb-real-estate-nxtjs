@@ -18,13 +18,7 @@ import en from "../context/languages/en";
 
 // };
 
-export const urls = [
-  {
-    routes: {
-      routeAllProperties: "http://localhost:3000/properties",
-    },
-  },
-];
+
 export const homeProperties = [
   {
     id: 1,
