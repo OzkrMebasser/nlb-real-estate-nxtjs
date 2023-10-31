@@ -66,7 +66,7 @@ const Footer = () => {
               </p>
               {/* faq_5: "What is the role of the notary public in Mexico?" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/What_is_the_role_of_the_notary_public_in_Mexico">
+                <Link href="/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico">
                   {language === es ? es.faq_info.faq_5 : en.faq_info.faq_5}
                 </Link>
               </p>
