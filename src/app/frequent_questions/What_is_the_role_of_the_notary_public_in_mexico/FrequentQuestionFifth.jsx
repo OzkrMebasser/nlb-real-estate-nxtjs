@@ -6,7 +6,7 @@ import es from "@/context/languages/es";
 import QuestionArticle from "../../components/QuestionArticles/QuestionArticle";
 
 
-const FrequentQuestionFive = (props) => {
+const FrequentQuestionFifth = (props) => {
   const {language} = useLanguage();
 
   return (
@@ -25,5 +25,5 @@ const FrequentQuestionFive = (props) => {
   );
 };
 
-export default FrequentQuestionFive;
+export default FrequentQuestionFifth;
 
