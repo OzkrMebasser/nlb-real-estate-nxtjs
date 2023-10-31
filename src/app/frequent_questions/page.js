@@ -114,7 +114,7 @@ const FrequentQuestions = (props) => {
         <FrequentQuestionTwo />
         <FrequentQuestionThree />
         <FrequentQuestionFour />
-        <FrequentQuestionFive />
+        <FrequentQuestionFive/>
         <FrequentQuestionSix />
         <FrequentQuestionSeven/>
         <FrequentQuestionEight />
