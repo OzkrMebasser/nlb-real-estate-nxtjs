@@ -17,10 +17,10 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 import "./NavBar.css";
 import Logo from "./Logo";
-import { urls } from "@/backend/dataProperties";
+
 
 function Nav() {
-  const { allProperties, urls } = useProperties();
+  const { allProperties} = useProperties();
   // const {language} = useLanguage();
   const { language, setLanguage } = useLanguage();
 
@@ -116,8 +116,7 @@ function Nav() {
                               {({ active }) => (
                                 <Link
                                   href="/properties"
-                                  // onClick={() => router.push(`properties`)}
-                                  // href={urls.routes["routeAllProperties"]}
+                                 
                                   className={classNames(
                                     active
                                       ? "bg-[#e5c995] text-gray-900"
