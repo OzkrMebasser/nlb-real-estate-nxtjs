@@ -26,6 +26,7 @@ import FrequentQuestionTen from "./What_are_the_next_steps/FrequentQuestionTen";
 const FrequentQuestions = (props) => {
   // const { questions } = useQuestions();
 
+
   const { language } = useLanguage();
   
   const questions = [
@@ -95,7 +96,9 @@ const FrequentQuestions = (props) => {
       <div className="max-w-screen-xl mx-auto divide-y ">
         <div className=" pl-4 pr-4 font-bold leading-tight text-[#9c8966af]  sm:pl-[300px] text-justify">
           {questions.map((question, num) =>
+              
              <ScrollToSection
+             
              key={num}
              questionNum={question.questionNum}
              num={question.num}

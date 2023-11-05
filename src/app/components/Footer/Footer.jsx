@@ -113,16 +113,17 @@ const Footer = () => {
           <div className="md:w-2/3 lg:w-1/3 md:px-4 xl:pl-16 mt-12 lg:mt-0">
             <div className="sm:flex">
               <div className="sm:flex-1 mt-4 sm:mt-0">
-                <h6 className="text-base  text-[#9c8966] font-bold uppercase mb-2">
-                  OUR BLOG
+                <h6 className="text-base  text-[#9c8966] font-bold uppercase mb-2 hover:underline">
+                  {/* OUR BLOG */}
+                  <Link href="/blog/">{language === es ? es.blog_info.subtitle : en.blog_info.subtitle}</Link>
                 </h6>
                 <div>
-                  <a
-                    href="#"
+                  <p
+                  
                     className="text-[#32f1ff] py-1 block hover:underline"
                   >
-                    HOW DO I ACQUIRE PROPERTY IN MEXICO?
-                  </a>
+                    <Link   href="/blog/5_differences_between_residential_lots_and_investment_land">{language === es ? es.blog_info.post_1.title : en.blog_info.post_1.title}</Link>
+                  </p>
                   <a
                     href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20en%20la%20Argentina,%20vengo%20de%20la%20pagina%20www.nlbrealestate.com"
                     target="_blank"

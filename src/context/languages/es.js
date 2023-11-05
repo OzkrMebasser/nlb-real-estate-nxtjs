@@ -566,7 +566,26 @@ faq_10_article:{
   
 },
   },
-  
+  blog_info:{
+    subtitle:"Nuestro Blog",
+    post_1:{
+      title: "5 diferencias entre lotes residenciales y terrenos de inversión",
+      subTitle1: "¿Cuáles son las diferencias entre un lote residencial y un terreno de inversión?",
+      subTitle2: "1.- Construcción y estructura",
+      cap_letter_p1: "L",
+      p1:`lega un momento en la vida en el que cada una de tus decisiones cuenta: por fin estás viendo los frutos de tu esfuerzo y seguramente estás buscando dar el siguiente paso; quizás estés pensando: '¿cómo hacer que mi patrimonio crezca?`,
+      p2:`Una excelente opción para comenzar tu carrera de inversionista es poner la vista en la tierra, ya que te brinda un respaldo económico y te ofrece la oportunidad de generar rendimientos a largo plazo.`,
+      p3:`Comprar un lote o terreno es ideal para comenzar tu patrimonio familiar, el cual incluso puedes heredar a tus hijos. Ten en cuenta que invertir no es lo mismo que gastar.`,
+      p4:`Antes de tomar esta importante decisión debes saber que existen dos tipos de terrenos que puedes adquirir para comenzar tu portafolio de inversionista, sin desembolsar mucho dinero: `,
+      p4_strong:`Lotes residenciales y Terrenos de inversión.`,
+      p5: `Existen características clave entre ambos tipos de terrenos, entre ellas se encuentran las siguientes: `,
+      p6: `Los lotes residenciales son terrenos urbanizados, este tipo de terreno se caracteriza por contar con los servicios primordiales como luz, agua y drenaje; esto permite que puedas construir tu casa a tu medida, sin tener que pensar en los gastos que conlleva el proceso de urbanización.`,
+      p7: `Este tipo de terreno es muy versátil, ya sea que estés pensando en construir la casa que siempre soñaste o como herramienta de inversión. Gracias a su infraestructura, el valor de los terrenos residenciales incrementa de manera importante en poco tiempo, solo necesitas encontrar la ubicación adecuada.`,
+      p8:`Por su parte, los lotes de inversión son terrenos de tierra virgen sin ningún tipo de construcción, sin urbanización ni servicios. Básicamente es un pedazo de tierra en espera de un inversionista que se encuentre en búsqueda de generar altos rendimientos en un largo plazo.`,
+      p11: `Aunque los gastos de mantenimiento son escasos y el tiempo que le dedicarás es mínimo; el único uso que podrás darle es de un instrumento de inversión con el que deberás esperar hasta 15 años para ver crecer tu dinero.`,
+    },
+    
+  },
   
 };
 

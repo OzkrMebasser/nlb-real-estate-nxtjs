@@ -596,7 +596,26 @@ faq_10_article:{
   
 },
   },
-  
+  blog_info:{
+    subtitle:"Our Blog",
+    post_1:{
+      title: "5 differences between residential lots and investment land",
+      subTitle1: "What are the differences between a residential lot and an investment land?",
+      subTitle2: "1. Construction and Structure",
+      cap_letter_p1: "T",
+      p1:`here comes a point in life where every decision you make counts: you're finally seeing the results of your hard work, and you're probably looking to take the next step. Perhaps you're thinking, 'how can I make my wealth grow?`,
+      p2:`An excellent option to begin your journey as an investor is to set your sights on land, as it provides you with financial security and offers the opportunity to generate long-term returns.`,
+      p3:`Buying a residential lot or land is ideal to start building your family legacy, which you can even pass down to your children. Keep in mind that investing is not the same as spending.`,
+      p4:`Before making this important decision, you should know that there are two types of land you can acquire to start your investor portfolio without spending too much money: `,
+      p4_strong:`Residential lots and Investment land.`,
+      p5: `There are key characteristics between both types of land, including the following: `,
+      p6: `Residential lots are urbanized land; this type of land is characterized by having essential services such as electricity, water, and drainage. This allows you to build your house to your specifications without having to worry about the expenses associated with the urbanization process.`,
+      p7: `This type of land is very versatile, whether you're thinking of building the house of your dreams or using it as an investment tool. Thanks to its infrastructure, the value of residential lots increases significantly in a short time; you just need to find the right location.`,
+      p8:`On the other hand, investment land is undeveloped land with no construction, urbanization, or services. It's essentially a piece of land waiting for an investor looking to generate high returns over the long term.`,
+      p11:`Although maintenance costs are low, and the time you'll dedicate is minimal, the only purpose you can give it is as an investment tool, and you'll have to wait up to 15 years to see your money grow.`,
+    },
+    
+  },
 
 };
 
