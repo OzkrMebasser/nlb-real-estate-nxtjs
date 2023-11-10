@@ -35,8 +35,10 @@ function PostsComponent(props) {
     p19,
     p20,
     p21,
+    p22_strong,
     p22,
     p23,
+    p24_strong,
     p24,
     p25,
     image2,
@@ -90,7 +92,7 @@ function PostsComponent(props) {
             <p className="pb-4">
               {p4}
               {p4_strong && (
-                <span className="pb-4 font-bold  text-[#9c8966]">
+                <span className="pb-4 font-bold  text-[#3a341f]">
                   {p4_strong}{" "}
                 </span>
               )}
@@ -126,12 +128,6 @@ function PostsComponent(props) {
           {p9 && <p className="pb-4">{p9}</p>}
           {p10 && <p className="pb-4">{p10}</p>}
 
-          {subTitle3 && (
-            <h4 className="uppercase text-xl font-bold  text-[#9c8966] text-justify mb-2">
-              {subTitle3}
-            </h4>
-          )}
-
           {image3 && (
             <div className="mb-4 w-full max-w-screen-md mx-auto relative h-[384px]">
               <img
@@ -141,11 +137,20 @@ function PostsComponent(props) {
             </div>
           )}
 
-          {p11 && <p className="pb-4 mt-4">{p11}</p>}
+          {p11 && <p className="pb-4">{p11}</p>}
+
+          {subTitle3 && (
+            <h4 className="uppercase text-xl font-bold  text-[#9c8966] text-justify mb-2">
+              {subTitle3}
+            </h4>
+          )}
           {p12 && <p className="pb-4">{p12}</p>}
           {p13 && <p className="pb-4">{p13}</p>}
           {p14 && <p className="pb-4">{p14}</p>}
           {p15 && <p className="pb-4">{p15}</p>}
+          {p16 && <p className="pb-4 ">{p16}</p>}
+          {p17 && <p className="pb-4">{p17}</p>}
+          {p18 && <p className="pb-4">{p18}</p>}
 
           {subTitle4 && (
             <h4 className="uppercase text-xl font-bold  text-[#9c8966] text-justify mb-2">
@@ -154,7 +159,7 @@ function PostsComponent(props) {
           )}
 
           {image4 && (
-            <div className="mb-6 md:mb-0 w-full max-w-screen-md mx-auto relative h-[384px]">
+            <div className="mb-4 w-full max-w-screen-md mx-auto relative h-[384px]">
               <img
                 src={image4}
                 className="absolute left-0 top-0 w-full h-full z-0 object-cover"
@@ -162,11 +167,9 @@ function PostsComponent(props) {
             </div>
           )}
 
-          {p16 && <p className="pb-4  mt-4">{p16}</p>}
-          {p17 && <p className="pb-4">{p17}</p>}
-          {p18 && <p className="pb-4">{p18}</p>}
           {p19 && <p className="pb-4">{p19}</p>}
           {p20 && <p className="pb-4">{p20}</p>}
+          {p21 && <p className="pb-4">{p21}</p>}
 
           {subTitle5 && (
             <h4 className="uppercase text-xl font-bold  text-[#9c8966] text-justify mb-2">
@@ -174,7 +177,7 @@ function PostsComponent(props) {
             </h4>
           )}
           {image5 && (
-            <div className="mb-6 md:mb-0 w-full max-w-screen-md mx-auto relative h-[384px]">
+            <div className="mb-4 w-full max-w-screen-md mx-auto relative h-[384px]">
               <img
                 src={image5}
                 className="absolute left-0 top-0 w-full h-full z-0 object-cover"
@@ -182,10 +185,23 @@ function PostsComponent(props) {
             </div>
           )}
 
-          {p21 && <p className="pb-4  mt-4">{p21}</p>}
-          {p22 && <p className="pb-4">{p22}</p>}
+          {p22 && <p className="pb-4">
+            
+          {p22_strong && (
+                <span className="pb-4 font-bold  text-[#3a341f]">
+                  {p22_strong}{" "}
+                </span>
+              )}
+            {p22}</p>}
           {p23 && <p className="pb-4">{p23}</p>}
-          {p24 && <p className="pb-4">{p24}</p>}
+          {p24 && <p className="pb-4">
+            
+          {p24_strong && (
+                <span className="pb-4 font-bold  text-[#3a341f]">
+                  {p24_strong}{" "}
+                </span>
+              )}
+            {p24}</p>}
           {p25 && <p className="pb-4 mb-8">{p25}</p>}
         </div>
       </main>

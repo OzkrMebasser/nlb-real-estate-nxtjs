@@ -12,6 +12,15 @@ import PhoneInput from "react-phone-input-2";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+
+
+
+
+
+
+
+
+
 const Footer = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -22,6 +31,8 @@ const Footer = () => {
 
   const propiedades = allProperties.map((propiedad) => propiedad.desarrollo);
 
+ 
+
   const handlePhoneNumberChange = (value) => {
     setPhoneNumber(value);
   };
@@ -31,6 +42,7 @@ const Footer = () => {
       <div className="lg:px-[80px]  mx-auto">
         <div className="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12 px-4">
           <div className="footer-info lg:w-1/3 md:px-4">
+          
             <h6 className="text-base text-[#9c8966] font-bold uppercase mb-2 hover:underline cursor-pointer">
               <span onClick={() => router.push(`frequent_questions`)}>
                 {/* Preguntas Frecuentes */}

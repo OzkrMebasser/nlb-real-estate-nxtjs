@@ -601,7 +601,11 @@ faq_10_article:{
     post_1:{
       title: "5 differences between residential lots and investment land",
       subTitle1: "What are the differences between a residential lot and an investment land?",
-      subTitle2: "1. Construction and Structure",
+      subTitle2: "1.- Construction and Structure",
+      subTitle3: "2.- Property Value",
+      subTitle4: "3. Maintenance Costs",
+      subTitle5: "4. Investment / Returns",
+      subTitle6: "5. Investment Return Time",
       cap_letter_p1: "T",
       p1:`here comes a point in life where every decision you make counts: you're finally seeing the results of your hard work, and you're probably looking to take the next step. Perhaps you're thinking, 'how can I make my wealth grow?`,
       p2:`An excellent option to begin your journey as an investor is to set your sights on land, as it provides you with financial security and offers the opportunity to generate long-term returns.`,
@@ -613,10 +617,27 @@ faq_10_article:{
       p7: `This type of land is very versatile, whether you're thinking of building the house of your dreams or using it as an investment tool. Thanks to its infrastructure, the value of residential lots increases significantly in a short time; you just need to find the right location.`,
       p8:`On the other hand, investment land is undeveloped land with no construction, urbanization, or services. It's essentially a piece of land waiting for an investor looking to generate high returns over the long term.`,
       p11:`Although maintenance costs are low, and the time you'll dedicate is minimal, the only purpose you can give it is as an investment tool, and you'll have to wait up to 15 years to see your money grow.`,
+      p12: `The price between both types of properties varies considerably:`,
+      p13: `✔ The cost of a residential lot is slightly higher.`,
+      p14:`This is due to the infrastructure surrounding your land. It might seem like a downside, but consider the following: most of these types of lots are located within residential developments with amenities that increase their value.`,
+      p15: `These features ensure the appreciation of your land, which could generate annual returns of up to 30%. This is undoubtedly a significant advantage for your wallet.`,
+      p16: `✔ Yes, the cost of an investment land is lower.`,
+      p17: `Since it lacks infrastructure and any kind of construction, the value of the land tends to be lower, making it a good option if you have a limited budget, as long as you don't plan to build a house, as they are not suitable for that purpose.`,
+      p18: `These types of investments are long-term, so you can generate significant returns, although you'll need to be patient because it will take between 10 and 15 years for its value to increase.`,
+      p19: `✔ Residential lots are medium-term investments, so maintenance costs in the first few years will be minimal. Yes, you'll have the infrastructure in place to access all services, so you won't have to worry about payments until you decide to build on it.`,
+      p20: `✔ Investment land, being undeveloped land, doesn't require any maintenance, so you'll essentially let your money grow while you relax at home. These types of investments are long-term.`,
+      p21: `However, if you decide to build on your land, the urbanization costs will be your responsibility.`,
+      p22_strong: "Residential lots:",
+      p22: ` depending on where you buy your land, you will reap the benefits. Remember that location is key; for example, if you invest in a real estate development with significant growth opportunities, your residential lot can significantly increase in value.`,
+      p23:`Yes, the cost is higher, but the appreciation of your land is guaranteed.`,
+      p24_strong: `Investment land:`,
+      p24: ` since it is a lower-value real estate asset, you will need a smaller capital to start your investment. However, you will need to be very patient to begin seeing returns.`,
+    
     },
     
   },
 
 };
+
 
 export default enTranslations;

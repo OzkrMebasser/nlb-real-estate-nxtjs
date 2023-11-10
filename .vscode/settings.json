@@ -1,0 +1,7 @@
+{
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "console-ninja.featureSet": "Community",
+    "console-ninja.outputMode": "In View"
+}
