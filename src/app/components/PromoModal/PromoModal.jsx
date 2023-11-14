@@ -15,42 +15,54 @@ export default function PromoModal() {
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*header*/}
-                <div className="bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800 flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-xl lg:text-3xl font-semibold text-white ">
-                    OFERTA DE FIN DE AÑO
+                {/*header*/}{" "}
+                {/*bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800*/}
+                <div className=" bg-[red] flex items-center justify-between py-5 px-8 border-b border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-xl lg:text-3xl font-semibold text-white lg:ml-12 ">
+                    OFERTA DEL BUEN FIN
                   </h3>
+                  <img
+                    className="h-10 w-10 lg:mr-12"
+                    src="https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/blog-images%2Fbuen-fin-removebg-preview.png?alt=media&token=5648bddb-e3a7-4bac-b262-90cd81e85eed"
+                    alt="buen fin"
+                  />
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto ">
-                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Earum perspiciatis magni voluptas aspernatur beatae, sed
-                    neque animi, omnis rerum fugit esse, iusto corrupti a alias
-                    minima sint! Optio, molestiae? Modi.
+                <div className="px-6 relative  flex-auto ">
+                  <ul className="   leading-relaxed mb-4 grid  sm:gap-2 sm:grid-cols-2 sm:space-y-0 mt-6 lg:mt-12">
+                    <li>✅ Constelada</li>
+                    <li>✅ Beanna</li>
+                    <li>✅ Villas Kaybé</li>
+                    <li>✅ Peregrina </li>
+                  </ul>
+                  <p className="my-4  leading-relaxed mb-4">
+                    Regalamos la escritura de tu propiedad en la zona, lo que
+                    equivale al 6% del valor. Por ejemplo, si tu propiedad tiene
+                    un valor de $4,000,000 MXN, estaríamos regalándote $240,000
+                    MXN como parte de nuestra oferta especial por el Buen Fin
+                    🎁.
                   </p>
-                    <div className="w-full lg:px-44 mx-auto  items-center justify-center ">
-                    <Link 
-                    onClick={() => setShowModal(false)}
-                    href="/properties/On_Sale"
-                  >
-                    {/* w-full lg:w-[350px]  */}
-                    <button className=" w-full  px-4 py-3 text-sm text-blue-100 bg-blue-500 rounded shadow"
-                    >
-                      Ver Ofertas!
-                    </button>
-                  </Link>
-                    </div>
-                  
+                
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="flex items-center justify-between p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <Link
+                      onClick={() => setShowModal(false)}
+                      href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20con%20la%20promoción"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      {/* w-full lg:w-[350px]  */}
+                      <button className=" font-bold w-full px-4 py-3 text-sm text-white bg-blue-500 rounded shadow">
+                        Mas información
+                      </button>
+                    </Link>
                   <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-red-500 text-white rounded shadow background-transparent font-bold  px-4 py-3 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Close
+                    Cerrar
                   </button>
                   {/* <button
                     className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

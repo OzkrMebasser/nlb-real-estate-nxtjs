@@ -57,9 +57,11 @@ const BlogPostsOne = (props) => {
             ? es.blog_info.post_1.subTitle5
             : en.blog_info.post_1.subTitle5
         }
-        // subTitle6={
-        //   language === es
-        // }
+        subTitle6={
+          language === es
+          ? es.blog_info.post_1.subTitle6
+          : en.blog_info.post_1.subTitle6
+      }
         p5={language === es ? es.blog_info.post_1.p5 : en.blog_info.post_1.p5}
         p6={language === es ? es.blog_info.post_1.p6 : en.blog_info.post_1.p6}
         p7={language === es ? es.blog_info.post_1.p7 : en.blog_info.post_1.p7}
@@ -118,6 +120,19 @@ const BlogPostsOne = (props) => {
         }
         p24={
           language === es ? es.blog_info.post_1.p24 : en.blog_info.post_1.p24
+        }
+
+        p25_strong={
+          language === es ? es.blog_info.post_1.p25_strong : en.blog_info.post_1.p25_strong
+        }
+        p25={
+          language === es ? es.blog_info.post_1.p25 : en.blog_info.post_1.p25
+        }
+        p26={
+          language === es ? es.blog_info.post_1.p26 : en.blog_info.post_1.p26
+        }
+        p27={
+          language === es ? es.blog_info.post_1.p27 : en.blog_info.post_1.p27
         }
        
         authorName="Nuria Hernandez"

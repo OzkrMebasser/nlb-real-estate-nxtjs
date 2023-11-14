@@ -487,7 +487,11 @@ const enTranslations = {
       },
     },
   },
-
+  tul:{
+    peregrina:{
+      
+    },
+  },
   faq_info:{
     //PREGUNTAS FRECUENTES (LINKS FOOTER)
   faq: "Frequently Asked Questions",
@@ -632,7 +636,10 @@ faq_10_article:{
       p23:`Yes, the cost is higher, but the appreciation of your land is guaranteed.`,
       p24_strong: `Investment land:`,
       p24: ` since it is a lower-value real estate asset, you will need a smaller capital to start your investment. However, you will need to be very patient to begin seeing returns.`,
-    
+      p25_strong: `Residential lots: `,
+      p25: ` they are considered medium-term investment tools. In other words, within a period of 1 to 5 years, the urbanization process will be ready, so you can build or sell your lot at a higher price after that time.`,
+      p26: `As you can see, both tools represent a great opportunity for your wealth and your wallet. It's only a matter of deciding which option best suits your investor profile.`,
+      p27: `Continue building your investment career with our guide and discover the best investment option based on your age.`      
     },
     
   },

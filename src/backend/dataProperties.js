@@ -70,11 +70,11 @@ export const homeProperties = [
   {
     //PROBABLE HAY QUE CAMBIAR INFO
     id: 4,
-    desarrollo: "LIK TULUM",
+    desarrollo: "PEREGRINA",
     tipo: "departamento",
     ubicacion: "Tulum",
-    route: "",
-    route2: "",
+    route: "properties/Tulum/Peregrina",
+    route2: "Tulum/Peregrina",
     precio: 2500000,
     habitaciones: 3,
     banios: 2,
@@ -82,7 +82,7 @@ export const homeProperties = [
     // description:
     //   "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
-      "https://lh3.googleusercontent.com/p/AF1QipP6kcotaUM6hWKhr8s7rVpOtZ-OafPIhbFlgjBP=s680-w680-h510",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FTulum%2FPeregrina%2FCARD_PEREGRINA.png?alt=media&token=dda28f75-87e3-4c2f-9c74-74916cdeb086",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },

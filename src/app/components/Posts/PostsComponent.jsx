@@ -8,6 +8,7 @@ function PostsComponent(props) {
     subTitle3,
     subTitle4,
     subTitle5,
+    subTitle6,
     main_image,
     authorImg,
     authorName,
@@ -40,7 +41,10 @@ function PostsComponent(props) {
     p23,
     p24_strong,
     p24,
+    p25_strong,
     p25,
+    p26,
+    p27,
     image2,
     image3,
     image4,
@@ -202,7 +206,23 @@ function PostsComponent(props) {
                 </span>
               )}
             {p24}</p>}
-          {p25 && <p className="pb-4 mb-8">{p25}</p>}
+
+            {subTitle6 && (
+            <h4 className="uppercase text-xl font-bold  text-[#9c8966] text-justify mb-2">
+              {subTitle6}
+            </h4>
+          )}
+            {p25 && <p className="pb-4">
+            
+            {p25_strong && (
+                  <span className="pb-4 font-bold  text-[#3a341f]">
+                    {p25_strong}{" "}
+                  </span>
+                )}
+              {p25}              
+              </p>}
+              {p26 && <p className="pb-4">{p26}</p>}
+              {p27 && <p className="pb-8">{p27}</p>}
         </div>
       </main>
     </div>

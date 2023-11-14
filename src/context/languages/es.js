@@ -483,6 +483,11 @@ const esTranslations = {
       },
     },
   },
+  tul:{
+    peregrina:{
+      
+    },
+  },
 
   faq_info:{
     //PREGUNTAS FRECUENTES
@@ -602,6 +607,10 @@ faq_10_article:{
       p23: `Sí, el costo es mayor, pero la plusvalía de tu terreno se encuentra asegurada.`,
       p24_strong: `Lotes de inversión:`,
       p24: ` al tratarse de un bien inmueble de menor valor, necesitarás de un bajo capital para iniciar tu inversión, ahora bien, necesitarás ser muy paciente para empezar a percibir tus rendimientos.`,
+      p25_strong: `Lotes residenciales: `,
+      p25: `son consideradas herramientas de inversión a mediano plazo, es decir, en un lapso de 1 a 5 años el proceso de urbanización se encontrará listo, por lo que podrás construir o vender tu terreno a un mayor precio después de ese tiempo.`,
+      p26: `Como puedes ver, ambas herramientas representan una gran oportunidad para tu patrimonio y tu bolsillo, solo falta que decidas cuál es la opción que mejor se ajusta a tu perfil de inversionista.`,
+      p27: `Sigue construyendo tu carrera de inversionista con nuestra guía y descubre cuál es la mejor opción para invertir según tu edad.`
     },
     post_2:{
 

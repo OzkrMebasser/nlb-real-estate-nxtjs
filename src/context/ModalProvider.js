@@ -11,7 +11,7 @@ export function ModalProvider({ children }) {
     const openModal = () => {
       setTimeout(() => {
         setShowModal(true);
-      }, 5000); // Cierra automáticamente después de 5 segundos
+      }, 2000); // Cierra automáticamente después de 5 segundos
     };
 
 
