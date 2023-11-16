@@ -43,7 +43,7 @@ const ActionButtons = () => {
       {openMenu ? (
         <div className="messenger">
           <a
-            href="https://www.facebook.com/"
+            href="http://m.me/NLBRealEstate?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
@@ -53,7 +53,7 @@ const ActionButtons = () => {
       ) : null}
       {openMenu ? (
         <div className="email">
-          <a href="mailto:nlb@email.com">
+          <a href="mailto:infonlbrealestate@gmail.com">
             <MdOutlineMailOutline />
           </a>
         </div>
@@ -71,7 +71,7 @@ const ActionButtons = () => {
       ) : null}
       {openMenu ? (
         <div className="instagram">
-          <a href="https://www.instagram.com/"
+          <a href="https://instagram.com/nlbtierramaya"
           target="_blank"
           rel="nofollow noopener noreferrer"
           >
@@ -82,7 +82,7 @@ const ActionButtons = () => {
       {openMenu ? (
         <div className="facebook">
           <a 
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/NLBRealEstate"
           target="_blank"
           rel="nofollow noopener noreferrer"
           >

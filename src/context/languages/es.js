@@ -72,6 +72,8 @@ const esTranslations = {
   terms: "Términos de servicio",
   privacyPolicy: "Política de privacidad",
   argentina: "¿Buscas propiedades en Argentina?",
+  rentalsMX: "Rentas Vacacionales, Riviera Maya",
+  rentalsAR: "Rentas Vacacionales, Buenos Aires",
 
   //PROPIEDADES ***********************
 
@@ -483,125 +485,123 @@ const esTranslations = {
       },
     },
   },
-  tul:{
-    peregrina:{
-      
-    },
+  tul: {
+    peregrina: {},
   },
 
-  faq_info:{
+  faq_info: {
     //PREGUNTAS FRECUENTES
-  faq: "Preguntas frecuentes",
-  faq_1: "¿Cómo adquiero una propiedad en México?",
-  faq_2: "¿Puedo adquirir en copropiedad?",
-  faq_3: "¿Puedo adquirir a través de una LLC?",
-  faq_4:
-    "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay riesgo de perder mi propiedad?",
-  faq_5: "¿Cuál es el papel del notario público en México?",
-  faq_6: "¿Cuáles son mis costos de cierre?",
-  faq_7: "Impuesto sobre la propiedad",
-  faq_8: "¿Necesito un abogado?",
-  faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
-  faq_10: "¿Cuáles son los siguientes pasos?",
+    faq: "Preguntas frecuentes",
+    faq_1: "¿Cómo adquiero una propiedad en México?",
+    faq_2: "¿Puedo adquirir en copropiedad?",
+    faq_3: "¿Puedo adquirir a través de una LLC?",
+    faq_4:
+      "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay riesgo de perder mi propiedad?",
+    faq_5: "¿Cuál es el papel del notario público en México?",
+    faq_6: "¿Cuáles son mis costos de cierre?",
+    faq_7: "Impuesto sobre la propiedad",
+    faq_8: "¿Necesito un abogado?",
+    faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
+    faq_10: "¿Cuáles son los siguientes pasos?",
 
-  //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
-  //faq_1: "¿Cómo adquiero una propiedad en México?"
-  faq_1_article: {
-    cap_letter_p1: "L",
-    p1: `
+    //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
+    //faq_1: "¿Cómo adquiero una propiedad en México?"
+    faq_1_article: {
+      cap_letter_p1: "L",
+      p1: `
 os extranjeros pueden adquirir la propiedad directa de bienes raíces en territorio mexicano. Sin embargo, los extranjeros no pueden tener el título de propiedad dentro de 100 km de la frontera y a menos de 50 km de la costa. Esta área se conoce como la zona restringida. Sin embargo, en México existe un sistema que permite a los no mexicanos adquirir propiedades, brindando una gran protección al propietario y es muy similar a la propiedad en régimen de propiedad simple. Para comprar bienes raíces en la zona restringida, los extranjeros deben adquirir la propiedad a través de un fideicomiso bancario formalizado con una institución bancaria mexicana.
 `,
-    p2: `Como comprador, serás designado como el beneficiario principal y podrás designar beneficiarios sustitutos en caso de fallecimiento, evitando de esta manera los procedimientos de sucesión tras la muerte. El fideicomiso bancario se establece por 50 años y es renovable por el mismo período de tiempo.`,
-    p3: `Antes de la expiración, el banco fiduciario te informará que es hora de extender el plazo por otros 50 años.`,
-  },
+      p2: `Como comprador, serás designado como el beneficiario principal y podrás designar beneficiarios sustitutos en caso de fallecimiento, evitando de esta manera los procedimientos de sucesión tras la muerte. El fideicomiso bancario se establece por 50 años y es renovable por el mismo período de tiempo.`,
+      p3: `Antes de la expiración, el banco fiduciario te informará que es hora de extender el plazo por otros 50 años.`,
+    },
 
-  //faq_2: "¿Puedo adquirir en copropiedad?",
-  faq_2_article:{
-    cap_letter_p1: "S",
-    p1: `í, en el fideicomiso, ambos copropietarios serán designados como beneficiarios principales. Es común que estos copropietarios se designen a sí mismos como beneficiarios sustitutos, y también pueden designar a terceros, como sus hijos, como beneficiarios sustitutos en caso de fallecimiento.`
+    //faq_2: "¿Puedo adquirir en copropiedad?",
+    faq_2_article: {
+      cap_letter_p1: "S",
+      p1: `í, en el fideicomiso, ambos copropietarios serán designados como beneficiarios principales. Es común que estos copropietarios se designen a sí mismos como beneficiarios sustitutos, y también pueden designar a terceros, como sus hijos, como beneficiarios sustitutos en caso de fallecimiento.`,
+    },
+    //faq_3: "¿Puedo adquirir a través de una LLC?",
+    faq_3_article: {
+      cap_letter_p1: "S",
+      p1: `í, el banco fiduciario designaría a la LLC como el beneficiario principal del fideicomiso. Sin embargo, dado que la LLC es una entidad extranjera, existen requisitos adicionales para que dicha LLC realice negocios en México.`,
+    },
+    //faq_4: "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay
+    faq_4_article: {
+      cap_letter_p1: "N",
+      p1: `o, con la asistencia de la Comisión Bancaria de México, el banco fiduciario sería reemplazado por otro.`,
+    },
+    //faq_5: "¿Cuál es el papel del notario público en México?",
+    faq_5_article: {
+      cap_letter_p1: "E",
+      p1: `l notario público es un funcionario designado por el gobierno. Parte de su responsabilidad es calcular, retener y pagar impuestos en nombre tanto del comprador como del vendedor al cierre de la transacción. El notario público emitirá una escritura mediante la cual se formalizará la transacción inmobiliaria, y este documento se registra en el Registro Público.`,
+    },
+    //faq_6: "¿Cuáles son mis costos de cierre?",
+    faq_6_article: {
+      cap_letter_p1: "L",
+      p1: `os costos de cierre suelen ser pagados por el comprador y varían de un caso a otro, dependiendo del precio de compra, y normalmente representan entre el 5% y el 9% del precio de compra.`,
+      p2: `Los costos de cierre incluyen honorarios notariales, impuestos y deberes gubernamentales, tarifas del banco fiduciario, permisos gubernamentales, tarifas de Título Seguro, entre otros.`,
+      p3: `El vendedor es responsable del Impuesto sobre las Ganancias de Capital, servicios públicos impagos y los impuestos de la propiedad. Estos gastos deben pagarse antes o en el momento del cierre. Título Seguro se asegurará de que se paguen todos los conceptos para que el comprador reciba un título limpio.`,
+    },
+    //faq_7: "Impuesto sobre la propiedad",
+    faq_7_article: {
+      cap_letter_p1: "C",
+      p1: `omo regla general, los impuestos a la propiedad son muy bajos en México. Los impuestos a la propiedad varían según la jurisdicción en México en la que se encuentre su propiedad. Los impuestos se pagan anualmente, y el valor evaluado se determina en el momento de la venta y se basa en el precio de compra.`,
+    },
+    //faq_8: "¿Necesito un abogado?",
+    faq_8_article: {
+      cap_letter_p1: "S",
+      p1: `í, la transacción inmobiliaria está sujeta a la ejecución de múltiples documentos legales, por lo tanto, es importante contar con un abogado de bienes raíces que lo guíe y asesore durante el proceso. "Secure Title" cuenta con un equipo de experimentados abogados de bienes raíces que lo asistirán durante la transacción.`,
+    },
+    //faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
+    faq_9_article: {
+      cap_letter_p1: "C",
+      p1: `omo beneficiario principal del fideicomiso, usted instruiría al banco fiduciario para: 1- extinga el fideicomiso y transfiera el título si el comprador es de nacionalidad mexicana, o 2- ceda los derechos del contrato de fideicomiso a un comprador extranjero.`,
+    },
+    //faq_10: "¿Cuáles son los siguientes pasos?",
+    faq_10_article: {
+      p1: `1. Encuentra tu propiedad y presentar una oferta:`,
+      p2: `2. Si la oferta es aceptada, asegure el título de propiedad:`,
+      p3: `* Llevar a cabo la diligencia debida para verificar que la propiedad está en buen estado legal.`,
+      p4: `* Redactar el contrato de depósito en garantía y de compraventa tanto en español como en inglés.`,
+      p5: `* Coordinar con el notario público y el banco fiduciario el borrador de la escritura que contendrá el fideicomiso.`,
+      p6: `* Recibir los fondos en custodia.`,
+      p7: `* Fijar una fecha de cierre para ejecutar la escritura.`,
+      p8: `* Liberar los fondos de la plica una vez cumplidos los términos y condiciones acordados por las partes.`,
+      p9: `* Entregar una copia certificada de la escritura.`,
+    },
   },
-   //faq_3: "¿Puedo adquirir a través de una LLC?",
-   faq_3_article:{
-    cap_letter_p1: "S",
-    p1: `í, el banco fiduciario designaría a la LLC como el beneficiario principal del fideicomiso. Sin embargo, dado que la LLC es una entidad extranjera, existen requisitos adicionales para que dicha LLC realice negocios en México.`,
-  },
-  //faq_4: "Si el banco que mantiene mi fideicomiso deja de operar, ¿hay
-  faq_4_article:{
-    cap_letter_p1: "N",
-    p1: `o, con la asistencia de la Comisión Bancaria de México, el banco fiduciario sería reemplazado por otro.`,
-  },
-  //faq_5: "¿Cuál es el papel del notario público en México?",
-  faq_5_article:{
-    cap_letter_p1: "E",
-    p1: `l notario público es un funcionario designado por el gobierno. Parte de su responsabilidad es calcular, retener y pagar impuestos en nombre tanto del comprador como del vendedor al cierre de la transacción. El notario público emitirá una escritura mediante la cual se formalizará la transacción inmobiliaria, y este documento se registra en el Registro Público.`,
-  },
-  //faq_6: "¿Cuáles son mis costos de cierre?",
-  faq_6_article:{
-    cap_letter_p1: "L",
-    p1: `os costos de cierre suelen ser pagados por el comprador y varían de un caso a otro, dependiendo del precio de compra, y normalmente representan entre el 5% y el 9% del precio de compra.`,
-    p2: `Los costos de cierre incluyen honorarios notariales, impuestos y deberes gubernamentales, tarifas del banco fiduciario, permisos gubernamentales, tarifas de Título Seguro, entre otros.`,
-    p3: `El vendedor es responsable del Impuesto sobre las Ganancias de Capital, servicios públicos impagos y los impuestos de la propiedad. Estos gastos deben pagarse antes o en el momento del cierre. Título Seguro se asegurará de que se paguen todos los conceptos para que el comprador reciba un título limpio.`,
-  },
-  //faq_7: "Impuesto sobre la propiedad",
-  faq_7_article:{
-    cap_letter_p1: "C",
-    p1: `omo regla general, los impuestos a la propiedad son muy bajos en México. Los impuestos a la propiedad varían según la jurisdicción en México en la que se encuentre su propiedad. Los impuestos se pagan anualmente, y el valor evaluado se determina en el momento de la venta y se basa en el precio de compra.`,
-  },
-//faq_8: "¿Necesito un abogado?",
-  faq_8_article:{
-    cap_letter_p1: "S",
-    p1: `í, la transacción inmobiliaria está sujeta a la ejecución de múltiples documentos legales, por lo tanto, es importante contar con un abogado de bienes raíces que lo guíe y asesore durante el proceso. "Secure Title" cuenta con un equipo de experimentados abogados de bienes raíces que lo asistirán durante la transacción.`,
-  },
-  //faq_9: "Una vez que soy propietario, ¿cómo transfiero el título?",
-  faq_9_article:{
-    cap_letter_p1: "C",
-    p1:`omo beneficiario principal del fideicomiso, usted instruiría al banco fiduciario para: 1- extinga el fideicomiso y transfiera el título si el comprador es de nacionalidad mexicana, o 2- ceda los derechos del contrato de fideicomiso a un comprador extranjero.`,
-  },
-//faq_10: "¿Cuáles son los siguientes pasos?",
-faq_10_article:{
-  p1:`1. Encuentra tu propiedad y presentar una oferta:`,
-  p2:`2. Si la oferta es aceptada, asegure el título de propiedad:`,
-  p3:`* Llevar a cabo la diligencia debida para verificar que la propiedad está en buen estado legal.`,
-  p4:`* Redactar el contrato de depósito en garantía y de compraventa tanto en español como en inglés.`,
-  p5:`* Coordinar con el notario público y el banco fiduciario el borrador de la escritura que contendrá el fideicomiso.`,
-  p6:`* Recibir los fondos en custodia.`,
-  p7:`* Fijar una fecha de cierre para ejecutar la escritura.`,
-  p8:`* Liberar los fondos de la plica una vez cumplidos los términos y condiciones acordados por las partes.`,
-  p9:`* Entregar una copia certificada de la escritura.`,
-  
-},
-  },
-  blog_info:{
-    subtitle:"Nuestro Blog",
-    post_1:{
+  blog_info: {
+    subtitle: "Nuestro Blog",
+    post_1: {
       title: "5 diferencias entre lotes residenciales y terrenos de inversión",
-      subTitle1: "¿Cuáles son las diferencias entre un lote residencial y un terreno de inversión?",
+      subTitle1:
+        "¿Cuáles son las diferencias entre un lote residencial y un terreno de inversión?",
       subTitle2: "1.- Construcción y estructura",
       subTitle3: "2.- Valor de la propiedad",
       subTitle4: "3. Gastos de mantenimiento",
       subTitle5: "4.- Inversión / rendimientos",
       subTitle6: "5. Tiempo de retorno de inversión",
       cap_letter_p1: "L",
-      p1:`lega un momento en la vida en el que cada una de tus decisiones cuenta: por fin estás viendo los frutos de tu esfuerzo y seguramente estás buscando dar el siguiente paso; quizás estés pensando: '¿cómo hacer que mi patrimonio crezca?`,
-      p2:`Una excelente opción para comenzar tu carrera de inversionista es poner la vista en la tierra, ya que te brinda un respaldo económico y te ofrece la oportunidad de generar rendimientos a largo plazo.`,
-      p3:`Comprar un lote o terreno es ideal para comenzar tu patrimonio familiar, el cual incluso puedes heredar a tus hijos. Ten en cuenta que invertir no es lo mismo que gastar.`,
-      p4:`Antes de tomar esta importante decisión debes saber que existen dos tipos de terrenos que puedes adquirir para comenzar tu portafolio de inversionista, sin desembolsar mucho dinero: `,
-      p4_strong:`Lotes residenciales y Terrenos de inversión.`,
+      p1: `lega un momento en la vida en el que cada una de tus decisiones cuenta: por fin estás viendo los frutos de tu esfuerzo y seguramente estás buscando dar el siguiente paso; quizás estés pensando: '¿cómo hacer que mi patrimonio crezca?`,
+      p2: `Una excelente opción para comenzar tu carrera de inversionista es poner la vista en la tierra, ya que te brinda un respaldo económico y te ofrece la oportunidad de generar rendimientos a largo plazo.`,
+      p3: `Comprar un lote o terreno es ideal para comenzar tu patrimonio familiar, el cual incluso puedes heredar a tus hijos. Ten en cuenta que invertir no es lo mismo que gastar.`,
+      p4: `Antes de tomar esta importante decisión debes saber que existen dos tipos de terrenos que puedes adquirir para comenzar tu portafolio de inversionista, sin desembolsar mucho dinero: `,
+      p4_strong: `Lotes residenciales y Terrenos de inversión.`,
       p5: `Existen características clave entre ambos tipos de terrenos, entre ellas se encuentran las siguientes: `,
       p6: `Los lotes residenciales son terrenos urbanizados, este tipo de terreno se caracteriza por contar con los servicios primordiales como luz, agua y drenaje; esto permite que puedas construir tu casa a tu medida, sin tener que pensar en los gastos que conlleva el proceso de urbanización.`,
       p7: `Este tipo de terreno es muy versátil, ya sea que estés pensando en construir la casa que siempre soñaste o como herramienta de inversión. Gracias a su infraestructura, el valor de los terrenos residenciales incrementa de manera importante en poco tiempo, solo necesitas encontrar la ubicación adecuada.`,
-      p8:`Por su parte, los lotes de inversión son terrenos de tierra virgen sin ningún tipo de construcción, sin urbanización ni servicios. Básicamente es un pedazo de tierra en espera de un inversionista que se encuentre en búsqueda de generar altos rendimientos en un largo plazo.`,
+      p8: `Por su parte, los lotes de inversión son terrenos de tierra virgen sin ningún tipo de construcción, sin urbanización ni servicios. Básicamente es un pedazo de tierra en espera de un inversionista que se encuentre en búsqueda de generar altos rendimientos en un largo plazo.`,
       p11: `Aunque los gastos de mantenimiento son escasos y el tiempo que le dedicarás es mínimo; el único uso que podrás darle es de un instrumento de inversión con el que deberás esperar hasta 15 años para ver crecer tu dinero.`,
       p12: `El precio entre ambos tipos de propiedades varían de forma considerable:`,
-      p13: `✔ El costo de un terreno residencial es un poco más elevado.`,  
-      p14:`Esto se debe a la infraestructura que rodea a tu terreno, pareciera una característica mala, pero tengamos en cuenta lo siguiente: la mayoría de este tipo de terrenos se encuentran dentro de desarrollos residenciales con amenidades que aumentan su valor.`,
-      p15:`Estas características aseguran el crecimiento de la plusvalía de tu terreno, que podría generar rendimientos de hasta el 30 % anual, lo que representa, sí o sí, un gran acierto para tu bolsillo.`,
-      p16:`✔ Sí, el costo de un lote de inversión es menor.`,
+      p13: `✔ El costo de un terreno residencial es un poco más elevado.`,
+      p14: `Esto se debe a la infraestructura que rodea a tu terreno, pareciera una característica mala, pero tengamos en cuenta lo siguiente: la mayoría de este tipo de terrenos se encuentran dentro de desarrollos residenciales con amenidades que aumentan su valor.`,
+      p15: `Estas características aseguran el crecimiento de la plusvalía de tu terreno, que podría generar rendimientos de hasta el 30 % anual, lo que representa, sí o sí, un gran acierto para tu bolsillo.`,
+      p16: `✔ Sí, el costo de un lote de inversión es menor.`,
       p17: `Al no contar con infraestructura, ni ningún tipo de construcción, el valor de la tierra tiende a ser menor, por lo que es una buena opción si tienes un presupuesto reducido, siempre y cuando no tengas en mente construir una casa, ya que no están habilitados para este fin.`,
       p18: `Este tipo de inversiones son de largo plazo, por lo que puedes generar grandes rendimientos, aunque deberás tener paciencia, ya que tardará entre 10 y 15 años para que aumente su valor.`,
-      p19:`✔ Los lotes residenciales son inversiones a mediano plazo, por lo que los primeros años los gastos de mantenimiento serán mínimos. Sí, contarás con la infraestructura para contar con todos los servicios, por lo que no tendrás que preocuparte por los pagos hasta el momento que decidas construir en ella.`,
-      p20:`✔ Los lotes de inversión al ser terrenos de tierra virgen no requieren de ningún tipo mantenimiento, por lo que dejarás prácticamente que tu dinero crezca mientras tú descansas en tu casa, este tipo de inversiones son de largo plazo.`,
-      p21:`Ahora bien, si decides construir dentro de tu terreno, los costos de urbanización correrán por tu cuenta.`,
+      p19: `✔ Los lotes residenciales son inversiones a mediano plazo, por lo que los primeros años los gastos de mantenimiento serán mínimos. Sí, contarás con la infraestructura para contar con todos los servicios, por lo que no tendrás que preocuparte por los pagos hasta el momento que decidas construir en ella.`,
+      p20: `✔ Los lotes de inversión al ser terrenos de tierra virgen no requieren de ningún tipo mantenimiento, por lo que dejarás prácticamente que tu dinero crezca mientras tú descansas en tu casa, este tipo de inversiones son de largo plazo.`,
+      p21: `Ahora bien, si decides construir dentro de tu terreno, los costos de urbanización correrán por tu cuenta.`,
       p22_strong: "Lotes residenciales:",
       p22: ` dependiendo de dónde compres tu terreno obtendrás los beneficios, recuerda que la ubicación es la clave; por ejemplo, si inviertes en un desarrollo inmobiliario con grandes oportunidades de crecimiento, tu lote residencial puede incrementar su valor de manera considerable.`,
       p23: `Sí, el costo es mayor, pero la plusvalía de tu terreno se encuentra asegurada.`,
@@ -610,14 +610,10 @@ faq_10_article:{
       p25_strong: `Lotes residenciales: `,
       p25: `son consideradas herramientas de inversión a mediano plazo, es decir, en un lapso de 1 a 5 años el proceso de urbanización se encontrará listo, por lo que podrás construir o vender tu terreno a un mayor precio después de ese tiempo.`,
       p26: `Como puedes ver, ambas herramientas representan una gran oportunidad para tu patrimonio y tu bolsillo, solo falta que decidas cuál es la opción que mejor se ajusta a tu perfil de inversionista.`,
-      p27: `Sigue construyendo tu carrera de inversionista con nuestra guía y descubre cuál es la mejor opción para invertir según tu edad.`
+      p27: `Sigue construyendo tu carrera de inversionista con nuestra guía y descubre cuál es la mejor opción para invertir según tu edad.`,
     },
-    post_2:{
-
-    },
-    
+    post_2: {},
   },
-  
 };
 
 export default esTranslations;

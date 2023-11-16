@@ -14,10 +14,10 @@ export default function PromoModal() {
           <div className="animatedBorder p-4 justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 border-b-4 border-l-4 border-[black] rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}{" "}
                 {/*bg-gradient-to-r from-[#12283f] via-sky-900  to-teal-800*/}
-                <div className=" bg-[red] flex items-center justify-between py-5 px-8 border-b border-solid border-blueGray-200 rounded-t">
+                <div className=" bg-[red] flex items-center justify-between py-5 px-8 border-b-4 border-solid border-[black] rounded-t">
                   <h3 className="text-xl lg:text-3xl font-semibold text-white lg:ml-12 ">
                     OFERTA DEL BUEN FIN
                   </h3>
@@ -29,34 +29,45 @@ export default function PromoModal() {
                 </div>
                 {/*body*/}
                 <div className="px-6 relative  flex-auto ">
-                  <ul className="   leading-relaxed mb-4 grid  sm:gap-2 sm:grid-cols-2 sm:space-y-0 mt-6 lg:mt-12">
-                    <li>✅ Constelada</li>
-                    <li>✅ Beanna</li>
-                    <li>✅ Villas Kaybé</li>
-                    <li>✅ Peregrina </li>
+                <p className="mt-6 mb-4 uppercase "><strong className="">TULUM </strong></p>
+                  <ul className=" uppercase  leading-relaxed mb-4 grid  sm:gap-2 sm:grid-cols-2 sm:space-y-0  ">
+                     
+                    <strong>
+                      <li>✅ Constelada</li>
+                    </strong>
+                    <strong>
+                      <li>✅ Beanna  </li>
+                    </strong>
+                    <strong>
+                      <li>✅ Villas Kaybé</li>
+                    </strong>
+                    <strong>
+                      <li>✅ Peregrina </li>
+                    </strong>
                   </ul>
                   <p className="my-4  leading-relaxed mb-4">
-                    Regalamos la escritura de tu propiedad en la zona, lo que
-                    equivale al 6% del valor. Por ejemplo, si tu propiedad tiene
-                    un valor de $4,000,000 MXN, estaríamos regalándote $240,000
-                    MXN como parte de nuestra oferta especial por el Buen Fin
+                    <strong>Regalamos la escritura</strong> de tu propiedad en
+                    la zona, lo que equivale al 6% del valor. Por ejemplo, si tu
+                    propiedad tiene un valor de $4,000,000 MXN,{" "}
+                    <strong>estaríamos regalándote $240,000 MXN</strong> como
+                    parte de nuestra{" "}
+                    <strong>oferta especial por el Buen Fin</strong>
                     🎁.
                   </p>
-                
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-between p-6 border-t border-solid border-blueGray-200 rounded-b">
-                <Link
-                      onClick={() => setShowModal(false)}
-                      href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20con%20la%20promoción"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                    >
-                      {/* w-full lg:w-[350px]  */}
-                      <button className=" font-bold w-full px-4 py-3 text-sm text-white bg-blue-500 rounded shadow">
-                        Mas información
-                      </button>
-                    </Link>
+                  <Link
+                    onClick={() => setShowModal(false)}
+                    href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20con%20la%20promoción"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  >
+                    {/* w-full lg:w-[350px]  */}
+                    <button className=" font-bold w-full px-4 py-3 text-sm text-white bg-blue-500 rounded shadow">
+                      Mas información
+                    </button>
+                  </Link>
                   <button
                     className="bg-red-500 text-white rounded shadow background-transparent font-bold  px-4 py-3 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"

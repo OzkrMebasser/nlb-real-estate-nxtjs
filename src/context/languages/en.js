@@ -79,6 +79,8 @@ const enTranslations = {
   terms: "Terms of Service",
   privacyPolicy: "Privacy Policy",
   argentina: "Looking for properties in Argentina?",
+  rentalsMX: "Vacation Rentals, Riviera Maya",
+  rentalsAR: "Vacation Rentals, Buenos Aires",
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -487,33 +489,31 @@ const enTranslations = {
       },
     },
   },
-  tul:{
-    peregrina:{
-      
-    },
+  tul: {
+    peregrina: {},
   },
-  faq_info:{
+  faq_info: {
     //PREGUNTAS FRECUENTES (LINKS FOOTER)
-  faq: "Frequently Asked Questions",
-  faq_1: "How do I acquire a property In Mexico?",
-  faq_2: "Can I acquire in co-ownership?",
-  faq_3: "Can I acquire through a LLC?",
-  faq_4:
-    "If the bank holding my trust ceases doing business is ther any risk of losing my property?",
-  faq_5: "What is the role of the notary public in Mexico?",
-  faq_6: "What are my closing cost?",
-  faq_7: "Property Tax",
-  faq_8: "Do I need an attorney?",
-  faq_9: "Once I am an owner, how do I transfer title?",
-  faq_10: "What are the next steps?",
+    faq: "Frequently Asked Questions",
+    faq_1: "How do I acquire a property In Mexico?",
+    faq_2: "Can I acquire in co-ownership?",
+    faq_3: "Can I acquire through a LLC?",
+    faq_4:
+      "If the bank holding my trust ceases doing business is ther any risk of losing my property?",
+    faq_5: "What is the role of the notary public in Mexico?",
+    faq_6: "What are my closing cost?",
+    faq_7: "Property Tax",
+    faq_8: "Do I need an attorney?",
+    faq_9: "Once I am an owner, how do I transfer title?",
+    faq_10: "What are the next steps?",
 
-  //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
-  //faq_1: "How do I acquire a property In Mexico?",
-  faq_1_article:{
-    cap_letter_p1: "F",
-    p1:
-    // "oreigners may obtain direct ownership of property within Mexican territory. However, foreigners cannot hold title to property within 100 km from the border and within 50 km from the coastline. This area is know as the restricted zone. However, there is a system in Mexico that allows non-Mexicans to purchase property, providing great protection for the property owner, and is very similar to fee simple ownership. In order to purchase real estate in the restricted zone, foreigners must acquire the property through a bank trust formalized with a Mexican Banking institution.",
-    `
+    //FREQUENT QUESTIONS TRANSLATIONS ?????????? ********
+    //faq_1: "How do I acquire a property In Mexico?",
+    faq_1_article: {
+      cap_letter_p1: "F",
+      p1:
+        // "oreigners may obtain direct ownership of property within Mexican territory. However, foreigners cannot hold title to property within 100 km from the border and within 50 km from the coastline. This area is know as the restricted zone. However, there is a system in Mexico that allows non-Mexicans to purchase property, providing great protection for the property owner, and is very similar to fee simple ownership. In order to purchase real estate in the restricted zone, foreigners must acquire the property through a bank trust formalized with a Mexican Banking institution.",
+        `
    oreigners may obtain direct ownership of property within Mexican
 territory. However, foreigners cannot hold title to property within
 100 km from the border and within 50 km from the coastline. This
@@ -524,106 +524,105 @@ simple ownership. In order to purchase real estate in the restricted
 zone, foreigners must acquire the property through a bank trust
 formalized with a Mexican Banking institution.
    `,
-   p2: `As a buyer, you will
+      p2: `As a buyer, you will
    be designated as the main beneficiary and can designate substitute
    beneficiaries in the event of death, that way avoiding probate
    procedures upon death. The bank turst is established for 50 years,
    renewable for the same period of time.`,
-   p3: `Prior to expiration, the
+      p3: `Prior to expiration, the
    trustee bank will let you know that it´s time to extend the term for
    anothr 50 years.`,
-  },
-  //faq_2: "Can I acquire in co-ownership?",
-  faq_2_article:{
-    cap_letter_p1: "Y",
-    p1: `es, In the trust, both co-owners will be designated as main beneficiaries. It's common that such co-owners designate themselves
+    },
+    //faq_2: "Can I acquire in co-ownership?",
+    faq_2_article: {
+      cap_letter_p1: "Y",
+      p1: `es, In the trust, both co-owners will be designated as main beneficiaries. It's common that such co-owners designate themselves
     as substitute beneficiaries, and they can also designate other 3rd parties, such as their children, as substitutive beneficiaries in 
-    the event of death.`
-  },
-  //faq_3: "Can I acquire through a LLC?",
-  faq_3_article:{
-    cap_letter_p1: "Y",
-    p1: `es, the trustee bank would designate the LLC as the main beneficiary of the trust. However, since the LLC is a foreign entity, there are aditional requirements for such an LLC to conduct business in Mexico.`,
-  },
-  /*faq_4:
+    the event of death.`,
+    },
+    //faq_3: "Can I acquire through a LLC?",
+    faq_3_article: {
+      cap_letter_p1: "Y",
+      p1: `es, the trustee bank would designate the LLC as the main beneficiary of the trust. However, since the LLC is a foreign entity, there are aditional requirements for such an LLC to conduct business in Mexico.`,
+    },
+    /*faq_4:
   "If the bank holding my trust ceases doing business is ther any risk of losing my property?",*/
-  faq_4_article:{
-    cap_letter_p1: "N",
-    p1: `o, with the assistance of the Mexican Banking Commission, the trustee bank would be replaced by another.`,
-  },
-  //faq_5: "What is the role of the notary public in Mexico?",
-  faq_5_article:{
-    cap_letter_p1: "T",
-    p1: `he notary public is a government appointed official. Part of his responsibility is to calculate, retain and pay taxes on behalf of both
+    faq_4_article: {
+      cap_letter_p1: "N",
+      p1: `o, with the assistance of the Mexican Banking Commission, the trustee bank would be replaced by another.`,
+    },
+    //faq_5: "What is the role of the notary public in Mexico?",
+    faq_5_article: {
+      cap_letter_p1: "T",
+      p1: `he notary public is a government appointed official. Part of his responsibility is to calculate, retain and pay taxes on behalf of both
     the buyer and the seller at closing. The notary public will issue a deed by means of which the real estate transaction will be formalized,
     and this document is recorded in the Public Registry.`,
-  },
-  //faq_6: "What are my closing cost?",
-  faq_6_article:{
-    cap_letter_p1: "C",
-    p1: `losing costs are typically paid by the buyer and vary on a case to case basis, depending on the purchase price, and are usually between 5% to 9% of the purchase price.`,
-    p2: `Closing costs include notary fees, government taxes and duties, trustee bank fees, government  permits, Secure Title fees, among others. `,
-    p3: `The seller is responsible for the Capital Gains Tax, any unpaid utilities, and property taxes. Such fees must be paid upon or prior to
+    },
+    //faq_6: "What are my closing cost?",
+    faq_6_article: {
+      cap_letter_p1: "C",
+      p1: `losing costs are typically paid by the buyer and vary on a case to case basis, depending on the purchase price, and are usually between 5% to 9% of the purchase price.`,
+      p2: `Closing costs include notary fees, government taxes and duties, trustee bank fees, government  permits, Secure Title fees, among others. `,
+      p3: `The seller is responsible for the Capital Gains Tax, any unpaid utilities, and property taxes. Such fees must be paid upon or prior to
     closing. Secure Title will make sure that all items are paid, in order for the buyer to receive a clean title.`,
-  },
-//faq_7: "Property Tax",
-faq_7_article:{
-  cap_letter_p1: "A",
-  p1: `s a general rule, property taxes are very low in Mexico. Property taxes vary according to the jurisdiction in Mexico in which your
+    },
+    //faq_7: "Property Tax",
+    faq_7_article: {
+      cap_letter_p1: "A",
+      p1: `s a general rule, property taxes are very low in Mexico. Property taxes vary according to the jurisdiction in Mexico in which your
   property is located. Taxes are paid annually, with the assessed value being determined at the time of the sale and based on the
   purchase price.`,
-},
-//faq_8: "Do I need an attorney?",
-faq_8_article:{
-  cap_letter_p1: "Y",
-  p1: `es, the real estate transaction is subject to the execution of multiple legal documents, therefore it is important to have a real estate
+    },
+    //faq_8: "Do I need an attorney?",
+    faq_8_article: {
+      cap_letter_p1: "Y",
+      p1: `es, the real estate transaction is subject to the execution of multiple legal documents, therefore it is important to have a real estate
   attorney to guide and advise you during the process. Secure Title has a team of experienced real estate attorneys that would assist you
   during the transaction.`,
-},
-//faq_9: "Once I am an owner, how do I transfer title?",
-faq_9_article:{
-  cap_letter_p1: "A",
-  p1:`s the main beneficiary of the trust, you would instruct the trustee bank to: 1- extinguish the trust ad transfer the title if the buyer is a Mexican National, or 2- assign the rights of the trust agreement to a foreign buyer.`,
-},
-//faq_10: "What are the next steps?",
-faq_10_article:{
-  p1:`1. Find your property and submit an offer.`,
-  p2:`2. is the offer is accepted, secure title will:`,
-  p3:`* Conduct due diligence in order to verify that the property is in good legal standing.`,
-  p4:`* Draft the escrow and purchase agreement in both Spanish and English.`,
-  p5:`* Coordinate with the notary public and trustee bank the draft of the deed that will contain the trust.`,
-  p6:`* Receive funds in escrow.`,
-  p7:`* Set a closing date to execute the deed.`,
-  p8:`* Release funds from escrow once the terms and conditions agreed by the parties are met.`,
-  p9:`* Delivery a certified copy of the deed.`,
-  
-  
-},
+    },
+    //faq_9: "Once I am an owner, how do I transfer title?",
+    faq_9_article: {
+      cap_letter_p1: "A",
+      p1: `s the main beneficiary of the trust, you would instruct the trustee bank to: 1- extinguish the trust ad transfer the title if the buyer is a Mexican National, or 2- assign the rights of the trust agreement to a foreign buyer.`,
+    },
+    //faq_10: "What are the next steps?",
+    faq_10_article: {
+      p1: `1. Find your property and submit an offer.`,
+      p2: `2. is the offer is accepted, secure title will:`,
+      p3: `* Conduct due diligence in order to verify that the property is in good legal standing.`,
+      p4: `* Draft the escrow and purchase agreement in both Spanish and English.`,
+      p5: `* Coordinate with the notary public and trustee bank the draft of the deed that will contain the trust.`,
+      p6: `* Receive funds in escrow.`,
+      p7: `* Set a closing date to execute the deed.`,
+      p8: `* Release funds from escrow once the terms and conditions agreed by the parties are met.`,
+      p9: `* Delivery a certified copy of the deed.`,
+    },
   },
-  blog_info:{
-    subtitle:"Our Blog",
-    post_1:{
+  blog_info: {
+    subtitle: "Our Blog",
+    post_1: {
       title: "5 differences between residential lots and investment land",
-      subTitle1: "What are the differences between a residential lot and an investment land?",
+      subTitle1:
+        "What are the differences between a residential lot and an investment land?",
       subTitle2: "1.- Construction and Structure",
       subTitle3: "2.- Property Value",
       subTitle4: "3. Maintenance Costs",
       subTitle5: "4. Investment / Returns",
       subTitle6: "5. Investment Return Time",
       cap_letter_p1: "T",
-      p1:`here comes a point in life where every decision you make counts: you're finally seeing the results of your hard work, and you're probably looking to take the next step. Perhaps you're thinking, 'how can I make my wealth grow?`,
-      p2:`An excellent option to begin your journey as an investor is to set your sights on land, as it provides you with financial security and offers the opportunity to generate long-term returns.`,
-      p3:`Buying a residential lot or land is ideal to start building your family legacy, which you can even pass down to your children. Keep in mind that investing is not the same as spending.`,
-      p4:`Before making this important decision, you should know that there are two types of land you can acquire to start your investor portfolio without spending too much money: `,
-      p4_strong:`Residential lots and Investment land.`,
+      p1: `here comes a point in life where every decision you make counts: you're finally seeing the results of your hard work, and you're probably looking to take the next step. Perhaps you're thinking, 'how can I make my wealth grow?`,
+      p2: `An excellent option to begin your journey as an investor is to set your sights on land, as it provides you with financial security and offers the opportunity to generate long-term returns.`,
+      p3: `Buying a residential lot or land is ideal to start building your family legacy, which you can even pass down to your children. Keep in mind that investing is not the same as spending.`,
+      p4: `Before making this important decision, you should know that there are two types of land you can acquire to start your investor portfolio without spending too much money: `,
+      p4_strong: `Residential lots and Investment land.`,
       p5: `There are key characteristics between both types of land, including the following: `,
       p6: `Residential lots are urbanized land; this type of land is characterized by having essential services such as electricity, water, and drainage. This allows you to build your house to your specifications without having to worry about the expenses associated with the urbanization process.`,
       p7: `This type of land is very versatile, whether you're thinking of building the house of your dreams or using it as an investment tool. Thanks to its infrastructure, the value of residential lots increases significantly in a short time; you just need to find the right location.`,
-      p8:`On the other hand, investment land is undeveloped land with no construction, urbanization, or services. It's essentially a piece of land waiting for an investor looking to generate high returns over the long term.`,
-      p11:`Although maintenance costs are low, and the time you'll dedicate is minimal, the only purpose you can give it is as an investment tool, and you'll have to wait up to 15 years to see your money grow.`,
+      p8: `On the other hand, investment land is undeveloped land with no construction, urbanization, or services. It's essentially a piece of land waiting for an investor looking to generate high returns over the long term.`,
+      p11: `Although maintenance costs are low, and the time you'll dedicate is minimal, the only purpose you can give it is as an investment tool, and you'll have to wait up to 15 years to see your money grow.`,
       p12: `The price between both types of properties varies considerably:`,
       p13: `✔ The cost of a residential lot is slightly higher.`,
-      p14:`This is due to the infrastructure surrounding your land. It might seem like a downside, but consider the following: most of these types of lots are located within residential developments with amenities that increase their value.`,
+      p14: `This is due to the infrastructure surrounding your land. It might seem like a downside, but consider the following: most of these types of lots are located within residential developments with amenities that increase their value.`,
       p15: `These features ensure the appreciation of your land, which could generate annual returns of up to 30%. This is undoubtedly a significant advantage for your wallet.`,
       p16: `✔ Yes, the cost of an investment land is lower.`,
       p17: `Since it lacks infrastructure and any kind of construction, the value of the land tends to be lower, making it a good option if you have a limited budget, as long as you don't plan to build a house, as they are not suitable for that purpose.`,
@@ -633,18 +632,15 @@ faq_10_article:{
       p21: `However, if you decide to build on your land, the urbanization costs will be your responsibility.`,
       p22_strong: "Residential lots:",
       p22: ` depending on where you buy your land, you will reap the benefits. Remember that location is key; for example, if you invest in a real estate development with significant growth opportunities, your residential lot can significantly increase in value.`,
-      p23:`Yes, the cost is higher, but the appreciation of your land is guaranteed.`,
+      p23: `Yes, the cost is higher, but the appreciation of your land is guaranteed.`,
       p24_strong: `Investment land:`,
       p24: ` since it is a lower-value real estate asset, you will need a smaller capital to start your investment. However, you will need to be very patient to begin seeing returns.`,
       p25_strong: `Residential lots: `,
       p25: ` they are considered medium-term investment tools. In other words, within a period of 1 to 5 years, the urbanization process will be ready, so you can build or sell your lot at a higher price after that time.`,
       p26: `As you can see, both tools represent a great opportunity for your wealth and your wallet. It's only a matter of deciding which option best suits your investor profile.`,
-      p27: `Continue building your investment career with our guide and discover the best investment option based on your age.`      
+      p27: `Continue building your investment career with our guide and discover the best investment option based on your age.`,
     },
-    
   },
-
 };
-
 
 export default enTranslations;

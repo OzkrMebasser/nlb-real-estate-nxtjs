@@ -15,12 +15,6 @@ import Link from "next/link";
 
 
 
-
-
-
-
-
-
 const Footer = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -136,6 +130,22 @@ const Footer = () => {
                   >
                     <Link   href="/blog/5_differences_between_residential_lots_and_investment_land">{language === es ? es.blog_info.post_1.title : en.blog_info.post_1.title}</Link>
                   </p>
+
+                  <a
+                  href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20rentas%20vacacionales%20en%20Riviera%20Maya%20🇲🇽"
+                    
+                    className="text-[#32f1ff] py-1 block hover:underline"
+                  >
+                    {language === es? es.rentalsMX : en.rentalsMX}  <span className="fi fi-mx ml-3"></span>
+                  </a>
+                 
+                  
+                  <a
+                   href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20rentas%20vacacionales,%20en%20Buenos%20Aires%20Argentina%20🇦🇷"
+                    className="text-[#32f1ff] py-1 block hover:underline"
+                  >
+                    {language === es? es.rentalsAR : en.rentalsAR} <span className="fi fi-ar ml-3"></span>
+                  </a>
                   <a
                     href="https://wa.me/5219841886928?text=Hola%20me%20interesa%20saber%20mas%20sobre%20una%20de%20sus%20propiedades%20en%20la%20Argentina,%20vengo%20de%20la%20pagina%20www.nlbrealestate.com"
                     target="_blank"
@@ -144,24 +154,12 @@ const Footer = () => {
                   >
                     {language === es? es.argentina : en.argentina}  <span className="fi fi-ar ml-3"></span>
                   </a>
-                  <a
-                    href="#"
-                    className="text-[#32f1ff] py-1 block hover:underline"
-                  >
-                    Tools
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#32f1ff] py-1 block hover:underline"
-                  >
-                    Blog
-                  </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-[#32f1ff] py-1 block hover:underline"
                   >
                     Freebies
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
