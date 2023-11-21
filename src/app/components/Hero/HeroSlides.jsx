@@ -10,23 +10,23 @@ import "../NavBar/NavBar.css";
 //IMAGES SLIDES
 const fotoHero1 =
   // Tulum
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage1-tulum.jpeg?alt=media&token=ce7fa2f7-2eca-4ef0-8ce7-74000e153cd1";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage1-tulum.jpeg?alt=media&token=cc54972d-9870-47fd-96c6-5c6fe49491f4";
 const fotoHero2 =
   // "Tres Patios";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage2-tresPatios-.jpg?alt=media&token=0ef27096-fa8d-4e6a-9fa4-3e416c2f9b72";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage2-tresPatios-.jpg?alt=media&token=f1b25e37-8070-4816-a666-773f779cb12c";
 const fotoHero3 =
   // "Madre tierra";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage3-madreTiera.jpg?alt=media&token=c4186920-5027-4037-bc80-1f3790e5970c";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage3-madreTiera.jpg?alt=media&token=86f0fc66-5131-4172-8ba0-339d2734aa5f";
 const fotoHero4 =
   // "Vidarah";
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage4-vidara.webp?alt=media&token=2be3b69b-bf24-47d6-91eb-78ed133253d3";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage4-vidara.webp?alt=media&token=2e37eaa0-219a-4a5d-ab36-7d94f9c830dd";
 
 const fotoHero5 =
   //Cenote o Cancun
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage5-cancun.jpeg?alt=media&token=54ea1d35-7c29-46f8-a2ab-bbfe5c66ee4e";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage5-cancun.jpeg?alt=media&token=d9be341a-445d-4cbd-b56c-e0cee2e5d0f6";
 const fotoHero6 =
   //Atimar
-  "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/heroImages%2Fheroimage6-ATHIMAR.jpg?alt=media&token=5b395a3a-b857-4c1d-b510-23a1d3be376f";
+  "https://firebasestorage.googleapis.com/v0/b/nlb-res-hero-b1.appspot.com/o/hero-slider-imgs%2Fheroimage6-ATHIMAR.jpg?alt=media&token=fa0426ff-a399-4d1c-83b6-e5e3d2088a85";
 
 function LabelIndex({ labelIndex }) {
   return (

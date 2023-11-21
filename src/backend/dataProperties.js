@@ -20,6 +20,7 @@ import en from "../context/languages/en";
 
 
 export const homeProperties = [
+  // ATHIMAR
   {
     id: 1,
     desarrollo: "ATHIMAR",
@@ -33,8 +34,9 @@ export const homeProperties = [
     metrosCuadrados: "m2Athimar",
     ymuchomas: "ymuchomas",
     imagenCard:
-      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/homePropertiesImgs%2F1_ATHIMAR_home.jpg?alt=media&token=f0278039-5ae9-41a2-879b-a90329bbb830",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F1_ATHIMAR_home.jpg?alt=media&token=7c02ce23-18c2-4a84-840f-fcc451731a61",
   },
+  // TRES PATIOS
   {
     id: 2,
     desarrollo: "TRES PATIOS",
@@ -48,8 +50,9 @@ export const homeProperties = [
     metrosCuadrados: "m2TresPatios",
     ymuchomas: "ymuchomas",
     imagenCard:
-      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPlaya_del_Carmen%2FTres_Patios%2FTRESPATIOS%20(9).jpg?alt=media&token=5a77d03a-fe24-4e78-b9db-bf92aa4b1182",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F2_TRES_PATIOS_home.jpg?alt=media&token=13c9827d-8978-48f5-914e-e40e73f68f0b",
   },
+  // VIDARAA
   {
     id: 3,
     desarrollo: "VIDARAA",
@@ -63,12 +66,13 @@ export const homeProperties = [
     metrosCuadrados: "m2vidaraa",
     ymuchomas: "ymuchomas",
     imagenCard:
-      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-homecard.jpg?alt=media&token=4e1b0df2-9a25-4fca-813d-e59cf2e3a186&_gl=1*17t7769*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDU3ODQuNjAuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F3_VIDARAA_CANCUN_home.jpg?alt=media&token=2033d5d6-550f-433a-b16d-83756e95bbb5",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
+  //PEREGRINA
   {
-    //PROBABLE HAY QUE CAMBIAR INFO
+    
     id: 4,
     desarrollo: "PEREGRINA",
     tipo: "departamento",
@@ -82,10 +86,11 @@ export const homeProperties = [
     // description:
     //   "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
-      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FTulum%2FPeregrina%2FCARD_PEREGRINA.png?alt=media&token=dda28f75-87e3-4c2f-9c74-74916cdeb086",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F4_PEREGRINA_home.png?alt=media&token=f38e5ecd-5551-4279-9be6-489041a422ec",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
+  // NÁLU LUXURY BEACHFRONT
   {
     id: 5,
     desarrollo: "NÁLU LUXURY BEACHFRONT",
@@ -98,11 +103,11 @@ export const homeProperties = [
     banios: "tres_banios",
     metrosCuadrados: "m2Nalu",
     imagenCard:
-      "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FPuertoMorelos%2F01_PRINCIPAL%20less.png?alt=media&token=b3a9d55b-7fbf-4a03-af2a-e1f58b8c2243&_gl=1*r8us0b*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzY5MDY3NC42Mi4xLjE2OTc2OTEyNzYuNTkuMC4w",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F5_NALU_home.jpg?alt=media&token=a7583f0f-61f6-4722-866d-f3b444d81f8e",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
-
+  // TERRENO DE INVERSION
   {
     id: 6,
     desarrollo: "TERRENO DE INVERSION",
@@ -122,14 +127,14 @@ export const homeProperties = [
     description:
       "Contamos con 6 Departamentos en villas por cada módulo de 90 m2 o 110 m2.",
     imagenCard:
-      "https://maxproperties.com.mx/wp-content/uploads/2021/09/paam.webp",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-home-cards-b2.appspot.com/o/home-cards%2F6_TERRENO_hom.jpg?alt=media&token=087fb54e-bf69-4ffe-9ebe-d9614180fe4f",
     embededMapSrc:
       "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Tres Patios&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
   },
 ];
 
 export const allProperties = [
-  // "TRES PATIOS"
+  // "TRES PATIOS - Playa del Carmen"
   {
     id: 1,
     desarrollo: "Tres Patios",
@@ -274,7 +279,7 @@ export const allProperties = [
       ],
     },
   },
-  //"ATHIMAR"
+  //"ATHIMAR - Cozumel"
   {
     id: 2,
     desarrollo: "ATHIMAR",
@@ -464,7 +469,7 @@ export const allProperties = [
       ],
     },
   },
-  //"VIDARAA"
+  //"VIDARAA - Cancún"
   {
     id: 3,
     desarrollo: "Vidaraa Tower",
@@ -640,7 +645,7 @@ export const allProperties = [
       ],
     },
   },
-  //"NALU"
+  //"NALU - Puerto Morelos"
   {
     id: 4,
     desarrollo: "NÁLU ",
@@ -818,6 +823,33 @@ export const allProperties = [
     },
    
   },
- 
+   //"PEREGRINA - Tulum"
+   {
+    id: 4,
+    desarrollo: "PEREGRINA ",
+    nickName: "El Paraíso, sobre el cielo y sobre arena.",
+    subTitle: "",
+    tipo: "departamento",
+    ubicacion: "Puerto Morelos",
+    onsale: "promo",
+    route: "properties/Tulum/Peregrina",
+    route2: "Tulum/Peregrina",
+    routeUnit_1: "properties/Tulum/Peregrina/Studio",
+    routeUnit_2: "properties/Tulum/Peregrina/Two_Bedroom",
+    precio: 2500000,
+    habitaciones: "tres_habs",
+    banios: "dos_banios",
+    metrosCuadrados: "m2TresPatios",
+    ymuchomas: "ymuchomas",
+
+    imagenCard:
+    "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-homecard.jpg?alt=media&token=4e1b0df2-9a25-4fca-813d-e59cf2e3a186&_gl=1*17t7769*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDU3ODQuNjAuMC4w",
+  // embededMapSrc:
+  //   "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embedhttps://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+
+  imagesCube: [
+    
+  ],
+   },
   
 ];

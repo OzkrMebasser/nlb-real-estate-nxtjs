@@ -11,13 +11,13 @@ export function ModalProvider({ children }) {
     const openModal = () => {
       setTimeout(() => {
         setShowModal(true);
-      }, 500); // Cierra automáticamente después de 5 segundos
+      }, 60000); // Abre despues de un minuto
     };
 
 
     openModal(); // Abre el modal inicialmente después de 5 segundos
 
-    const interval = setInterval(openModal, 120000); // Abre el modal cada 40 segundos
+    const interval = setInterval(openModal, 420000); // Abre el modal cada 7 minutos
 
     return () => {
       clearInterval(interval); // Limpia el intervalo si el componente se desmonta

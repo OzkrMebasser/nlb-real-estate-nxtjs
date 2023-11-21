@@ -490,7 +490,35 @@ const enTranslations = {
     },
   },
   tul: {
-    peregrina: {},
+    peregrina: {
+      title: "Peregrina",
+      subTitleStrong: "Paradise, above the sky and over the sand.",
+      //Description
+      paragraph_1: `Designed by Lavalle Peniche for travelers seeking the connection experience that characterizes and positions Tulum as the most sought-after destination during the holiday season. Peregrina is a development with `,
+      paragraph_1_pt_2_strong: `51 residential units `,
+      paragraph_1_pt_3: `distributed among paths and terraces surrounded by abundant nature and attractive exclusive amenities, as well as others shared with Kaybé.`,
+
+      //Amenidades
+      amenities_peregrina: {
+        title: "Amenities",
+        restaurant: "Restaurant",
+        pool: "Pool and Terrace",
+        gym: "Gym",
+        yoga_area: "Yoga Area",
+        spa: "Spa",
+        coworking: "Coworking Space",
+        fire_pit: "Fire Pit",
+        star_viewp: "Star Viewpoint",
+        elevator: "Elevators",
+        laundry_room: "Laundry Room",
+        security_24_7: "24/7 Security",
+        snack_bar: "Snack Bar Area"
+      },
+      
+      
+
+    },
+
   },
   faq_info: {
     //PREGUNTAS FRECUENTES (LINKS FOOTER)

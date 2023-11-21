@@ -11,133 +11,123 @@ import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
 
-const NaluPage = () => {
+const PeregrinaPage = () => {
   const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
 
-  const images = allProperties[3].imagesCube;
-  
+  //   const images = allProperties[3].imagesCube;
+  // OJO FALTA AGREGAR LAS FOTOS DEL PROYECTO *******************************
 
   const router = useRouter();
   return (
     <>
       <section className="bg-white ">
-        <div className="px-6 py-10 mx-auto mt-8">
+        <div className="px-6 py-10 mx-auto mt-8 bg-yellow-400">
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4 ">
               <h2 className=" uppercase max-w-lg  mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
-                NÁLU 
+                PEREGRINA
               </h2>
 
               <strong>
                 <h3 className="mb-6 mt-2 uppercase text-gray-700">
                   {language === es
-                    ? es.pom.nalu.subTitleStrong
-                    : en.pom.nalu.subTitleStrong}
+                    ? es.tul.peregrina.subTitleStrong
+                    : en.tul.peregrina.subTitleStrong}
                 </h3>
               </strong>
 
               <p className="text-base text-gray-700 md:text-lg mb-2">
                 {language === es
-                  ? es.pom.nalu.paragraph_1
-                  : en.pom.nalu.paragraph_1}
-              </p>
-
-              <p className="text-base text-gray-700 md:text-lg mb-2">
-                {language === es
-                  ? es.pom.nalu.paragraph_2
-                  : en.pom.nalu.paragraph_2}
+                  ? es.tul.peregrina.paragraph_1
+                  : en.tul.peregrina.paragraph_1}
 
                 <strong>
                   {language === es
-                    ? es.pom.nalu.paragraph_2_pt_2_strong
-                    : en.pom.nalu.paragraph_2_pt_2_strong}
+                    ? es.tul.peregrina.paragraph_1_pt_2_strong
+                    : en.tul.peregrina.paragraph_1_pt_2_strong}
                 </strong>
 
                 {language === es
-                  ? es.pom.nalu.paragraph_2_pt_3
-                  : en.pom.nalu.paragraph_2_pt_3}
+                  ? es.tul.peregrina.paragraph_1_pt_3
+                  : en.tul.peregrina.paragraph_1_pt_3}
               </p>
-              {/* <p className="text-base text-gray-700 md:text-lg mb-2">
-                {language === es
-                  ? es.pom.nalu.paragraph_3
-                  : en.pom.nalu.paragraph_3}
-              </p> */}
 
               <h4 className="max-w-lg mb-6 mt-4 text-xl font-black text-sky-950 ">
                 {language === es
-                  ? es.pom.nalu.amenities_nalu.title
-                  : en.pom.nalu.amenities_nalu.title}
+                  ? es.tul.peregrina.amenities_peregrina.title
+                  : en.tul.peregrina.amenities_peregrina.title}
               </h4>
 
               <AmenitiesInProject
                 amenidad_1={
                   language === es
-                    ? es.pom.nalu.amenities_nalu.private_beach
-                    : en.pom.nalu.amenities_nalu.private_beach
+                    ? es.tul.peregrina.amenities_peregrina.restaurant
+                    : en.tul.peregrina.amenities_peregrina.restaurant
                 }
                 amenidad_2={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.bbq_area
-                    : en.pom.nalu.amenities_nalu.bbq_area
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.pool
+                      : en.tul.peregrina.amenities_peregrina.pool
+                  }
                 amenidad_3={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.poolside_bar
-                    : en.pom.nalu.amenities_nalu.poolside_bar
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.gym
+                      : en.tul.peregrina.amenities_peregrina.gym
+                  }
                 amenidad_4={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.bicycle_area
-                    : en.pom.nalu.amenities_nalu.bicycle_area
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.yoga_area
+                      : en.tul.peregrina.amenities_peregrina.yoga_area
+                  }
                 amenidad_5={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.lobby
-                    : en.pom.nalu.amenities_nalu.lobby
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.spa
+                      : en.tul.peregrina.amenities_peregrina.spa
+                  }
                 amenidad_6={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.gym
-                    : en.pom.nalu.amenities_nalu.gym
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.coworking
+                      : en.tul.peregrina.amenities_peregrina.coworking
+                  }
                 amenidad_7={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.private_parking
-                    : en.pom.nalu.amenities_nalu.private_parking
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.fire_pit
+                      : en.tul.peregrina.amenities_peregrina.fire_pit
+                  }
                 amenidad_8={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.elevator
-                    : en.pom.nalu.amenities_nalu.elevator
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.star_viewp
+                      : en.tul.peregrina.amenities_peregrina.star_viewp
+                  }
                 amenidad_9={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.rooftop_pool
-                    : en.pom.nalu.amenities_nalu.rooftop_pool
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.elevator
+                      : en.tul.peregrina.amenities_peregrina.elevator
+                  }
                 amenidad_10={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.wellness_room
-                    : en.pom.nalu.amenities_nalu.wellness_room
-                }
-                amenidad_11={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.multipurpose_room
-                    : en.pom.nalu.amenities_nalu.multipurpose_room
-                }
-                amenidad_12={
-                  language === es
-                    ? es.pom.nalu.amenities_nalu.security_24_7
-                    : en.pom.nalu.amenities_nalu.security_24_7
-                }
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.laundry_room
+                      : en.tul.peregrina.amenities_peregrina.laundry_room
+                  }
+                  amenidad_11={
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.security_24_7
+                      : en.tul.peregrina.amenities_peregrina.security_24_7
+                  }
+                  amenidad_12={
+                    language === es
+                      ? es.tul.peregrina.amenities_peregrina.snack_bar
+                      : en.tul.peregrina.amenities_peregrina.snack_bar
+                  }
+                
               />
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center">
               {/*Imagenes Swiper CUBO*/}
-              <PropertyDetailImages images={images} />
+              {/* <PropertyDetailImages images={images} /> */}
 
               <div className="mx-auto items-center text-center relative bg-[white] mt-4">
                 <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
@@ -162,7 +152,6 @@ const NaluPage = () => {
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
             href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom"
-            
           >
             {language === es
               ? es.pom.nalu.two_bedroom
@@ -172,9 +161,8 @@ const NaluPage = () => {
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
             href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom"
-
           >
-            {/* 3 RECÁMARAS */}
+            {/* KAYBE */}
             {language === es
               ? es.pom.nalu.three_bedroom
               : en.pom.nalu.three_bedroom}
@@ -203,11 +191,11 @@ const NaluPage = () => {
           marginwidth="0"
           title="map"
           scroll="yes"
-          src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Nálu Luxury Beachfront Residences&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+          src="https://maps.google.com/maps?width=600&height=400&hl=en&q=PEREGRINA KAY BE&t=&z=14&ie=UTF8&iwloc=B&output=embed"
         ></iframe>
       </div>
     </>
   );
 };
 
-export default NaluPage;
+export default PeregrinaPage;

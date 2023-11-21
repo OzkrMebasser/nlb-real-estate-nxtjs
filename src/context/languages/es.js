@@ -486,7 +486,32 @@ const esTranslations = {
     },
   },
   tul: {
-    peregrina: {},
+    peregrina: {
+      title: "Peregrina",
+      subTitleStrong: "El Paraíso, sobre el cielo y sobre arena.",
+      //Description
+      paragraph_1: `Diseñado por Lavalle Peniche para viajeros que buscan la experiencia de conexión que caracteriza y posiciona a Tulum como el punto de mayor demanda en temporada vacacional. Peregrina es un desarrollo con `,
+      paragraph_1_pt_2_strong: `51 unidades habitacionales `,
+      paragraph_1_pt_3: `distribuidas entre caminos y terrazas rodeadas de abundante naturaleza y atractivas amenidades exclusivas, así como otras compartidas con Kaybé.`,
+
+      //Amenidades
+      amenities_peregrina: {
+        title: "Amenidades",
+        restaurant: "Restaurante",
+        pool: "Alberca y Terraza",
+        gym: "Gimnasio",
+        yoga_area: "Área de Yoga",
+        spa: "Spa",
+        coworking: "Coworking",
+        fire_pit: "Fogata",
+        star_viewp: "Mirador de Estrellas",
+        elevator: "Elevadores",
+        laundry_room: "Área de Lavado",
+        security_24_7: "Seguridad 24/7",
+        snack_bar: "Snack Bar"
+      },
+      
+    },
   },
 
   faq_info: {
