@@ -177,7 +177,7 @@ function Nav() {
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    <Link href="/properties/Playa_del_Carmen">
+                                    <Link href="/properties/Playa-del-Carmen">
                                       PLAYA DEL CARMEN
                                     </Link>
 
@@ -201,7 +201,7 @@ function Nav() {
                                       <Menu.Item>
                                         {({ active }) => (
                                           <Link
-                                            href="/properties/Playa_del_Carmen/Tres_Patios"
+                                            href="/properties/Playa-del-Carmen/Tres-Patios"
                                             className={classNames(
                                               active
                                                 ? "bg-[#e5c995] text-gray-900"
@@ -534,7 +534,7 @@ function Nav() {
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    <Link href="/properties/Puerto_Morelos">
+                                    <Link href="/properties/Puerto-Morelos">
                                       PUERTO MORELOS
                                     </Link>
                                     <ChevronDownIcon
@@ -934,7 +934,7 @@ function Nav() {
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    <Link href="/properties/Playa_del_Carmen">
+                                    <Link href="/properties/Playa-del-Carmen">
                                       PLAYA DEL CARMEN
                                     </Link>
 
@@ -958,7 +958,7 @@ function Nav() {
                                       <Menu.Item>
                                         {({ active }) => (
                                           <Link
-                                            href="/properties/Playa_del_Carmen/Tres_Patios"
+                                            href="/properties/Playa-del-Carmen/Tres-Patios"
                                             className={classNames(
                                               active
                                                 ? "bg-[#e5c995] text-gray-900"
@@ -1291,7 +1291,7 @@ function Nav() {
                               >
                                 <div>
                                   <Menu.Button className="text-[#12283f] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-[12px] font-semibold">
-                                    <Link href="/properties/Puerto_Morelos">
+                                    <Link href="/properties/Puerto-Morelos">
                                       PUERTO MORELOS
                                     </Link>
                                     <ChevronDownIcon
@@ -1316,7 +1316,7 @@ function Nav() {
                                       <Menu.Item>
                                         {({ active }) => (
                                           <Link
-                                            href="properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences"
+                                            href="properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences"
                                             className={classNames(
                                               active
                                                 ? "bg-[#e5c995] text-gray-900"

@@ -161,7 +161,7 @@ const NaluPage = () => {
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom"
+            href="/properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences/Two-Bedroom"
             
           >
             {language === es
@@ -171,7 +171,7 @@ const NaluPage = () => {
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom"
+            href="/properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences/Three-Bedroom"
 
           >
             {/* 3 RECÁMARAS */}
@@ -180,12 +180,6 @@ const NaluPage = () => {
               : en.pom.nalu.three_bedroom}
           </Link>
 
-          {/* <Link
-            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Penthouse"
-          >
-            PENTHOUSE
-          </Link> */}
         </div>
       </section>
       <div className="flex justify-center mt-6 ">

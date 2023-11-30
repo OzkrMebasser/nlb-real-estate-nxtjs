@@ -512,13 +512,30 @@ const enTranslations = {
         elevator: "Elevators",
         laundry_room: "Laundry Room",
         security_24_7: "24/7 Security",
-        snack_bar: "Snack Bar Area"
+        snack_bar: "Snack Bar Area",
       },
-      
-      
 
+      studio: "STUDIO FLATS",
+      two_bedroom: "2 BEDROOMS",
+      kaybe: "KAYBÉ",
+
+      unit_1: {
+        unit_1_Title: "STUDIO FLATS",
+        unit_1_description: `The 36 studio apartments are designed for the light
+          traveler, the nomad who enjoys the lightness of
+          living a freeing experience in intimate spaces.`,
+        unit_1_amenidades: {
+          amenidad_1: "1 bedroom",
+          amenidad_2: "Bathroom",
+          amenidad_3: "Walk-in closet",
+          amenidad_4: "Kitchen",
+          amenidad_5: "Dining room",
+          amenidad_6: "Living room",
+          amenidad_7: "Terrace",
+          amenidad_8: "Garden",
+        },
+      },
     },
-
   },
   faq_info: {
     //PREGUNTAS FRECUENTES (LINKS FOOTER)

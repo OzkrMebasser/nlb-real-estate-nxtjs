@@ -1,4 +1,5 @@
 "use client";
+import Script from 'next/script'
 import HeroSlider from "./components/Hero/HeroSlides";
 import HomeProperties from "./components/Cards/HomeProperties";
 import useLanguage from "@/context/hooks/useLanguage";
@@ -17,6 +18,16 @@ export default function Home() {
         {language === es ? es.featuredProperties : en.featuredProperties}
         </h2>
         <HomeProperties />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-VCZJW2YZVB" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-VCZJW2YZVB');
+        `}
+      </Script>
       </div>
     </>
   );

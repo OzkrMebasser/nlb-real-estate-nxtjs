@@ -8,16 +8,16 @@ import es from "@/context/languages/es";
 import ScrollToSection from "../components/ScrollToSection/ScrollToSection";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
-import FrequentQuestionOne from "./How_do_I_acquire_a_property_in_Mexico/FrequentQuestionOne";
-import FrequentQuestionTwo from "./Can_I_acquire_in_co_ownership/FrequentQuestionTwo";
-import FrequentQuestionThree from "./Can_I_acquire_through_an_LLC/FrequentQuestionThree";
-import FrequentQuestionFour from "./If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property/FrequentQuestionFour";
-import FrequentQuestionFifth from "./What_is_the_role_of_the_notary_public_in_mexico/FrequentQuestionFifth";
-import FrequentQuestionSix from "./What_are_my_closing_cost/FrequentQuestionSix";
-import FrequentQuestionSeven from "./Property_Tax/FrequentQuestionSeven";
-import FrequentQuestionEight from "./Do_I_need_an_attorney/FrequentQuestionEight";
-import FrequentQuestionNine from "./Once_Im_an_owner_how_do_I_transfer_title/FrequentQuestionNine"
-import FrequentQuestionTen from "./What_are_the_next_steps/FrequentQuestionTen";
+import FrequentQuestionOne from "./How-do-I-acquire-a-property-in-Mexico/FrequentQuestionOne";
+import FrequentQuestionTwo from "./Can-I-acquire-in-co-ownership/FrequentQuestionTwo";
+import FrequentQuestionThree from "./Can-I-acquire-through-an-LLC/FrequentQuestionThree";
+import FrequentQuestionFour from "./If-the-bank-holding-my-trust-ceases-doing-business-is-ther-any-risk-of-losing-my-property/FrequentQuestionFour";
+import FrequentQuestionFifth from "./What-is-the-role-of-the-notary-public-in-mexico/FrequentQuestionFifth";
+import FrequentQuestionSix from "./What-are-my-closing-cost/FrequentQuestionSix";
+import FrequentQuestionSeven from "./Property-Tax/FrequentQuestionSeven";
+import FrequentQuestionEight from "./Do-I-need-an-attorney/FrequentQuestionEight";
+import FrequentQuestionNine from "./Once-Im-an-owner-how-do-I-transfer-title/FrequentQuestionNine"
+import FrequentQuestionTen from "./What-are-the-next-steps/FrequentQuestionTen";
 
 
 

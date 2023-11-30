@@ -17,14 +17,13 @@ const PeregrinaPage = () => {
 
   const { allProperties } = useProperties();
 
-  //   const images = allProperties[3].imagesCube;
-  // OJO FALTA AGREGAR LAS FOTOS DEL PROYECTO *******************************
+    const images = allProperties[4].imagesCube;
 
   const router = useRouter();
   return (
     <>
       <section className="bg-white ">
-        <div className="px-6 py-10 mx-auto mt-8 bg-yellow-400">
+        <div className="px-6 py-10 mx-auto mt-8 ">
           <div className="mt-8 lg:mx-6 lg:flex lg:items-center lg:space-between">
             <div className="mt-6 lg:mt-0 lg:mx-4 ">
               <h2 className=" uppercase max-w-lg  mt-4 lg:mt-2 tracking-tight text-3xl font-black text-[#9c8966] sm:text-4xl sm:leading-none">
@@ -127,7 +126,7 @@ const PeregrinaPage = () => {
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center">
               {/*Imagenes Swiper CUBO*/}
-              {/* <PropertyDetailImages images={images} /> */}
+              <PropertyDetailImages images={images} />
 
               <div className="mx-auto items-center text-center relative bg-[white] mt-4">
                 <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
@@ -143,10 +142,15 @@ const PeregrinaPage = () => {
           </h4>
         </span>
         <div className="px-8 mb-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
-          {/* 1 RECÁMARA */}
-          <p className="px-4 py-2 text-center bg-white rounded ">
-            {/* BLANK BUTTON */}
-          </p>
+          {/* 1 ESTUDIO */}
+          <Link
+            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
+            href="/properties/Tulum/Peregrina/Studio"
+          >
+            {language === es
+              ? es.tul.peregrina.studio
+              : en.tul.peregrina.studio}
+          </Link>
 
           {/* 2 RECÁMARAS */}
           <Link
@@ -154,8 +158,8 @@ const PeregrinaPage = () => {
             href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom"
           >
             {language === es
-              ? es.pom.nalu.two_bedroom
-              : en.pom.nalu.two_bedroom}
+              ? es.tul.peregrina.two_bedroom
+              : en.tul.peregrina.two_bedroom}
           </Link>
 
           <Link
@@ -164,8 +168,8 @@ const PeregrinaPage = () => {
           >
             {/* KAYBE */}
             {language === es
-              ? es.pom.nalu.three_bedroom
-              : en.pom.nalu.three_bedroom}
+              ? es.tul.peregrina.kaybe
+              : en.tul.peregrina.kaybe}
           </Link>
 
           {/* <Link

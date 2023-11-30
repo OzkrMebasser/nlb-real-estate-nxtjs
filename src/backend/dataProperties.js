@@ -26,8 +26,8 @@ export const homeProperties = [
     desarrollo: "ATHIMAR",
     tipo: "departamento",
     ubicacion: "Cozumel",
-    route: "properties/Cozumel/Athimar_Cozumel",
-    route2: "Cozumel/Athimar_Cozumel",
+    route: "properties/Cozumel/Athimar-Cozumel",
+    route2: "Cozumel/Athimar-Cozumel",
     precio: 169999,
     habitaciones: "unoAtresRooms",
     banios: "unoAtresBanios",
@@ -42,8 +42,8 @@ export const homeProperties = [
     desarrollo: "TRES PATIOS",
     tipo: "villa",
     ubicacion: "Playa del Carmen",
-    route: "properties/Playa_del_Carmen/Tres_Patios",
-    route2: "Playa_del_Carmen/Tres_Patios",
+    route: "properties/Playa-del-Carmen/Tres-Patios",
+    route2: "Playa-del-Carmen/Tres-Patios",
     precio: 140000,
     habitaciones: "tres_habs",
     banios: "dos_banios",
@@ -96,8 +96,8 @@ export const homeProperties = [
     desarrollo: "NÁLU LUXURY BEACHFRONT",
     tipo: "departamento",
     ubicacion: "Puerto Morelos",
-    route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
-    route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    route: "properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences",
+    route2: "Puerto-Morelos/Nalu-Luxury-beachfront-residences",
     precio: 699000,
     habitaciones: "dosTres",
     banios: "tres_banios",
@@ -113,8 +113,8 @@ export const homeProperties = [
     desarrollo: "TERRENO DE INVERSION",
     tipo: "terreno",
     ubicacion: "Puerto Morelos",
-    route: "properties/Playa_del_Carmen/Tres_Patios",
-    route2: "Playa_del_Carmen/Tres_Patios",
+    route: "properties/Playa-del-Carmen/Tres-Patios",
+    route2: "Playa-del-Carmen/Tres-Patios",
     precio: 2500000,
     habitaciones: 3,
     banios: 2,
@@ -140,10 +140,10 @@ export const allProperties = [
     desarrollo: "Tres Patios",
     tipo: "villa",
     ubicacion: "Playa del Carmen",
-    route: "properties/Playa_del_Carmen/Tres_Patios",
-    route2: "Playa_del_Carmen/Tres_Patios",
-    routeUnit_1: "Tres_Patios/Villa_90m2",
-    routeUnit_2: "Tres_Patios/Villa_110m2",
+    route: "properties/Playa-del-Carmen/Tres-Patios",
+    route2: "Playa-del-Carmen/Tres-Patios",
+    routeUnit_1: "Tres-Patios/Villa-90m2",
+    routeUnit_2: "Tres-Patios/Villa-110m2",
     precio: 2500000,
     habitaciones: "tres_habs",
     banios: "dos_banios",
@@ -288,10 +288,10 @@ export const allProperties = [
       "UN PROYECTO DONDE EL LUJO Y EL CONFORT PREDOMINAN EN CADA RINCÓN",
     tipo: "departamento",
     ubicacion: "Cozumel",
-    route: "properties/Cozumel/Athimar_Cozumel",
-    route2: "Cozumel/Athimar_Cozumel",
-    routeUnit_1: "Athimar_Cozumel/One_Bedroom",
-    routeUnit_2: "Athimar_Cozumel/App2",
+    route: "properties/Cozumel/Athimar-Cozumel",
+    route2: "Cozumel/Athimar-Cozumel",
+    routeUnit_1: "Athimar-Cozumel/One-Bedroom",
+    routeUnit_2: "Athimar-Cozumel/App2",
     precio: 169999,
     habitaciones: "unoAtresRooms",
     banios: "unoAtresBanios",
@@ -654,12 +654,12 @@ export const allProperties = [
     tipo: "departamento",
     ubicacion: "Puerto Morelos",
     onsale: "promo",
-    route: "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences",
-    route2: "Puerto_Morelos/Nalu_Luxury_beachfront_residences",
+    route: "properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences",
+    route2: "Puerto-Morelos/Nalu-Luxury-beachfront-residences",
     routeUnit_1:
-      "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom",
+      "properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences/Two-Bedroom",
     routeUnit_2:
-      "properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom",
+      "properties/Puerto-Morelos/Nalu-Luxury-beachfront-residences/Three-Bedroom",
     precio: 699000,
     habitaciones: "dosTres",
     banios: "tres_banios",
@@ -830,12 +830,12 @@ export const allProperties = [
     nickName: "El Paraíso, sobre el cielo y sobre arena.",
     subTitle: "",
     tipo: "departamento",
-    ubicacion: "Puerto Morelos",
+    ubicacion: "Tulum",
     onsale: "promo",
     route: "properties/Tulum/Peregrina",
     route2: "Tulum/Peregrina",
     routeUnit_1: "properties/Tulum/Peregrina/Studio",
-    routeUnit_2: "properties/Tulum/Peregrina/Two_Bedroom",
+    routeUnit_2: "properties/Tulum/Peregrina/Two-Bedroom",
     precio: 2500000,
     habitaciones: "tres_habs",
     banios: "dos_banios",
@@ -843,13 +843,74 @@ export const allProperties = [
     ymuchomas: "ymuchomas",
 
     imagenCard:
-    "https://firebasestorage.googleapis.com/v0/b/nlb-real-estate.appspot.com/o/allProperties%2FCUN%2FVidaraa%2Fvidaraa-tower-homecard.jpg?alt=media&token=4e1b0df2-9a25-4fca-813d-e59cf2e3a186&_gl=1*17t7769*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY5NzYwNTU5NC42MS4xLjE2OTc2MDU3ODQuNjAuMC4w",
-  // embededMapSrc:
-  //   "https://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embedhttps://maps.google.com/maps?width=945&amp;height=512&amp;hl=en&amp;q=Athimar Cozumel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
-
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/00_PEREGRINA_CARD.png?alt=media&token=0791598b-21c9-4451-8df6-164915f3b99e",
   imagesCube: [
-    
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/02_PEREGRINA_FACHADA_NOCTURNA_1.jpg?alt=media&token=8856ee5e-1cd8-448a-a244-b6731711af7b",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/03_PEREGRINA_LOBBY.png?alt=media&token=0b683324-b3d2-49af-a328-5f568165c478",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/04_PEREGRINA_PISCINA.jpg?alt=media&token=dfac3906-2193-4b04-bdbd-6ad45f559453",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/05_PEREGRINA_RESTAURANT.jpg?alt=media&token=ab98848e-0552-4b96-a5bd-5bb243c3946a",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/05_PEREGRINA_RESTAURANT_2.jpg?alt=media&token=8cf73669-284c-413f-a171-d0d83f1bbc41",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/06_PEREGRINA_GIMNASIO.png?alt=media&token=fc32868b-763b-4b8c-a1a0-d3df41edbaf1",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/07_PEREGRINA_COWORKING.png?alt=media&token=7bb27e49-7a03-4dcd-9de2-868e84786c8d",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/08_PEREGRINA_GIMNASIO.jpg?alt=media&token=2ea95b10-a1a6-42f7-b0b4-83087507fa10",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/09_PEREGRINA_FIREPIT.png?alt=media&token=945bd144-a8d6-4aca-aa8d-202f427b94d3",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/10_PEREGRINA_MIRADOR.png?alt=media&token=b08db926-2fd3-457e-b23b-4044d03af3d5",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/11_PEREGRINA_JARDIN%20ZEN.jpg?alt=media&token=a55953d0-f09e-4bc2-9791-b3bc8fa41c65",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/12_PEREGRINA_SPA.jpg?alt=media&token=7830d3bf-6eef-40a1-ab3e-378a535e0f74",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/23_PEREGRINA_AEREA_1.png?alt=media&token=1927a08b-e7bb-4980-b924-b14919007dc3",
+    "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-mainpage-img.appspot.com/o/23_PEREGRINA_AEREA_2.png?alt=media&token=6961bbb2-a7ed-46e6-87c4-ac0aece01201",
   ],
+  unit_1: {
+    //STUDIO
+
+    unit_1_precio: 4780000,
+
+    unit_1_imagenes_A: [
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO.JPG?alt=media&token=470ca079-9122-48c8-a9ab-bc90fc1788d5",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_01.jpg?alt=media&token=d955f5ae-d5a2-4b05-b928-16e92f5e5d19",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_02.jpg?alt=media&token=ce83f484-94e7-4535-88f7-68950b73ea7b",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_CORTE_1.jpg?alt=media&token=ee9b35b6-256c-46b3-89db-eca09df7f22a",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_CORTE_2.jpg?alt=media&token=82b82d64-2220-4b4d-aebe-f97e05f5a3b9",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_01.jpg?alt=media&token=6d9ad34a-ccc3-494a-985d-58aedd80af40",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_02.jpg?alt=media&token=059b4bb6-1db3-45b6-bee9-a2f566de1b2d",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_TERRAZA.jpg?alt=media&token=5f5fc0bb-feb2-4e36-8bf1-82c8503ce538"
+      
+    ],
+    unit_1_imagenes_B: [
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO.JPG?alt=media&token=470ca079-9122-48c8-a9ab-bc90fc1788d5",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_01.jpg?alt=media&token=d955f5ae-d5a2-4b05-b928-16e92f5e5d19",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_02.jpg?alt=media&token=ce83f484-94e7-4535-88f7-68950b73ea7b",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_CORTE_1.jpg?alt=media&token=ee9b35b6-256c-46b3-89db-eca09df7f22a",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/01_PEREGRINA_ESTUDIO_CORTE_2.jpg?alt=media&token=82b82d64-2220-4b4d-aebe-f97e05f5a3b9",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_01.jpg?alt=media&token=6d9ad34a-ccc3-494a-985d-58aedd80af40",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_02.jpg?alt=media&token=059b4bb6-1db3-45b6-bee9-a2f566de1b2d",
+      "https://firebasestorage.googleapis.com/v0/b/nlb-res-peregrina-studio-img.appspot.com/o/02_PEREGRINA_ESTUDIO_TERRAZA.jpg?alt=media&token=5f5fc0bb-feb2-4e36-8bf1-82c8503ce538"
+    ],
+  },
+
+  unit_2: {
+    //TWO BEDROOM
+    
+    
+    unit_2_imagenes_A: [
+    ],
+    unit_2_imagenes_B: [
+     
+    ],
+  },
+
+  kaybe: {
+    //KAYBE proyecto
+    
+    
+    kaybe_imagenes_A: [
+    ],
+    kaybe_imagenes_B: [
+     
+    ],
+  },
+   
+  
    },
   
 ];

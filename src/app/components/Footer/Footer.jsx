@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="footer-info lg:w-1/3 md:px-4">
           
             <h6 className="text-base text-[#9c8966] font-bold uppercase mb-2 hover:underline cursor-pointer">
-              <span onClick={() => router.push(`frequent_questions`)}>
+              <span onClick={() => router.push(`frequent-questions`)}>
                 {/* Preguntas Frecuentes */}
                 {language === es ? es.faq_info.faq : en.faq_info.faq}
               </span>
@@ -46,7 +46,7 @@ const Footer = () => {
             <div>
               {/*faq_1: "How do I acquire a property In Mexico?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/How_do_I_acquire_a_property_in_Mexico">
+                <Link href="/frequent-questions/How-do-I-acquire-a-property-in-Mexico">
                   {/* How do I acquire a property In Mexico? */}
                   {language === es ? es.faq_info.faq_1 : en.faq_info.faq_1}
                 </Link>
@@ -54,44 +54,44 @@ const Footer = () => {
               {/*faq_2: "Can I acquire in co-ownership?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
                 {/* Can I acquire in co-ownership? */}
-                <Link href="/frequent_questions/Can_I_acquire_in_co_ownership">
+                <Link href="/frequent-questions/Can-I-acquire-in-co-ownership">
                   {language === es ? es.faq_info.faq_2 : en.faq_info.faq_2}
                 </Link>
               </p>
               {/* faq_3: "Can I acquire through a LLC?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/Can_I_acquire_through_an_LLC">
+                <Link href="/frequent-questions/Can-I-acquire-through-an-LLC">
                   {language === es ? es.faq_info.faq_3 : en.faq_info.faq_3}
                 </Link>
               </p>
               {/* faq_4: "If the bank holding my trust ceases doing business is ther any risk of losing my property?"*/}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/If_the_bank_holding_my_trust_ceases_doing_business_is_ther_any_risk_of_losing_my_property">
+                <Link href="/frequent-questions/If-the-bank-holding-my-trust-ceases-doing-business-is-ther-any-risk-of-losing-my-property">
                   {language === es ? es.faq_info.faq_4 : en.faq_info.faq_4}
                 </Link>
               </p>
               {/* faq_5: "What is the role of the notary public in Mexico?" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/What_is_the_role_of_the_notary_public_in_mexico">
+                <Link href="/frequent-questions/What-is-the-role-of-the-notary-public-in-mexico">
                   {language === es ? es.faq_info.faq_5 : en.faq_info.faq_5}
                 </Link>
               </p>
               {/* faq_6: "What are my closing cost?" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/What_are_my_closing_cost">
+                <Link href="/frequent-questions/What-are-my-closing-cost">
                   {language === es ? es.faq_info.faq_6 : en.faq_info.faq_6}
                 </Link>
               </p>
               {/* faq_7: "Property Tax" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
-                <Link href="/frequent_questions/Property_Tax">
+                <Link href="/frequent-questions/Property-Tax">
                   {language === es ? es.faq_info.faq_7 : en.faq_info.faq_7}
                 </Link>
               </p>
               {/* faq_8: "Do I need an attorney?" */}
               <p className="text-[#32f1ff] py-1 block hover:underline cursor-pointer">
               
-                <Link href="/frequent_questions/Do_I_need_an_attorney">
+                <Link href="/frequent-questions/Do-I-need-an-attorney">
                   {language === es ? es.faq_info.faq_8 : en.faq_info.faq_8}
                 </Link>
               </p>
@@ -99,7 +99,7 @@ const Footer = () => {
               <p
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-               <Link href="/frequent_questions/Once_Im_an_owner_how_do_I_transfer_title">
+               <Link href="/frequent-questions/Once-Im-an-owner-how-do-I-transfer-title">
                {language === es ? es.faq_info.faq_9 : en.faq_info.faq_9}
                </Link>
               </p>
@@ -107,7 +107,7 @@ const Footer = () => {
               <p
                 className="text-[#32f1ff] py-1 block hover:underline cursor-pointer"
               >
-                <Link href="/frequent_questions/What_are_the_next_steps">
+                <Link href="/frequent-questions/What-are-the-next-steps">
                 {language === es ? es.faq_info.faq_10 : en.faq_info.faq_10}
                 </Link>
               </p>
@@ -128,7 +128,7 @@ const Footer = () => {
                   
                     className="text-[#32f1ff] py-1 block hover:underline"
                   >
-                    <Link   href="/blog/5_differences_between_residential_lots_and_investment_land">{language === es ? es.blog_info.post_1.title : en.blog_info.post_1.title}</Link>
+                    <Link   href="/blog/5-differences-between-residential-lots-and-investment-land">{language === es ? es.blog_info.post_1.title : en.blog_info.post_1.title}</Link>
                   </p>
 
                   <a

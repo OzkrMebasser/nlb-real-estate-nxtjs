@@ -13,7 +13,7 @@ import en from "@/context/languages/en";
 import es from "@/context/languages/es";
 import Link from "next/link";
 
-function CancunProperties() {
+function TulumProperties() {
   const { allProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
   const router = useRouter();
@@ -202,4 +202,4 @@ function CancunProperties() {
   );
 }
 
-export default CancunProperties;
+export default TulumProperties;

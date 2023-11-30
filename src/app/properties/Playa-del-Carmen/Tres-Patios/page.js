@@ -203,7 +203,7 @@ const TresPatios = () => {
           {/* Villa 90m2 */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Playa_del_Carmen/Tres_Patios/Villa_90m2"
+            href="/properties/Playa-del-Carmen/Tres-Patios/Villa-90m2"
           >
             {language === es
               ? es.pdc.tres_patios.villa_90m2
@@ -213,7 +213,7 @@ const TresPatios = () => {
           {/* Villa 110m2 */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Playa_del_Carmen/Tres_Patios/Villa_110m2"
+            href="/properties/Playa-del-Carmen/Tres-Patios/Villa-110m2"
           >
             {language === es
               ? es.pdc.tres_patios.villa_110m2
@@ -222,7 +222,7 @@ const TresPatios = () => {
           {/* Penthouse 90m2 */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Playa_del_Carmen/Tres_Patios/Penthouse_90m2"
+            href="/properties/Playa-del-Carmen/Tres-Patios/Penthouse-90m2"
           >
             {language === es
               ? es.pdc.tres_patios.penthouse_90m2
@@ -231,7 +231,7 @@ const TresPatios = () => {
              {/* Penthouse 110m2 */}
              <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Playa_del_Carmen/Tres_Patios/Penthouse_110m2"
+            href="/properties/Playa-del-Carmen/Tres-Patios/Penthouse-110m2"
           >
             {language === es
               ? es.pdc.tres_patios.penthouse_110m2

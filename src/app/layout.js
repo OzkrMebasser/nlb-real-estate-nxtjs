@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        
+      <meta name="google-site-verification" content="tDyU-6XXNqYRmCnaP0g_ck1MBaxk2XiPB75LXa_9Vfg" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
           rel="stylesheet"
@@ -54,16 +54,7 @@ export default function RootLayout({ children }) {
             </PropertiesProvider>
           </LanguageProvider>
         </ModalProvider>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-VCZJW2YZVB" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-VCZJW2YZVB');
-        `}
-      </Script>
+   
       </body>
     </html>
   );

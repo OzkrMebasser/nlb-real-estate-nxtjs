@@ -168,7 +168,7 @@ const VidaraaPage = () => {
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cancun/Vidaraa/Two_Bedroom"
+            href="/properties/Cancun/Vidaraa/Two-Bedroom"
           >
            
             {language === es
@@ -178,7 +178,7 @@ const VidaraaPage = () => {
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cancun/Vidaraa/Three_Bedroom"
+            href="/properties/Cancun/Vidaraa/Three-Bedroom"
           >
             {/* 3 RECÁMARAS */}
             {language === es
@@ -186,12 +186,7 @@ const VidaraaPage = () => {
               : en.cun.vidaraa.three_bedroom}
           </Link>
 
-          {/* <Link
-            className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Penthouse"
-          >
-            PENTHOUSE
-          </Link> */}
+          
         </div>
       </section>
       <div className="flex justify-center mt-6">

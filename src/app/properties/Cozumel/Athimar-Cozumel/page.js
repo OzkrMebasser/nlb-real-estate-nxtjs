@@ -195,7 +195,7 @@ const AthimarPage = () => {
           {/* 1 RECÁMARA */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded "
-            href="/properties/Cozumel/Athimar_Cozumel/One_Bedroom"
+            href="/properties/Cozumel/Athimar-Cozumel/One-Bedroom"
           >
             {language === es
               ? es.coz.athimar.one_bedroom
@@ -205,7 +205,7 @@ const AthimarPage = () => {
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Two_Bedroom"
+            href="/properties/Cozumel/Athimar-Cozumel/Two-Bedroom"
           >
             {/* 2 RECÁMARAS */}
             {language === es
@@ -215,7 +215,7 @@ const AthimarPage = () => {
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Three_Bedroom"
+            href="/properties/Cozumel/Athimar-Cozumel/Three-Bedroom"
           >
             {/* 3 RECÁMARAS */}
             {language === es
@@ -225,7 +225,7 @@ const AthimarPage = () => {
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Cozumel/Athimar_Cozumel/Penthouse"
+            href="/properties/Cozumel/Athimar-Cozumel/Penthouse"
           >
             PENTHOUSE
           </Link>

@@ -508,9 +508,30 @@ const esTranslations = {
         elevator: "Elevadores",
         laundry_room: "Área de Lavado",
         security_24_7: "Seguridad 24/7",
-        snack_bar: "Snack Bar"
+        snack_bar: "Snack Bar",
       },
-      
+      //Mas detalles...
+      studio: "ESTUDIOS",
+      two_bedroom: "2 RECÁMARAS",
+      kaybe: "KAYBÉ",
+
+      unit_1: {
+        unit_1_Title: "ESTUDIOS",
+        unit_1_description: `Los 36 departamentos tipo estudio están
+            diseñados para el viajero ligero, el nómada
+            que disfruta de la ligereza de vivir una
+            experiencia libre en espacios íntimos.`,
+        unit_1_amenidades: {
+          amenidad_1: "1 recámara",
+          amenidad_2: "Baño",
+          amenidad_3: "Clóset vestidor",
+          amenidad_4: "Cocina",
+          amenidad_5: "Comedor",
+          amenidad_6: "Sala",
+          amenidad_7: "Terraza",
+          amenidad_8: "Jardín",
+        },
+      },
     },
   },
 
