@@ -9,15 +9,15 @@ import PropertyDetailImages from "../../../components/Cards/PropertyDetailImages
 import AmenitiesInProject from "../../../components/Amenities/AmenitiesInProject";
 import { useProperties } from "@/context/PropertiesProvider";
 import { MdOutlineSwipe } from "react-icons/md";
-import { HiBadgeCheck } from "react-icons/hi";
 
 const PeregrinaPage = () => {
-  const { homeProperties } = useProperties();
   const { language, setLanguage } = useLanguage();
 
   const { allProperties } = useProperties();
 
-    const images = allProperties[4].imagesCube;
+  const images = allProperties[4].imagesCube;
+  const desarrollo = allProperties[4].desarrollo;
+
 
   const router = useRouter();
   return (
@@ -67,66 +67,68 @@ const PeregrinaPage = () => {
                     : en.tul.peregrina.amenities_peregrina.restaurant
                 }
                 amenidad_2={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.pool
-                      : en.tul.peregrina.amenities_peregrina.pool
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.pool
+                    : en.tul.peregrina.amenities_peregrina.pool
+                }
                 amenidad_3={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.gym
-                      : en.tul.peregrina.amenities_peregrina.gym
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.gym
+                    : en.tul.peregrina.amenities_peregrina.gym
+                }
                 amenidad_4={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.yoga_area
-                      : en.tul.peregrina.amenities_peregrina.yoga_area
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.yoga_area
+                    : en.tul.peregrina.amenities_peregrina.yoga_area
+                }
                 amenidad_5={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.spa
-                      : en.tul.peregrina.amenities_peregrina.spa
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.spa
+                    : en.tul.peregrina.amenities_peregrina.spa
+                }
                 amenidad_6={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.coworking
-                      : en.tul.peregrina.amenities_peregrina.coworking
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.coworking
+                    : en.tul.peregrina.amenities_peregrina.coworking
+                }
                 amenidad_7={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.fire_pit
-                      : en.tul.peregrina.amenities_peregrina.fire_pit
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.fire_pit
+                    : en.tul.peregrina.amenities_peregrina.fire_pit
+                }
                 amenidad_8={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.star_viewp
-                      : en.tul.peregrina.amenities_peregrina.star_viewp
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.star_viewp
+                    : en.tul.peregrina.amenities_peregrina.star_viewp
+                }
                 amenidad_9={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.elevator
-                      : en.tul.peregrina.amenities_peregrina.elevator
-                  }
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.elevator
+                    : en.tul.peregrina.amenities_peregrina.elevator
+                }
                 amenidad_10={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.laundry_room
-                      : en.tul.peregrina.amenities_peregrina.laundry_room
-                  }
-                  amenidad_11={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.security_24_7
-                      : en.tul.peregrina.amenities_peregrina.security_24_7
-                  }
-                  amenidad_12={
-                    language === es
-                      ? es.tul.peregrina.amenities_peregrina.snack_bar
-                      : en.tul.peregrina.amenities_peregrina.snack_bar
-                  }
-                
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.laundry_room
+                    : en.tul.peregrina.amenities_peregrina.laundry_room
+                }
+                amenidad_11={
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.security_24_7
+                    : en.tul.peregrina.amenities_peregrina.security_24_7
+                }
+                amenidad_12={
+                  language === es
+                    ? es.tul.peregrina.amenities_peregrina.snack_bar
+                    : en.tul.peregrina.amenities_peregrina.snack_bar
+                }
               />
             </div>
             <div className="mt-4 object-cover w-[330px] mx-auto lg:w-[435px]  lg: justify-center">
               {/*Imagenes Swiper CUBO*/}
-              <PropertyDetailImages images={images} />
+              <PropertyDetailImages 
+              altImgs={`${desarrollo}-Images-not-available`}
+              images={images}
+               />
 
               <div className="mx-auto items-center text-center relative bg-[white] mt-4">
                 <MdOutlineSwipe className=" text-[#058a94] mx-auto z-50 text-4xl text-center" />
@@ -155,7 +157,7 @@ const PeregrinaPage = () => {
           {/* 2 RECÁMARAS */}
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Two_Bedroom"
+            href="/properties/Tulum/Peregrina/Two-Bedroom"
           >
             {language === es
               ? es.tul.peregrina.two_bedroom
@@ -164,12 +166,10 @@ const PeregrinaPage = () => {
 
           <Link
             className="px-4 py-2 text-center bg-blue-500 hover:bg-blue-600 text-white rounded"
-            href="/properties/Puerto_Morelos/Nalu_Luxury_beachfront_residences/Three_Bedroom"
+            href="/properties/Tulum/Peregrina/Kaybe"
           >
             {/* KAYBE */}
-            {language === es
-              ? es.tul.peregrina.kaybe
-              : en.tul.peregrina.kaybe}
+            {language === es ? es.tul.peregrina.kaybe : en.tul.peregrina.kaybe}
           </Link>
 
           {/* <Link

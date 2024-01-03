@@ -29,6 +29,7 @@ const enTranslations = {
   typeCard: "Type : ",
   bedroomsCard: "Bedrooms : ",
   bathroomsCard: "Bathrooms : ",
+  unoDos: "One or two",
   unoAtresRooms: "One, two & three",
   dosTres: "Two & three",
   unoAtresBanios: "One, two & three",
@@ -39,6 +40,9 @@ const enTranslations = {
   m2TresPatios: "From 90m² to 110m²",
   m2vidaraa: "From 104.72m² to 150.32m²",
   m2Nalu: "From 141.40m² to 215.10m²",
+  m2Peregrina: "From 43.40m² to 122.10m²",
+  m2lotes: "Various sizes available",
+  n_a: "N/A",
 
   ymuchomas: "And much more!",
   departamento: "Appartment",
@@ -64,6 +68,11 @@ const enTranslations = {
   location: "Location",
   wesorry:
     "We're sorry, but we currently don't have any properties in this location.",
+  ourPortfolio: "Our Portfolio",
+  selectLocation: "Select a Location",
+  lessThan: "Less than $1,000,000",
+  moreThan: "More than $1,000,000",
+  seeAllLocations: "See All Locations",
 
   //CONTACT US FORM // FOOTER
   contactUsTitle: "Contact Us",
@@ -533,6 +542,103 @@ const enTranslations = {
           amenidad_6: "Living room",
           amenidad_7: "Terrace",
           amenidad_8: "Garden",
+        },
+      },
+      unit_2: {
+        unit_2_Title: "2 BEDROOMS",
+        unit_2_description: `The 15 departments are a generous space for tribes who need 
+        lots of natural light and flexibility, provided by the Lock-off option offered by one of its two rooms.`,
+        unit_2_amenidades: {
+          amenidad_1: "Master bedroom with bathroom and closet",
+          amenidad_2: "Lock-off room with bathroom and closet",
+          amenidad_3: "Kitchen",
+          amenidad_4: "Dining room",
+          amenidad_5: "Living room / TV",
+          amenidad_6: "Terrace",
+          amenidad_7: "Swimming pool",
+          amenidad_8: "Garden",
+        },
+      },
+
+      kaybe_paragraph_1:
+        "Kaybe is a unique development that combines harmony and tranquility, providing an environment fused with the precision of the ancient Mayan civilization. This balance culminates in the architecture of its portico and clubhouse, designed by the acclaimed Macías Peredo studio.",
+      kaybe_paragraph_2:
+        "Kaybe features a one-of-a-kind amenity in Mexico: a multisensory park designed by the bio-architectural studio ARQUITECTURA MIXTA. Built with endemic materials and bamboo, the park is a space intended to connect with nature, oneself, and to live experiences that appeal to all senses through each of its amenities. Being part of this exclusive community includes access to amenities such as :",
+
+      kaybe_amenidades: {
+        security: "24/7 security and controlled access with six lanes",
+        gymYogaSpa: "Gym yoga spa (jacuzzis, massages, steam, and lockers)",
+        swimmingPool:
+          "Swimming pool with two semi-Olympic lanes, two wading pools, poolside bathrooms",
+        motorCarLobby: "Motor car lobby",
+        eventsHall: "Adults and children events hall",
+        playgroundSnackBar: "Children's play area and Snack bar",
+        threePaddleCourts: "Three paddle courts",
+        iconicAccess: "Iconic access",
+        yogaDomePalapa: "Yoga dome and palapa",
+        viewpoint: "15-meter high viewpoint",
+        terrace: "Terrace",
+        sculptures: "Sculptures",
+      },
+    },
+    kaybe: {
+      slogan:
+        "The project features three types of lots, where high-end architectural projects can be developed.",
+      singleLots: "SINGLE FAM. LOTS",
+      macroLots: "MACROLOTS",
+      macroLotsPrm: "MACROLOTS PREMIUM",
+
+      single_Lots: {
+        title: "142 Single-Family Lots",
+        description_1:
+          "Excellent for various residential house projects with authentic designs",
+        description_2:
+          "The spaces are magnificent for building a villa or dream residences",
+
+        amenidades: {
+          amenidad_1: "24/7 Security and Controlled Access",
+          amenidad_2:
+            "Gym, Yoga, Spa (Jacuzzis, Massages, Steam Room, and Lockers)",
+          amenidad_3: "Semi-Olympic Swimming Pool and Wading Pools",
+          amenidad_4: "Motor Car Lobby",
+          amenidad_5: "Events Hall for Adults and Children",
+          amenidad_6: "Children's Playground and Snack Bar",
+          amenidad_7: "Three Paddle Courts",
+          amenidad_8: "Iconic Access and 15-Meter High Viewpoint",
+        },
+      },
+      macrolots: {
+        title: "38 Macrolots",
+        description_1:
+          "Where various vertical projects ideal for departments can be developed",
+        
+          amenidades: {
+            amenidad_1: "24/7 Security and Controlled Access",
+            amenidad_2:
+              "Gym, Yoga, Spa (Jacuzzis, Massages, Steam Room, and Lockers)",
+            amenidad_3: "Semi-Olympic Swimming Pool and Wading Pools",
+            amenidad_4: "Motor Car Lobby",
+            amenidad_5: "Events Hall for Adults and Children",
+            amenidad_6: "Children's Playground and Snack Bar",
+            amenidad_7: "Three Paddle Courts",
+            amenidad_8: "Iconic Access and 15-Meter High Viewpoint",
+          },
+      },
+      premium_macrolots: {
+        title: "12 Premium Macrolots",
+        description_1:
+          "Strategically located, with perfect spaces for residential developments such as:",
+        description_2: "Villas, Townhouses, Apartments, Exclusive Projects.",
+        amenidades: {
+          amenidad_1: "24/7 Security and Controlled Access",
+          amenidad_2:
+            "Gym, Yoga, Spa (Jacuzzis, Massages, Steam Room, and Lockers)",
+          amenidad_3: "Semi-Olympic Swimming Pool and Wading Pools",
+          amenidad_4: "Motor Car Lobby",
+          amenidad_5: "Events Hall for Adults and Children",
+          amenidad_6: "Children's Playground and Snack Bar",
+          amenidad_7: "Three Paddle Courts",
+          amenidad_8: "Iconic Access and 15-Meter High Viewpoint",
         },
       },
     },

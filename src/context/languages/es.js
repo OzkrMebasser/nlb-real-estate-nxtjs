@@ -31,6 +31,7 @@ const esTranslations = {
   typeCard: "Tipo : ",
   bedroomsCard: "Habitaciones : ",
   bathroomsCard: "Baños : ",
+  unoDos: "Uno o dos",
   dosTres: "Dos y tres",
   unoAtresRooms: "Una, dos y tres",
   unoAtresBanios: "Uno, dos y tres",
@@ -41,6 +42,10 @@ const esTranslations = {
   m2TresPatios: "Deste 90m² hasta 110m²",
   m2vidaraa: "Deste 104.72m² hasta 150.32m²",
   m2Nalu: "Deste 141.40m² hasta 215.10m²",
+  m2Peregrina: "Deste 43.40m² hasta 122.10m²",
+  m2lotes: "Diferentes tamaños disponibles",
+
+  n_a: "N/A",
   ymuchomas: "¡Y mucho más!",
   departamento: "Departamento",
   casa: "Casa",
@@ -83,6 +88,11 @@ const esTranslations = {
   location: "Ubicación",
   wesorry:
     "Lo sentimos, por el momento no tenemos propiedades en esta ubicación.",
+  ourPortfolio: "Nuestro Portafolio",
+  selectLocation: "Selecciona una Ubicación",
+  lessThan: "Menos de $1,000,000",
+  moreThan: "Más de $1,000,000",
+  seeAllLocations: "Ver todas las ubicaciones",
 
   //PLAYA DEL CARMEN
   pdc: {
@@ -530,6 +540,103 @@ const esTranslations = {
           amenidad_6: "Sala",
           amenidad_7: "Terraza",
           amenidad_8: "Jardín",
+        },
+      },
+      unit_2: {
+        unit_2_Title: "2 RECÁMARAS",
+        unit_2_description: `Los 15 departamentos son un espacion generoso para tribus que necesitan mucha luz y flexiblildad, otorgada por opción Lock-off que ofrece una de sus 2 habitaciones.`,
+        unit_2_amenidades: {
+          amenidad_1: "Habitación principal con baño y clóset",
+          amenidad_2: "Habitación lock-off con baño y clóset",
+          amenidad_3: "Cocina",
+          amenidad_4: "Comedor",
+          amenidad_5: "Sala de estar / TV",
+          amenidad_6: "Terraza",
+          amenidad_7: "Piscina",
+          amenidad_8: "Jardín",
+        },
+      },
+
+      kaybe_paragraph_1: `Kaybé es un desarrollo singular que une la armonía y la tranquilidad, brindando un entorno fusionado con la precisión de la antigua civilización Maya. Este equilibrio culmina en la arquitectura de su pórtico y casa club, diseñados por el aclamado estudio Macías Peredo.`,
+      kaybe_paragraph_2: `Kaybé cuenta con una amenidad única en México: un parque multisensorial, diseñado por el estudio bioarquitectónico ARQUITECTURA MIXTA. Construido con materiales endémicos y bambú, el parque es un espacio destinado a conectar con la naturaleza, consigo mismo y a vivir experiencias que apelan a todos los sentidos a través de cada una de sus amenidades. Formar parte de esta exclusiva comunidad incluye el acceso a amenidades como:`,
+
+      kaybe_amenidades: {
+        security: "Seguridad 24/7 y acceso controlado de seis carriles",
+        gymYogaSpa: "Gimnasio yoga spa (jacuzzis, masajes, vapor y lockers)",
+        swimmingPool:
+          "Piscina con dos carriles de nado semiolímpicos, dos chapoteaderos, baños de piscina",
+        motorCarLobby: "Motor car lobby",
+        eventsHall: "Salón de eventos adultos y niños",
+        playgroundSnackBar: "Área de juegos infantiles y Snack bar",
+        threePaddleCourts: "Tres canchas de paddle",
+        iconicAccess: "Acceso icónico",
+        yogaDomePalapa: "Domo y palapa de yoga",
+        viewpoint: "Mirador de 15 metros de altura",
+        terrace: "Terraza",
+        sculptures: "Esculturas",
+      },
+    },
+    kaybe: {
+      slogan:
+        "El proyecto cuenta con tres tipos de lotes, en los cuales se pueden desarrollar proyectos arquitectonicos de alta gama",
+      singleLots: "LOTES UNIFAMILIARES",
+      macroLots: "MACROLOTES",
+      macroLotsPrm: "MACROLOTES PREMIUM",
+
+      single_Lots: {
+        title: "142 Lotes Unifamiliares",
+        description_1:
+          "Excelentes para realizar diversos proyectos de casas residenciales con diseños auténticos",
+        description_2:
+          "Los espacios son magnificos para construir una villa o residencias de ensueño",
+
+        amenidades: {
+          amenidad_1: "Seguridad 24/7 y acceso controlado",
+          amenidad_2:
+            "Gimnasio, yoga, spa (jacuzzis, masajes, vapor y lockers)",
+          amenidad_3: "Piscina semiolímpica y chapoteaderos",
+          amenidad_4: "Lobby para automóviles",
+          amenidad_5: "Salón de eventos para adultos y niños",
+          amenidad_6: "Área de juegos infantiles y Snack bar",
+          amenidad_7: "Tres canchas de paddle",
+          amenidad_8: "Acceso icónico y mirador de 15 metros de altura",
+        },
+      },
+      macrolots: {
+        title: "38 Macrolotes",
+        description_1:
+          "En ellos se pueden desarrollar diversos proyectos verticales ideales para departamentos",
+        
+
+        amenidades: {
+          amenidad_1: "Seguridad 24/7 y acceso controlado",
+          amenidad_2:
+            "Gimnasio, yoga, spa (jacuzzis, masajes, vapor y lockers)",
+          amenidad_3: "Piscina semiolímpica y chapoteaderos",
+          amenidad_4: "Lobby para automóviles",
+          amenidad_5: "Salón de eventos para adultos y niños",
+          amenidad_6: "Área de juegos infantiles y Snack bar",
+          amenidad_7: "Tres canchas de paddle",
+          amenidad_8: "Acceso icónico y mirador de 15 metros de altura",
+        },
+      },
+      premium_macrolots: {
+        title: "12 Macrolotes Premium",
+        description_1:
+          "Ubicados estratégicamente, con espacios perfectos para llevar a cabo desarrollos residenciales como: ",
+        description_2:
+          "Villas, Townhouses, Departamentos, Proyectos exclusivos.",
+
+        amenidades: {
+          amenidad_1: "Seguridad 24/7 y acceso controlado",
+          amenidad_2:
+            "Gimnasio, yoga, spa (jacuzzis, masajes, vapor y lockers)",
+          amenidad_3: "Piscina semiolímpica y chapoteaderos",
+          amenidad_4: "Lobby para automóviles",
+          amenidad_5: "Salón de eventos para adultos y niños",
+          amenidad_6: "Área de juegos infantiles y Snack bar",
+          amenidad_7: "Tres canchas de paddle",
+          amenidad_8: "Acceso icónico y mirador de 15 metros de altura",
         },
       },
     },

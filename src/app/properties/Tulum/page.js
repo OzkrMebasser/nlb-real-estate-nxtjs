@@ -12,6 +12,7 @@ import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
 import Link from "next/link";
+import Head from "next/head"
 
 function TulumProperties() {
   const { allProperties } = useProperties();
@@ -44,6 +45,10 @@ function TulumProperties() {
   }
   return (
     <>
+    
+    <Head>
+        <link rel="canonical" href="https://nlb-realestate.com/properties/Tulum" />
+      </Head>
       <div className="mt-24 mx-auto justify-center">
         <h2 className="text-center mt-8 text-3xl font-black text-sky-950">
           {language === es ? es.propertiesIn : en.propertiesIn} Tulum
@@ -66,7 +71,7 @@ function TulumProperties() {
                       // onClick={HandleRoute}
 
                       // onClick={() => router.push(`properties/${items.ubicacion}`)}
-                      onClick={() => router.push(`${items.route2}`)}
+                      // onClick={() => router.push(`${items.route}`)}
                     >
                       <h1 className="uppercase text-2xl text-sky-900 font-black">
                         {items.desarrollo}
@@ -81,7 +86,7 @@ function TulumProperties() {
                       <img
                         className="object-cover w-full h-48"
                         src={items.imagenCard}
-                        alt="image"
+                        alt={`Project-${items.desarrollo}-${items.ubicacion}`}
                       />
                       <div className="p-4">
                         <h4 className="text-xl font-semibold text-blue-600">
@@ -158,7 +163,7 @@ function TulumProperties() {
                         </p>
 
                         {/*Ver este proyecto*/}
-                        <Link href={`properties/${items.route2}`}>
+                        <Link href={`${items.route2}`}>
                           <button
                             // onClick={() => router.push(`properties/${items.route2}`)}
                             className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"

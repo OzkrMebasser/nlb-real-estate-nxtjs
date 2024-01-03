@@ -50,8 +50,7 @@ const HomeProperties = () => {
                   <img
                     className="object-cover w-full h-48"
                     src={items.imagenCard}
-                    alt="image"
-                  />
+                    alt={`Project-${items.desarrollo}-${items.ubicacion}`}                  />
                   <div className="p-4">
                     <h4 className="text-xl font-semibold text-blue-800">
                       {items.title}

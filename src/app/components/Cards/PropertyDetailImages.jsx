@@ -13,8 +13,8 @@ import "./swipper.css";
 // import required modules
 import { EffectCube, Pagination } from "swiper";
 
-const PropertyDetailImages =({images}) => {
-  console.log(images)
+const PropertyDetailImages =({images, altImgs}) => {
+  // console.log(images)
   return (
     <>
       <div>
@@ -48,7 +48,7 @@ const PropertyDetailImages =({images}) => {
           </SwiperSlide> */}
           {images.map(image => (
           <SwiperSlide key={image}>
-            <img src={image} />  
+            <img src={image}  alt={altImgs}/>  
           </SwiperSlide>
         ))}
         </Swiper>

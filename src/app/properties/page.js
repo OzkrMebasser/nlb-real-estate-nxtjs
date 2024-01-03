@@ -11,7 +11,8 @@ import useLanguage from "@/context/hooks/useLanguage";
 import en from "@/context/languages/en";
 import es from "@/context/languages/es";
 import Loading from "../components/Loading/Loading";
-import Link from "next/link"
+import Link from "next/link";
+import Head from "next/head";
 
 function Allproperties() {
   const { allProperties } = useProperties();
@@ -19,14 +20,8 @@ function Allproperties() {
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(true);
-
-  // const [filteredEmployees, setFilteredEmployees] = useState(employees);
   const [filteredPropiedades, setfilteredPropiedades] = useState(allProperties);
-
-  // const [department, setDepartment] = useState("");
   const [ubicacion, setUbicacion] = useState("");
-
-  // const [experience, setExperience] = useState();
   const [precio, setPrecio] = useState();
 
   // Using set to filter unique values
@@ -34,11 +29,21 @@ function Allproperties() {
     new Set(allProperties.map((propiedad) => propiedad.ubicacion))
   );
 
+
+  useEffect(() => {
+    const filteredPropiedades = allProperties.filter(p => {
+      return p.ubicacion.toLowerCase().includes(ubicacion.toLowerCase()); 
+    });
+    
+    setfilteredPropiedades(filteredPropiedades);
+  }, [ubicacion, allProperties]);
+  
+
   useEffect(() => {
     setfilteredPropiedades(
       allProperties.filter((propiedad) => {
         return (
-          (!ubicacion || ubicacion === propiedad.ubicacion) &&
+          // (!ubicacion || ubicacion === propiedad.ubicacion) &&
           (!precio ||
             (precio === "LESS_THAN_1M"
               ? propiedad.precio < 1000000
@@ -46,7 +51,7 @@ function Allproperties() {
         );
       })
     );
-  }, [ubicacion, precio, allProperties]);
+  }, [ precio, allProperties]);
 
   const clearFilters = () => {
     setUbicacion("");
@@ -66,11 +71,18 @@ function Allproperties() {
   function formatearPrecio(price) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
+
+
+  
+
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://nlb-realestate.com/properties" />
+      </Head>
       <div className="mt-24 mx-auto justify-center">
         <h2 className="text-center mt-8 text-3xl font-black text-sky-950">
-          Nuestro portafolio{" "}
+        {language === es ? es.ourPortfolio : en.ourPortfolio}{" "}
         </h2>
 
         {/* <Properties /> */}
@@ -81,7 +93,8 @@ function Allproperties() {
             value={ubicacion}
           >
             <option value="" disabled>
-              Selecciona una Ubicación
+              {/* Selecciona una Ubicación */}
+              {language === es ? es.selectLocation : en.selectLocation}
             </option>
 
             {ubicaciones.map((ubicacion) => {
@@ -90,27 +103,30 @@ function Allproperties() {
           </select>
           <div className=" mx-auto w-[350px] flex justify-between mt-6">
             <button
-              className={` mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow ${
+              className={` mx-auto px-2 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow ${
                 precio === "LESS_THAN_1M" ? "selected bg-slate-600" : ""
               }`}
               onClick={() => setPrecio("LESS_THAN_1M")}
             >
-              Menos de $1,000,000
+              {/* Menos de $1,000,000 */}
+              {language === es ? es.lessThan : en.lessThan}
             </button>
             <button
-              className={` mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow${
+              className={` mx-auto px-2 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow${
                 precio === "1M_PLUS" ? "selected" : ""
               }`}
               onClick={() => setPrecio("1M_PLUS")}
             >
-              Mas de $1,000,000
+              {/* Mas de $1,000,000 */}
+              {language === es ? es.moreThan : en.moreThan}
             </button>
           </div>
           <button
-            className="mx-auto mt-4 px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
+            className="mx-auto mt-4 px-2 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
             onClick={clearFilters}
           >
-            Ver todas las ubicaciones
+            {/* Ver todas las ubicaciones */}
+            {language === es ? es.seeAllLocations : en.seeAllLocations}
           </button>
           {/* <ul>
         {filteredPropiedades.map((propiedad) => {
@@ -139,12 +155,12 @@ function Allproperties() {
               <div className="mx-auto grid gap-2 lg:grid-cols-3 ">
                 {filteredPropiedades.map((items) => (
                   <div
-                  className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2 hover:scale-95 hover:shadow-[0_10px_20px_rgba(0,0,0,0.38)] transition-transform duration-300 "
+                    className="p-4 mx-auto w-full rounded-lg shadow-md lg:max-w-sm mt-2 hover:scale-95 hover:shadow-[0_10px_20px_rgba(0,0,0,0.38)] transition-transform duration-300 "
                     key={items.id}
                     // onClick={HandleRoute}
 
                     // onClick={() => router.push(`properties/${items.ubicacion}`)}
-                    onClick={() => router.push(`${items.route}`)}
+                    // onClick={() => router.push(`${items.route}`)}
                   >
                     <h1 className="uppercase text-2xl text-sky-900 font-black">
                       {items.desarrollo}
@@ -159,7 +175,7 @@ function Allproperties() {
                     <img
                       className="object-cover w-full h-48"
                       src={items.imagenCard}
-                      alt="image"
+                      alt={`Project-${items.desarrollo}-${items.ubicacion}`}
                     />
                     <div className="p-4">
                       <h4 className="text-xl font-semibold text-blue-600">
@@ -167,77 +183,82 @@ function Allproperties() {
                       </h4>
                       <p className="mb-2 leading-normal">{items.content}</p>
                       <button className="mb-4 w-full px-4 py-2 text-sm text-blue-100 bg-teal-800 rounded">
-                      {/* Propiedades desde US  */}
-                      {language === es ? es.pricesFromCard : en.pricesFromCard}$
-                      {formatearPrecio(items.precio)}
-                    </button>
-                    <div>
-                      {/* Tipo : */}
-                      <span className=" "><HiOutlineBuildingOffice2 className="inline font-extrabold text-[1.4rem] " /></span>
-                      <span className=" ml-2">
-                      <strong>
-                        {language === es ? es[items.tipo] : en[items.tipo]}
-                      </strong></span>
-                      {/* {language === es ? es.typeCard : en.typeCard} */}
-
-                      {/*Tipo de edificio. Casa, Depto etc*/}
-                      
-                    </div>
-                    <p className="">
-                    <span className="">
-                      <RxRulerHorizontal className="inline font-extrabold text-[1.1rem] " />
-                      </span>
-                      <span className="ml-3">
-                      <strong>
+                        {/* Propiedades desde US  */}
                         {language === es
-                          ? es[items.metrosCuadrados]
-                          : en[items.metrosCuadrados]}
-                      </strong>
-                      </span>
-                    </p>
-                    <p>
-                      {/* Habitaciones :  */}
-                      <IoBedOutline className="inline font-extrabold text-[1.3rem] " />
-                      <span className="ml-2"></span>
-                      {language === es ? es.bedroomsCard : en.bedroomsCard}
-                      <strong>
-                        {language === es
-                          ? es[items.habitaciones]
-                          : en[items.habitaciones]}
-                      </strong>
-                    </p>
-
-                    <p className="mb-2">
-                      {/* Baños :  */}
-                      <PiBathtub className="inline font-extrabold text-[1.3rem] " />
-                      <span className="ml-2"></span>
-                      {language === es ? es.bathroomsCard : en.bathroomsCard}
-                      <strong>
-                        {language === es ? es[items.banios] : en[items.banios]}
-                      </strong>
-                    </p>
-
-                    <p className="mb-4">
-                      <strong>
-                        {language === es
-                          ? es[items.ymuchomas]
-                          : en[items.ymuchomas]}
-                      </strong>
-                    </p>
-
-                    {/*Ver este proyecto*/}
-                    <Link href={`properties/${items.route2}`}>
-                      <button
-                        // onClick={() => router.push(`properties/${items.route2}`)}
-                        className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
-                      >
-                        {language === es ? es.verProyecto : en.verProyecto}
-                        <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" />
+                          ? es.pricesFromCard
+                          : en.pricesFromCard}
+                        ${formatearPrecio(items.precio)}
                       </button>
-                    </Link>
-                  </div>
-                </div>
+                      <div>
+                        {/* Tipo : */}
+                        <span className=" ">
+                          <HiOutlineBuildingOffice2 className="inline font-extrabold text-[1.4rem] " />
+                        </span>
+                        <span className=" ml-2">
+                          <strong>
+                            {language === es ? es[items.tipo] : en[items.tipo]}
+                          </strong>
+                        </span>
+                        {/* {language === es ? es.typeCard : en.typeCard} */}
 
+                        {/*Tipo de edificio. Casa, Depto etc*/}
+                      </div>
+                      <p className="">
+                        <span className="">
+                          <RxRulerHorizontal className="inline font-extrabold text-[1.1rem] " />
+                        </span>
+                        <span className="ml-3">
+                          <strong>
+                            {language === es
+                              ? es[items.metrosCuadrados]
+                              : en[items.metrosCuadrados]}
+                          </strong>
+                        </span>
+                      </p>
+                      <p>
+                        {/* Habitaciones :  */}
+                        <IoBedOutline className="inline font-extrabold text-[1.3rem] " />
+                        <span className="ml-2"></span>
+                        {language === es ? es.bedroomsCard : en.bedroomsCard}
+                        <strong>
+                          {language === es
+                            ? es[items.habitaciones]
+                            : en[items.habitaciones]}
+                        </strong>
+                      </p>
+
+                      <p className="mb-2">
+                        {/* Baños :  */}
+                        <PiBathtub className="inline font-extrabold text-[1.3rem] " />
+                        <span className="ml-2"></span>
+                        {language === es ? es.bathroomsCard : en.bathroomsCard}
+                        <strong>
+                          {language === es
+                            ? es[items.banios]
+                            : en[items.banios]}
+                        </strong>
+                      </p>
+
+                      <p className="mb-4">
+                        <strong>
+                          {language === es
+                            ? es[items.ymuchomas]
+                            : en[items.ymuchomas]}
+                        </strong>
+                      </p>
+
+                      {/*Ver este proyecto*/}
+                      <Link href={`properties/${items.route2}`}>
+                        <button
+                          // onClick={() => router.push(`properties/${items.route2}`)}
+                          className="w-full mx-auto px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
+                        >
+                          {language === es ? es.verProyecto : en.verProyecto}
+                          <TfiNewWindow className="inline ml-5 text-lg mb-2 font-black" />
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 ))}
               </div>
             )}

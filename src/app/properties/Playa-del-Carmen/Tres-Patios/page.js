@@ -22,7 +22,7 @@ const TresPatios = () => {
 
   // console.log("AllProperties", allProperties);
   const images = allProperties[0].imagesCube;
-  console.log("Imagenes3Patios", images);
+  // console.log("Imagenes3Patios", images);
 
   const router = useRouter();
   return (
